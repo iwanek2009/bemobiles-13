@@ -1,10 +1,25 @@
 export const BrandFilter = () => {
   const brands = [
-    { name: "Apple", logo: "apple" },
-    { name: "Samsung", logo: "samsung" },
-    { name: "Google", logo: "google" },
-    { name: "Sony", logo: "sony" },
-    { name: "Honor", logo: "honor" },
+    { 
+      name: "Apple", 
+      logo: "/lovable-uploads/ea8ead47-6118-4894-bc62-fd23580b79f1.png"
+    },
+    { 
+      name: "Samsung", 
+      logo: "/lovable-uploads/1c71bb6f-4693-4bbe-8e90-6c96c7066b79.png"
+    },
+    { 
+      name: "Google", 
+      logo: "/lovable-uploads/b53f9160-6075-444a-abe9-c8b4b56362ea.png"
+    },
+    { 
+      name: "Sony", 
+      logo: "/lovable-uploads/352dd185-33dc-4cfd-84c6-80760dadd3cf.png"
+    },
+    { 
+      name: "Honor", 
+      logo: "/placeholder.svg"
+    },
   ];
 
   return (
@@ -14,9 +29,14 @@ export const BrandFilter = () => {
         {brands.map((brand) => (
           <button
             key={brand.name}
-            className="flex items-center justify-center p-4 border rounded-lg hover:border-primary transition-colors"
+            className="flex flex-col items-center justify-center p-4 border rounded-lg hover:border-primary transition-colors gap-2"
           >
-            <span className="font-medium">{brand.name}</span>
+            <img 
+              src={brand.logo} 
+              alt={`${brand.name} logo`} 
+              className="h-8 object-contain"
+            />
+            <span className="font-medium text-sm">{brand.name}</span>
           </button>
         ))}
       </div>
