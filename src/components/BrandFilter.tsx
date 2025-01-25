@@ -18,7 +18,7 @@ export const BrandFilter = () => {
     },
     { 
       name: "Honor", 
-      logo: "/placeholder.svg"
+      logo: "/lovable-uploads/df83f3e3-20c0-4ec8-86d9-4bdde97b863d.png"
     },
   ];
 
