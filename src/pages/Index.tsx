@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { BrandFilter } from "@/components/BrandFilter";
 import { PhoneDeals } from "@/components/PhoneDeals";
 import { InfoSection } from "@/components/InfoSection";
+import { CategoryList } from "@/components/CategoryList";
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <Header />
       <Hero />
       <BrandFilter />
+      <CategoryList />
       <PhoneDeals />
       <InfoSection />
     </div>
