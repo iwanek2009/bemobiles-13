@@ -33,7 +33,7 @@ export const BrandFilter = () => {
             <img 
               src={brand.logo} 
               alt={`${brand.name} logo`} 
-              className="h-8 object-contain"
+              className="h-12 w-full object-contain" // Increased height and added full width
             />
           </button>
         ))}
