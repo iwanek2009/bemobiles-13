@@ -19,7 +19,7 @@ export const PhoneCard = ({
   brand 
 }: PhoneCardProps) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       <div className="relative px-6 pt-6 pb-4 -mx-6 -mt-6">
         <img 
           src={image} 
