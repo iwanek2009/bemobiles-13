@@ -17,7 +17,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/be162283-678e-45f8-af1b-fece2422a8e0.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
-    colors: ["black", "blue", "purple", "white"],
+    colors: ["#222222", "#D946EF", "#0EA5E9", "#1A1F2C", "#FFFFFF"],  // black, pink, teal, Ultramarine, white
     brand: "Apple"
   },
   {
@@ -80,10 +80,20 @@ export const PhoneDeals = () => {
                     className="w-3 h-3 rounded-full border border-gray-200"
                     style={{ backgroundColor: color }}
                     title={
-                      index === 0 ? "White Titanium" :
-                      index === 1 ? "Natural Titanium" :
-                      index === 2 ? "Desert Titanium" :
-                      "Black Titanium"
+                      deal.name === "iPhone 16" ? 
+                        index === 0 ? "Black" :
+                        index === 1 ? "Pink" :
+                        index === 2 ? "Teal" :
+                        index === 3 ? "Ultramarine" :
+                        "White"
+                      :
+                      deal.name.includes("Pro") ?
+                        index === 0 ? "White Titanium" :
+                        index === 1 ? "Natural Titanium" :
+                        index === 2 ? "Desert Titanium" :
+                        "Black Titanium"
+                      :
+                      color
                     }
                   />
                 ))}
