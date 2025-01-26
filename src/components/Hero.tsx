@@ -41,6 +41,10 @@ export const Hero = () => {
                 transform: `translateY(${-scrollPosition * 0.2}px)`,
                 top: '0'
               }}
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="800"
             />
           </div>
         </div>
