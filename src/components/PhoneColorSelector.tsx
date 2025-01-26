@@ -9,7 +9,7 @@ export const PhoneColorSelector = ({ colors, phoneName }: ColorSelectorProps) =>
       {colors.map((color, index) => (
         <div
           key={index}
-          className="w-3 h-3 rounded-full border border-gray-200"
+          className="w-3 h-3 rounded-full"
           style={{ backgroundColor: color }}
           title={
             phoneName === "iPhone 16" ? 
