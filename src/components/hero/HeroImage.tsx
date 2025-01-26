@@ -12,7 +12,7 @@ export const HeroImage = ({ scrollPosition }: HeroImageProps) => {
         alt="Modern smartphones"
         className="absolute w-full object-cover transition-transform duration-300 ease-out"
         style={{
-          height: '550px',
+          height: '350px',
           transform: `translateY(${-scrollPosition * 0.2}px)`,
           top: '0'
         }}
