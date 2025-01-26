@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, CheckCircle, Smartphone, Signal, CreditCard, Clock } from "lucide-react";
+import { BookOpen, CheckCircle, Smartphone, Signal, CreditCard, Clock, CheckCircle2 } from "lucide-react";
 
 export const GuideSection = () => {
   const scrollToPhones = () => {
@@ -98,9 +98,12 @@ export const GuideSection = () => {
 
       <div className="bg-white py-12">
         <div className="container mx-auto px-4 max-w-[1000px]">
-          <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-6">
-            Why Choose a Pay Monthly Phone Contract?
-          </h2>
+          <CardHeader className="p-0 mb-8">
+            <CardTitle className="text-3xl font-bold text-gray-900 tracking-tight flex items-center gap-3">
+              <CheckCircle2 className="text-primary w-8 h-8" />
+              Why Choose a Pay Monthly Phone Contract?
+            </CardTitle>
+          </CardHeader>
           
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
             Discover the smart way to own the latest smartphones with minimal upfront investment through pay monthly contracts. At bemobiles.com, we help you understand exactly what you're getting – and what to watch out for.
@@ -108,81 +111,97 @@ export const GuideSection = () => {
 
           <div className="space-y-12">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-2">
+                <CheckCircle className="text-primary w-6 h-6" />
                 Key Advantages of Pay Monthly Contracts
               </h3>
               
-              <div className="space-y-8">
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
-                    Affordable Access to Premium Phones
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Get your dream phone without breaking the bank. Pay monthly contracts let you spread the cost of flagship devices, making premium smartphones instantly accessible with manageable monthly payments.
-                  </p>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      Affordable Access to Premium Phones
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Get your dream phone without breaking the bank. Pay monthly contracts let you spread the cost of flagship devices, making premium smartphones instantly accessible with manageable monthly payments.
+                    </p>
+                  </CardContent>
+                </Card>
 
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
-                    Enhanced Usage Allowances
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Enjoy generous data, call, and text packages that typically surpass pay-as-you-go offerings. Perfect for heavy users who stream, browse, and stay connected throughout the day.
-                  </p>
-                </div>
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      Enhanced Usage Allowances
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Enjoy generous data, call, and text packages that typically surpass pay-as-you-go offerings. Perfect for heavy users who stream, browse, and stay connected throughout the day.
+                    </p>
+                  </CardContent>
+                </Card>
 
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
-                    Hassle-Free Payments
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Say goodbye to inconvenient top-ups. Your monthly bill is automatically handled through Direct Debit, ensuring uninterrupted service and better budget management.
-                  </p>
-                </div>
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      Hassle-Free Payments
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Say goodbye to inconvenient top-ups. Your monthly bill is automatically handled through Direct Debit, ensuring uninterrupted service and better budget management.
+                    </p>
+                  </CardContent>
+                </Card>
 
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
-                    Exclusive Rewards
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Many contracts include valuable extras like streaming subscriptions or entertainment packages. At bemobiles.com, we'll help you evaluate whether these perks truly add value to your plan.
-                  </p>
-                </div>
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      Exclusive Rewards
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Many contracts include valuable extras like streaming subscriptions or entertainment packages. At bemobiles.com, we'll help you evaluate whether these perks truly add value to your plan.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6 flex items-center gap-2">
+                <CheckCircle className="text-primary w-6 h-6" />
                 Important Considerations
               </h3>
               
-              <div className="space-y-8">
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
-                    Long-Term Commitment
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Consider your contract length carefully. Most plans run for 12-36 months, requiring consistent monthly payments throughout the term.
-                  </p>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      Long-Term Commitment
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Consider your contract length carefully. Most plans run for 12-36 months, requiring consistent monthly payments throughout the term.
+                    </p>
+                  </CardContent>
+                </Card>
 
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
-                    Credit Requirements
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    Networks typically require credit checks before approval. We recommend checking your eligibility before applying to avoid disappointment.
-                  </p>
-                </div>
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      Credit Requirements
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      Networks typically require credit checks before approval. We recommend checking your eligibility before applying to avoid disappointment.
+                    </p>
+                  </CardContent>
+                </Card>
 
-                <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
-                    Total Cost Analysis
-                  </h4>
-                  <p className="text-gray-600 leading-relaxed">
-                    While monthly payments are lower, the overall cost may exceed buying a phone outright. Compare total contract values to make an informed decision.
-                  </p>
-                </div>
+                <Card className="bg-white shadow-sm hover:shadow-md transition-shadow">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      Total Cost Analysis
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      While monthly payments are lower, the overall cost may exceed buying a phone outright. Compare total contract values to make an informed decision.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
