@@ -79,7 +79,7 @@ export const InfoSection = () => {
         </div>
       </div>
 
-      <div className="bg-white py-12">
+      <div className="w-full bg-[#F1F1F1] py-8">
         <div className="container mx-auto px-4 max-w-[1000px]">
           <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-6">
             Why Choose a Pay Monthly Phone Contract?
