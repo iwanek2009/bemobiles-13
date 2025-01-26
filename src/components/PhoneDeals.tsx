@@ -55,6 +55,15 @@ const deals: PhoneDeal[] = [
     upfrontCost: 0,
     colors: ["#F5F5F7", "#000000"],  // White, Black
     brand: "Samsung"
+  },
+  {
+    id: 6,
+    name: "Galaxy 24FE",
+    image: "/lovable-uploads/90806a56-c2fd-4ca0-9846-45f404b74737.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#000000"],  // White, Black
+    brand: "Samsung"
   }
 ];
 
@@ -102,6 +111,8 @@ export const PhoneDeals = () => {
                         index === 2 ? "Desert Titanium" :
                         "Black Titanium"
                       :
+                      color === "#F5F5F7" ? "White" :
+                      color === "#000000" ? "Black" :
                       color
                     }
                   />
