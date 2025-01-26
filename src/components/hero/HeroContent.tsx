@@ -22,7 +22,7 @@ export const HeroContent = ({
         Looking for a new phone contract? We can help you find your ideal
         handset on a pay monthly plan that suits your needs.
       </p>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 max-w-[90%] md:max-w-[80%]">
         <CollapsibleFAQ
           open={openDeal}
           onOpenChange={setOpenDeal}
