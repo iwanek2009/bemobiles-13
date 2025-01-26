@@ -52,13 +52,13 @@ export const BrandFilter = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-[1000px]">
+    <div className="container mx-auto px-4 py-4 max-w-[1000px]">
       <div className="hidden md:grid grid-cols-5 gap-4">
         {brands.map((brand) => (
           <button
             key={brand.name}
             onClick={() => handleBrandClick(brand.name)}
-            className={`flex items-center justify-center p-4 border rounded-lg transition-colors ${
+            className={`flex items-center justify-center p-2 border rounded-lg transition-colors ${
               selectedBrand === brand.name 
                 ? 'border-primary bg-primary/5' 
                 : 'hover:border-primary'
@@ -89,7 +89,7 @@ export const BrandFilter = () => {
               <CarouselItem key={brand.name} className="pl-2 basis-1/2 sm:basis-1/3">
                 <button
                   onClick={() => handleBrandClick(brand.name)}
-                  className={`flex items-center justify-center p-4 border rounded-lg transition-colors w-full ${
+                  className={`flex items-center justify-center p-2 border rounded-lg transition-colors w-full ${
                     selectedBrand === brand.name 
                       ? 'border-primary bg-primary/5' 
                       : 'hover:border-primary'
