@@ -15,7 +15,7 @@ export const HeroContent = ({
 }: HeroContentProps) => {
   return (
     <div>
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <h1 className="pt-5 md:pt-0 text-4xl md:text-5xl font-bold mb-4">
         Mobile phone deals
       </h1>
       <p className="text-lg text-gray-600 mb-8">
