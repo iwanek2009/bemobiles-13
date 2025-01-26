@@ -14,7 +14,7 @@ const deals: PhoneDeal[] = [
   {
     id: 1,
     name: "iPhone 16",
-    image: "/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png",
+    image: "/lovable-uploads/a2d3fcfd-d18b-4199-8404-aed332adf40f.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
     colors: ["black", "blue", "purple", "white"],
