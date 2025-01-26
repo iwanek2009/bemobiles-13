@@ -41,7 +41,7 @@ const deals: PhoneDeal[] = [
   {
     id: 4,
     name: "iPhone 16 Pro Max",
-    image: "/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png",
+    image: "/lovable-uploads/e00ee709-dd25-47b2-adc0-ae7a4446c6ab.png",
     monthlyPrice: 43.00,
     upfrontCost: 0,
     colors: ["black", "gold"],
