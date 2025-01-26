@@ -24,11 +24,11 @@ export const PhoneCard = ({
         <img 
           src={image} 
           alt={name} 
-          className="w-48 h-auto object-contain mx-auto" 
+          className="w-44 h-auto object-contain mx-auto" 
           loading="lazy"
           decoding="async"
-          width="192"
-          height="192"
+          width="176"
+          height="176"
         />
       </div>
       
