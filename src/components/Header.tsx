@@ -6,7 +6,13 @@ export const Header = () => {
     <header className="w-full bg-white border-b">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-2xl font-bold text-primary">Bemobiles</div>
+          <div>
+            <img 
+              src="/lovable-uploads/76dacefe-9b25-4f6d-9697-bba1e60e81c7.png" 
+              alt="Bemobiles" 
+              className="h-8"
+            />
+          </div>
           
           <nav className="flex gap-6">
             <a href="#" className="text-gray-600 hover:text-primary transition-colors">Home</a>
