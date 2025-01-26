@@ -5,6 +5,7 @@ import { PhoneDeals } from "@/components/PhoneDeals";
 import { InfoSection } from "@/components/InfoSection";
 import { CategoryList } from "@/components/CategoryList";
 import { GuideSection } from "@/components/GuideSection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <CategoryList />
       <GuideSection />
       <InfoSection />
+      <Footer />
     </div>
   );
 };
