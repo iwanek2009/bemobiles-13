@@ -23,7 +23,7 @@ const deals: PhoneDeal[] = [
   {
     id: 2,
     name: "iPhone 15",
-    image: "/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png",
+    image: "/lovable-uploads/794c7a99-1639-472d-97c3-1ebb220a09b1.png",
     monthlyPrice: 27.00,
     upfrontCost: 0,
     colors: ["black", "blue", "green", "pink", "yellow"],
