@@ -44,7 +44,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/da14abe3-8ee8-4ee5-8776-c3682eafb410.png",
     monthlyPrice: 43.00,
     upfrontCost: 0,
-    colors: ["black", "gold"],
+    colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],  // White, Natural, Desert, Black Titanium
     brand: "Apple"
   }
 ];
@@ -77,8 +77,14 @@ export const PhoneDeals = () => {
                 {deal.colors.map((color, index) => (
                   <div
                     key={index}
-                    className="w-3 h-3 rounded-full"
+                    className="w-3 h-3 rounded-full border border-gray-200"
                     style={{ backgroundColor: color }}
+                    title={
+                      index === 0 ? "White Titanium" :
+                      index === 1 ? "Natural Titanium" :
+                      index === 2 ? "Desert Titanium" :
+                      "Black Titanium"
+                    }
                   />
                 ))}
               </div>
