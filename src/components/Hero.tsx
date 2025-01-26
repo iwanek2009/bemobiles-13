@@ -1,7 +1,19 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 export const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="bg-gradient-to-b from-blue-100 to-white">
       <div className="container mx-auto px-4 py-16">
@@ -21,9 +33,13 @@ export const Hero = () => {
           </div>
           <div className="hidden md:block">
             <img
-              src="/lovable-uploads/9437e5c2-7f3c-4940-962c-813c9639a88c.png"
-              alt="Person with phone"
-              className="w-full h-auto rounded-lg"
+              src="/lovable-uploads/9d6a7295-3541-4c86-b417-dd0af10760d3.png"
+              alt="Latest phones showcase"
+              className="w-full h-auto rounded-lg transform transition-transform duration-500"
+              style={{
+                transform: `translateY(${scrollY * 0.1}px) scale(${1 - scrollY * 0.0005})`,
+                opacity: 1 - scrollY * 0.002
+              }}
             />
           </div>
         </div>
