@@ -1,4 +1,18 @@
+import { create } from 'zustand';
+
+interface BrandFilterStore {
+  selectedBrand: string | null;
+  setSelectedBrand: (brand: string | null) => void;
+}
+
+export const useBrandFilter = create<BrandFilterStore>((set) => ({
+  selectedBrand: null,
+  setSelectedBrand: (brand) => set({ selectedBrand: brand }),
+}));
+
 export const BrandFilter = () => {
+  const { selectedBrand, setSelectedBrand } = useBrandFilter();
+  
   const brands = [
     { 
       name: "Apple", 
@@ -22,18 +36,31 @@ export const BrandFilter = () => {
     },
   ];
 
+  const handleBrandClick = (brandName: string) => {
+    if (selectedBrand === brandName) {
+      setSelectedBrand(null); // Deselect if clicking the same brand
+    } else {
+      setSelectedBrand(brandName);
+    }
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
         {brands.map((brand) => (
           <button
             key={brand.name}
-            className="flex items-center justify-center p-4 border rounded-lg hover:border-primary transition-colors"
+            onClick={() => handleBrandClick(brand.name)}
+            className={`flex items-center justify-center p-4 border rounded-lg transition-colors ${
+              selectedBrand === brand.name 
+                ? 'border-primary bg-primary/5' 
+                : 'hover:border-primary'
+            }`}
           >
             <img 
               src={brand.logo} 
               alt={`${brand.name} logo`} 
-              className="h-20 w-full object-contain" // Increased height by 8px (from h-12 to h-20)
+              className="h-20 w-full object-contain"
             />
           </button>
         ))}
