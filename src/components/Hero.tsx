@@ -1,9 +1,21 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 export const Hero = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="bg-gradient-to-b from-blue-100 to-white">
+    <div className="bg-gradient-to-b from-blue-100 to-white overflow-hidden">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -19,11 +31,16 @@ export const Hero = () => {
               <Button>Search Deals</Button>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block relative h-[400px] overflow-hidden">
             <img
-              src="/lovable-uploads/9437e5c2-7f3c-4940-962c-813c9639a88c.png"
-              alt="Person with phone"
-              className="w-full h-auto rounded-lg"
+              src="/lovable-uploads/1f97ee16-02b5-48f8-aa35-82d57b257908.png"
+              alt="Modern smartphones"
+              className="absolute w-full object-cover transition-transform duration-300 ease-out"
+              style={{
+                height: '800px',
+                transform: `translateY(${-scrollPosition * 0.2}px)`,
+                top: '0'
+              }}
             />
           </div>
         </div>
