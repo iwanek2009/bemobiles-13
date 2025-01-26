@@ -1,9 +1,16 @@
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { ChevronDown } from "lucide-react";
 
 export const Hero = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [openDeal, setOpenDeal] = useState(false);
+  const [openSim, setOpenSim] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,9 +33,54 @@ export const Hero = () => {
               Looking for a new phone contract? We can help you find your ideal
               handset on a pay monthly plan that suits your needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Input placeholder="What phone are you looking for?" className="flex-1" />
-              <Button>Search Deals</Button>
+            <div className="flex flex-col gap-4">
+              <Collapsible
+                open={openDeal}
+                onOpenChange={setOpenDeal}
+                className="w-full"
+              >
+                <CollapsibleTrigger asChild>
+                  <Button
+                    variant="outline"
+                    className="w-full flex justify-between items-center bg-white"
+                  >
+                    <span>How to choose the best mobile phone deal</span>
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform duration-200 ${
+                        openDeal ? "transform rotate-180" : ""
+                      }`}
+                    />
+                  </Button>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="bg-white p-4 mt-2 rounded-md">
+                  Consider your usage needs, budget, and preferred networks. Compare deals across providers
+                  and look for special offers or cashback deals.
+                </CollapsibleContent>
+              </Collapsible>
+
+              <Collapsible
+                open={openSim}
+                onOpenChange={setOpenSim}
+                className="w-full"
+              >
+                <CollapsibleTrigger asChild>
+                  <Button
+                    variant="outline"
+                    className="w-full flex justify-between items-center bg-white"
+                  >
+                    <span>Should I choose a pay monthly or SIM only deal?</span>
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform duration-200 ${
+                        openSim ? "transform rotate-180" : ""
+                      }`}
+                    />
+                  </Button>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="bg-white p-4 mt-2 rounded-md">
+                  Pay monthly deals are great if you want a new phone and can spread the cost.
+                  SIM only deals are better if you're happy with your current phone and just need data and minutes.
+                </CollapsibleContent>
+              </Collapsible>
             </div>
           </div>
           <div className="hidden md:block relative h-[400px] overflow-hidden">
