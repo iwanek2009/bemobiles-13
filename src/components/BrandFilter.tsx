@@ -1,4 +1,11 @@
 import { create } from 'zustand';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface BrandFilterStore {
   selectedBrand: string | null;
@@ -46,7 +53,7 @@ export const BrandFilter = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-[1000px]">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+      <div className="hidden md:grid grid-cols-5 gap-4">
         {brands.map((brand) => (
           <button
             key={brand.name}
@@ -66,6 +73,42 @@ export const BrandFilter = () => {
             />
           </button>
         ))}
+      </div>
+
+      {/* Mobile Carousel */}
+      <div className="md:hidden">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-2">
+            {brands.map((brand) => (
+              <CarouselItem key={brand.name} className="pl-2 basis-1/2 sm:basis-1/3">
+                <button
+                  onClick={() => handleBrandClick(brand.name)}
+                  className={`flex items-center justify-center p-4 border rounded-lg transition-colors w-full ${
+                    selectedBrand === brand.name 
+                      ? 'border-primary bg-primary/5' 
+                      : 'hover:border-primary'
+                  }`}
+                >
+                  <img 
+                    src={brand.logo} 
+                    alt={`${brand.name} logo`} 
+                    className="h-16 w-full object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden sm:flex" />
+          <CarouselNext className="hidden sm:flex" />
+        </Carousel>
       </div>
     </div>
   );
