@@ -1,6 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const GuideSection = () => {
+  const scrollToPhones = () => {
+    const phonesSection = document.querySelector('#phones-section');
+    if (phonesSection) {
+      phonesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="w-full bg-white py-8">
       <div className="container mx-auto px-4 max-w-[1000px]">
@@ -50,9 +57,12 @@ export const GuideSection = () => {
               </p>
             </div>
 
-            <p className="text-lg text-gray-700 font-medium mt-8">
-              Ready to find your perfect phone contract? Visit bemobiles.com to compare deals and discover the ideal combination of handset, allowances, and payment terms for your needs.
-            </p>
+            <button
+              onClick={scrollToPhones}
+              className="text-lg text-primary hover:text-primary/90 font-medium mt-8 flex items-center gap-2 transition-colors cursor-pointer"
+            >
+              Ready to find your perfect phone contract? Compare deals and discover the ideal combination of handset, allowances, and payment terms for your needs →
+            </button>
           </div>
         </CardContent>
       </div>

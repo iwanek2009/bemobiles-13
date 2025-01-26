@@ -95,7 +95,7 @@ export const PhoneDeals = () => {
     : deals;
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-[1000px]">
+    <div id="phones-section" className="container mx-auto px-4 py-8 max-w-[1000px]">
       <div className="flex justify-between items-center mb-6">
         <div className="text-sm text-gray-600">
           {filteredDeals.length} phones found
