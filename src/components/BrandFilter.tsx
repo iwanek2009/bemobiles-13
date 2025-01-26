@@ -38,14 +38,14 @@ export const BrandFilter = () => {
 
   const handleBrandClick = (brandName: string) => {
     if (selectedBrand === brandName) {
-      setSelectedBrand(null); // Deselect if clicking the same brand
+      setSelectedBrand(null);
     } else {
       setSelectedBrand(brandName);
     }
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 max-w-[1000px]">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
         {brands.map((brand) => (
           <button
@@ -61,6 +61,8 @@ export const BrandFilter = () => {
               src={brand.logo} 
               alt={`${brand.name} logo`} 
               className="h-20 w-full object-contain"
+              loading="lazy"
+              decoding="async"
             />
           </button>
         ))}

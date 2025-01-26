@@ -7,7 +7,7 @@ import {
 
 export const InfoSection = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 max-w-[1000px]">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-xl font-semibold mb-4">Uswitch tips</h2>
         <Accordion type="single" collapsible>
