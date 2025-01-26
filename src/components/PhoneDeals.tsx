@@ -46,6 +46,15 @@ const deals: PhoneDeal[] = [
     upfrontCost: 0,
     colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],  // White, Natural, Desert, Black Titanium
     brand: "Apple"
+  },
+  {
+    id: 5,
+    name: "Galaxy A55",
+    image: "/lovable-uploads/a793194d-2367-4165-9b13-79c754bea505.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#000000"],  // White, Black
+    brand: "Samsung"
   }
 ];
 
@@ -53,7 +62,7 @@ export const PhoneDeals = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
-        <div className="text-sm text-gray-600">62 phones found</div>
+        <div className="text-sm text-gray-600">{deals.length} phones found</div>
         <select className="border rounded-lg px-4 py-2">
           <option>Sort by Bestselling</option>
           <option>Price: Low to High</option>
