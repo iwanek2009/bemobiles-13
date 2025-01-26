@@ -120,9 +120,9 @@ export const PhoneDeals = () => {
       {isMobile ? (
         <div className="relative">
           <Carousel className="w-full">
-            <CarouselContent className="-ml-2">
+            <CarouselContent>
               {filteredDeals.map((deal) => (
-                <CarouselItem key={deal.id} className="pl-2 basis-1/2">
+                <CarouselItem key={deal.id}>
                   <PhoneCard {...deal} />
                 </CarouselItem>
               ))}
