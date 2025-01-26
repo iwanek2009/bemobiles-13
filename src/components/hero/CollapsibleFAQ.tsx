@@ -23,9 +23,9 @@ export const CollapsibleFAQ = ({ open, onOpenChange, question, answer }: FAQItem
       <CollapsibleTrigger asChild>
         <Button
           variant="outline"
-          className="w-full flex justify-between items-center bg-white text-[16px]"
+          className="w-full flex justify-between items-center bg-white text-[16px] shadow-none border border-gray-200 rounded-md hover:bg-white"
         >
-          <span>{question}</span>
+          <span className="text-left font-normal">{question}</span>
           <ChevronDown
             className={`h-4 w-4 transition-transform duration-200 ${
               open ? "transform rotate-180" : ""
@@ -33,7 +33,7 @@ export const CollapsibleFAQ = ({ open, onOpenChange, question, answer }: FAQItem
           />
         </Button>
       </CollapsibleTrigger>
-      <CollapsibleContent className="bg-white p-4 text-[16px]">
+      <CollapsibleContent className="bg-white p-4 text-[16px] border-x border-b border-gray-200 rounded-b-md">
         {answer}
       </CollapsibleContent>
     </Collapsible>
