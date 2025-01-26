@@ -89,7 +89,7 @@ export const Hero = () => {
               alt="Modern smartphones"
               className="absolute w-full object-cover transition-transform duration-300 ease-out"
               style={{
-                height: '800px',
+                height: '700px',
                 transform: `translateY(${-scrollPosition * 0.2}px)`,
                 top: '0'
               }}
