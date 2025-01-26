@@ -26,14 +26,14 @@ export const HeroContent = ({
         <CollapsibleFAQ
           open={openDeal}
           onOpenChange={setOpenDeal}
-          question="How to choose the best mobile phone deal"
-          answer="Consider your usage needs, budget, and preferred networks. Compare deals across providers and look for special offers or cashback deals."
+          question="Can I keep my number when switching?"
+          answer="Yes. Text 'PAC' to 65075, receive code within minutes, share with new provider. Number transfers within 1-2 business day"
         />
         <CollapsibleFAQ
           open={openSim}
           onOpenChange={setOpenSim}
-          question="Should I choose a pay monthly or SIM only deal?"
-          answer="Pay monthly deals are great if you want a new phone and can spread the cost. SIM only deals are better if you're happy with your current phone and just need data and minutes."
+          question="Do I need to pay anything upfront?"
+          answer="Many phones like iPhone 16 and Samsung S24 available with £0 upfront cost, though monthly payments will be slightly higher than paying deposit upfront."
         />
       </div>
     </div>
