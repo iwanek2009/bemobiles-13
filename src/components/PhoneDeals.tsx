@@ -64,8 +64,12 @@ export const PhoneDeals = () => {
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {deals.map((deal) => (
           <div key={deal.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-            <div className="relative mb-4">
-              <img src={deal.image} alt={deal.name} className="w-full h-auto" />
+            <div className="relative mb-4 -mx-6 -mt-6 px-6 pt-6 flex items-center justify-center bg-white">
+              <img 
+                src={deal.image} 
+                alt={deal.name} 
+                className="w-48 h-auto object-contain" 
+              />
             </div>
             
             <div className="flex justify-center gap-1 mb-4">
