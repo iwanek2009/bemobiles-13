@@ -81,7 +81,8 @@ export const InfoSection = () => {
 
       <div className="w-full bg-[#F1F1F1] py-8">
         <div className="container mx-auto px-4 max-w-[1000px]">
-          <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-6">
+          <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-6 flex items-center gap-3">
+            <ChartBar className="text-primary w-8 h-8" />
             Why Choose a Pay Monthly Phone Contract?
           </h2>
           
@@ -89,15 +90,16 @@ export const InfoSection = () => {
             Discover the smart way to own the latest smartphones with minimal upfront investment through pay monthly contracts. At bemobiles.com, we help you understand exactly what you're getting – and what to watch out for.
           </p>
 
-          <div className="space-y-12">
-            <div>
+          <div className="space-y-8">
+            <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                 Key Advantages of Pay Monthly Contracts
               </h3>
               
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                  <h4 className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <DollarSign className="text-primary w-5 h-5" />
                     Affordable Access to Premium Phones
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
@@ -106,7 +108,8 @@ export const InfoSection = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                  <h4 className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <ChartBar className="text-primary w-5 h-5" />
                     Enhanced Usage Allowances
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
@@ -115,7 +118,8 @@ export const InfoSection = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                  <h4 className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <CreditCard className="text-primary w-5 h-5" />
                     Hassle-Free Payments
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
@@ -124,7 +128,8 @@ export const InfoSection = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                  <h4 className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <Heart className="text-primary w-5 h-5" />
                     Exclusive Rewards
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
@@ -134,14 +139,15 @@ export const InfoSection = () => {
               </div>
             </div>
 
-            <div>
+            <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                 Important Considerations
               </h3>
               
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                  <h4 className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <Check className="text-primary w-5 h-5" />
                     Long-Term Commitment
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
@@ -150,7 +156,8 @@ export const InfoSection = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                  <h4 className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <Check className="text-primary w-5 h-5" />
                     Credit Requirements
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
@@ -159,7 +166,8 @@ export const InfoSection = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                  <h4 className="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <Check className="text-primary w-5 h-5" />
                     Total Cost Analysis
                   </h4>
                   <p className="text-gray-600 leading-relaxed">
