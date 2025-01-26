@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { PhoneCard } from "./PhoneCard";
 
 interface PhoneDeal {
   id: number;
@@ -64,6 +65,15 @@ const deals: PhoneDeal[] = [
     upfrontCost: 0,
     colors: ["#F5F5F7", "#000000"],  // White, Black
     brand: "Samsung"
+  },
+  {
+    id: 7,
+    name: "Galaxy S24",
+    image: "/lovable-uploads/6e83658a-1c9c-47f5-80f2-39e4627e3cb1.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#000000"],  // White, Black
+    brand: "Samsung"
   }
 ];
 
@@ -81,57 +91,7 @@ export const PhoneDeals = () => {
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {deals.map((deal) => (
-          <div key={deal.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="relative px-6 pt-6 pb-4 -mx-6 -mt-6">
-              <img 
-                src={deal.image} 
-                alt={deal.name} 
-                className="w-52 h-auto object-contain mx-auto" 
-              />
-            </div>
-            
-            <div className="p-6 pt-0">
-              <div className="flex justify-center gap-1 mb-4">
-                {deal.colors.map((color, index) => (
-                  <div
-                    key={index}
-                    className="w-3 h-3 rounded-full border border-gray-200"
-                    style={{ backgroundColor: color }}
-                    title={
-                      deal.name === "iPhone 16" ? 
-                        index === 0 ? "Black" :
-                        index === 1 ? "Pink" :
-                        index === 2 ? "Teal" :
-                        index === 3 ? "Ultramarine" :
-                        "White"
-                      :
-                      deal.name.includes("Pro") ?
-                        index === 0 ? "White Titanium" :
-                        index === 1 ? "Natural Titanium" :
-                        index === 2 ? "Desert Titanium" :
-                        "Black Titanium"
-                      :
-                      color === "#F5F5F7" ? "White" :
-                      color === "#000000" ? "Black" :
-                      color
-                    }
-                  />
-                ))}
-              </div>
-
-              <div className="text-center mb-4">
-                <div className="text-sm text-gray-600">{deal.brand}</div>
-                <h3 className="font-semibold text-lg">{deal.name}</h3>
-              </div>
-
-              <div className="text-center mb-4">
-                <div className="text-sm text-gray-600">No upfront cost from</div>
-                <div className="font-semibold">£{deal.monthlyPrice.toFixed(2)} per month</div>
-              </div>
-
-              <Button className="w-full">See all deals</Button>
-            </div>
-          </div>
+          <PhoneCard key={deal.id} {...deal} />
         ))}
       </div>
     </div>
