@@ -5,7 +5,7 @@ interface ColorSelectorProps {
 
 export const PhoneColorSelector = ({ colors, phoneName }: ColorSelectorProps) => {
   return (
-    <div className="flex justify-center gap-1 mb-4">
+    <div className="flex justify-center gap-[15px] mb-4">
       {colors.map((color, index) => (
         <div
           key={index}
