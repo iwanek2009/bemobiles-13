@@ -74,6 +74,15 @@ const deals: PhoneDeal[] = [
     upfrontCost: 0,
     colors: ["#F5F5F7", "#000000"],  // White, Black
     brand: "Samsung"
+  },
+  {
+    id: 8,
+    name: "Galaxy S24 Ultra",
+    image: "/lovable-uploads/c2180d62-3e5e-4cba-a6e4-0ae0544d3d85.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#000000"],  // White, Black
+    brand: "Samsung"
   }
 ];
 
