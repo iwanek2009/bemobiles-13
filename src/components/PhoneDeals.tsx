@@ -65,11 +65,6 @@ export const PhoneDeals = () => {
         {deals.map((deal) => (
           <div key={deal.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
             <div className="relative mb-4">
-              {deal.id === 1 && (
-                <span className="absolute top-0 left-0 bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  Top selling
-                </span>
-              )}
               <img src={deal.image} alt={deal.name} className="w-full h-auto" />
             </div>
             
