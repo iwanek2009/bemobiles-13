@@ -4,7 +4,7 @@ export const GuideSection = () => {
   return (
     <div className="w-full bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-[1000px]">
-        <Card>
+        <Card className="bg-white">
           <CardHeader>
             <CardTitle className="text-2xl font-bold text-center mb-6">
               Finding Your Perfect Phone Contract at bemobiles.com
