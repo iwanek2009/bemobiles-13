@@ -1,4 +1,3 @@
-import { User, Phone, HelpCircle, Info, Shield, FileText, Cookie, Home } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 export const Footer = () => {
@@ -22,26 +21,11 @@ export const Footer = () => {
           <div className="flex flex-col items-start">
             <h3 className="font-semibold text-lg mb-4">About Us</h3>
             <nav className="flex flex-col gap-3">
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <User className="h-4 w-4" />
-                About Bemobiles
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <Home className="h-4 w-4" />
-                Home
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                Mobile Phones
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                Sim Only
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                Broadband & TV
-              </a>
+              <a href="#" className="text-gray-600 hover:text-primary">About Bemobiles</a>
+              <a href="#" className="text-gray-600 hover:text-primary">Home</a>
+              <a href="#" className="text-gray-600 hover:text-primary">Mobile Phones</a>
+              <a href="#" className="text-gray-600 hover:text-primary">Sim Only</a>
+              <a href="#" className="text-gray-600 hover:text-primary">Broadband & TV</a>
             </nav>
           </div>
 
@@ -49,18 +33,9 @@ export const Footer = () => {
           <div className="flex flex-col items-start">
             <h3 className="font-semibold text-lg mb-4">Support</h3>
             <nav className="flex flex-col gap-3">
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                Contact Us
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <HelpCircle className="h-4 w-4" />
-                FAQs
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <Info className="h-4 w-4" />
-                Help Center
-              </a>
+              <a href="#" className="text-gray-600 hover:text-primary">Contact Us</a>
+              <a href="#" className="text-gray-600 hover:text-primary">FAQs</a>
+              <a href="#" className="text-gray-600 hover:text-primary">Help Center</a>
             </nav>
           </div>
 
@@ -68,18 +43,9 @@ export const Footer = () => {
           <div className="flex flex-col items-start">
             <h3 className="font-semibold text-lg mb-4">Legal</h3>
             <nav className="flex flex-col gap-3">
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <Shield className="h-4 w-4" />
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <FileText className="h-4 w-4" />
-                Terms of Service
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary flex items-center gap-2">
-                <Cookie className="h-4 w-4" />
-                Cookie Policy
-              </a>
+              <a href="#" className="text-gray-600 hover:text-primary">Privacy Policy</a>
+              <a href="#" className="text-gray-600 hover:text-primary">Terms of Service</a>
+              <a href="#" className="text-gray-600 hover:text-primary">Cookie Policy</a>
             </nav>
           </div>
         </div>
