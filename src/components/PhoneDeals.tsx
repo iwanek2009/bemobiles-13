@@ -14,7 +14,7 @@ const deals: PhoneDeal[] = [
   {
     id: 1,
     name: "iPhone 16",
-    image: "/lovable-uploads/199250da-d944-4262-b9e5-2e88d77cd710.png",
+    image: "/lovable-uploads/be162283-678e-45f8-af1b-fece2422a8e0.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
     colors: ["black", "blue", "purple", "white"],
@@ -23,7 +23,7 @@ const deals: PhoneDeal[] = [
   {
     id: 2,
     name: "iPhone 15",
-    image: "/lovable-uploads/2daa54c2-45b8-47e8-aebf-9c02cd1ae88e.png",
+    image: "/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png",
     monthlyPrice: 27.00,
     upfrontCost: 0,
     colors: ["black", "blue", "green", "pink", "yellow"],
@@ -32,7 +32,7 @@ const deals: PhoneDeal[] = [
   {
     id: 3,
     name: "iPhone 16 Pro",
-    image: "/lovable-uploads/42b4efda-f6da-4ff7-81b1-0687f2d36930.png",
+    image: "/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png",
     monthlyPrice: 57.49,
     upfrontCost: 0,
     colors: ["black"],
@@ -41,7 +41,7 @@ const deals: PhoneDeal[] = [
   {
     id: 4,
     name: "iPhone 16 Pro Max",
-    image: "/lovable-uploads/199250da-d944-4262-b9e5-2e88d77cd710.png",
+    image: "/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png",
     monthlyPrice: 43.00,
     upfrontCost: 0,
     colors: ["black", "gold"],
