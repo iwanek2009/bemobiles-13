@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { Check, ArrowLeft, ArrowRight } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -58,12 +59,17 @@ export const BrandFilter = () => {
           <button
             key={brand.name}
             onClick={() => handleBrandClick(brand.name)}
-            className={`flex items-center justify-center p-2 border rounded-lg transition-colors ${
+            className={`relative flex items-center justify-center p-2 border rounded-lg transition-colors ${
               selectedBrand === brand.name 
                 ? 'border-primary bg-primary/5' 
                 : 'hover:border-primary'
             }`}
           >
+            {selectedBrand === brand.name && (
+              <div className="absolute top-2 right-2">
+                <Check className="h-5 w-5 text-primary" />
+              </div>
+            )}
             <img 
               src={brand.logo} 
               alt={`${brand.name} logo`} 
@@ -76,7 +82,7 @@ export const BrandFilter = () => {
       </div>
 
       {/* Mobile Carousel */}
-      <div className="md:hidden">
+      <div className="md:hidden relative">
         <Carousel
           opts={{
             align: "start",
@@ -89,12 +95,17 @@ export const BrandFilter = () => {
               <CarouselItem key={brand.name} className="pl-2 basis-1/2 sm:basis-1/3">
                 <button
                   onClick={() => handleBrandClick(brand.name)}
-                  className={`flex items-center justify-center p-2 border rounded-lg transition-colors w-full ${
+                  className={`relative flex items-center justify-center p-2 border rounded-lg transition-colors w-full ${
                     selectedBrand === brand.name 
                       ? 'border-primary bg-primary/5' 
                       : 'hover:border-primary'
                   }`}
                 >
+                  {selectedBrand === brand.name && (
+                    <div className="absolute top-2 right-2">
+                      <Check className="h-5 w-5 text-primary" />
+                    </div>
+                  )}
                   <img 
                     src={brand.logo} 
                     alt={`${brand.name} logo`} 
@@ -106,8 +117,12 @@ export const BrandFilter = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden sm:flex" />
-          <CarouselNext className="hidden sm:flex" />
+          <CarouselPrevious className="absolute -left-4 sm:-left-12 flex bg-white shadow-md">
+            <ArrowLeft className="h-4 w-4" />
+          </CarouselPrevious>
+          <CarouselNext className="absolute -right-4 sm:-right-12 flex bg-white shadow-md">
+            <ArrowRight className="h-4 w-4" />
+          </CarouselNext>
         </Carousel>
       </div>
     </div>
