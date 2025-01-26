@@ -6,7 +6,7 @@ export const Header = () => {
     <header className="w-full bg-white border-b">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-2xl font-bold text-primary">PhoneDeals</div>
+          <div className="text-2xl font-bold text-primary">Bemobiles</div>
           
           <nav className="flex gap-6">
             <a href="#" className="text-gray-600 hover:text-primary transition-colors">Home</a>
