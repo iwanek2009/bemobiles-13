@@ -35,7 +35,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/7700d6bc-54cb-487b-8ed0-b5a4d6bdf229.png",
     monthlyPrice: 57.49,
     upfrontCost: 0,
-    colors: ["black"],
+    colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],  // White, Natural, Desert, Black Titanium
     brand: "Apple"
   },
   {
