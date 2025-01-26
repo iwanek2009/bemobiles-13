@@ -20,7 +20,7 @@ export const PhoneCard = ({
 }: PhoneCardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-      <div className="relative px-6 pt-6 pb-[15px] -mx-6 -mt-6">
+      <div className="relative px-4 pt-4 pb-[10px] -mx-4 -mt-4">
         <img 
           src={image} 
           alt={name} 
@@ -32,7 +32,7 @@ export const PhoneCard = ({
         />
       </div>
       
-      <div className="p-6 pt-0">
+      <div className="p-4">
         <PhoneColorSelector colors={colors} phoneName={name} />
 
         <div className="text-center mb-4">

@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { PhoneCard } from "./PhoneCard";
 import { useBrandFilter } from "./BrandFilter";
+import { useIsMobile } from "@/hooks/use-mobile";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 interface PhoneDeal {
   id: number;
@@ -89,6 +97,7 @@ const deals: PhoneDeal[] = [
 
 export const PhoneDeals = () => {
   const { selectedBrand } = useBrandFilter();
+  const isMobile = useIsMobile();
   
   const filteredDeals = selectedBrand 
     ? deals.filter(deal => deal.brand === selectedBrand)
@@ -108,11 +117,25 @@ export const PhoneDeals = () => {
         </select>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-        {filteredDeals.map((deal) => (
-          <PhoneCard key={deal.id} {...deal} />
-        ))}
-      </div>
+      {isMobile ? (
+        <Carousel className="w-full">
+          <CarouselContent>
+            {filteredDeals.map((deal) => (
+              <CarouselItem key={deal.id} className="basis-1/2">
+                <PhoneCard {...deal} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      ) : (
+        <div className="grid lg:grid-cols-4 gap-4 md:gap-6">
+          {filteredDeals.map((deal) => (
+            <PhoneCard key={deal.id} {...deal} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
