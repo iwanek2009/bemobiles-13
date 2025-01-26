@@ -23,7 +23,7 @@ export const CollapsibleFAQ = ({ open, onOpenChange, question, answer }: FAQItem
       <CollapsibleTrigger asChild>
         <Button
           variant="outline"
-          className="w-full flex justify-between items-center bg-white"
+          className="w-full flex justify-between items-center bg-white text-[16px]"
         >
           <span>{question}</span>
           <ChevronDown
@@ -33,7 +33,7 @@ export const CollapsibleFAQ = ({ open, onOpenChange, question, answer }: FAQItem
           />
         </Button>
       </CollapsibleTrigger>
-      <CollapsibleContent className="bg-white p-4 mt-2 rounded-md">
+      <CollapsibleContent className="bg-white p-4 mt-2 rounded-md text-[16px]">
         {answer}
       </CollapsibleContent>
     </Collapsible>
