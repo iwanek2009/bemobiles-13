@@ -18,9 +18,9 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6">
             <a href="#" className="text-gray-600 hover:text-primary transition-colors">Home</a>
-            <a href="#" className="text-gray-600 hover:text-primary transition-colors">SIM-only</a>
-            <a href="#" className="text-gray-600 hover:text-primary transition-colors">Broadband</a>
-            <a href="#" className="text-gray-600 hover:text-primary transition-colors">Help</a>
+            <a href="#" className="text-gray-600 hover:text-primary transition-colors">Mobile Phones</a>
+            <a href="#" className="text-gray-600 hover:text-primary transition-colors">Sim Only</a>
+            <a href="#" className="text-gray-600 hover:text-primary transition-colors">Broadband & TV</a>
           </nav>
 
           {/* Mobile Navigation */}
@@ -33,9 +33,9 @@ export const Header = () => {
             <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8">
                 <a href="#" className="text-gray-600 hover:text-primary transition-colors">Home</a>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors">SIM-only</a>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors">Broadband</a>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors">Help</a>
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">Mobile Phones</a>
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">Sim Only</a>
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">Broadband & TV</a>
               </nav>
             </SheetContent>
           </Sheet>
