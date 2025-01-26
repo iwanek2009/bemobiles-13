@@ -118,17 +118,19 @@ export const PhoneDeals = () => {
       </div>
 
       {isMobile ? (
-        <Carousel className="w-full">
-          <CarouselContent>
-            {filteredDeals.map((deal) => (
-              <CarouselItem key={deal.id} className="basis-1/2">
-                <PhoneCard {...deal} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <div className="relative">
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2">
+              {filteredDeals.map((deal) => (
+                <CarouselItem key={deal.id} className="pl-2 basis-1/2">
+                  <PhoneCard {...deal} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute -left-4 top-1/2" />
+            <CarouselNext className="absolute -right-4 top-1/2" />
+          </Carousel>
+        </div>
       ) : (
         <div className="grid lg:grid-cols-4 gap-4 md:gap-6">
           {filteredDeals.map((deal) => (
