@@ -16,7 +16,7 @@ export const Hero = () => {
 
   return (
     <div className="bg-gradient-to-b from-blue-100 to-white overflow-hidden">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
