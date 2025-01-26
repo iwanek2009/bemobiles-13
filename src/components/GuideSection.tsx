@@ -2,8 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const GuideSection = () => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-[1000px]">
-      <Card className="bg-white w-full">
+    <div className="w-full bg-white py-8">
+      <div className="container mx-auto px-4 max-w-[1000px]">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center mb-6">
             Finding Your Perfect Phone Contract at bemobiles.com
@@ -55,7 +55,7 @@ export const GuideSection = () => {
             </p>
           </div>
         </CardContent>
-      </Card>
+      </div>
     </div>
   );
 };
