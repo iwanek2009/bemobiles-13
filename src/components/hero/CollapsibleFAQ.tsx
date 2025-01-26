@@ -33,7 +33,7 @@ export const CollapsibleFAQ = ({ open, onOpenChange, question, answer }: FAQItem
           />
         </Button>
       </CollapsibleTrigger>
-      <CollapsibleContent className="bg-white p-4 mt-2 rounded-md text-[16px]">
+      <CollapsibleContent className="bg-white p-4 text-[16px]">
         {answer}
       </CollapsibleContent>
     </Collapsible>
