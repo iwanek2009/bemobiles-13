@@ -62,7 +62,6 @@ export const PhoneCard = ({
         <Button 
           onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
           className="w-full"
-          variant="secondary"
         >
           See all deals
         </Button>
