@@ -9,7 +9,10 @@ const SamsungMobilePhones = () => {
   const [searchParams] = useSearchParams();
   const filterParam = searchParams.get('filter');
   
-  const filter = filterParam ? { families: [Number(filterParam)] } : undefined;
+  const filter = {
+    ...(filterParam ? { families: [Number(filterParam)] } : {}),
+    brands: [5]
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
