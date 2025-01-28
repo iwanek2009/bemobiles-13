@@ -18,28 +18,26 @@ const Index = () => {
       <Header />
       <Hero />
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-wrap gap-4">
-          <Button 
-            onClick={() => handleFilteredDeals(1968)}
-            className="mb-8"
-          >
-            View iPhone Deals
-          </Button>
-          <Button 
-            onClick={() => handleFilteredDeals(1969)}
-            className="mb-8"
-            variant="secondary"
-          >
-            View Samsung Deals
-          </Button>
-          <Button 
-            onClick={() => handleFilteredDeals(1970)}
-            className="mb-8"
-            variant="outline"
-          >
-            View Google Pixel Deals
-          </Button>
-        </div>
+        <Button 
+          onClick={() => handleFilteredDeals(1968)}
+          className="mb-8"
+        >
+          View iPhone Deals
+        </Button>
+        <Button 
+          onClick={() => handleFilteredDeals(1969)}
+          className="mb-8"
+          variant="secondary"
+        >
+          View Samsung Deals
+        </Button>
+        <Button 
+          onClick={() => handleFilteredDeals(1970)}
+          className="mb-8"
+          variant="outline"
+        >
+          View Google Pixel Deals
+        </Button>
       </div>
       <BrandFilter />
       <PhoneDeals />
