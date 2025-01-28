@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneDeals } from "@/components/PhoneDeals";
 import { BrandFilter } from "@/components/BrandFilter";
+import { StickeeWidget } from "@/components/StickeeWidget";
 
 const MobilePhones = () => {
   return (
@@ -14,6 +15,7 @@ const MobilePhones = () => {
         </div>
       </div>
       <BrandFilter />
+      <StickeeWidget />
       <PhoneDeals />
       <Footer />
     </div>
