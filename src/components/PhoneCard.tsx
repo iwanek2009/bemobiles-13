@@ -21,7 +21,7 @@ export const PhoneCard = ({
 }: PhoneCardProps) => {
   const getWidgetLink = () => {
     if (name === "iPhone 15") {
-      return "/mobile-phones#stickee-widget-smartfony-90?filters={\"families\":[1967]}";
+      return "/mobile-phones#stickee-widget-smartfony-90";
     }
     return "/mobile-phones";
   };
