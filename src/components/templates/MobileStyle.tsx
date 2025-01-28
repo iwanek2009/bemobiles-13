@@ -46,3 +46,5 @@ export const HeroTemplate = ({
     </div>
   );
 };
+
+export default HeroTemplate;
