@@ -39,8 +39,8 @@ export const PhoneCard = ({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-      <div className="relative px-6 pt-6 pb-[15px] -mx-6 -mt-6">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 sm:flex sm:flex-row md:block lg:block">
+      <div className="relative px-6 pt-6 pb-[15px] -mx-6 -mt-6 sm:w-1/2 md:w-full lg:w-full">
         <img 
           src={image} 
           alt={name} 
@@ -52,22 +52,23 @@ export const PhoneCard = ({
         />
       </div>
       
-      <div className="p-6 pt-0">
-        <PhoneColorSelector colors={colors} phoneName={name} />
-
-        <div className="text-center mb-4">
+      <div className="p-6 pt-0 sm:w-1/2 md:w-full lg:w-full sm:flex sm:flex-col sm:justify-center">
+        <div className="text-center sm:text-left md:text-center lg:text-center mb-4">
           <div className="text-sm text-gray-600">{brand}</div>
-          <h3 className="font-semibold text-lg">{name}</h3>
+          <h3 className="font-semibold text-2xl sm:text-xl md:text-lg lg:text-lg">{name}</h3>
         </div>
 
-        <div className="text-center mb-4">
+        <PhoneColorSelector colors={colors} phoneName={name} />
+
+        <div className="text-center sm:text-left md:text-center lg:text-center mb-4">
           <div className="text-sm text-gray-600">No upfront cost from</div>
-          <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
+          <div className="font-semibold text-xl">£{monthlyPrice.toFixed(2)} per month</div>
         </div>
 
         <Button 
           onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
-          className="w-full"
+          className="w-full bg-black hover:bg-gray-800 text-white"
+          variant="secondary"
         >
           See all deals
         </Button>
