@@ -26,7 +26,7 @@ const MobilePhones = () => {
                 Best mobile phone deals on the UK's biggest networks.
               </p>
             </div>
-            <div className="relative h-[300px] hidden md:block pt-[30px]">
+            <div className="relative h-[300px] hidden md:block mt-[30px]">
               <img
                 src="/lovable-uploads/e5af43e9-0d34-4eab-8779-a0261436c139.png"
                 alt="iPhone Pro with multiple cameras"
