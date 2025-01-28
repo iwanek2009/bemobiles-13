@@ -52,6 +52,7 @@ export const StickeeWidget = ({ filter }: StickeeWidgetProps) => {
       <div 
         data-stickee-widget-id="smartfony-90"
         data-filters={filter ? JSON.stringify(filter) : undefined}
+        data-sort="UPFRONT_PRICE"
       >
         Loading deals...
       </div>
