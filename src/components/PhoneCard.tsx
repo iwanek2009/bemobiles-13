@@ -20,9 +20,9 @@ export const PhoneCard = ({
   brand 
 }: PhoneCardProps) => {
   const getWidgetLink = () => {
-    // Only link the Galaxy S24 Ultra to widget 1906
+    // Only link the Galaxy S24 Ultra to widget smartfony-90
     if (name === "Galaxy S24 Ultra") {
-      return `/mobile-phones#stickee-widget-1906`;
+      return `/mobile-phones#stickee-widget-smartfony-90`;
     }
     return undefined;
   };
