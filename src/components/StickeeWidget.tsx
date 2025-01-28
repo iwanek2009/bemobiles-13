@@ -38,7 +38,12 @@ export const StickeeWidget = () => {
 
   return (
     <div className="w-full">
-      <div data-stickee-widget-id="smartfony-90">Loading deals...</div>
+      <div 
+        data-stickee-widget-id="smartfony-90" 
+        data-filters='{"families":[1968]}'
+      >
+        Loading deals...
+      </div>
     </div>
   );
 };
