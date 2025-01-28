@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { PhoneDeals } from "@/components/PhoneDeals";
 import { BrandFilter } from "@/components/BrandFilter";
 import { StickeeWidget } from "@/components/StickeeWidget";
 import { useEffect } from "react";
@@ -43,7 +42,6 @@ const MobilePhones = () => {
       </div>
       <BrandFilter />
       <StickeeWidget />
-      <PhoneDeals />
       <Footer />
     </div>
   );
