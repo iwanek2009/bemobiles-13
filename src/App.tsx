@@ -2,11 +2,24 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import MobilePhones from "./pages/MobilePhones";
 
 const queryClient = new QueryClient();
+
+const RouteWrapper = () => {
+  const location = useLocation();
+  return (
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route 
+        path="/mobile-phones" 
+        element={<MobilePhones key={location.pathname} />} 
+      />
+    </Routes>
+  );
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -14,10 +27,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/mobile-phones" element={<MobilePhones />} />
-        </Routes>
+        <RouteWrapper />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
