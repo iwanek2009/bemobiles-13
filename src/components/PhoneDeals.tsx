@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { PhoneCard } from "./PhoneCard";
-import { useBrandFilter } from "./BrandFilter";
 
 interface PhoneDeal {
   id: number;
@@ -88,18 +87,11 @@ const deals: PhoneDeal[] = [
 ];
 
 export const PhoneDeals = () => {
-  const { selectedBrand } = useBrandFilter();
-  
-  const filteredDeals = selectedBrand 
-    ? deals.filter(deal => deal.brand === selectedBrand)
-    : deals;
-
   return (
     <div id="phones-section" className="container mx-auto px-4 py-8 max-w-[1000px]">
       <div className="flex justify-between items-center mb-6">
         <div className="text-sm text-gray-600">
-          {filteredDeals.length} phones found
-          {selectedBrand && ` for ${selectedBrand}`}
+          {deals.length} phones found
         </div>
         <select className="border rounded-lg px-4 py-2">
           <option>Sort by Bestselling</option>
@@ -109,7 +101,7 @@ export const PhoneDeals = () => {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-        {filteredDeals.map((deal) => (
+        {deals.map((deal) => (
           <PhoneCard key={deal.id} {...deal} />
         ))}
       </div>
