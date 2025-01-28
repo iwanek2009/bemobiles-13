@@ -28,7 +28,7 @@ export const PhoneCard = ({
       'Galaxy A55': 1974,
       'Galaxy 24FE': 1975,
       'Galaxy S24': 1976,
-      'Galaxy S24 Ultra': 1977,
+      'Galaxy S24 Ultra': 1906,  // Updated from 1977 to 1906
     };
 
     // Return the specific model's filter ID if it exists, otherwise fallback to brand-based filtering
