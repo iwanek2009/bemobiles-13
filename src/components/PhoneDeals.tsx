@@ -75,10 +75,11 @@ const deals: PhoneDeal[] = [
     id: 7,
     name: "Galaxy S24",
     image: "/lovable-uploads/6e83658a-1c9c-47f5-80f2-39e4627e3cb1.png",
-    monthlyPrice: 30.00,
+    monthlyPrice: 31.00,
     upfrontCost: 0,
     colors: ["#F5F5F7", "#000000"],
-    brand: "Samsung"
+    brand: "Samsung",
+    filterId: 1904
   },
   {
     id: 8,
