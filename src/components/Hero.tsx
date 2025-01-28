@@ -17,7 +17,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-[#2990dd]/5 to-white overflow-hidden">
+    <div className="bg-gradient-to-b from-[#2990dd]/25 to-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-4 py-[30px] md:py-0">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <HeroContent
