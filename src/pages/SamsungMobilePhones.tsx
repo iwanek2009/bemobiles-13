@@ -2,15 +2,14 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StickeeWidget } from "@/components/StickeeWidget";
 import { manufacturers } from "@/data/manufacturers";
+import { useSearchParams } from "react-router-dom";
 
 const SamsungMobilePhones = () => {
   const samsung = manufacturers.find(m => m.id === 'samsung');
+  const [searchParams] = useSearchParams();
+  const filterParam = searchParams.get('filter');
   
-  // Filter for Samsung phones (family ID 2 and brand ID 5)
-  const filter = { 
-    families: [2],
-    brands: [5]
-  };
+  const filter = filterParam ? { families: [Number(filterParam)] } : undefined;
 
   return (
     <div className="min-h-screen bg-gray-50">
