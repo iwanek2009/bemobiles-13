@@ -30,6 +30,11 @@ export const PhoneColorSelector = ({ colors, phoneName }: ColorSelectorProps) =>
               index === 1 ? "Champagne" :
               index === 2 ? "Green" :
               "Purple" :
+            phoneName === "Galaxy S24" ?
+              index === 0 ? "Violet" :
+              index === 1 ? "Black" :
+              index === 2 ? "Gray" :
+              "Yellow" :
             color === "#F5F5F7" ? "White" :
             color === "#000000" ? "Black" :
             color
