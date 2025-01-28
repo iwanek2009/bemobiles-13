@@ -3,6 +3,15 @@ import { Footer } from "@/components/Footer";
 import { StickeeWidget } from "@/components/StickeeWidget";
 import { manufacturers } from "@/data/manufacturers";
 import { useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const SamsungMobilePhones = () => {
   const samsung = manufacturers.find(m => m.id === 'samsung');
@@ -17,6 +26,25 @@ const SamsungMobilePhones = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
+      
+      {/* Breadcrumb Navigation */}
+      <div className="container mx-auto px-4 py-4">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink as={Link} to="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink as={Link} to="/mobile-phones">Mobile Phones</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Samsung Mobile Phones</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
       
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#2990dd]/50 to-white">
@@ -42,7 +70,7 @@ const SamsungMobilePhones = () => {
         </div>
       </div>
 
-      <StickeeWidget filter={filter} />
+      <StickeeWidget filter={filter} data-filters='{"brands":[5]}' />
       <Footer />
     </div>
   );
