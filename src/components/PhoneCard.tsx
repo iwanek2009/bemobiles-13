@@ -38,7 +38,7 @@ export const PhoneCard = ({
       <div className="md:p-6 p-4">
         <div className="flex md:flex-col items-center md:items-center gap-4">
           {/* Image Section */}
-          <div className="relative w-1/3 md:w-full md:px-6 md:pt-6 md:pb-[15px] md:-mx-6 md:-mt-6">
+          <div className="relative w-1/3 md:w-full md:px-6 md:pt-6 md:pb-[6px] md:-mx-6 md:-mt-6">
             <img 
               src={image} 
               alt={name} 
