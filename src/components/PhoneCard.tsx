@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { PhoneColorSelector } from "./PhoneColorSelector";
+import { Link } from "react-router-dom";
 
 interface PhoneCardProps {
   id: number;
@@ -45,7 +46,9 @@ export const PhoneCard = ({
           <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
         </div>
 
-        <Button className="w-full">See all deals</Button>
+        <Link to="/mobile-phones" className="w-full">
+          <Button className="w-full">See all deals</Button>
+        </Link>
       </div>
     </div>
   );
