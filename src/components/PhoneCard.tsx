@@ -20,10 +20,14 @@ export const PhoneCard = ({
   brand 
 }: PhoneCardProps) => {
   const getWidgetLink = () => {
-    if (name === "iPhone 15") {
-      return "/mobile-phones#stickee-widget-1890";
+    switch (name) {
+      case "iPhone 15":
+        return "/mobile-phones#stickee-widget-1890";
+      case "iPhone 16":
+        return "/mobile-phones#stickee-widget-1891";
+      default:
+        return "/mobile-phones";
     }
-    return "/mobile-phones";
   };
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
