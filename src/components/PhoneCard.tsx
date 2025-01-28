@@ -11,31 +11,26 @@ interface PhoneCardProps {
   brand: string;
 }
 
-export const PhoneCard = ({ 
-  name, 
-  image, 
-  monthlyPrice, 
-  colors, 
-  brand 
+export const PhoneCard = ({
+  name,
+  image,
+  monthlyPrice,
+  colors,
+  brand,
 }: PhoneCardProps) => {
-  const handleFilteredDeals = (filterId: number) => {
-    window.location.href = `/mobile-phones?filter=${filterId}`;
+  const getFilterId = (brand: string, model: string) => {
+    if (brand === "Apple") {
+      return 1968;
+    } else if (brand === "Samsung") {
+      return 1969;
+    } else if (brand === "Google") {
+      return 1970;
+    }
+    return 0;
   };
 
-  const getFilterId = (brand: string, name: string) => {
-    if (brand.toLowerCase() === 'apple') {
-      if (name === 'iPhone 15') {
-        return 1890;
-      }
-      return 1968;
-    }
-    if (brand.toLowerCase() === 'samsung') {
-      if (name === 'Galaxy A55') {
-        return 11760;
-      }
-      return 1904;
-    }
-    return 1904; // Default for others
+  const handleFilteredDeals = (filterId: number) => {
+    window.location.href = `/mobile-phones?filter=${filterId}`;
   };
 
   return (
@@ -69,13 +64,15 @@ export const PhoneCard = ({
               <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
             </div>
 
-            <Button 
-              onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
-              className="w-full bg-black hover:bg-black/90"
-              variant="default"
-            >
-              See all deals
-            </Button>
+            <div className="flex justify-center">
+              <Button 
+                onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
+                className="w-3/4"
+                variant="default"
+              >
+                See all deals
+              </Button>
+            </div>
           </div>
         </div>
       </div>
