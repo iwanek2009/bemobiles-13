@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneDeals } from "@/components/PhoneDeals";
@@ -6,11 +5,6 @@ import { BrandFilter } from "@/components/BrandFilter";
 import { StickeeWidget } from "@/components/StickeeWidget";
 
 const MobilePhones = () => {
-  useEffect(() => {
-    // Force a full browser reload when component mounts
-    window.location.reload();
-  }, []);
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
