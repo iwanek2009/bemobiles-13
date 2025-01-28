@@ -9,6 +9,7 @@ interface PhoneCardProps {
   upfrontCost: number;
   colors: string[];
   brand: string;
+  filterId?: number;
 }
 
 export const PhoneCard = ({
@@ -17,9 +18,13 @@ export const PhoneCard = ({
   monthlyPrice,
   colors,
   brand,
+  filterId,
 }: PhoneCardProps) => {
   const getFilterId = (brand: string, model: string) => {
-    // Map specific models to their filter IDs
+    // If a specific filterId is provided, use it
+    if (filterId) return filterId;
+    
+    // Otherwise use the default mapping
     const modelMap: { [key: string]: number } = {
       'iPhone 16': 1968,
       'iPhone 15': 1971,
@@ -28,10 +33,9 @@ export const PhoneCard = ({
       'Galaxy A55': 1974,
       'Galaxy 24FE': 1975,
       'Galaxy S24': 1976,
-      'Galaxy S24 Ultra': 1906,  // Updated from 1977 to 1906
+      'Galaxy S24 Ultra': 1906,
     };
 
-    // Return the specific model's filter ID if it exists, otherwise fallback to brand-based filtering
     return modelMap[model] || (brand === "Apple" ? 1968 : brand === "Samsung" ? 1969 : brand === "Google" ? 1970 : 0);
   };
 
