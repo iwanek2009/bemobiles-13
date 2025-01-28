@@ -29,7 +29,7 @@ const MobilePhones = () => {
           {/* Hero Image */}
           <div className="absolute right-0 top-0 h-full w-1/2 hidden md:block">
             <img 
-              src="/lovable-uploads/150c1546-7c64-4a1e-a878-0b1b7a23ea01.png"
+              src="/lovable-uploads/10f62c25-cd06-48e2-8af0-20d87dc8af98.png"
               alt="iPhone Pro"
               className="h-full w-full object-contain object-right"
             />
