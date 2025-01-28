@@ -38,9 +38,6 @@ const MobilePhones = () => {
         </div>
       </div>
 
-      <div className="md:hidden">
-        <BrandFilter />
-      </div>
       <StickeeWidget filter={filter} />
       <Footer />
     </div>
