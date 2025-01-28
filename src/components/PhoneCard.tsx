@@ -22,15 +22,14 @@ export const PhoneCard = ({
     window.location.href = `/mobile-phones?filter=${filterId}`;
   };
 
-  const getFilterId = (brand: string) => {
-    switch (brand.toLowerCase()) {
-      case 'apple':
-        return 1968;
-      case 'samsung':
-        return 1904;
-      default:
-        return 1904;
+  const getFilterId = (brand: string, name: string) => {
+    if (brand.toLowerCase() === 'apple') {
+      if (name === 'iPhone 15') {
+        return 1890;
+      }
+      return 1968;
     }
+    return 1904; // Default for Samsung and others
   };
 
   return (
@@ -61,8 +60,9 @@ export const PhoneCard = ({
         </div>
 
         <Button 
-          onClick={() => handleFilteredDeals(getFilterId(brand))} 
+          onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
           className="w-full"
+          variant="secondary"
         >
           See all deals
         </Button>
