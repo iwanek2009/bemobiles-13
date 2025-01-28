@@ -7,8 +7,11 @@ import { StickeeWidget } from "@/components/StickeeWidget";
 const SamsungMobilePhones = () => {
   const samsung = manufacturers.find(m => m.id === 'samsung');
   
-  // Filter for Samsung phones (family ID 2)
-  const filter = { families: [2] };
+  // Filter for Samsung phones (family ID 2 and brand ID 5)
+  const filter = { 
+    families: [2],
+    brands: [5]
+  };
 
   return (
     <>

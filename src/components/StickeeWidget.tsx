@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 
 interface StickeeWidgetProps {
-  filter?: { families: number[] };
+  filter?: { 
+    families?: number[];
+    brands?: number[];
+  };
 }
 
 export const StickeeWidget = ({ filter }: StickeeWidgetProps) => {
@@ -10,18 +13,15 @@ export const StickeeWidget = ({ filter }: StickeeWidgetProps) => {
   useEffect(() => {
     const loadScript = () => {
       try {
-        // Create and load the script
         const script = document.createElement('script');
         script.src = 'https://whitelabels.stickeebroadband.co.uk/js/loader.js';
         script.async = true;
         
-        // Add error handling
         script.onerror = () => {
           console.error('Failed to load Stickee widget script');
           setHasError(true);
         };
 
-        // Add load handler to confirm script loaded
         script.onload = () => {
           console.log('Stickee widget script loaded successfully');
         };
@@ -29,7 +29,6 @@ export const StickeeWidget = ({ filter }: StickeeWidgetProps) => {
         document.head.appendChild(script);
         console.log('Stickee widget script added to head');
 
-        // Cleanup function
         return () => {
           document.head.removeChild(script);
         };
