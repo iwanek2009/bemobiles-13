@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { PhoneCard } from "./PhoneCard";
 import { useBrandFilter } from "./BrandFilter";
-import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
 
 interface PhoneDeal {
   id: number;
@@ -14,56 +12,87 @@ interface PhoneDeal {
   brand: string;
 }
 
-const fetchPhones = async () => {
-  const { data: phones, error } = await supabase
-    .from('phones')
-    .select(`
-      *,
-      brands:brand_id (
-        name
-      )
-    `);
-
-  if (error) {
-    console.error('Error fetching phones:', error);
-    throw error;
+const deals: PhoneDeal[] = [
+  {
+    id: 1,
+    name: "iPhone 16",
+    image: "/lovable-uploads/be162283-678e-45f8-af1b-fece2422a8e0.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#222222", "#D946EF", "#0EA5E9", "#1A1F2C", "#FFFFFF"],  // black, pink, teal, Ultramarine, white
+    brand: "Apple"
+  },
+  {
+    id: 2,
+    name: "iPhone 15",
+    image: "/lovable-uploads/794c7a99-1639-472d-97c3-1ebb220a09b1.png",
+    monthlyPrice: 27.00,
+    upfrontCost: 0,
+    colors: ["black", "blue", "green", "pink", "yellow"],
+    brand: "Apple"
+  },
+  {
+    id: 3,
+    name: "iPhone 16 Pro",
+    image: "/lovable-uploads/7700d6bc-54cb-487b-8ed0-b5a4d6bdf229.png",
+    monthlyPrice: 57.49,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],  // White, Natural, Desert, Black Titanium
+    brand: "Apple"
+  },
+  {
+    id: 4,
+    name: "iPhone 16 Pro Max",
+    image: "/lovable-uploads/da14abe3-8ee8-4ee5-8776-c3682eafb410.png",
+    monthlyPrice: 43.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],  // White, Natural, Desert, Black Titanium
+    brand: "Apple"
+  },
+  {
+    id: 5,
+    name: "Galaxy A55",
+    image: "/lovable-uploads/a793194d-2367-4165-9b13-79c754bea505.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#000000"],  // White, Black
+    brand: "Samsung"
+  },
+  {
+    id: 6,
+    name: "Galaxy 24FE",
+    image: "/lovable-uploads/90806a56-c2fd-4ca0-9846-45f404b74737.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#000000"],  // White, Black
+    brand: "Samsung"
+  },
+  {
+    id: 7,
+    name: "Galaxy S24",
+    image: "/lovable-uploads/6e83658a-1c9c-47f5-80f2-39e4627e3cb1.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#000000"],  // White, Black
+    brand: "Samsung"
+  },
+  {
+    id: 8,
+    name: "Galaxy S24 Ultra",
+    image: "/lovable-uploads/c2180d62-3e5e-4cba-a6e4-0ae0544d3d85.png",
+    monthlyPrice: 30.00,
+    upfrontCost: 0,
+    colors: ["#F5F5F7", "#000000"],  // White, Black
+    brand: "Samsung"
   }
-
-  // Transform the data to match the PhoneDeal interface
-  return phones.map(phone => ({
-    id: phone.id,
-    name: phone.name,
-    image: phone.image,
-    monthlyPrice: phone.monthly_price,
-    upfrontCost: phone.upfront_cost,
-    colors: phone.colors,
-    brand: phone.brands.name
-  }));
-};
+];
 
 export const PhoneDeals = () => {
   const { selectedBrand } = useBrandFilter();
-  const { data: deals = [], isLoading, error } = useQuery({
-    queryKey: ['phones', selectedBrand],
-    queryFn: fetchPhones
-  });
-  
-  console.log('Selected Brand:', selectedBrand);
   
   const filteredDeals = selectedBrand 
     ? deals.filter(deal => deal.brand === selectedBrand)
     : deals;
-    
-  console.log('Filtered Deals:', filteredDeals);
-
-  if (isLoading) {
-    return <div className="text-center py-8">Loading phones...</div>;
-  }
-
-  if (error) {
-    console.error('Error loading phones:', error);
-    return <div className="text-center py-8 text-red-500">Error loading phones. Please try again later.</div>;
-  }
 
   return (
     <div id="phones-section" className="container mx-auto px-4 py-8 max-w-[1000px]">
@@ -80,10 +109,9 @@ export const PhoneDeals = () => {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-        {filteredDeals.map((deal) => {
-          console.log('Rendering phone:', deal.name);
-          return <PhoneCard key={deal.id} {...deal} />;
-        })}
+        {filteredDeals.map((deal) => (
+          <PhoneCard key={deal.id} {...deal} />
+        ))}
       </div>
     </div>
   );
