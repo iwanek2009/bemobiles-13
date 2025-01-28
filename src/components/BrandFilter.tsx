@@ -81,7 +81,6 @@ export const BrandFilter = () => {
         ))}
       </div>
 
-      {/* Mobile Carousel */}
       <div className="md:hidden relative">
         <Carousel
           opts={{
