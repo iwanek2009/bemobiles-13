@@ -26,6 +26,12 @@ export const PhoneCard = ({
     return "/mobile-phones";
   };
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const link = getWidgetLink();
+    window.location.href = link;
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       <div className="relative px-6 pt-6 pb-[15px] -mx-6 -mt-6">
@@ -53,7 +59,7 @@ export const PhoneCard = ({
           <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
         </div>
 
-        <Link to={getWidgetLink()} className="w-full">
+        <Link to={getWidgetLink()} onClick={handleClick} className="w-full">
           <Button className="w-full">See all deals</Button>
         </Link>
       </div>
