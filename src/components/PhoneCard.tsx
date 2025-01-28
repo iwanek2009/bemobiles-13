@@ -18,6 +18,10 @@ export const PhoneCard = ({
   colors, 
   brand 
 }: PhoneCardProps) => {
+  const handleFilteredDeals = (filterId: number) => {
+    window.location.href = `/mobile-phones?filter=${filterId}`;
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       <div className="relative px-6 pt-6 pb-[15px] -mx-6 -mt-6">
@@ -45,7 +49,13 @@ export const PhoneCard = ({
           <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
         </div>
 
-        <Button className="w-full">See all deals</Button>
+        <Button 
+          onClick={() => handleFilteredDeals(1904)} 
+          className="w-full"
+          variant="secondary"
+        >
+          See all deals
+        </Button>
       </div>
     </div>
   );
