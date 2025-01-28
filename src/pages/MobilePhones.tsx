@@ -3,6 +3,8 @@ import { BrandFilter } from "@/components/BrandFilter";
 import { Footer } from "@/components/Footer";
 import { StickeeWidget } from "@/components/StickeeWidget";
 import { useSearchParams } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const MobilePhones = () => {
   const [searchParams] = useSearchParams();
@@ -15,29 +17,27 @@ const MobilePhones = () => {
       <Header />
       
       {/* Hero Section */}
-      <div className="bg-[#29B6F6] relative overflow-hidden">
+      <div className="bg-gradient-to-b from-[#2990dd]/50 to-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
-          <div className="max-w-2xl relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
-              Contract phones.
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Find Your Perfect Mobile Phone Deal
             </h1>
-            <p className="text-xl md:text-2xl text-white/90">
-              Our best mobile deals on the UK's biggest networks.
+            <p className="text-lg md:text-xl text-gray-700 mb-8">
+              Compare the latest smartphones from top brands with flexible payment options and great network coverage.
             </p>
-          </div>
-          
-          {/* Hero Image */}
-          <div className="absolute right-0 top-0 h-full w-1/2 hidden md:block">
-            <img 
-              src="/lovable-uploads/10f62c25-cd06-48e2-8af0-20d87dc8af98.png"
-              alt="iPhone Pro"
-              className="h-full w-full object-contain object-right"
-            />
+            <div className="flex gap-4">
+              <Button className="bg-primary text-white hover:bg-primary/90">
+                View Latest Deals <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button variant="outline">
+                Compare Plans
+              </Button>
+            </div>
           </div>
         </div>
       </div>
 
-      <BrandFilter />
       <StickeeWidget filter={filter} />
       <Footer />
     </div>
