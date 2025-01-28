@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import Index from "./pages/Index";
 import MobilePhones from "./pages/MobilePhones";
 import ExamplePage from "./pages/ExamplePage";
+import SamsungMobilePhones from "./pages/SamsungMobilePhones";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const RouteWrapper = () => {
       <Route path="/" element={<Index />} />
       <Route path="/mobile-phones" element={<MobilePhones />} />
       <Route path="/example" element={<ExamplePage />} />
+      <Route path="/samsung-mobile-phones" element={<SamsungMobilePhones />} />
     </Routes>
   );
 };
