@@ -107,7 +107,7 @@ export const PhoneDeals = () => {
         </select>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      <div className="flex flex-col space-y-4">
         {filteredDeals.map((deal) => (
           <PhoneCard key={deal.id} {...deal} />
         ))}

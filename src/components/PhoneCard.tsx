@@ -39,38 +39,39 @@ export const PhoneCard = ({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-      <div className="relative px-6 pt-6 pb-[15px] -mx-6 -mt-6">
-        <img 
-          src={image} 
-          alt={name} 
-          className="w-44 h-auto object-contain mx-auto" 
-          loading="lazy"
-          decoding="async"
-          width="176"
-          height="176"
-        />
-      </div>
-      
-      <div className="p-6 pt-0">
-        <PhoneColorSelector colors={colors} phoneName={name} />
-
-        <div className="text-center mb-4">
-          <div className="text-sm text-gray-600">{brand}</div>
-          <h3 className="font-semibold text-lg">{name}</h3>
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl">
+      <div className="flex flex-row items-center p-6">
+        <div className="w-1/2">
+          <img 
+            src={image} 
+            alt={name} 
+            className="w-full h-auto object-contain mx-auto" 
+            loading="lazy"
+            decoding="async"
+            width="176"
+            height="176"
+          />
+          <PhoneColorSelector colors={colors} phoneName={name} />
         </div>
+        
+        <div className="w-1/2 text-left pl-6">
+          <div className="mb-2">
+            <div className="text-sm text-gray-600">{brand}</div>
+            <h3 className="font-semibold text-xl">{name}</h3>
+          </div>
 
-        <div className="text-center mb-4">
-          <div className="text-sm text-gray-600">No upfront cost from</div>
-          <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
+          <div className="mb-4">
+            <div className="text-sm text-gray-600">No upfront cost from</div>
+            <div className="font-semibold text-lg">£{monthlyPrice.toFixed(2)} per month</div>
+          </div>
+
+          <Button 
+            onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
+            className="w-full bg-black text-white hover:bg-gray-800"
+          >
+            See all deals
+          </Button>
         </div>
-
-        <Button 
-          onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
-          className="w-full"
-        >
-          See all deals
-        </Button>
       </div>
     </div>
   );
