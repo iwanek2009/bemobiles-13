@@ -9,8 +9,8 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
-  const handleFilteredDeals = () => {
-    window.location.href = '/mobile-phones?filter=1968';
+  const handleFilteredDeals = (filterId: number) => {
+    window.location.href = `/mobile-phones?filter=${filterId}`;
   };
 
   return (
@@ -18,12 +18,28 @@ const Index = () => {
       <Header />
       <Hero />
       <div className="container mx-auto px-4 py-8">
-        <Button 
-          onClick={handleFilteredDeals}
-          className="mb-8"
-        >
-          View iPhone Deals
-        </Button>
+        <div className="flex flex-wrap gap-4">
+          <Button 
+            onClick={() => handleFilteredDeals(1968)}
+            className="mb-8"
+          >
+            View iPhone Deals
+          </Button>
+          <Button 
+            onClick={() => handleFilteredDeals(1969)}
+            className="mb-8"
+            variant="secondary"
+          >
+            View Samsung Deals
+          </Button>
+          <Button 
+            onClick={() => handleFilteredDeals(1970)}
+            className="mb-8"
+            variant="outline"
+          >
+            View Google Pixel Deals
+          </Button>
+        </div>
       </div>
       <BrandFilter />
       <PhoneDeals />
