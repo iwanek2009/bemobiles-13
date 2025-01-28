@@ -6,9 +6,9 @@ export const StickeeWidget = () => {
   useEffect(() => {
     const loadScript = () => {
       try {
-        // Create and load the script from the correct domain
+        // Create and load the script
         const script = document.createElement('script');
-        script.src = 'https://smartfony.stickeemobiles.co.uk/js/loader.js';
+        script.src = 'https://whitelabels.stickeebroadband.co.uk/js/loader.js';
         script.async = true;
         
         // Add error handling
@@ -38,12 +38,7 @@ export const StickeeWidget = () => {
 
   return (
     <div className="w-full">
-      <div 
-        data-stickee-widget-id="1906"
-        data-filters='{"families":[]}'
-      >
-        Loading deals...
-      </div>
+      <div data-stickee-widget-id="smartfony-90">Loading deals...</div>
     </div>
   );
 };

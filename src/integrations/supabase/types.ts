@@ -9,71 +9,7 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      brands: {
-        Row: {
-          created_at: string
-          id: string
-          logo: string
-          name: string
-          stickee_brand_id: number | null
-        }
-        Insert: {
-          created_at?: string
-          id?: string
-          logo: string
-          name: string
-          stickee_brand_id?: number | null
-        }
-        Update: {
-          created_at?: string
-          id?: string
-          logo?: string
-          name?: string
-          stickee_brand_id?: number | null
-        }
-        Relationships: []
-      }
-      phones: {
-        Row: {
-          brand_id: string
-          colors: string[]
-          created_at: string
-          id: string
-          image: string
-          monthly_price: number
-          name: string
-          upfront_cost: number
-        }
-        Insert: {
-          brand_id: string
-          colors?: string[]
-          created_at?: string
-          id?: string
-          image: string
-          monthly_price: number
-          name: string
-          upfront_cost?: number
-        }
-        Update: {
-          brand_id?: string
-          colors?: string[]
-          created_at?: string
-          id?: string
-          image?: string
-          monthly_price?: number
-          name?: string
-          upfront_cost?: number
-        }
-        Relationships: [
-          {
-            foreignKeyName: "phones_brand_id_fkey"
-            columns: ["brand_id"]
-            isOneToOne: false
-            referencedRelation: "brands"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
