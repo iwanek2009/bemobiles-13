@@ -6,7 +6,7 @@ interface HeroImageProps {
 
 export const HeroImage = ({ scrollPosition }: HeroImageProps) => {
   return (
-    <div className="hidden md:block relative h-[400px] overflow-hidden">
+    <div className="block md:hidden lg:block relative h-[400px] overflow-hidden">
       <img
         src="/lovable-uploads/1f97ee16-02b5-48f8-aa35-82d57b257908.png"
         alt="Modern smartphones"
