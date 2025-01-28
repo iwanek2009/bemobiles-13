@@ -19,14 +19,20 @@ export const PhoneCard = ({
   brand,
 }: PhoneCardProps) => {
   const getFilterId = (brand: string, model: string) => {
-    if (brand === "Apple") {
-      return 1968;
-    } else if (brand === "Samsung") {
-      return 1969;
-    } else if (brand === "Google") {
-      return 1970;
-    }
-    return 0;
+    // Map specific models to their filter IDs
+    const modelMap: { [key: string]: number } = {
+      'iPhone 16': 1968,
+      'iPhone 15': 1971,
+      'iPhone 16 Pro': 1972,
+      'iPhone 16 Pro Max': 1973,
+      'Galaxy A55': 1974,
+      'Galaxy 24FE': 1975,
+      'Galaxy S24': 1976,
+      'Galaxy S24 Ultra': 1977,
+    };
+
+    // Return the specific model's filter ID if it exists, otherwise fallback to brand-based filtering
+    return modelMap[model] || (brand === "Apple" ? 1968 : brand === "Samsung" ? 1969 : brand === "Google" ? 1970 : 0);
   };
 
   const handleFilteredDeals = (filterId: number) => {
