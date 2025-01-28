@@ -38,9 +38,7 @@ const MobilePhones = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4">
-        <BrandFilter />
-      </div>
+      <BrandFilter />
       <StickeeWidget filter={filter} />
       <Footer />
     </div>
