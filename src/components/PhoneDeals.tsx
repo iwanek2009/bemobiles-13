@@ -10,7 +10,7 @@ interface PhoneDeal {
   upfrontCost: number;
   colors: string[];
   brand: string;
-  filterId?: number;  // Added optional filterId property
+  filterId?: number;
 }
 
 const deals: PhoneDeal[] = [
@@ -27,20 +27,21 @@ const deals: PhoneDeal[] = [
     id: 2,
     name: "iPhone 15",
     image: "/lovable-uploads/794c7a99-1639-472d-97c3-1ebb220a09b1.png",
-    monthlyPrice: 33.00,  // Updated price to £33
+    monthlyPrice: 33.00,
     upfrontCost: 0,
     colors: ["black", "blue", "green", "pink", "yellow"],
     brand: "Apple",
-    filterId: 1890  // Added specific filter ID for iPhone 15
+    filterId: 1890
   },
   {
     id: 3,
     name: "iPhone 16 Pro",
     image: "/lovable-uploads/7700d6bc-54cb-487b-8ed0-b5a4d6bdf229.png",
-    monthlyPrice: 57.49,
+    monthlyPrice: 42.99,
     upfrontCost: 0,
     colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],
-    brand: "Apple"
+    brand: "Apple",
+    filterId: 1970
   },
   {
     id: 4,
