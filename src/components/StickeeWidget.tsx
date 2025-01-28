@@ -13,18 +13,24 @@ export const StickeeWidget = () => {
         
         // Add error handling
         script.onerror = () => {
-          console.warn('Failed to load Stickee widget script');
+          console.error('Failed to load Stickee widget script');
           setHasError(true);
+        };
+
+        // Add load handler to confirm script loaded
+        script.onload = () => {
+          console.log('Stickee widget script loaded successfully');
         };
         
         document.head.appendChild(script);
+        console.log('Stickee widget script added to head');
 
         // Cleanup function
         return () => {
           document.head.removeChild(script);
         };
       } catch (error) {
-        console.warn('Error setting up Stickee widget:', error);
+        console.error('Error setting up Stickee widget:', error);
         setHasError(true);
       }
     };
@@ -33,7 +39,8 @@ export const StickeeWidget = () => {
   }, []);
 
   if (hasError) {
-    return null; // Return nothing if there's an error loading the widget
+    console.error('Widget in error state');
+    return null;
   }
 
   return (
