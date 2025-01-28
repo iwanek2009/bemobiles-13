@@ -18,6 +18,12 @@ const MobilePhones = () => {
       <div className="bg-gradient-to-b from-[#2990dd]/50 to-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Contract phones deals.
+            </h1>
+            <p className="text-lg md:text-xl text-gray-700">
+              Best mobile phone deals on the UK's biggest networks.
+            </p>
           </div>
         </div>
       </div>
