@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneDeals } from "@/components/PhoneDeals";
@@ -7,15 +5,6 @@ import { BrandFilter } from "@/components/BrandFilter";
 import { StickeeWidget } from "@/components/StickeeWidget";
 
 const MobilePhones = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    // Force a full page reload when navigating to this page
-    if (location.key) {
-      window.location.reload();
-    }
-  }, [location]);
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
