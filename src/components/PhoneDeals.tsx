@@ -64,12 +64,13 @@ const deals: PhoneDeal[] = [
   },
   {
     id: 6,
-    name: "Galaxy 24FE",
+    name: "Galaxy 23FE",
     image: "/lovable-uploads/90806a56-c2fd-4ca0-9846-45f404b74737.png",
-    monthlyPrice: 30.00,
+    monthlyPrice: 25.00,
     upfrontCost: 0,
     colors: ["#F5F5F7", "#000000"],
-    brand: "Samsung"
+    brand: "Samsung",
+    filterId: 1916
   },
   {
     id: 7,
