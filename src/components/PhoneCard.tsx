@@ -48,11 +48,16 @@ export const PhoneCard = ({
               width="176"
               height="176"
             />
+            <div className="mt-2 flex justify-center md:hidden">
+              <PhoneColorSelector colors={colors} phoneName={name} />
+            </div>
           </div>
 
           {/* Content Section */}
           <div className="flex-1 w-2/3 md:w-full">
-            <PhoneColorSelector colors={colors} phoneName={name} />
+            <div className="hidden md:block">
+              <PhoneColorSelector colors={colors} phoneName={name} />
+            </div>
 
             <div className="text-left md:text-center mb-2 md:mb-4">
               <div className="text-sm text-gray-600">{brand}</div>
