@@ -54,34 +54,7 @@ export const BrandFilter = () => {
 
   return (
     <div className="container mx-auto px-4 py-4 max-w-[1000px]">
-      <div className="hidden md:grid grid-cols-5 gap-4">
-        {brands.map((brand) => (
-          <button
-            key={brand.name}
-            onClick={() => handleBrandClick(brand.name)}
-            className={`relative flex items-center justify-center p-2 border rounded-lg transition-colors ${
-              selectedBrand === brand.name 
-                ? 'border-primary bg-primary/5' 
-                : 'hover:border-primary'
-            }`}
-          >
-            {selectedBrand === brand.name && (
-              <div className="absolute top-2 right-2">
-                <Check className="h-5 w-5 text-primary" />
-              </div>
-            )}
-            <img 
-              src={brand.logo} 
-              alt={`${brand.name} logo`} 
-              className="h-20 w-full object-contain"
-              loading="lazy"
-              decoding="async"
-            />
-          </button>
-        ))}
-      </div>
-
-      <div className="md:hidden relative">
+      <div className="relative">
         <Carousel
           opts={{
             align: "start",

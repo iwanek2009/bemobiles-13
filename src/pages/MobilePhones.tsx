@@ -5,12 +5,10 @@ import { StickeeWidget } from "@/components/StickeeWidget";
 import { useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 const MobilePhones = () => {
   const [searchParams] = useSearchParams();
   const filterParam = searchParams.get('filter');
-  const isMobile = useIsMobile();
   
   const filter = filterParam ? { families: [Number(filterParam)] } : undefined;
 
@@ -40,7 +38,9 @@ const MobilePhones = () => {
         </div>
       </div>
 
-      {!isMobile && <BrandFilter />}
+      <div className="md:hidden">
+        <BrandFilter />
+      </div>
       <StickeeWidget filter={filter} />
       <Footer />
     </div>
