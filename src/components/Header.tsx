@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -8,19 +9,21 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div>
-            <img 
-              src="/lovable-uploads/76dacefe-9b25-4f6d-9697-bba1e60e81c7.png" 
-              alt="Bemobiles" 
-              className="h-8"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/76dacefe-9b25-4f6d-9697-bba1e60e81c7.png" 
+                alt="Bemobiles" 
+                className="h-8"
+              />
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6">
-            <a href="#" className="text-black hover:text-primary transition-colors">Home</a>
-            <a href="#" className="text-black hover:text-primary transition-colors">Mobile Phones</a>
-            <a href="#" className="text-black hover:text-primary transition-colors">Sim Only</a>
-            <a href="#" className="text-black hover:text-primary transition-colors">Broadband & TV</a>
+            <Link to="/" className="text-black hover:text-primary transition-colors">Home</Link>
+            <Link to="/mobile-phones" className="text-black hover:text-primary transition-colors">Mobile Phones</Link>
+            <Link to="#" className="text-black hover:text-primary transition-colors">Sim Only</Link>
+            <Link to="#" className="text-black hover:text-primary transition-colors">Broadband & TV</Link>
           </nav>
 
           {/* Mobile Navigation */}
@@ -32,10 +35,10 @@ export const Header = () => {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8">
-                <a href="#" className="text-black hover:text-primary transition-colors">Home</a>
-                <a href="#" className="text-black hover:text-primary transition-colors">Mobile Phones</a>
-                <a href="#" className="text-black hover:text-primary transition-colors">Sim Only</a>
-                <a href="#" className="text-black hover:text-primary transition-colors">Broadband & TV</a>
+                <Link to="/" className="text-black hover:text-primary transition-colors">Home</Link>
+                <Link to="/mobile-phones" className="text-black hover:text-primary transition-colors">Mobile Phones</Link>
+                <Link to="#" className="text-black hover:text-primary transition-colors">Sim Only</Link>
+                <Link to="#" className="text-black hover:text-primary transition-colors">Broadband & TV</Link>
               </nav>
             </SheetContent>
           </Sheet>
