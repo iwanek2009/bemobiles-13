@@ -13,6 +13,7 @@ interface PhoneCardProps {
 }
 
 export const PhoneCard = ({ 
+  id,
   name, 
   image, 
   monthlyPrice, 
@@ -20,14 +21,7 @@ export const PhoneCard = ({
   brand 
 }: PhoneCardProps) => {
   const getWidgetLink = () => {
-    switch (name) {
-      case "iPhone 15":
-        return "/mobile-phones#stickee-widget-1890";
-      case "iPhone 16":
-        return "/mobile-phones#stickee-widget-1891";
-      default:
-        return "/mobile-phones";
-    }
+    return `/mobile-phones#stickee-widget-${id}`;
   };
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
