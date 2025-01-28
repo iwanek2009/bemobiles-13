@@ -7,13 +7,10 @@ import { CategoryList } from "@/components/CategoryList";
 import { GuideSection } from "@/components/GuideSection";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 
 const Index = () => {
-  const navigate = useNavigate();
-
   const handleFilteredDeals = () => {
-    navigate('/mobile-phones?filter=1968');
+    window.location.href = '/mobile-phones?filter=1968';
   };
 
   return (
