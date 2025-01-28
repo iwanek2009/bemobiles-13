@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from 'react';
 import Index from "./pages/Index";
 import MobilePhones from "./pages/MobilePhones";
+import ExamplePage from "./pages/ExamplePage";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const RouteWrapper = () => {
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/mobile-phones" element={<MobilePhones />} />
+      <Route path="/example" element={<ExamplePage />} />
     </Routes>
   );
 };
