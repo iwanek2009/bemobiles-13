@@ -16,18 +16,19 @@ const RouteWrapper = () => {
       const anchor = target.closest('a');
       if (!anchor) return;
 
+      // Only force reload for mobile-phones route
+      const href = anchor.getAttribute('href');
+      const isMobilePhonesLink = href === '/mobile-phones';
+
       const isLocalLink =
         anchor.hostname === window.location.hostname &&
-        anchor.getAttribute('href') &&
-        !anchor.getAttribute('href')?.startsWith('#');
+        href &&
+        !href.startsWith('#');
 
-      if (isLocalLink) {
+      if (isLocalLink && isMobilePhonesLink) {
         e.preventDefault();
-        const href = anchor.getAttribute('href');
-        if (href) {
-          console.log('Forcing full page reload for:', href);
-          window.location.href = href;
-        }
+        console.log('Forcing full page reload for mobile-phones:', href);
+        window.location.href = href;
       }
     };
 
