@@ -54,17 +54,17 @@ export const PhoneCard = ({
           </div>
 
           {/* Content Section */}
-          <div className="flex-1 w-2/3 md:w-full">
+          <div className="flex-1 w-2/3 md:w-full text-center">
             <div className="hidden md:block">
               <PhoneColorSelector colors={colors} phoneName={name} />
             </div>
 
-            <div className="text-left md:text-center mb-2 md:mb-4">
+            <div className="mb-2 md:mb-4">
               <div className="text-sm text-gray-600">{brand}</div>
               <h3 className="font-semibold text-xl md:text-lg">{name}</h3>
             </div>
 
-            <div className="text-left md:text-center mb-3 md:mb-4">
+            <div className="mb-3 md:mb-4">
               <div className="text-sm text-gray-600">No upfront cost from</div>
               <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
             </div>
