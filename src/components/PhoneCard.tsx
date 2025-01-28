@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { PhoneColorSelector } from "./PhoneColorSelector";
-import { StickeeWidget } from "./StickeeWidget";
+import { Link } from "react-router-dom";
 
 interface PhoneCardProps {
   id: number;
@@ -19,7 +19,26 @@ export const PhoneCard = ({
   colors, 
   brand 
 }: PhoneCardProps) => {
-  const isGalaxyS24Ultra = name === "Galaxy S24 Ultra";
+  const getWidgetLink = () => {
+    // Only link the Galaxy S24 Ultra to widget 1906
+    if (name === "Galaxy S24 Ultra") {
+      return `/mobile-phones#stickee-widget-1906`;
+    }
+    return undefined;
+  };
+
+  const widgetLink = getWidgetLink();
+
+  const renderButton = () => {
+    if (widgetLink) {
+      return (
+        <Link to={widgetLink} className="w-full">
+          <Button className="w-full">See all deals</Button>
+        </Link>
+      );
+    }
+    return <Button className="w-full">See all deals</Button>;
+  };
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -48,11 +67,7 @@ export const PhoneCard = ({
           <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
         </div>
 
-        {isGalaxyS24Ultra ? (
-          <div data-stickee-widget-id="smartfony-90" data-filters='{"families":[1906]}'>Loading...</div>
-        ) : (
-          <Button className="w-full">See all deals</Button>
-        )}
+        {renderButton()}
       </div>
     </div>
   );

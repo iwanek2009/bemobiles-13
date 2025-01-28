@@ -19,7 +19,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/be162283-678e-45f8-af1b-fece2422a8e0.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
-    colors: ["#222222", "#D946EF", "#0EA5E9", "#1A1F2C", "#FFFFFF"],  // black, pink, teal, Ultramarine, white
+    colors: ["#222222", "#D946EF", "#0EA5E9", "#1A1F2C", "#FFFFFF"],
     brand: "Apple"
   },
   {
@@ -37,7 +37,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/7700d6bc-54cb-487b-8ed0-b5a4d6bdf229.png",
     monthlyPrice: 57.49,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],  // White, Natural, Desert, Black Titanium
+    colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],
     brand: "Apple"
   },
   {
@@ -46,7 +46,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/da14abe3-8ee8-4ee5-8776-c3682eafb410.png",
     monthlyPrice: 43.00,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],  // White, Natural, Desert, Black Titanium
+    colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],
     brand: "Apple"
   },
   {
@@ -55,7 +55,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/a793194d-2367-4165-9b13-79c754bea505.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#000000"],  // White, Black
+    colors: ["#F5F5F7", "#000000"],
     brand: "Samsung"
   },
   {
@@ -64,7 +64,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/90806a56-c2fd-4ca0-9846-45f404b74737.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#000000"],  // White, Black
+    colors: ["#F5F5F7", "#000000"],
     brand: "Samsung"
   },
   {
@@ -73,7 +73,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/6e83658a-1c9c-47f5-80f2-39e4627e3cb1.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#000000"],  // White, Black
+    colors: ["#F5F5F7", "#000000"],
     brand: "Samsung"
   },
   {
@@ -82,7 +82,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/c2180d62-3e5e-4cba-a6e4-0ae0544d3d85.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#000000"],  // White, Black
+    colors: ["#F5F5F7", "#000000"],
     brand: "Samsung"
   }
 ];
@@ -90,9 +90,13 @@ const deals: PhoneDeal[] = [
 export const PhoneDeals = () => {
   const { selectedBrand } = useBrandFilter();
   
+  console.log('Selected Brand:', selectedBrand);
+  
   const filteredDeals = selectedBrand 
     ? deals.filter(deal => deal.brand === selectedBrand)
     : deals;
+    
+  console.log('Filtered Deals:', filteredDeals);
 
   return (
     <div id="phones-section" className="container mx-auto px-4 py-8 max-w-[1000px]">
@@ -109,9 +113,10 @@ export const PhoneDeals = () => {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-        {filteredDeals.map((deal) => (
-          <PhoneCard key={deal.id} {...deal} />
-        ))}
+        {filteredDeals.map((deal) => {
+          console.log('Rendering phone:', deal.name);
+          return <PhoneCard key={deal.id} {...deal} />;
+        })}
       </div>
     </div>
   );
