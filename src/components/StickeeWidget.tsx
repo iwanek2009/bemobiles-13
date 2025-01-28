@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 
-export const StickeeWidget = () => {
+interface StickeeWidgetProps {
+  filter?: { families: number[] };
+}
+
+export const StickeeWidget = ({ filter }: StickeeWidgetProps) => {
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
@@ -47,7 +51,7 @@ export const StickeeWidget = () => {
     <div className="w-full">
       <div 
         data-stickee-widget-id="smartfony-90"
-        data-filters='{"families":[1971]}'
+        data-filters={filter ? JSON.stringify(filter) : undefined}
       >
         Loading deals...
       </div>

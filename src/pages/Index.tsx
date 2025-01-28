@@ -6,12 +6,28 @@ import { InfoSection } from "@/components/InfoSection";
 import { CategoryList } from "@/components/CategoryList";
 import { GuideSection } from "@/components/GuideSection";
 import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
+  const handleFilteredDeals = () => {
+    navigate('/mobile-phones?filter=1968');
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
       <Hero />
+      <div className="container mx-auto px-4 py-8">
+        <Button 
+          onClick={handleFilteredDeals}
+          className="mb-8"
+        >
+          View iPhone Deals
+        </Button>
+      </div>
       <BrandFilter />
       <PhoneDeals />
       <CategoryList />
