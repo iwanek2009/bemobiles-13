@@ -29,7 +29,13 @@ export const PhoneCard = ({
       }
       return 1968;
     }
-    return 1904; // Default for Samsung and others
+    if (brand.toLowerCase() === 'samsung') {
+      if (name === 'Galaxy A55') {
+        return 11760;
+      }
+      return 1904;
+    }
+    return 1904; // Default for others
   };
 
   return (
