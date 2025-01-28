@@ -19,12 +19,6 @@ const Index = () => {
       <Hero />
       <div className="container mx-auto px-4 py-8">
         <Button 
-          onClick={() => handleFilteredDeals(1968)}
-          className="mb-8"
-        >
-          View iPhone Deals
-        </Button>
-        <Button 
           onClick={() => handleFilteredDeals(1969)}
           className="mb-8"
           variant="secondary"
