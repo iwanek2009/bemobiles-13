@@ -19,6 +19,13 @@ export const PhoneCard = ({
   colors, 
   brand 
 }: PhoneCardProps) => {
+  const getWidgetLink = () => {
+    if (name === "iPhone 15") {
+      return "/mobile-phones#stickee-widget-smartfony-90?filters={\"families\":[1967]}";
+    }
+    return "/mobile-phones";
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       <div className="relative px-6 pt-6 pb-[15px] -mx-6 -mt-6">
@@ -46,7 +53,7 @@ export const PhoneCard = ({
           <div className="font-semibold">£{monthlyPrice.toFixed(2)} per month</div>
         </div>
 
-        <Link to="/mobile-phones" className="w-full">
+        <Link to={getWidgetLink()} className="w-full">
           <Button className="w-full">See all deals</Button>
         </Link>
       </div>
