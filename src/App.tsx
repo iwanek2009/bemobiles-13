@@ -15,7 +15,7 @@ const RouteWrapper = () => {
       <Route path="/" element={<Index />} />
       <Route 
         path="/mobile-phones" 
-        element={<MobilePhones key={location.key} />} 
+        element={<MobilePhones />} 
       />
     </Routes>
   );
