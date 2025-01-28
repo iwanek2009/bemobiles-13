@@ -21,7 +21,7 @@ const SamsungMobilePhones = () => {
         <div className="py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {samsung?.models.map((model) => (
-              <div key={model.id} className="bg-white rounded-lg shadow-md p-6">
+              <div key={model.id}>
                 <img
                   src={model.image}
                   alt={model.name}
