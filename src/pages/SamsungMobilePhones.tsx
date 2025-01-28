@@ -32,15 +32,11 @@ const SamsungMobilePhones = () => {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/">Home</Link>
-              </BreadcrumbLink>
+              <BreadcrumbLink as={Link} to="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/mobile-phones">Mobile Phones</Link>
-              </BreadcrumbLink>
+              <BreadcrumbLink as={Link} to="/mobile-phones">Mobile Phones</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
