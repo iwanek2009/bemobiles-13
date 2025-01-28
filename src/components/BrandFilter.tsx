@@ -53,7 +53,7 @@ export const BrandFilter = () => {
   };
 
   return (
-    <>
+    <div className="container mx-auto px-4 py-4 max-w-[1000px]">
       <div className="hidden md:grid grid-cols-5 gap-4">
         {brands.map((brand) => (
           <button
@@ -124,6 +124,6 @@ export const BrandFilter = () => {
           </CarouselNext>
         </Carousel>
       </div>
-    </>
+    </div>
   );
 };
