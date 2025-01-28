@@ -6,7 +6,6 @@ import { InfoSection } from "@/components/InfoSection";
 import { CategoryList } from "@/components/CategoryList";
 import { GuideSection } from "@/components/GuideSection";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const handleFilteredDeals = (filterId: number) => {
@@ -17,15 +16,6 @@ const Index = () => {
     <div className="min-h-screen bg-gray-50">
       <Header />
       <Hero />
-      <div className="container mx-auto px-4 py-8">
-        <Button 
-          onClick={() => handleFilteredDeals(1970)}
-          className="mb-8"
-          variant="outline"
-        >
-          View Google Pixel Deals
-        </Button>
-      </div>
       <BrandFilter />
       <PhoneDeals />
       <CategoryList />
