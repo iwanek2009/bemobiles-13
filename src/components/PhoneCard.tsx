@@ -52,7 +52,6 @@ export const PhoneCard = ({
         <Button 
           onClick={() => handleFilteredDeals(1904)} 
           className="w-full"
-          variant="secondary"
         >
           See all deals
         </Button>
