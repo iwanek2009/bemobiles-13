@@ -2,9 +2,13 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { HeroTemplate } from "@/components/templates/MobileStyle";
 import { manufacturers } from "@/data/manufacturers";
+import { StickeeWidget } from "@/components/StickeeWidget";
 
 const SamsungMobilePhones = () => {
   const samsung = manufacturers.find(m => m.id === 'samsung');
+  
+  // Filter for Samsung phones (family ID 2)
+  const filter = { families: [2] };
 
   return (
     <>
@@ -42,6 +46,7 @@ const SamsungMobilePhones = () => {
             ))}
           </div>
         </div>
+        <StickeeWidget filter={filter} />
       </HeroTemplate>
       <Footer />
     </>
