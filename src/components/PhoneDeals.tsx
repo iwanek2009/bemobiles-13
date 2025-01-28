@@ -55,12 +55,13 @@ const deals: PhoneDeal[] = [
   },
   {
     id: 5,
-    name: "Galaxy A55",
+    name: "Galaxy A53",
     image: "/lovable-uploads/a793194d-2367-4165-9b13-79c754bea505.png",
-    monthlyPrice: 30.00,
+    monthlyPrice: 13.99,
     upfrontCost: 0,
     colors: ["#F5F5F7", "#000000"],
-    brand: "Samsung"
+    brand: "Samsung",
+    filterId: 1760
   },
   {
     id: 6,
