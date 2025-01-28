@@ -18,23 +18,23 @@ const Index = () => {
       <Header />
       <Hero />
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row md:flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4">
           <Button 
             onClick={() => handleFilteredDeals(1968)}
-            className="mb-2 md:mb-8"
+            className="mb-8"
           >
             View iPhone Deals
           </Button>
           <Button 
             onClick={() => handleFilteredDeals(1969)}
-            className="mb-2 md:mb-8"
+            className="mb-8"
             variant="secondary"
           >
             View Samsung Deals
           </Button>
           <Button 
             onClick={() => handleFilteredDeals(1970)}
-            className="mb-2 md:mb-8"
+            className="mb-8"
             variant="outline"
           >
             View Google Pixel Deals
