@@ -89,7 +89,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/c2180d62-3e5e-4cba-a6e4-0ae0544d3d85.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
-    colors: ["#000000", "#FDE1D3", "#F2FCE2", "#9b87f5"],
+    colors: ["#9b87f5", "#000000", "#8E9196", "#FEF7CD"],
     brand: "Samsung"
   }
 ];
