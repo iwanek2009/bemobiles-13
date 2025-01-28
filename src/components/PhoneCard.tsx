@@ -29,10 +29,14 @@ export const PhoneCard = ({
 
   const widgetLink = getWidgetLink();
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const renderButton = () => {
     if (widgetLink) {
       return (
-        <Link to={widgetLink} className="w-full">
+        <Link to={widgetLink} className="w-full" onClick={handleClick}>
           <Button className="w-full">See all deals</Button>
         </Link>
       );
