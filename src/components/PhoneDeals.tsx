@@ -59,7 +59,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/a793194d-2367-4165-9b13-79c754bea505.png",
     monthlyPrice: 13.99,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#000000"],
+    colors: ["#000000", "#FDE1D3", "#F2FCE2", "#9b87f5"],
     brand: "Samsung",
     filterId: 1760
   },
@@ -69,7 +69,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/90806a56-c2fd-4ca0-9846-45f404b74737.png",
     monthlyPrice: 25.00,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#000000"],
+    colors: ["#000000", "#FDE1D3", "#F2FCE2", "#9b87f5"],
     brand: "Samsung",
     filterId: 1916
   },
@@ -79,7 +79,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/6e83658a-1c9c-47f5-80f2-39e4627e3cb1.png",
     monthlyPrice: 31.00,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#000000"],
+    colors: ["#000000", "#FDE1D3", "#F2FCE2", "#9b87f5"],
     brand: "Samsung",
     filterId: 1904
   },
@@ -89,7 +89,7 @@ const deals: PhoneDeal[] = [
     image: "/lovable-uploads/c2180d62-3e5e-4cba-a6e4-0ae0544d3d85.png",
     monthlyPrice: 30.00,
     upfrontCost: 0,
-    colors: ["#F5F5F7", "#000000"],
+    colors: ["#000000", "#FDE1D3", "#F2FCE2", "#9b87f5"],
     brand: "Samsung"
   }
 ];
