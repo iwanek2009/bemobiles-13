@@ -17,13 +17,23 @@ const MobilePhones = () => {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#2990dd]/50 to-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Contract phones deals.
-            </h1>
-            <p className="text-lg md:text-xl text-gray-700">
-              Best mobile phone deals on the UK's biggest networks.
-            </p>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Contract phones deals.
+              </h1>
+              <p className="text-lg md:text-xl text-gray-700">
+                Best mobile phone deals on the UK's biggest networks.
+              </p>
+            </div>
+            <div className="relative h-[400px] hidden md:block">
+              <img
+                src="/lovable-uploads/e5af43e9-0d34-4eab-8779-a0261436c139.png"
+                alt="iPhone Pro with multiple cameras"
+                className="absolute inset-0 w-full h-full object-contain"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
       </div>
