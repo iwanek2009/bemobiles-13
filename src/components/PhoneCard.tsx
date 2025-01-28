@@ -39,39 +39,39 @@ export const PhoneCard = ({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 sm:flex sm:flex-row md:block lg:block">
-      <div className="relative px-6 pt-6 pb-[15px] -mx-6 -mt-6 sm:w-1/2 md:w-full lg:w-full">
-        <img 
-          src={image} 
-          alt={name} 
-          className="w-44 h-auto object-contain mx-auto" 
-          loading="lazy"
-          decoding="async"
-          width="176"
-          height="176"
-        />
-      </div>
-      
-      <div className="p-6 pt-0 sm:w-1/2 md:w-full lg:w-full sm:flex sm:flex-col sm:justify-center">
-        <div className="text-center sm:text-left md:text-center lg:text-center mb-4">
-          <div className="text-sm text-gray-600">{brand}</div>
-          <h3 className="font-semibold text-2xl sm:text-xl md:text-lg lg:text-lg">{name}</h3>
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl">
+      <div className="flex flex-row items-center p-6">
+        <div className="w-1/2">
+          <img 
+            src={image} 
+            alt={name} 
+            className="w-full h-auto object-contain mx-auto" 
+            loading="lazy"
+            decoding="async"
+            width="176"
+            height="176"
+          />
+          <PhoneColorSelector colors={colors} phoneName={name} />
         </div>
+        
+        <div className="w-1/2 text-left pl-6">
+          <div className="mb-2">
+            <div className="text-sm text-gray-600">{brand}</div>
+            <h3 className="font-semibold text-xl">{name}</h3>
+          </div>
 
-        <PhoneColorSelector colors={colors} phoneName={name} />
+          <div className="mb-4">
+            <div className="text-sm text-gray-600">No upfront cost from</div>
+            <div className="font-semibold text-lg">£{monthlyPrice.toFixed(2)} per month</div>
+          </div>
 
-        <div className="text-center sm:text-left md:text-center lg:text-center mb-4">
-          <div className="text-sm text-gray-600">No upfront cost from</div>
-          <div className="font-semibold text-xl">£{monthlyPrice.toFixed(2)} per month</div>
+          <Button 
+            onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
+            className="w-full bg-black text-white hover:bg-gray-800"
+          >
+            See all deals
+          </Button>
         </div>
-
-        <Button 
-          onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
-          className="w-full bg-black hover:bg-gray-800 text-white"
-          variant="secondary"
-        >
-          See all deals
-        </Button>
       </div>
     </div>
   );
