@@ -6,8 +6,17 @@ export const SamsungCoverageChecker = () => {
           Samsung Coverage Checker: How It Works
         </h2>
         
-        <p className="text-gray-600 mb-8">
-          Many carriers provide an online coverage checker, similar to a broadband postcode checker. 
+        <p className="text-gray-600 mb-8 bg-white p-4 rounded-lg">
+          Many carriers provide an{' '}
+          <a 
+            href="https://checker.ofcom.org.uk/en-gb/mobile-coverage" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+            online coverage checker
+          </a>
+          , similar to a broadband postcode checker. 
           This tool helps you see if a carrier's network offers reliable service where you live or work.
         </p>
 
