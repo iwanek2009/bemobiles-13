@@ -4,6 +4,8 @@ import { SamsungASeries } from "./sections/SamsungASeries";
 import { SamsungZSeries } from "./sections/SamsungZSeries";
 import { SamsungEcosystem } from "./sections/SamsungEcosystem";
 import { SamsungContracts } from "./sections/SamsungContracts";
+import { SamsungComparison } from "./sections/SamsungComparison";
+import { SamsungChoosingTips } from "./sections/SamsungChoosingTips";
 
 export const SamsungGuide = () => {
   return (
@@ -24,6 +26,8 @@ export const SamsungGuide = () => {
           <SamsungZSeries />
           <SamsungEcosystem />
           <SamsungContracts />
+          <SamsungComparison />
+          <SamsungChoosingTips />
         </div>
       </div>
     </div>
