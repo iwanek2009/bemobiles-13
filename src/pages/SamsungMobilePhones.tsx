@@ -1,7 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const SamsungMobilePhones = () => {
   return (
@@ -75,78 +74,57 @@ const SamsungMobilePhones = () => {
 
       <div className="bg-white py-12">
         <div className="container mx-auto px-4 max-w-[1000px]">
-          <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-8">
-            Frequently Asked Questions (FAQs)
+          <h2 className="text-3xl font-bold tracking-tight text-[#111111] mb-6">
+            How to Choose the Right Samsung Mobile Phone
           </h2>
           
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6">
-              <AccordionTrigger className="text-lg font-semibold text-gray-900">
-                Is it possible to bundle my Samsung phone deal with broadband services?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Yes, many carriers allow you to bundle mobile plans with broadband packages. Doing so can often result in lower overall costs and added convenience of a single monthly bill.
-              </AccordionContent>
-            </AccordionItem>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold text-[#111111] mb-3">
+                List Your Must-Haves
+              </h3>
+              <p className="text-[#4B5563] leading-relaxed">
+                Are you looking for a top-of-the-line camera? A large, immersive screen? A foldable form factor? Samsung caters to a wide range of preferences with the A, S, and Z-series.
+              </p>
+            </div>
 
-            <AccordionItem value="item-2" className="border rounded-lg px-6">
-              <AccordionTrigger className="text-lg font-semibold text-gray-900">
-                How do I check the best internet speeds available for my Samsung phone?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Use a coverage checker or consult your carrier's website. This is similar to how you'd check internet coverage for a home broadband service—you simply enter your postcode and review the results.
-              </AccordionContent>
-            </AccordionItem>
+            <div>
+              <h3 className="text-2xl font-semibold text-[#111111] mb-3">
+                Check Available Offers
+              </h3>
+              <p className="text-[#4B5563] leading-relaxed">
+                Whether you're eyeing the Galaxy S25 or a budget-friendly Galaxy A device, gather multiple quotes. The best route might involve contacting providers directly or using comparison websites.
+              </p>
+            </div>
 
-            <AccordionItem value="item-3" className="border rounded-lg px-6">
-              <AccordionTrigger className="text-lg font-semibold text-gray-900">
-                What's the ideal data allowance for everyday use?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Most average users can manage with 10–20GB of monthly data. However, if you frequently stream HD videos, game online, or work remotely, consider 20GB or more to avoid speed throttling and extra charges.
-              </AccordionContent>
-            </AccordionItem>
+            <div>
+              <h3 className="text-2xl font-semibold text-[#111111] mb-3">
+                Factor in Broadband
+              </h3>
+              <p className="text-[#4B5563] leading-relaxed">
+                Since many rely on stable home internet for tasks like streaming and remote work, it's wise to compare broadband deals concurrently. This ensures your data usage on your Samsung phone is supported by a reliable connection at home.
+              </p>
+            </div>
 
-            <AccordionItem value="item-4" className="border rounded-lg px-6">
-              <AccordionTrigger className="text-lg font-semibold text-gray-900">
-                Can I switch to a new carrier if I'm still under contract?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                You can, but you'll likely need to pay an early termination fee. Check your current contract's terms or ask your provider for details about any exit fees before switching.
-              </AccordionContent>
-            </AccordionItem>
+            <div>
+              <h3 className="text-2xl font-semibold text-[#111111] mb-3">
+                Weigh Contract vs. SIM-Only
+              </h3>
+              <ul className="list-disc pl-6 space-y-2 text-[#4B5563]">
+                <li>Contract: Spreads out phone costs, often includes bonuses or freebies.</li>
+                <li>SIM-Only: Requires an upfront phone purchase but may have lower monthly fees. Ideal if you already own a Samsung phone or plan to buy one outright.</li>
+              </ul>
+            </div>
 
-            <AccordionItem value="item-5" className="border rounded-lg px-6">
-              <AccordionTrigger className="text-lg font-semibold text-gray-900">
-                What should I do if I have poor signal at home?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                First, see if your provider offers Wi-Fi calling to route calls through your broadband connection. Some carriers also provide signal boosters or femtocells to strengthen your indoor reception.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="border rounded-lg px-6">
-              <AccordionTrigger className="text-lg font-semibold text-gray-900">
-                Are there special low-cost plans for people on benefits or tight budgets?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Some carriers provide discounted plans or promotions that can help reduce monthly phone and broadband costs. It's worth asking your provider about social tariffs or financial assistance options.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-7" className="border rounded-lg px-6">
-              <AccordionTrigger className="text-lg font-semibold text-gray-900">
-                Do all Samsung phones support 5G?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Not all Samsung devices are 5G-ready. Generally, the newest S and Z-series phones support 5G. Always check the phone's specifications or ask your carrier to confirm 5G compatibility.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-
-          <p className="mt-8 text-lg text-gray-600">
-            Now that you're equipped with essential tips and insights, it's time to explore the best Samsung mobile phone deals. Don't forget to compare broadband offers to maximize your digital experience—start your search today and enjoy unbeatable connectivity wherever you go!
-          </p>
+            <div>
+              <h3 className="text-2xl font-semibold text-[#111111] mb-3">
+                Review Contract Terms and Potential Price Rises
+              </h3>
+              <p className="text-[#4B5563] leading-relaxed">
+                Always check the small print for price adjustments that may occur mid-contract. Some providers lock in prices, but others adjust rates annually.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       
