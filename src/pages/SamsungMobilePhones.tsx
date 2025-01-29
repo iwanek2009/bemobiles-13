@@ -7,22 +7,11 @@ import { SamsungFAQ } from "@/components/samsung/SamsungFAQ";
 import { SamsungConsiderations } from "@/components/samsung/SamsungConsiderations";
 import { SamsungCoverageChecker } from "@/components/samsung/SamsungCoverageChecker";
 import { SamsungGuide } from "@/components/samsung/SamsungGuide";
-import { PageText } from "@/components/ui/page-text";
 
 const SamsungMobilePhones = () => {
   return (
     <>
       <Header />
-      <div className="bg-white py-8">
-        <div className="container mx-auto px-4">
-          <PageText variant="h1">
-            Samsung Mobile Phone Deals: Compare & Save on the Best Plans
-          </PageText>
-          <PageText>
-            Find the best Samsung monthly plans and exclusive offers. Compare data packages, save on upfront costs, and enjoy fast, reliable mobile service today!
-          </PageText>
-        </div>
-      </div>
       <TheMobile
         title="Samsung phone deals."
         description="Discover Samsung's diverse range of smartphones, from premium Galaxy S series to innovative foldables."
