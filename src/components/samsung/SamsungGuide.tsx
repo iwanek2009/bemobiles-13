@@ -6,6 +6,8 @@ import { SamsungEcosystem } from "./sections/SamsungEcosystem";
 import { SamsungContracts } from "./sections/SamsungContracts";
 import { SamsungComparison } from "./sections/SamsungComparison";
 import { SamsungChoosingTips } from "./sections/SamsungChoosingTips";
+import { SamsungExpertTips } from "./sections/SamsungExpertTips";
+import { SamsungPerfectDeal } from "./sections/SamsungPerfectDeal";
 
 export const SamsungGuide = () => {
   return (
@@ -28,6 +30,8 @@ export const SamsungGuide = () => {
           <SamsungContracts />
           <SamsungComparison />
           <SamsungChoosingTips />
+          <SamsungExpertTips />
+          <SamsungPerfectDeal />
         </div>
       </div>
     </div>
