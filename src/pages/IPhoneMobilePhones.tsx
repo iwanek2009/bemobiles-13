@@ -15,8 +15,8 @@ const IPhoneMobilePhones = () => {
       <TheMobile
         title="iPhone phone deals."
         description="Experience innovation with Apple's premium iPhone range, featuring cutting-edge technology and seamless integration with the Apple ecosystem."
-        heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
-        imageAlt="Latest iPhone models showcasing premium features"
+        heroImage="/lovable-uploads/2cfcbfd3-2aa7-4cd3-b90b-7c501499fb1e.png"
+        imageAlt="Latest iPhone 14 Pro showcasing premium design with triple camera system"
         filter={{ brands: [19] }}
       />
       <Footer />
