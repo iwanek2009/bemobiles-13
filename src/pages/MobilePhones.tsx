@@ -3,12 +3,18 @@ import { BrandFilter } from "@/components/BrandFilter";
 import { Footer } from "@/components/Footer";
 import { StickeeWidget } from "@/components/StickeeWidget";
 import { useSearchParams } from "react-router-dom";
+import { useSEO } from "@/hooks/useSEO";
 
 const MobilePhones = () => {
   const [searchParams] = useSearchParams();
   const filterParam = searchParams.get('filter');
   
   const filter = filterParam ? { families: [Number(filterParam)] } : undefined;
+
+  useSEO({
+    title: "Mobile Phone Deals & Contracts | Best UK Phone Deals",
+    description: "Compare the best mobile phone deals and contracts from UK's leading networks. Find amazing offers on the latest smartphones with flexible payment options."
+  });
 
   return (
     <div className="min-h-screen bg-gray-50">
