@@ -13,8 +13,8 @@ const SamsungMobilePhones = () => {
     <>
       <Header />
       <TheMobile
-        title="Samsung phone deals."
-        description="Discover Samsung's diverse range of smartphones, from premium Galaxy S series to innovative foldables."
+        title="Samsung Mobile Phone Deals: Compare & Save on the Best Plans"
+        description="Find the best Samsung monthly plans and exclusive offers. Compare data packages, save on upfront costs, and enjoy fast, reliable mobile service today!"
         heroImage="/lovable-uploads/7957768e-94f3-4f05-b4fc-1c67cb7ddeab.png"
         imageAlt="Samsung Galaxy S23 smartphone in blue color"
         filter={{ brands: [5] }}
