@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { PageText } from "@/components/ui/page-text";
 
 export const SamsungPerfectDeal = () => {
   const scrollToWidget = () => {
@@ -10,13 +11,13 @@ export const SamsungPerfectDeal = () => {
 
   return (
     <section className="space-y-6">
-      <h3 className="text-2xl font-bold text-[#111111] mb-4">
+      <PageText variant="h3">
         10. Find Your Perfect Samsung Deal at BeMobiles
-      </h3>
+      </PageText>
       
-      <p className="text-gray-600 leading-relaxed">
+      <PageText>
         Ready to explore the latest Samsung phone deals? At bemobiles.com, we specialize in Samsung Galaxy contracts tailored to your lifestyle. Whether you're eyeing the shiny new S-series flagship, the affordable A-series, or a foldable Z-series device, our expert team is here to guide you.
-      </p>
+      </PageText>
 
       <div className="flex justify-center pt-4">
         <Button 
