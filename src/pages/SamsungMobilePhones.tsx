@@ -7,8 +7,14 @@ import { SamsungFAQ } from "@/components/samsung/SamsungFAQ";
 import { SamsungConsiderations } from "@/components/samsung/SamsungConsiderations";
 import { SamsungCoverageChecker } from "@/components/samsung/SamsungCoverageChecker";
 import { SamsungGuide } from "@/components/samsung/SamsungGuide";
+import { useSEO } from "@/hooks/useSEO";
 
 const SamsungMobilePhones = () => {
+  useSEO({
+    title: "Samsung Mobile Phone Deals: Compare & Save on the Best Plans",
+    description: "Find the best Samsung monthly plans and exclusive offers. Compare data packages, save on upfront costs, and enjoy fast, reliable mobile service today!"
+  });
+
   return (
     <>
       <Header />
