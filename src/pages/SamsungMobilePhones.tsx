@@ -4,6 +4,7 @@ import { TheMobile } from "@/components/templates/TheMobile";
 import { SamsungHowToCompare } from "@/components/samsung/SamsungHowToCompare";
 import { SamsungChoosingGuide } from "@/components/samsung/SamsungChoosingGuide";
 import { SamsungFAQ } from "@/components/samsung/SamsungFAQ";
+import { SamsungConsiderations } from "@/components/samsung/SamsungConsiderations";
 
 const SamsungMobilePhones = () => {
   return (
@@ -20,6 +21,7 @@ const SamsungMobilePhones = () => {
       <SamsungHowToCompare />
       <SamsungChoosingGuide />
       <SamsungFAQ />
+      <SamsungConsiderations />
       
       <Footer />
     </>
