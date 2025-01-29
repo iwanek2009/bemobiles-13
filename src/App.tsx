@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import MobilePhones from "./pages/MobilePhones";
 import ExamplePage from "./pages/ExamplePage";
 import SamsungMobilePhones from "./pages/SamsungMobilePhones";
+import GoogleMobilePhones from "./pages/GoogleMobilePhones";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const RouteWrapper = () => {
       <Route path="/mobile-phones" element={<MobilePhones />} />
       <Route path="/example" element={<ExamplePage />} />
       <Route path="/samsung-mobile-phones" element={<SamsungMobilePhones />} />
+      <Route path="/google-mobile-phones" element={<GoogleMobilePhones />} />
     </Routes>
   );
 };
