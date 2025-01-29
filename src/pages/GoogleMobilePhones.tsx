@@ -21,8 +21,8 @@ const GoogleMobilePhones = () => {
             </div>
             <div className="relative h-[300px] md:h-[320px] w-full md:mt-5">
               <img
-                src="/lovable-uploads/b53f9160-6075-444a-abe9-c8b4b56362ea.png"
-                alt="Google Pixel smartphone"
+                src="/lovable-uploads/8e34dd3d-43b9-45d2-a7bf-58b162b8eedb.png"
+                alt="Google Pixel phones in various colors"
                 className="absolute inset-0 w-full h-full object-contain"
                 loading="eager"
               />
