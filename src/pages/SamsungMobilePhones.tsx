@@ -6,6 +6,7 @@ import { SamsungChoosingGuide } from "@/components/samsung/SamsungChoosingGuide"
 import { SamsungFAQ } from "@/components/samsung/SamsungFAQ";
 import { SamsungConsiderations } from "@/components/samsung/SamsungConsiderations";
 import { SamsungCoverageChecker } from "@/components/samsung/SamsungCoverageChecker";
+import { SamsungGuide } from "@/components/samsung/SamsungGuide";
 
 const SamsungMobilePhones = () => {
   return (
@@ -24,6 +25,7 @@ const SamsungMobilePhones = () => {
       <SamsungFAQ />
       <SamsungConsiderations />
       <SamsungCoverageChecker />
+      <SamsungGuide />
       
       <Footer />
     </>
