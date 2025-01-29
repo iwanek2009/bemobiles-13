@@ -124,23 +124,6 @@ const SamsungMobilePhones = () => {
                 Always check the small print for price adjustments that may occur mid-contract. Some providers lock in prices, but others adjust rates annually.
               </p>
             </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold text-[#111111] mb-3">
-                Conclusion & Call to Action
-              </h3>
-              <p className="text-[#4B5563] leading-relaxed mb-6">
-                By carefully comparing Samsung mobile phone deals, checking coverage, and factoring in your data needs, you can secure a plan that perfectly suits your lifestyle. Whether you're upgrading to the newest Galaxy flagship or choosing a dependable mid-range phone, the right deal can save you money while delivering top-tier performance.
-              </p>
-              <p className="text-xl font-semibold text-[#111111] mb-4">
-                Ready to find the perfect Samsung offer for you?
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-[#4B5563]">
-                <li>Compare current deals and data packages.</li>
-                <li>Check broadband bundles if you want an all-in-one connectivity solution.</li>
-                <li>Enter your postcode in a coverage checker to see which carriers provide the best network speeds in your area.</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
