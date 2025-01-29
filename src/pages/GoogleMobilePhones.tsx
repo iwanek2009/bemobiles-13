@@ -31,7 +31,7 @@ const GoogleMobilePhones = () => {
         </div>
       </div>
 
-      <StickeeWidget filter={{ brands: [7] }} />
+      <StickeeWidget filter={{ brands: [7, 15] }} />
       <Footer />
     </div>
   );
