@@ -14,7 +14,7 @@ const SamsungMobilePhones = () => {
         filter={{ brands: [5] }}
       />
       
-      <div className="bg-white py-12">
+      <div className="bg-[#F1F1F1] py-8">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary tracking-tight mb-8">
             How to Compare Samsung Mobile Phone Deals
