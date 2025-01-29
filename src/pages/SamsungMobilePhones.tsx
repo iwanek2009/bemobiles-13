@@ -32,8 +32,8 @@ const SamsungMobilePhones = () => {
             </div>
             <div className="relative h-[300px] md:h-[320px] w-full md:mt-5">
               <img
-                src="/lovable-uploads/a0ce8510-21c9-4192-98da-ff063708d8b1.png"
-                alt="Samsung Galaxy S23 Ultra smartphone"
+                src="/lovable-uploads/7957768e-94f3-4f05-b4fc-1c67cb7ddeab.png"
+                alt="Samsung Galaxy S23 smartphone in blue color"
                 className="absolute inset-0 w-full h-full object-contain"
                 loading="eager"
               />
