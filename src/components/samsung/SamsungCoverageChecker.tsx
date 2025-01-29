@@ -1,6 +1,6 @@
 export const SamsungCoverageChecker = () => {
   return (
-    <div className="bg-white py-12">
+    <div className="bg-gradient-to-b from-[#2990dd]/10 to-white py-12">
       <div className="container mx-auto px-4 max-w-[1000px]">
         <h2 className="text-3xl font-bold tracking-tight text-[#111111] mb-8">
           Samsung Coverage Checker: How It Works
