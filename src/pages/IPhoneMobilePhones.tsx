@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
+import { IPhoneContracts } from "@/components/iphone/IPhoneContracts";
 import { useSEO } from "@/hooks/useSEO";
 
 const IPhoneMobilePhones = () => {
@@ -19,6 +20,7 @@ const IPhoneMobilePhones = () => {
         imageAlt="Latest iPhone 14 Pro showcasing premium design with triple camera system"
         filter={{ brands: [19] }}
       />
+      <IPhoneContracts />
       <Footer />
     </>
   );
