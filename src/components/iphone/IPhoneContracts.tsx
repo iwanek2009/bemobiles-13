@@ -64,6 +64,38 @@ export const IPhoneContracts = () => {
           Similar to completing your switch with broadband, ensure all personal and payment details are correct.
         </PageText>
       </div>
+
+      <div className="bg-white mt-12 rounded-lg shadow-sm p-6">
+        <PageText variant="h2">What to Consider When Searching for an iPhone Contract Deal</PageText>
+        
+        <PageText variant="h3">1. Are You Out of Contract?</PageText>
+        <PageText>
+          If your current plan is nearing its end, it's prime time to hunt for a better offer—especially if you can compare broadband offers and pair your phone contract with a home internet bundle. Sometimes, you'll find compelling joint promotions that reduce overall costs.
+        </PageText>
+
+        <PageText variant="h3">2. Data Speeds and Usage</PageText>
+        <PageText>
+          Regular Browsing & Social Media: ~5-10GB data may suffice.
+          HD Streaming & Online Gaming: ~20GB or more to prevent throttling or overage fees.
+          Hotspot Usage: Consider unlimited or high-cap data plans.
+        </PageText>
+
+        <PageText variant="h3">3. Budget and Monthly Costs</PageText>
+        <PageText>
+          Set a maximum monthly payment you're comfortable with.
+          Look for any "introductory rate" that may escalate after a few months.
+        </PageText>
+
+        <PageText variant="h3">4. Bundling TV or Broadband</PageText>
+        <PageText>
+          Many carriers also offer home services. Just like checking for the best internet in your area, you can see if you can bundle an iPhone deal with TV or landline services. This often results in discounts or free hardware upgrades.
+        </PageText>
+
+        <PageText variant="h3">5. Customer Support and Reliability</PageText>
+        <PageText>
+          A plan that offers 24/7 customer service can be invaluable if you rely heavily on your phone for work or personal matters. Check user reviews or awards to see which carriers excel in reliability and prompt assistance.
+        </PageText>
+      </div>
     </div>
   );
 };
