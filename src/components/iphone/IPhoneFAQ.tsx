@@ -11,6 +11,16 @@ export const IPhoneFAQ = () => {
 
   const faqs = [
     {
+      id: "perfect-match",
+      question: "Find Your Perfect Match",
+      answer: "Apple's iPhone lineup has a well-earned reputation for innovation, sleek design, and a seamless ecosystem that ties all your devices together. Whether you're an Apple aficionado or making your first leap into the iOS world, choosing the right iPhone—and the right contract—can be a game-changer. In this guide, we'll explore the latest iPhone deals, contract options, and tips for getting the most out of Apple's ecosystem."
+    },
+    {
+      id: "iphones-standout",
+      question: "Why iPhones Stand Out",
+      answer: "• Advanced Camera Systems – From capturing Instagram-worthy group selfies to shooting cinematic videos, iPhones set the bar for mobile photography.\n\n• Streamlined iOS Integration – With iCloud, AirDrop, and FaceTime, your photos, files, and conversations sync across all Apple devices effortlessly.\n\n• Security and Privacy – Face ID and Apple's stringent privacy protections ensure top-notch security for your data.\n\n• Long-Term Value – iPhones tend to retain high trade-in value, making upgrades and resale more rewarding over time."
+    },
+    {
       id: "bundle",
       question: "Can I bundle my iPhone plan with home broadband services?",
       answer: "Absolutely. Some carriers offer discounts for combining mobile and home internet. This can be a smart way to save on overall costs while enjoying a single monthly bill."
