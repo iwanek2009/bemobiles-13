@@ -65,7 +65,7 @@ export const IPhoneContracts = () => {
         </PageText>
       </div>
 
-      <div className="bg-white mt-12 rounded-lg shadow-sm p-6">
+      <div className="bg-white mt-12 rounded-xl border border-gray-100 shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
         <PageText variant="h2">What to Consider When Searching for an iPhone Contract Deal</PageText>
         
         <PageText variant="h3">1. Are You Out of Contract?</PageText>
