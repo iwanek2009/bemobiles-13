@@ -27,6 +27,43 @@ export const IPhoneContracts = () => {
         Initial Device Cost: Some plans require a small upfront fee.
         Monthly Payments: Factor in data usage, additional services (like Apple Music or Apple TV+), and potential price hikes after promotional periods.
       </PageText>
+
+      <div className="bg-white mt-12 rounded-lg shadow-sm">
+        <PageText variant="h2">Step-by-Step: How to Choose Your Ideal iPhone Deal</PageText>
+        <PageText>
+          Just as you'd follow a process to switch broadband providers, there's a logical way to pick your iPhone contract:
+        </PageText>
+
+        <PageText variant="h3">Check Coverage and Speed</PageText>
+        <PageText>
+          Investigate carrier coverage in your area. A great deal means little if your signal is weak.
+          If you plan to use your iPhone for home internet tethering, ensure connection speed and data allowances meet your needs.
+        </PageText>
+
+        <PageText variant="h3">Determine Your Usage</PageText>
+        <PageText>
+          Are you a streaming enthusiast? Look for unlimited data or high data caps.
+          Work or study remotely? Prioritize consistent speeds and a reliable network.
+        </PageText>
+
+        <PageText variant="h3">Compare Offers</PageText>
+        <PageText>
+          Visit multiple carriers or third-party comparison sites to see current promotions.
+          Look for special add-ons: free streaming trials, international minutes, or discounts on family plans.
+        </PageText>
+
+        <PageText variant="h3">Review Device Options</PageText>
+        <PageText>
+          The latest iPhone comes with cutting-edge features but may cost more.
+          Older models might offer great value for those on a budget.
+        </PageText>
+
+        <PageText variant="h3">Sign Up</PageText>
+        <PageText>
+          Once you've chosen, head to the provider's website and verify contract details.
+          Similar to completing your switch with broadband, ensure all personal and payment details are correct.
+        </PageText>
+      </div>
     </div>
   );
 };
