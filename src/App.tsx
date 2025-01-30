@@ -21,18 +21,26 @@ const RouteWrapper = () => {
       const anchor = target.closest('a');
       if (!anchor) return;
 
-      // Only force reload for mobile-phones route
       const href = anchor.getAttribute('href');
-      const isMobilePhonesLink = href === '/mobile-phones';
-
       const isLocalLink =
         anchor.hostname === window.location.hostname &&
         href &&
         !href.startsWith('#');
 
-      if (isLocalLink && isMobilePhonesLink) {
+      // List of routes that should trigger a full page refresh
+      const refreshRoutes = [
+        '/mobile-phones',
+        '/samsung-mobile-phones',
+        '/google-mobile-phones',
+        '/sony-mobile-phones',
+        '/iphone-mobile-phones'
+      ];
+
+      const shouldRefresh = refreshRoutes.some(route => href === route);
+
+      if (isLocalLink && shouldRefresh) {
         e.preventDefault();
-        console.log('Forcing full page reload for mobile-phones:', href);
+        console.log('Forcing full page reload for:', href);
         window.location.href = href;
       }
     };
