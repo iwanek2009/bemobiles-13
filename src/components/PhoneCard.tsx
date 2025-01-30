@@ -30,10 +30,10 @@ export const PhoneCard = ({
       'iPhone 15': 1971,
       'iPhone 16 Pro': 1972,
       'iPhone 16 Pro Max': 1973,
-      'Galaxy A55': 1974,
-      'Galaxy 24FE': 1975,
-      'Galaxy S24': 1976,
-      'Galaxy S24 Ultra': 1906,
+      'Galaxy A53': 1760,
+      'Galaxy 23FE': 1916,
+      'Galaxy S24': 1904,
+      'Galaxy S24 Ultra': 1906
     };
 
     return modelMap[model] || (brand === "Apple" ? 1968 : brand === "Samsung" ? 1969 : brand === "Google" ? 1970 : 0);
