@@ -9,6 +9,13 @@ interface TheMobileProps {
     families?: number[];
     brands?: number[];
   };
+  imageProps?: {
+    loading?: "eager" | "lazy";
+    fetchPriority?: "high" | "low" | "auto";
+    width?: string;
+    height?: string;
+    decoding?: "async" | "sync" | "auto";
+  };
 }
 
 export const TheMobile = ({
@@ -16,7 +23,8 @@ export const TheMobile = ({
   description,
   heroImage,
   imageAlt,
-  filter
+  filter,
+  imageProps
 }: TheMobileProps) => {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -37,7 +45,7 @@ export const TheMobile = ({
                 src={heroImage}
                 alt={imageAlt}
                 className="absolute inset-0 w-full h-full object-contain"
-                loading="eager"
+                {...imageProps}
               />
             </div>
           </div>
