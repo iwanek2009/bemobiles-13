@@ -1,10 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
-import { IPhoneIntro } from "@/components/iphone/sections/IPhoneIntro";
-import { IPhoneComparison } from "@/components/iphone/sections/IPhoneComparison";
-import { IPhoneBudget } from "@/components/iphone/sections/IPhoneBudget";
-import { IPhoneGuide } from "@/components/iphone/sections/IPhoneGuide";
+import { IPhoneContracts } from "@/components/iphone/IPhoneContracts";
 import { IPhoneFAQ } from "@/components/iphone/IPhoneFAQ";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -24,10 +21,7 @@ const IPhoneMobilePhones = () => {
         imageAlt="Latest iPhone 14 Pro showcasing premium design with triple camera system"
         filter={{ brands: [19] }}
       />
-      <IPhoneIntro />
-      <IPhoneComparison />
-      <IPhoneBudget />
-      <IPhoneGuide />
+      <IPhoneContracts />
       <IPhoneFAQ />
       <Footer />
     </>
