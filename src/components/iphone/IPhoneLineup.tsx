@@ -2,8 +2,8 @@ import { PageText } from "@/components/ui/page-text";
 
 export const IPhoneLineup = () => {
   return (
-    <div className="bg-white py-12">
-      <div className="container mx-auto px-4 max-w-[1000px]">
+    <div className="bg-gradient-to-b from-white to-gray-50 py-16">
+      <div className="container mx-auto px-6 max-w-[1000px] rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg border border-gray-100/20 p-8">
         <PageText variant="h2" className="mb-6">
           Exploring the iPhone Lineup
         </PageText>
