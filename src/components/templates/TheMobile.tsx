@@ -44,7 +44,9 @@ export const TheMobile = ({
         </div>
       </div>
 
-      <StickeeWidget filter={filter} />
+      <div id="phones-section">
+        <StickeeWidget filter={filter} />
+      </div>
     </div>
   );
 };
