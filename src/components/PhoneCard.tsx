@@ -36,7 +36,8 @@ export const PhoneCard = ({
       'Galaxy S24 Ultra': 1906
     };
 
-    return modelMap[model] || (brand === "Apple" ? 1968 : brand === "Samsung" ? 1969 : brand === "Google" ? 1970 : 0);
+    const mappedId = modelMap[model];
+    return mappedId || (brand === "Apple" ? 1968 : brand === "Samsung" ? 1969 : brand === "Google" ? 1970 : 0);
   };
 
   const handleFilteredDeals = (filterId: number) => {
