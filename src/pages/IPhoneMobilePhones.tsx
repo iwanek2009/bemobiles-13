@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
 import { IPhoneContracts } from "@/components/iphone/IPhoneContracts";
+import { IPhoneFAQ } from "@/components/iphone/IPhoneFAQ";
 import { useSEO } from "@/hooks/useSEO";
 
 const IPhoneMobilePhones = () => {
@@ -21,6 +22,7 @@ const IPhoneMobilePhones = () => {
         filter={{ brands: [19] }}
       />
       <IPhoneContracts />
+      <IPhoneFAQ />
       <Footer />
     </>
   );
