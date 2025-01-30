@@ -1,6 +1,14 @@
+import { Button } from "@/components/ui/button";
 import { PageText } from "@/components/ui/page-text";
 
 export const IPhoneEcosystem = () => {
+  const scrollToWidget = () => {
+    const widgetElement = document.querySelector('#phones-section');
+    if (widgetElement) {
+      widgetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="bg-gradient-to-b from-white to-gray-50 py-16">
       <div className="container mx-auto px-6 max-w-[1000px] rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg border border-gray-100/20 p-8">
@@ -82,11 +90,45 @@ export const IPhoneEcosystem = () => {
         <PageText variant="h2" className="mb-6">
           Future iPhone Trends
         </PageText>
-        <ul className="list-disc pl-6 space-y-2 text-gray-600">
+        <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-12">
           <li>Foldable Concepts – Rumors hint at Apple exploring foldable phone tech to rival other OEMs.</li>
           <li>Further Camera Innovations – Expect even greater sensor upgrades, possibly bridging the gap between phone and DSLR.</li>
           <li>Increased AI Integration – Machine learning might shape how iPhones handle daily tasks, from photography suggestions to predictive text improvements.</li>
         </ul>
+
+        <div className="mt-16 text-center space-y-6 bg-blue-50 rounded-2xl p-8 border border-blue-100">
+          <PageText variant="h2" className="text-blue-900">
+            Ready to Find Your Perfect iPhone Deal?
+          </PageText>
+          
+          <PageText className="max-w-3xl mx-auto">
+            At bemobiles.com, we specialize in matching you with the best iPhone contracts to fit your budget, usage, and lifestyle. Whether you're eyeing the iPhone 16 Pro Max for its colossal screen or the standard iPhone for everyday reliability, our friendly experts will guide you every step of the way. Explore our iPhone carrier deals today, or reach out to our support team for personalized recommendations.
+          </PageText>
+
+          <div className="space-y-4">
+            <PageText variant="h3" className="text-blue-800">
+              Why Wait?
+            </PageText>
+            <ul className="list-none space-y-2 text-blue-700">
+              <li>Browse the latest iPhone 16 offers</li>
+              <li>Compare iPhone Pro Max plans</li>
+              <li>Save money with iPhone upgrade deals</li>
+              <li>Get the right plan for your family with iPhone family plans</li>
+            </ul>
+          </div>
+
+          <PageText className="text-blue-700">
+            Join the Apple ecosystem and experience the seamless integration of iOS devices. Let bemobiles.com help you find an iPhone contract
+          </PageText>
+
+          <Button
+            onClick={scrollToWidget}
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            Find Your Perfect iPhone Deal
+          </Button>
+        </div>
       </div>
     </div>
   );
