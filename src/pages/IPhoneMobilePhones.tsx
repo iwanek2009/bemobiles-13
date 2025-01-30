@@ -10,8 +10,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 const IPhoneMobilePhones = () => {
   useSEO({
-    title: "iPhone Mobile Phone Deals: Latest Models & Best Offers",
-    description: "Compare the best iPhone deals and contracts from UK's leading networks. Find amazing offers on the latest iPhone models with flexible payment options."
+    title: "iPhone Contract Deals: Compare Plans & Get the Best Offers",
+    description: "Find unbeatable iPhone contract deals, compare top carriers, and save on your upgrade. Explore flexible plans and secure the best iPhone offer for you now!"
   });
 
   return (
