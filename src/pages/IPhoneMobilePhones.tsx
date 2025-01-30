@@ -4,6 +4,7 @@ import { TheMobile } from "@/components/templates/TheMobile";
 import { IPhoneContracts } from "@/components/iphone/IPhoneContracts";
 import { IPhoneFAQ } from "@/components/iphone/IPhoneFAQ";
 import { IPhoneLineup } from "@/components/iphone/IPhoneLineup";
+import { IPhoneCarrierDeals } from "@/components/iphone/IPhoneCarrierDeals";
 import { useSEO } from "@/hooks/useSEO";
 
 const IPhoneMobilePhones = () => {
@@ -24,6 +25,7 @@ const IPhoneMobilePhones = () => {
       />
       <IPhoneContracts />
       <IPhoneLineup />
+      <IPhoneCarrierDeals />
       <IPhoneFAQ />
       <Footer />
     </>
