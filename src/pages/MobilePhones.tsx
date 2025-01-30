@@ -38,7 +38,7 @@ const MobilePhones = () => {
                 alt="Latest iPhone models showing Pro and regular versions"
                 className="absolute inset-0 w-full h-full object-contain"
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
                 width="800"
                 height="800"
                 decoding="async"
