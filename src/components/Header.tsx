@@ -28,43 +28,43 @@ export const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6 items-center">
-            <Link to="/" className="text-black hover:text-primary transition-colors">Home</Link>
+            <Link to="/" className="text-black hover:text-primary transition-colors text-base">Home</Link>
             
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-black hover:text-primary transition-colors">
+                  <NavigationMenuTrigger className="text-black hover:text-primary transition-colors text-base">
                     Mobile Phones
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="grid gap-3 p-4 w-[200px]">
                       <Link 
                         to="/mobile-phones" 
-                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors"
+                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors text-base"
                       >
                         All Phones
                       </Link>
                       <Link 
                         to="/iphone-mobile-phones" 
-                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors"
+                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors text-base"
                       >
                         iPhone
                       </Link>
                       <Link 
                         to="/samsung-mobile-phones" 
-                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors"
+                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors text-base"
                       >
                         Samsung
                       </Link>
                       <Link 
                         to="/google-mobile-phones" 
-                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors"
+                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors text-base"
                       >
                         Google
                       </Link>
                       <Link 
                         to="/sony-mobile-phones" 
-                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors"
+                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors text-base"
                       >
                         Sony
                       </Link>
@@ -74,32 +74,32 @@ export const Header = () => {
               </NavigationMenuList>
             </NavigationMenu>
 
-            <Link to="#" className="text-black hover:text-primary transition-colors">Sim Only</Link>
-            <Link to="#" className="text-black hover:text-primary transition-colors">Broadband & TV</Link>
+            <Link to="#" className="text-black hover:text-primary transition-colors text-base">Sim Only</Link>
+            <Link to="#" className="text-black hover:text-primary transition-colors text-base">Broadband & TV</Link>
           </nav>
 
           {/* Mobile Navigation */}
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
+                <Menu className="h-7 w-7" /> {/* Increased size from default 6 to 7 */}
               </Button>
             </SheetTrigger>
-            <SheetContent side="right">
+            <SheetContent side="right" className="bg-white">
               <nav className="flex flex-col gap-4 mt-8">
-                <Link to="/" className="text-black hover:text-primary transition-colors">Home</Link>
-                <div className="space-y-2">
-                  <p className="font-medium">Mobile Phones</p>
-                  <div className="pl-4 space-y-2">
-                    <Link to="/mobile-phones" className="block text-black hover:text-primary transition-colors">All Phones</Link>
-                    <Link to="/iphone-mobile-phones" className="block text-black hover:text-primary transition-colors">iPhone</Link>
-                    <Link to="/samsung-mobile-phones" className="block text-black hover:text-primary transition-colors">Samsung</Link>
-                    <Link to="/google-mobile-phones" className="block text-black hover:text-primary transition-colors">Google</Link>
-                    <Link to="/sony-mobile-phones" className="block text-black hover:text-primary transition-colors">Sony</Link>
+                <Link to="/" className="text-black hover:text-primary transition-colors text-lg font-medium">Home</Link>
+                <div className="space-y-3">
+                  <p className="text-lg font-semibold text-black">Mobile Phones</p>
+                  <div className="pl-4 space-y-3 border-l-2 border-primary">
+                    <Link to="/mobile-phones" className="block text-black hover:text-primary transition-colors text-base">All Phones</Link>
+                    <Link to="/iphone-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">iPhone</Link>
+                    <Link to="/samsung-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Samsung</Link>
+                    <Link to="/google-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Google</Link>
+                    <Link to="/sony-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Sony</Link>
                   </div>
                 </div>
-                <Link to="#" className="text-black hover:text-primary transition-colors">Sim Only</Link>
-                <Link to="#" className="text-black hover:text-primary transition-colors">Broadband & TV</Link>
+                <Link to="#" className="text-black hover:text-primary transition-colors text-lg font-medium">Sim Only</Link>
+                <Link to="#" className="text-black hover:text-primary transition-colors text-lg font-medium">Broadband & TV</Link>
               </nav>
             </SheetContent>
           </Sheet>
