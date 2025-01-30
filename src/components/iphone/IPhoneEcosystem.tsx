@@ -67,6 +67,26 @@ export const IPhoneEcosystem = () => {
             </ul>
           </div>
         </div>
+
+        <PageText variant="h2" className="mt-12 mb-6">
+          Making the Most of Your iPhone Contract
+        </PageText>
+        <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-8">
+          <li>Set Up Apple Pay – Convenient and secure payments via your device or Apple Watch.</li>
+          <li>Optimize iCloud Storage – Store photos and files in the cloud to free up phone space and automatically back up data.</li>
+          <li>Use Focus Modes – iOS allows you to customize notifications for work, sleep, or personal time.</li>
+          <li>Check for Bundles – Combine your phone plan with broadband or TV for potential discounts, especially on iPhone family plans.</li>
+          <li>Protect Your Device – AppleCare+ or carrier insurance covers accidental damage—worth considering for peace of mind.</li>
+        </ul>
+
+        <PageText variant="h2" className="mb-6">
+          Future iPhone Trends
+        </PageText>
+        <ul className="list-disc pl-6 space-y-2 text-gray-600">
+          <li>Foldable Concepts – Rumors hint at Apple exploring foldable phone tech to rival other OEMs.</li>
+          <li>Further Camera Innovations – Expect even greater sensor upgrades, possibly bridging the gap between phone and DSLR.</li>
+          <li>Increased AI Integration – Machine learning might shape how iPhones handle daily tasks, from photography suggestions to predictive text improvements.</li>
+        </ul>
       </div>
     </div>
   );
