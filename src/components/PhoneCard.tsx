@@ -22,7 +22,7 @@ export const PhoneCard = ({
 }: PhoneCardProps) => {
   const getFilterId = (brand: string, model: string) => {
     // If a specific filterId is provided, use it
-    if (filterId) return filterId;
+    if (filterId !== undefined) return filterId;
     
     // Otherwise use the default mapping
     const modelMap: { [key: string]: number } = {
@@ -36,8 +36,7 @@ export const PhoneCard = ({
       'Galaxy S24 Ultra': 1906
     };
 
-    const mappedId = modelMap[model];
-    return mappedId || (brand === "Apple" ? 1968 : brand === "Samsung" ? 1969 : brand === "Google" ? 1970 : 0);
+    return modelMap[model] || (brand === "Apple" ? 1968 : brand === "Samsung" ? 1969 : brand === "Google" ? 1970 : 0);
   };
 
   const handleFilteredDeals = (filterId: number) => {
