@@ -40,7 +40,11 @@ export const PhoneCard = ({
   };
 
   const handleFilteredDeals = (filterId: number) => {
-    const basePath = brand === "Samsung" ? "/samsung-mobile-phones" : "/mobile-phones";
+    const basePath = brand === "Samsung" 
+      ? "/samsung-mobile-phones" 
+      : brand === "Apple" 
+        ? "/iphone-mobile-phones"
+        : "/mobile-phones";
     window.location.href = `${basePath}?filter=${filterId}`;
   };
 
