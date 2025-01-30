@@ -28,7 +28,7 @@ export const IPhoneContracts = () => {
         Monthly Payments: Factor in data usage, additional services (like Apple Music or Apple TV+), and potential price hikes after promotional periods.
       </PageText>
 
-      <div className="bg-white mt-12 rounded-lg shadow-sm">
+      <div className="bg-[#F1F1F1] mt-12 rounded-lg shadow-sm p-6">
         <PageText variant="h2">Step-by-Step: How to Choose Your Ideal iPhone Deal</PageText>
         <PageText>
           Just as you'd follow a process to switch broadband providers, there's a logical way to pick your iPhone contract:
