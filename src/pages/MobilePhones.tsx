@@ -34,8 +34,8 @@ const MobilePhones = () => {
             </div>
             <div className="relative h-[300px] md:h-[320px] w-full md:mt-5">
               <img
-                src="/lovable-uploads/e5af43e9-0d34-4eab-8779-a0261436c139.png"
-                alt="iPhone Pro with multiple cameras"
+                src="/lovable-uploads/9faf7347-cd7d-4837-bc81-2e870b83dd8a.png"
+                alt="Latest iPhone models showing Pro and regular versions"
                 className="absolute inset-0 w-full h-full object-contain"
                 loading="eager"
               />
