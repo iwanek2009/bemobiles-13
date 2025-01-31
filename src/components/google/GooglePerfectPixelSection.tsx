@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageText } from "@/components/ui/page-text";
-import { Smartphone, Camera, Brain, Cloud, Home, Link2, Bot, Smartphone as PhoneIcon, DollarSign, Calendar, Signal, CloudStorage, Settings, Users, Cpu } from "lucide-react";
+import { Smartphone, Camera, Brain, Cloud, Home, Link2, Bot, Smartphone as PhoneIcon, DollarSign, Calendar, Signal, Settings, Users, Cpu } from "lucide-react";
 
 export const GooglePerfectPixelSection = () => {
   return (
@@ -233,7 +233,7 @@ export const GooglePerfectPixelSection = () => {
 
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <div className="flex items-center gap-4 mb-4">
-                  <CloudStorage className="w-8 h-8 text-primary" />
+                  <Cloud className="w-8 h-8 text-primary" />
                   <h3 className="text-xl font-semibold">Storage vs. Cloud</h3>
                 </div>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600">
