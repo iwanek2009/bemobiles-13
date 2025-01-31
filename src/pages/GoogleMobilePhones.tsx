@@ -6,6 +6,7 @@ import { GoogleBenefitsSection } from "@/components/google/GoogleBenefitsSection
 import { GoogleComparisonSection } from "@/components/google/GoogleComparisonSection";
 import { GoogleContractSection } from "@/components/google/GoogleContractSection";
 import { GooglePerfectPixelSection } from "@/components/google/GooglePerfectPixelSection";
+import { GoogleCTASection } from "@/components/google/sections/GoogleCTASection";
 
 const GoogleMobilePhones = () => {
   return (
@@ -19,6 +20,7 @@ const GoogleMobilePhones = () => {
       <GoogleComparisonSection />
       <GoogleContractSection />
       <GooglePerfectPixelSection />
+      <GoogleCTASection />
       <Footer />
     </div>
   );
