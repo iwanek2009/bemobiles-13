@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageText } from "@/components/ui/page-text";
-import { Smartphone, Camera, Brain, Cloud, Home, Link2, Bot, Smartphone as PhoneIcon } from "lucide-react";
+import { Smartphone, Camera, Brain, Cloud, Home, Link2, Bot, Smartphone as PhoneIcon, DollarSign, Calendar, Signal, CloudStorage, Settings, Users, Cpu } from "lucide-react";
 
 export const GooglePerfectPixelSection = () => {
   return (
@@ -189,6 +189,124 @@ export const GooglePerfectPixelSection = () => {
                 <p className="text-gray-600">
                   Ideal if you rely on Gmail, Google Docs, YouTube, and other Google apps daily.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16">
+            <PageText variant="h2" className="mb-8">
+              Tips for Choosing the Right Google Phone
+            </PageText>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div className="flex items-center gap-4 mb-4">
+                  <DollarSign className="w-8 h-8 text-primary" />
+                  <h3 className="text-xl font-semibold">Budget and Features</h3>
+                </div>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                  <li>Standard Pixel – Solid choice if your focus is on camera quality and swift updates without extra frills.</li>
+                  <li>Pixel Pro – Ideal for those who want advanced camera capabilities, higher refresh rates, or a more premium build.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div className="flex items-center gap-4 mb-4">
+                  <Calendar className="w-8 h-8 text-primary" />
+                  <h3 className="text-xl font-semibold">Timing Your Purchase</h3>
+                </div>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                  <li>Launch Season – New Pixels typically release in the fall. Expect promotional carrier deals around these times.</li>
+                  <li>Holiday Sales – Black Friday, Boxing Day, or year-end sales can yield substantial discounts, especially on older models.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div className="flex items-center gap-4 mb-4">
+                  <Signal className="w-8 h-8 text-primary" />
+                  <h3 className="text-xl font-semibold">Checking Carrier Coverage</h3>
+                </div>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                  <li>Data Demands – High-definition streaming or gaming? Look for unlimited data plans or robust 5G coverage in your area.</li>
+                  <li>Roaming Needs – If you travel frequently, choose carriers with favorable international roaming options.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div className="flex items-center gap-4 mb-4">
+                  <CloudStorage className="w-8 h-8 text-primary" />
+                  <h3 className="text-xl font-semibold">Storage vs. Cloud</h3>
+                </div>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                  <li>Built-In Storage – Decide between 128GB, 256GB, or higher if you shoot lots of 4K video.</li>
+                  <li>Google Photos – Take advantage of cloud storage, but check if original-quality backups cost extra.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-16">
+              <PageText variant="h2" className="mb-8">
+                Making the Most of Your Google Phone Contract
+              </PageText>
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <ul className="list-disc pl-6 space-y-4 text-gray-600">
+                  <li className="flex items-start gap-4">
+                    <Settings className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <span>Customize Call Screening – Filter out spam calls automatically for a quieter inbox.</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <Cloud className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <span>Explore Google One – For extra cloud storage, extended device backups, and premium support.</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <Users className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <span>Use Family Sharing – Share apps, purchased movies, or even your YouTube Premium subscription with family members.</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <Bot className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <span>Leverage Google Assistant Routines – Automate morning routines (e.g., news briefings, commute updates) or bedtime tasks (phone brightness down, alarm set).</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <DollarSign className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                    <span>Check for Bundles – If your carrier also provides broadband or TV services, bundling can yield significant monthly savings.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-16">
+              <PageText variant="h2" className="mb-8">
+                Future Google Phone Trends
+              </PageText>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Cpu className="w-8 h-8 text-primary" />
+                    <h3 className="text-xl font-semibold">Self-Designed Chips</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Expect Google to continue refining its Tensor processors, focusing on AI performance and battery efficiency.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Camera className="w-8 h-8 text-primary" />
+                    <h3 className="text-xl font-semibold">Camera Evolution</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Enhanced zoom features, better low-light capture, and improved post-processing are likely to remain a priority.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Smartphone className="w-8 h-8 text-primary" />
+                    <h3 className="text-xl font-semibold">Foldables?</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Rumors suggest Google exploring foldable phone designs to compete with market alternatives. Keep an eye on upcoming announcements.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
