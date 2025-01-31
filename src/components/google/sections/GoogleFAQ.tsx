@@ -54,7 +54,7 @@ export const GoogleFAQ = () => {
           Frequently Asked Questions (FAQs)
         </PageText>
         
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-full">
           {faqs.map((faq) => (
             <CollapsibleFAQ
               key={faq.id}
