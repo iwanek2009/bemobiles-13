@@ -39,7 +39,7 @@ export const GoogleCTASection = () => {
             
             <Button 
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 h-auto text-lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 h-auto text-base"
               onClick={() => window.location.href = '#phones-section'}
             >
               Find Your Perfect Google Phone Deal
