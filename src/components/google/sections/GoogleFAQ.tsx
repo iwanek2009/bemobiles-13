@@ -48,13 +48,13 @@ export const GoogleFAQ = () => {
   ];
 
   return (
-    <div className="bg-[#F8F9FA] py-12">
+    <div className="bg-[#F8F9FA] py-8 md:py-12">
       <div className="container mx-auto px-4 max-w-[1000px]">
-        <PageText variant="h2" className="mb-8">
+        <PageText variant="h2" className="mb-6 md:mb-8 text-2xl md:text-3xl">
           Frequently Asked Questions (FAQs)
         </PageText>
         
-        <div className="space-y-4">
+        <div className="space-y-3 md:space-y-4">
           {faqs.map((faq) => (
             <CollapsibleFAQ
               key={faq.id}
