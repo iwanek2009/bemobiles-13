@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageText } from "@/components/ui/page-text";
-import { Smartphone, Camera, Brain, Cloud, Home, Link2, Robot, Apple, Android } from "lucide-react";
+import { Smartphone, Camera, Brain, Cloud, Home, Link2, Bot, Smartphone as PhoneIcon } from "lucide-react";
 
 export const GooglePerfectPixelSection = () => {
   return (
@@ -136,7 +136,7 @@ export const GooglePerfectPixelSection = () => {
 
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <div className="flex items-center gap-4 mb-4">
-                  <Robot className="w-8 h-8 text-primary" />
+                  <Bot className="w-8 h-8 text-primary" />
                   <h3 className="text-xl font-semibold">AI-Powered Apps</h3>
                 </div>
                 <p className="text-gray-600">
@@ -163,7 +163,7 @@ export const GooglePerfectPixelSection = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <div className="flex items-center gap-4 mb-4">
-                  <Android className="w-8 h-8 text-primary" />
+                  <PhoneIcon className="w-8 h-8 text-primary" />
                   <h3 className="text-xl font-semibold">Pure Android Experience</h3>
                 </div>
                 <p className="text-gray-600">
