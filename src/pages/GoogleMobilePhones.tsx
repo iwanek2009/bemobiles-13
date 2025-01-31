@@ -176,6 +176,45 @@ const GoogleMobilePhones = () => {
         </div>
       </section>
 
+      {/* Setting Up Section */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <PageText variant="h2" className="mb-8">
+              Setting Up Your New Google Phone
+            </PageText>
+
+            <div className="space-y-8">
+              <div>
+                <PageText variant="h3">1. Activation Process</PageText>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                  <li>SIM Insertion: Pop in your new SIM card and power on the device.</li>
+                  <li>Update Google Account: Log into your Google account to sync contacts, photos, and settings.</li>
+                  <li>Check for Updates: Google phones often have software updates pending—install them immediately to enjoy the latest security and features.</li>
+                </ul>
+              </div>
+
+              <div>
+                <PageText variant="h3">2. Migrating Data</PageText>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                  <li>Google's built-in transfer tool makes it straightforward to copy data from another Android phone or iPhone.</li>
+                  <li>For large backups, consider pairing with Wi-Fi or a robust data plan to avoid slow speeds or extra charges.</li>
+                </ul>
+              </div>
+
+              <div>
+                <PageText variant="h3">3. Customizing Your Phone</PageText>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                  <li>Google Assistant: Set voice match, shortcuts, or routines for easier daily tasks.</li>
+                  <li>Widget Setup: Tailor your home screen with weather, calendar, or news widgets.</li>
+                  <li>Privacy Controls: Adjust app permissions to keep your data secure—just as you'd tweak router settings for safe home browsing.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
