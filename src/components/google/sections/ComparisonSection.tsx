@@ -45,7 +45,7 @@ export const ComparisonSection = () => {
                 </li>
                 <li className="flex gap-2">
                   <span className="font-semibold text-primary">Consideration:</span>
-                  <span>Samsung offers more hardware options (like foldable screens) and extensive customization, yet Pixel's seamless Google integration offers a different kind of smart functionality.</span>
+                  <span><Link to="/samsung-mobile-phones" className="text-primary hover:underline">Samsung offers</Link> more hardware options (like foldable screens) and extensive customization, yet Pixel's seamless Google integration offers a different kind of smart functionality.</span>
                 </li>
               </ul>
             </div>
