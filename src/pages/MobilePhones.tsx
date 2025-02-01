@@ -12,6 +12,7 @@ import { ContractOptions } from "@/components/mobile/ContractOptions";
 import { EcosystemPerks } from "@/components/mobile/EcosystemPerks";
 import { ComparisonSection } from "@/components/mobile/ComparisonSection";
 import { ChoosingTips } from "@/components/mobile/ChoosingTips";
+import { MobileCTASection } from "@/components/mobile/MobileCTASection";
 
 const MobilePhones = () => {
   const [searchParams] = useSearchParams();
@@ -42,6 +43,7 @@ const MobilePhones = () => {
             <EcosystemPerks />
             <ComparisonSection />
             <ChoosingTips />
+            <MobileCTASection />
           </div>
         </div>
       </div>
