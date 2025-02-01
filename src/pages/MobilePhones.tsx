@@ -10,6 +10,8 @@ import { ModelVariations } from "@/components/mobile/ModelVariations";
 import { LatestFeatures } from "@/components/mobile/LatestFeatures";
 import { ContractOptions } from "@/components/mobile/ContractOptions";
 import { EcosystemPerks } from "@/components/mobile/EcosystemPerks";
+import { ComparisonSection } from "@/components/mobile/ComparisonSection";
+import { ChoosingTips } from "@/components/mobile/ChoosingTips";
 
 const MobilePhones = () => {
   const [searchParams] = useSearchParams();
@@ -38,6 +40,8 @@ const MobilePhones = () => {
             <LatestFeatures />
             <ContractOptions />
             <EcosystemPerks />
+            <ComparisonSection />
+            <ChoosingTips />
           </div>
         </div>
       </div>
