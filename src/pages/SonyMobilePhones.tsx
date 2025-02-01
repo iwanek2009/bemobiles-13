@@ -23,8 +23,8 @@ const SonyMobilePhones = () => {
       <TheMobile
         title="Sony phone deals."
         description="Experience premium Sony Xperia smartphones with professional-grade cameras and stunning displays."
-        heroImage="/lovable-uploads/3b3308dc-fdc1-4c2e-8738-1ffd646e9c67.png"
-        imageAlt="Three Sony Xperia smartphones showcasing their professional camera systems"
+        heroImage="/lovable-uploads/853d1592-1bf1-4803-a5d2-37a75f347fad.png"
+        imageAlt="Three Sony Xperia smartphones showcasing their professional ZEISS camera systems in black, green, and silver colors"
         filter={{ brands: [54] }}
         imageProps={{
           loading: "eager",
