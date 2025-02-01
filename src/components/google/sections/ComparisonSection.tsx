@@ -1,5 +1,6 @@
 import React from 'react';
 import { PageText } from "@/components/ui/page-text";
+import { Link } from "react-router-dom";
 
 export const ComparisonSection = () => {
   return (
@@ -28,7 +29,7 @@ export const ComparisonSection = () => {
                 </li>
                 <li className="flex gap-2">
                   <span className="font-semibold text-primary">Consideration:</span>
-                  <span>iPhones offer a tightly integrated ecosystem with iOS, but Pixel stands out with faster, more frequent updates and advanced AI capabilities.</span>
+                  <span><Link to="/iphone-mobile-phones" className="text-primary hover:underline">iPhones offer</Link> a tightly integrated ecosystem with iOS, but Pixel stands out with faster, more frequent updates and advanced AI capabilities.</span>
                 </li>
               </ul>
             </div>
