@@ -23,9 +23,13 @@ const SonyMobilePhones = () => {
       <TheMobile
         title="Sony phone deals."
         description="Experience premium Sony Xperia smartphones with professional-grade cameras and stunning displays."
-        heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
-        imageAlt="Sony Xperia smartphone showcasing professional camera features"
+        heroImage="/lovable-uploads/3b3308dc-fdc1-4c2e-8738-1ffd646e9c67.png"
+        imageAlt="Three Sony Xperia smartphones showcasing their professional camera systems"
         filter={{ brands: [54] }}
+        imageProps={{
+          loading: "eager",
+          fetchPriority: "high"
+        }}
       />
       
       <div className="container mx-auto px-4 py-12 max-w-[800px]">
