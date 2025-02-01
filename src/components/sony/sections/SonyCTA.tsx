@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { PageText } from "@/components/ui/page-text";
+import { Link } from "react-router-dom";
 
 export const SonyCTA = () => {
   const scrollToWidget = () => {
@@ -12,7 +13,7 @@ export const SonyCTA = () => {
   return (
     <section className="space-y-6 bg-secondary/50 rounded-lg p-8">
       <PageText>
-        Sony mobile phone contract deals in the UK are more than just a way to finance your next smartphone—they're an invitation to a richer, more immersive tech experience. With pro-grade displays, innovative camera systems, and a host of ecosystem perks, Sony offers a compelling alternative to the more familiar iPhone, Pixel, and Galaxy options.
+        Sony mobile phone contract deals in the UK are more than just a way to finance your next smartphone—they're an invitation to a richer, more immersive tech experience. With pro-grade displays, innovative camera systems, and a host of ecosystem perks, Sony offers a compelling alternative to the more familiar <Link to="/iphone-mobile-phones" className="text-primary hover:underline">iPhone</Link>, <Link to="/google-mobile-phones" className="text-primary hover:underline">Pixel</Link>, and <Link to="/samsung-mobile-phones" className="text-primary hover:underline">Galaxy</Link> options.
       </PageText>
 
       <PageText>
