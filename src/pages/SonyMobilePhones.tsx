@@ -142,6 +142,84 @@ const SonyMobilePhones = () => {
               These features aren't just buzzwords—they directly improve your daily use, from enhancing your viewing experience to ensuring you capture every important moment with clarity.
             </PageText>
           </section>
+
+          <section className="mt-12">
+            <PageText variant="h2">Contract Options & Carrier Deals in the UK</PageText>
+            <PageText>
+              One of the best parts about choosing a Sony phone in the UK is the variety of contract options available. Here's what to look for:
+            </PageText>
+            
+            <div className="space-y-6 mt-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <PageText variant="h3">Flexible Payment Plans</PageText>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Spread the cost over 24 months or more.</li>
+                  <li>Enjoy manageable monthly payments that fit your budget.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <PageText variant="h3">Trade-In Offers</PageText>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Upgrade your device while reducing the overall cost.</li>
+                  <li>Check out programs that give you credit for your old phone.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <PageText variant="h3">Bundle Promotions</PageText>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Combine your phone with accessories like wireless earbuds or smartwatches.</li>
+                  <li>Look for family plans that offer savings across multiple lines.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <PageText variant="h3">Carrier Exclusives</PageText>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Certain deals might include perks like additional data, free streaming subscriptions, or exclusive software features.</li>
+                </ul>
+                <PageText className="mt-4">
+                  Be sure to compare offers from popular UK carriers such as EE, Vodafone, O2, and Three, as many often have exclusive promotions tailored for Sony devices.
+                </PageText>
+              </div>
+            </div>
+          </section>
+
+          <section className="mt-12">
+            <PageText variant="h2">Ecosystem Perks & Integration</PageText>
+            <PageText>
+              While Apple's seamless iOS and Google's AI-driven ecosystem get a lot of attention, Sony brings its own set of ecosystem benefits:
+            </PageText>
+
+            <div className="space-y-6 mt-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <PageText variant="h3">Integration with Sony Entertainment</PageText>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Sync your phone with Sony TVs, audio systems, and even PlayStation consoles.</li>
+                  <li>Enjoy a unified multimedia experience whether you're streaming or gaming.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <PageText variant="h3">Accessory Compatibility</PageText>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Pair your Xperia with high-quality headphones, smartwatches, and cameras designed to work in harmony with Sony's hardware.</li>
+                  <li>Benefit from features like remote control for your Sony camera or a dedicated gaming mode.</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <PageText variant="h3">Regular Software Updates</PageText>
+                <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                  <li>Stay current with the latest Android features and security enhancements, keeping your device safe and efficient.</li>
+                </ul>
+                <PageText className="mt-4">
+                  These ecosystem perks make the transition into the Sony world smoother and more enjoyable, especially if you're already a fan of Sony's other tech products.
+                </PageText>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
       
