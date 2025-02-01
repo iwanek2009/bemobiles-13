@@ -1,5 +1,6 @@
 import React from 'react';
 import { PageText } from "@/components/ui/page-text";
+import { Link } from "react-router-dom";
 
 export const GoogleBenefitsSection = () => {
   return (
@@ -12,7 +13,7 @@ export const GoogleBenefitsSection = () => {
           
           <div className="prose prose-lg max-w-none text-gray-600 mb-12">
             <p>
-              If you're exploring the latest smartphone contracts in the UK, it's time to consider what Google has in store. Known for its AI-driven features and clean, intuitive design, Google's Pixel phones offer a fresh alternative to other big names like Apple and Samsung. Whether you're a photography enthusiast, a productivity pro, or simply after a user-friendly experience, Google's mobile phone contracts deliver flexibility, value, and innovation. Let's dive into the world of Google mobile phone deals and see how these offers can help you upgrade your tech life.
+              If you're exploring the latest smartphone contracts in the UK, it's time to consider what Google has in store. Known for its AI-driven features and clean, intuitive design, Google's Pixel phones offer a fresh alternative to other big names like <Link to="/iphone-mobile-phones" className="text-primary hover:underline">Apple</Link> and <Link to="/samsung-mobile-phones" className="text-primary hover:underline">Samsung</Link>. Whether you're a photography enthusiast, a productivity pro, or simply after a user-friendly experience, Google's mobile phone contracts deliver flexibility, value, and innovation. Let's dive into the world of Google mobile phone deals and see how these offers can help you upgrade your tech life.
             </p>
           </div>
         </div>
