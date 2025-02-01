@@ -22,7 +22,12 @@ export const MobileCTASection = () => {
           <Button 
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 h-auto text-base"
-            onClick={() => window.location.href = '#phones-section'}
+            onClick={() => {
+              const widget = document.querySelector('[data-stickee-widget-id]');
+              if (widget) {
+                widget.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             Explore Mobile Phone Deals
             <ArrowRight className="ml-2" />
