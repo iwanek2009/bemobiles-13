@@ -8,6 +8,7 @@ import { SonyContracts } from "@/components/sony/sections/SonyContracts";
 import { SonyEcosystem } from "@/components/sony/sections/SonyEcosystem";
 import { SonyComparison } from "@/components/sony/sections/SonyComparison";
 import { SonyChoosingTips } from "@/components/sony/sections/SonyChoosingTips";
+import { SonyCTA } from "@/components/sony/sections/SonyCTA";
 
 const SonyMobilePhones = () => {
   return (
@@ -30,6 +31,7 @@ const SonyMobilePhones = () => {
           <SonyEcosystem />
           <SonyComparison />
           <SonyChoosingTips />
+          <SonyCTA />
         </div>
       </div>
       
