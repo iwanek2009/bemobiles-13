@@ -31,7 +31,7 @@ const SonyMobilePhones = () => {
           <section className="bg-secondary/50 rounded-lg p-8">
             <PageText variant="h3">A Friendly Introduction to Sony's World</PageText>
             <PageText>
-              Imagine having a phone that not only captures your best moments in crystal-clear detail but also offers a display so sharp it makes your favourite movies pop. That's the promise of Sony's Xperia range. Whether you're a creative professional or just love high-quality visuals and sound, Sony's smartphone contracts can be tailored to suit your lifestyle. And if you're used to comparing iPhone deals, Pixel deals, and Galaxy deals, you might find that Sony offers a refreshing alternative with its own unique advantages.
+              Imagine having a phone that not only captures your best moments in crystal-clear detail but also offers a display so sharp it makes your favourite movies pop. That's the promise of Sony's Xperia range. Whether you're a creative professional or just love high-quality visuals and sound, Sony's smartphone contracts can be tailored to suit your lifestyle. And if you're used to comparing <Link to="/iphone-mobile-phones" className="text-primary hover:underline">iPhone deals</Link>, <Link to="/google-mobile-phones" className="text-primary hover:underline">Pixel deals</Link>, and <Link to="/samsung-mobile-phones" className="text-primary hover:underline">Galaxy deals</Link>, you might find that Sony offers a refreshing alternative with its own unique advantages.
             </PageText>
           </section>
         </div>
