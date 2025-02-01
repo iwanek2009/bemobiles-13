@@ -15,10 +15,6 @@ export const GoogleBenefitsSection = () => {
               If you're exploring the latest smartphone contracts in the UK, it's time to consider what Google has in store. Known for its AI-driven features and clean, intuitive design, Google's Pixel phones offer a fresh alternative to other big names like Apple and Samsung. Whether you're a photography enthusiast, a productivity pro, or simply after a user-friendly experience, Google's mobile phone contracts deliver flexibility, value, and innovation. Let's dive into the world of Google mobile phone deals and see how these offers can help you upgrade your tech life.
             </p>
           </div>
-
-          <PageText variant="h3" className="text-center mb-8">
-            Three Key Benefits at a Glance
-          </PageText>
         </div>
       </div>
     </section>
