@@ -180,7 +180,11 @@ const SonyMobilePhones = () => {
                   <li>Certain deals might include perks like additional data, free streaming subscriptions, or exclusive software features.</li>
                 </ul>
                 <PageText className="mt-4">
-                  Be sure to compare offers from popular UK carriers such as EE, Vodafone, O2, and Three, as many often have exclusive promotions tailored for Sony devices.
+                  Be sure to compare offers from popular UK carriers such as{" "}
+                  <a href="https://ee.co.uk/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">EE</a>,{" "}
+                  <a href="https://www.vodafone.co.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Vodafone</a>,{" "}
+                  <a href="https://www.o2.co.uk/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">O2</a>, and{" "}
+                  <a href="https://www.three.co.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Three</a>, as many often have exclusive promotions tailored for Sony devices.
                 </PageText>
               </div>
             </div>
