@@ -42,8 +42,8 @@ export const TheMobile = ({
             </div>
             <div className="relative h-[300px] md:h-[320px] w-full md:mt-5">
               <img
-                src={heroImage}
-                alt={imageAlt}
+                src="/lovable-uploads/78999e0d-89a7-4dbe-bf99-ac223a109be6.png"
+                alt="Sony Xperia smartphones lineup showing professional camera systems"
                 className="absolute inset-0 w-full h-full object-contain"
                 {...imageProps}
               />
