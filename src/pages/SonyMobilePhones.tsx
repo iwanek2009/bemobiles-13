@@ -9,8 +9,14 @@ import { SonyEcosystem } from "@/components/sony/sections/SonyEcosystem";
 import { SonyComparison } from "@/components/sony/sections/SonyComparison";
 import { SonyChoosingTips } from "@/components/sony/sections/SonyChoosingTips";
 import { SonyCTA } from "@/components/sony/sections/SonyCTA";
+import { useSEO } from "@/hooks/useSEO";
 
 const SonyMobilePhones = () => {
+  useSEO({
+    title: "Sony Mobile Phone Contract Deals UK | Best Sony Xperia Offers & Plans",
+    description: "Discover unbeatable Sony mobile phone contract deals in the UK. Explore the latest Sony Xperia offers, exclusive trade-in deals, and flexible payment plans to upgrade your smartphone experience today!"
+  });
+
   return (
     <>
       <Header />
