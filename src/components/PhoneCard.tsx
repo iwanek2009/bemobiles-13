@@ -18,6 +18,14 @@ export const PhoneCard = ({
   colors,
   brand,
 }: PhoneCardProps) => {
+  const handleFilteredDeals = () => {
+    // Only handle iPhone 16 for now as requested
+    if (name === "iPhone 16") {
+      window.scrollTo(0, 0);
+      window.location.href = `/mobile-phones?filters={"families":[1968]}`;
+    }
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl">
       <div className="md:p-6 p-4">
@@ -56,6 +64,7 @@ export const PhoneCard = ({
 
             <div className="flex justify-center">
               <Button 
+                onClick={handleFilteredDeals}
                 className="w-3/4"
                 variant="default"
               >
