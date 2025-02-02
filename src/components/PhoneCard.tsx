@@ -68,6 +68,15 @@ export const PhoneCard = ({
           }
         };
         break;
+      case "Galaxy 23FE":
+        filterObj = { 
+          families: [1916],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
+        break;
       default:
         return;
     }
