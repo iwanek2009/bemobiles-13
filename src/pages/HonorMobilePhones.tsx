@@ -17,7 +17,7 @@ const HonorMobilePhones = () => {
         description="Innovative smartphones combining style with cutting-edge technology at competitive prices."
         heroImage="/lovable-uploads/df83f3e3-20c0-4ec8-86d9-4bdde97b863d.png"
         imageAlt="Honor smartphone showcasing premium design and features"
-        filter={{ brands: [20] }}
+        filter={{ brands: [72] }}
         imageProps={{
           loading: "eager",
           fetchPriority: "high",
