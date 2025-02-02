@@ -8,8 +8,8 @@ import { HonorCTASection } from "@/components/honor/sections/HonorCTASection";
 
 const HonorMobilePhones = () => {
   useSEO({
-    title: "Honor Mobile Phone Deals: Compare Latest Honor Phones & Plans",
-    description: "Find the best Honor phone deals and contracts. Compare prices on the latest Honor smartphones and get exclusive offers on monthly plans."
+    title: "Honor Mobile Contract Deals | Best UK Honor Phone Offers",
+    description: "Discover unbeatable Honor mobile contract deals in the UK! Enjoy affordable payment plans, trade-in offers, and bundle promotions on the latest Honor phones at bemobiles.com."
   });
 
   return (
