@@ -10,7 +10,6 @@ interface PhoneDeal {
   upfrontCost: number;
   colors: string[];
   brand: string;
-  filterId?: number;
 }
 
 const deals: PhoneDeal[] = [
@@ -30,8 +29,7 @@ const deals: PhoneDeal[] = [
     monthlyPrice: 33.00,
     upfrontCost: 0,
     colors: ["black", "blue", "green", "pink", "yellow"],
-    brand: "Apple",
-    filterId: 1890
+    brand: "Apple"
   },
   {
     id: 3,
@@ -40,8 +38,7 @@ const deals: PhoneDeal[] = [
     monthlyPrice: 42.99,
     upfrontCost: 0,
     colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],
-    brand: "Apple",
-    filterId: 1970
+    brand: "Apple"
   },
   {
     id: 4,
@@ -50,8 +47,7 @@ const deals: PhoneDeal[] = [
     monthlyPrice: 55.99,
     upfrontCost: 0,
     colors: ["#F5F5F7", "#E3E3E0", "#DBD3C8", "#4A4A4A"],
-    brand: "Apple",
-    filterId: 1971
+    brand: "Apple"
   },
   {
     id: 5,
@@ -60,8 +56,7 @@ const deals: PhoneDeal[] = [
     monthlyPrice: 13.99,
     upfrontCost: 0,
     colors: ["#000000", "#FDE1D3", "#F2FCE2", "#9b87f5"],
-    brand: "Samsung",
-    filterId: 1760
+    brand: "Samsung"
   },
   {
     id: 6,
@@ -70,8 +65,7 @@ const deals: PhoneDeal[] = [
     monthlyPrice: 25.00,
     upfrontCost: 0,
     colors: ["#000000", "#FDE1D3", "#F2FCE2", "#9b87f5"],
-    brand: "Samsung",
-    filterId: 1916
+    brand: "Samsung"
   },
   {
     id: 7,
@@ -80,8 +74,7 @@ const deals: PhoneDeal[] = [
     monthlyPrice: 31.00,
     upfrontCost: 0,
     colors: ["#9b87f5", "#000000", "#8E9196", "#FEF7CD"],
-    brand: "Samsung",
-    filterId: 1904
+    brand: "Samsung"
   },
   {
     id: 8,

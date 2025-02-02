@@ -9,7 +9,6 @@ interface PhoneCardProps {
   upfrontCost: number;
   colors: string[];
   brand: string;
-  filterId?: number;
 }
 
 export const PhoneCard = ({
@@ -18,44 +17,7 @@ export const PhoneCard = ({
   monthlyPrice,
   colors,
   brand,
-  filterId,
 }: PhoneCardProps) => {
-  const getFilterId = (brand: string, model: string) => {
-    // If a specific filterId is provided, use it
-    if (filterId !== undefined) return filterId;
-    
-    // Otherwise use the default mapping
-    const modelMap: { [key: string]: number } = {
-      'iPhone 15': 1890,
-      'iPhone 16': 1968,
-      'iPhone 16 Pro': 1970,
-      'iPhone 16 Pro Max': 1971,
-      'Galaxy A53': 1760,
-      'Galaxy 23FE': 1916,
-      'Galaxy S24': 1904,
-      'Galaxy S24 Ultra': 1906
-    };
-
-    return modelMap[model] || 0;
-  };
-
-  const handleFilteredDeals = (filterId: number) => {
-    // Scroll to top before navigating
-    window.scrollTo(0, 0);
-    
-    // Determine the correct base URL based on brand
-    let baseUrl = '/mobile-phones';
-    if (brand === 'Apple') {
-      baseUrl = '/iphone-mobile-phones';
-    } else if (brand === 'Samsung') {
-      baseUrl = '/samsung-mobile-phones';
-    } else if (brand === 'Google') {
-      baseUrl = '/google-mobile-phones';
-    }
-    
-    window.location.href = `${baseUrl}?filter=${filterId}`;
-  };
-
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl">
       <div className="md:p-6 p-4">
@@ -94,7 +56,6 @@ export const PhoneCard = ({
 
             <div className="flex justify-center">
               <Button 
-                onClick={() => handleFilteredDeals(getFilterId(brand, name))} 
                 className="w-3/4"
                 variant="default"
               >
