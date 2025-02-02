@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
+import { NoUpfrontContent } from "@/components/mobile/NoUpfrontContent";
 import { useSEO } from "@/hooks/useSEO";
 
 const NoUpfrontCostPhones = () => {
@@ -17,7 +18,7 @@ const NoUpfrontCostPhones = () => {
         description="Get the latest smartphones with £0 upfront cost. Compare deals from all major UK networks."
         heroImage="/lovable-uploads/836ea50b-7a40-4377-b225-2c59bacd6058.png"
         imageAlt="Latest smartphones available with no upfront cost deals"
-        filter={{ families: [1968, 1969, 1970] }} // Filter for phones with no upfront cost
+        filter={{ families: [1968, 1969, 1970] }}
         imageProps={{
           loading: "eager",
           fetchPriority: "high",
@@ -26,6 +27,7 @@ const NoUpfrontCostPhones = () => {
           decoding: "async"
         }}
       />
+      <NoUpfrontContent />
       <Footer />
     </>
   );
