@@ -23,8 +23,8 @@ const NoUpfrontCostPhones = () => {
       <TheMobile
         title="No upfront cost phone deals."
         description="Get the latest smartphones with £0 upfront cost. Compare deals from all major UK networks."
-        heroImage="/lovable-uploads/836ea50b-7a40-4377-b225-2c59bacd6058.png"
-        imageAlt="Latest smartphones available with no upfront cost deals"
+        heroImage="/lovable-uploads/db93ae0b-0115-490e-85e2-f244c441730a.png"
+        imageAlt="Latest iPhone models showing Pro and regular versions with advanced camera system"
         filter={{ families: [1968, 1969, 1970] }}
         imageProps={{
           loading: "eager",
