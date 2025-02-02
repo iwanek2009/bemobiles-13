@@ -16,7 +16,7 @@ const GoogleMobilePhones = () => {
       <Header />
       <GoogleHeroSection />
       <div id="phones-section">
-        <StickeeWidget filter={{ brands: [7, 15] }} />
+        <StickeeWidget filter={{ brands: [7, 15] }} sort="POPULARITY" />
       </div>
       <GoogleBenefitsSection />
       <GoogleComparisonSection />
