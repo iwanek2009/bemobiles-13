@@ -251,6 +251,60 @@ const HonorMobilePhones = () => {
           </div>
         </div>
       </section>
+
+      <section className="bg-gradient-to-b from-white to-blue-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PageText variant="h2" className="text-center mb-8">
+              Tips for Choosing the Right Model
+            </PageText>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-gray-100 space-y-6">
+              <PageText>
+                Picking the right smartphone can be as personal as choosing a favourite coffee blend. Here are some handy tips to help you decide:
+              </PageText>
+
+              <div className="space-y-4">
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Budget vs. High-End:
+                  </PageText>
+                  <PageText>
+                    Determine whether you need a basic phone for everyday tasks or a high-end model for gaming, photography, and multitasking.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Performance Needs:
+                  </PageText>
+                  <PageText>
+                    Consider your primary use—if you're a heavy multitasker or a photography enthusiast, investing in a Pro model might be the way to go.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Size and Comfort:
+                  </PageText>
+                  <PageText>
+                    Make sure the phone feels good in your hand. Whether you prefer a compact design or a larger screen for media consumption, comfort is key.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Future-Proofing with Upgrade Programs:
+                  </PageText>
+                  <PageText>
+                    Look for contract deals that offer upgrade options, so you can easily transition to the latest model when it hits the market.
+                  </PageText>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
       <Footer />
     </>
