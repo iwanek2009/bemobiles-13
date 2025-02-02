@@ -26,6 +26,9 @@ export const PhoneCard = ({
       case "iPhone 16":
         filterObj = { families: [1968] };
         break;
+      case "iPhone 16 Pro":
+        filterObj = { families: [1970] };
+        break;
       case "iPhone 15":
         filterObj = { families: [1890] };
         break;
