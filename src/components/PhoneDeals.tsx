@@ -80,7 +80,7 @@ const deals: PhoneDeal[] = [
     id: 8,
     name: "Galaxy S24 Ultra",
     image: "/lovable-uploads/c2180d62-3e5e-4cba-a6e4-0ae0544d3d85.png",
-    monthlyPrice: 30.00,
+    monthlyPrice: 47.50,
     upfrontCost: 0,
     colors: ["#9b87f5", "#000000", "#8E9196", "#FEF7CD"],
     brand: "Samsung"
