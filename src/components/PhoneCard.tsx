@@ -22,7 +22,7 @@ export const PhoneCard = ({
     // Only handle iPhone 16 for now as requested
     if (name === "iPhone 16") {
       window.scrollTo(0, 0);
-      window.location.href = `/mobile-phones?filters={"families":[1968]}`;
+      window.location.href = `/mobile-phones?filter={"families":[1968]}`;
     }
   };
 
