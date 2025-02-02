@@ -32,6 +32,7 @@ const NoUpfrontCostPhones = () => {
             max: 0
           }
         }}
+        sort="POPULARITY"
         imageProps={{
           loading: "eager",
           fetchPriority: "high",
