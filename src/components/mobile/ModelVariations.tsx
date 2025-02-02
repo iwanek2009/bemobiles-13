@@ -9,7 +9,7 @@ export const ModelVariations = () => {
           Breaking Down Model Variations
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          Smartphones come in various models to suit different needs. Here's a quick look at what to expect from popular brands:
+          When choosing a new phone, it's important to know what each model offers:
         </p>
 
         <div className="space-y-8">

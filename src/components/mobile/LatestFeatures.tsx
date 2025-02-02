@@ -9,7 +9,7 @@ export const LatestFeatures = () => {
           Latest Releases & Best Features
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          Smartphone manufacturers are constantly innovating. Here are some of the latest highlights that make each brand stand out:
+          Stay ahead of the curve with the hottest new releases:
         </p>
 
         <div className="space-y-8">

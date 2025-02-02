@@ -2,6 +2,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
 import { NoUpfrontContent } from "@/components/mobile/NoUpfrontContent";
+import { ModelVariations } from "@/components/mobile/ModelVariations";
+import { LatestFeatures } from "@/components/mobile/LatestFeatures";
 import { useSEO } from "@/hooks/useSEO";
 
 const NoUpfrontCostPhones = () => {
@@ -28,6 +30,8 @@ const NoUpfrontCostPhones = () => {
         }}
       />
       <NoUpfrontContent />
+      <ModelVariations />
+      <LatestFeatures />
       <Footer />
     </>
   );
