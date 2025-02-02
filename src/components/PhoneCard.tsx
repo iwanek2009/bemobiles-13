@@ -77,6 +77,15 @@ export const PhoneCard = ({
           }
         };
         break;
+      case "Galaxy S24":
+        filterObj = { 
+          families: [1904],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
+        break;
       default:
         return;
     }
