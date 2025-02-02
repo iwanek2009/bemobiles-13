@@ -19,12 +19,22 @@ export const PhoneCard = ({
   brand,
 }: PhoneCardProps) => {
   const handleFilteredDeals = () => {
-    // Only handle iPhone 16 for now as requested
-    if (name === "iPhone 16") {
-      const filterObj = { families: [1968] };
-      const encodedFilter = encodeURIComponent(JSON.stringify(filterObj));
-      window.location.href = `/mobile-phones?filter=${encodedFilter}`;
+    let filterObj;
+    
+    // Handle filters for different iPhone models
+    switch (name) {
+      case "iPhone 16":
+        filterObj = { families: [1968] };
+        break;
+      case "iPhone 15":
+        filterObj = { families: [1890] };
+        break;
+      default:
+        return;
     }
+
+    const encodedFilter = encodeURIComponent(JSON.stringify(filterObj));
+    window.location.href = `/mobile-phones?filter=${encodedFilter}`;
   };
 
   return (
