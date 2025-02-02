@@ -26,21 +26,34 @@ export const PhoneCard = ({
     
     // Otherwise use the default mapping
     const modelMap: { [key: string]: number } = {
+      'iPhone 15': 1890,
       'iPhone 16': 1968,
-      'iPhone 15': 1971,
-      'iPhone 16 Pro': 1972,
-      'iPhone 16 Pro Max': 1973,
+      'iPhone 16 Pro': 1970,
+      'iPhone 16 Pro Max': 1971,
       'Galaxy A53': 1760,
       'Galaxy 23FE': 1916,
       'Galaxy S24': 1904,
       'Galaxy S24 Ultra': 1906
     };
 
-    return modelMap[model] || (brand === "Apple" ? 1968 : brand === "Samsung" ? 1969 : brand === "Google" ? 1970 : 0);
+    return modelMap[model] || 0;
   };
 
   const handleFilteredDeals = (filterId: number) => {
-    window.location.href = `/mobile-phones?filter=${filterId}`;
+    // Scroll to top before navigating
+    window.scrollTo(0, 0);
+    
+    // Determine the correct base URL based on brand
+    let baseUrl = '/mobile-phones';
+    if (brand === 'Apple') {
+      baseUrl = '/iphone-mobile-phones';
+    } else if (brand === 'Samsung') {
+      baseUrl = '/samsung-mobile-phones';
+    } else if (brand === 'Google') {
+      baseUrl = '/google-mobile-phones';
+    }
+    
+    window.location.href = `${baseUrl}?filter=${filterId}`;
   };
 
   return (
