@@ -5,9 +5,10 @@ interface StickeeWidgetProps {
     families?: number[];
     brands?: number[];
   };
+  basic?: boolean;
 }
 
-export const StickeeWidget = ({ filter }: StickeeWidgetProps) => {
+export const StickeeWidget = ({ filter, basic }: StickeeWidgetProps) => {
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
@@ -44,6 +45,16 @@ export const StickeeWidget = ({ filter }: StickeeWidgetProps) => {
   if (hasError) {
     console.error('Widget in error state');
     return null;
+  }
+
+  if (basic) {
+    return (
+      <div className="w-full">
+        <div data-stickee-widget-id="smartfony-90">
+          Loading...
+        </div>
+      </div>
+    );
   }
 
   return (

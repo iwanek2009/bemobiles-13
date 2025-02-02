@@ -9,6 +9,7 @@ interface TheMobileProps {
     families?: number[];
     brands?: number[];
   };
+  basic?: boolean;
   imageProps?: {
     loading?: "eager" | "lazy";
     fetchPriority?: "high" | "low" | "auto";
@@ -24,6 +25,7 @@ export const TheMobile = ({
   heroImage,
   imageAlt,
   filter,
+  basic,
   imageProps
 }: TheMobileProps) => {
   return (
@@ -53,7 +55,7 @@ export const TheMobile = ({
       </div>
 
       <div id="phones-section">
-        <StickeeWidget filter={filter} />
+        <StickeeWidget filter={filter} basic={basic} />
       </div>
     </div>
   );
