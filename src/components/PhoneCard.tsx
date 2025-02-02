@@ -51,7 +51,13 @@ export const PhoneCard = ({
         };
         break;
       case "iPhone 15":
-        filterObj = { families: [1890] };
+        filterObj = { 
+          families: [1890],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
         break;
       default:
         return;
