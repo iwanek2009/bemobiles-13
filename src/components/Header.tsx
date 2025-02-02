@@ -73,6 +73,12 @@ export const Header = () => {
                       >
                         Honor
                       </Link>
+                      <Link 
+                        to="/mobile-phones/no-upfront-cost" 
+                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors text-base"
+                      >
+                        No Upfront Cost
+                      </Link>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -102,6 +108,7 @@ export const Header = () => {
                     <Link to="/google-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Google</Link>
                     <Link to="/sony-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Sony</Link>
                     <Link to="/honor-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Honor</Link>
+                    <Link to="/mobile-phones/no-upfront-cost" className="block text-black hover:text-primary transition-colors text-base">No Upfront Cost</Link>
                   </div>
                 </div>
                 <Link to="#" className="text-black hover:text-primary transition-colors text-lg font-medium">Sim Only</Link>
