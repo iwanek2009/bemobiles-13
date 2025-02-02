@@ -4,6 +4,7 @@ import { TheMobile } from "@/components/templates/TheMobile";
 import { PageText } from "@/components/ui/page-text";
 import { useSEO } from "@/hooks/useSEO";
 import { Link } from "react-router-dom";
+import { HonorCTASection } from "@/components/honor/sections/HonorCTASection";
 
 const HonorMobilePhones = () => {
   useSEO({
@@ -305,6 +306,8 @@ const HonorMobilePhones = () => {
           </div>
         </div>
       </section>
+
+      <HonorCTASection />
       
       <Footer />
     </>
