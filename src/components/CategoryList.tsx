@@ -36,6 +36,9 @@ export const CategoryList = () => {
                     key={model.id}
                     to={getModelLink(manufacturer.name, model.id)}
                     className="block"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
                   >
                     <div className="flex items-center justify-between p-2 hover:bg-accent rounded-lg transition-colors">
                       <div>
