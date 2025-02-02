@@ -20,7 +20,7 @@ export const manufacturers: Manufacturer[] = [
           battery: "Up to 20 hours video playback"
         },
         price: {
-          monthly: 45.00,
+          monthly: 41.00,
           upfront: 199
         },
         releaseDate: "2024-09-20",
