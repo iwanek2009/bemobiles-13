@@ -13,12 +13,24 @@ import { EcosystemPerks } from "@/components/mobile/EcosystemPerks";
 import { ComparisonSection } from "@/components/mobile/ComparisonSection";
 import { ChoosingTips } from "@/components/mobile/ChoosingTips";
 import { MobileCTASection } from "@/components/mobile/MobileCTASection";
+import { useEffect } from "react";
 
 const MobilePhones = () => {
   const [searchParams] = useSearchParams();
   const filterParam = searchParams.get('filter');
   
-  const filter = filterParam ? { families: [Number(filterParam)] } : undefined;
+  let filter;
+  try {
+    filter = filterParam ? JSON.parse(decodeURIComponent(filterParam)) : undefined;
+  } catch (e) {
+    console.error('Error parsing filter:', e);
+    filter = undefined;
+  }
+
+  useEffect(() => {
+    // Log the filter to verify it's being parsed correctly
+    console.log('Current filter:', filter);
+  }, [filter]);
 
   useSEO({
     title: "Mobile Phone Deals & Contracts | Best UK Phone Deals",
@@ -29,7 +41,7 @@ const MobilePhones = () => {
     <div className="min-h-screen bg-gray-50">
       <Header />
       <MobileHeroSection />
-      <StickeeWidget basic sort="POPULARITY" />
+      <StickeeWidget basic sort="POPULARITY" filter={filter} />
 
       {/* Content Sections */}
       <div className="bg-white py-16">
