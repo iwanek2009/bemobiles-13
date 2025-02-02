@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
+import { PageText } from "@/components/ui/page-text";
 import { useSEO } from "@/hooks/useSEO";
 
 const HonorMobilePhones = () => {
@@ -26,6 +27,26 @@ const HonorMobilePhones = () => {
           decoding: "async"
         }}
       />
+      
+      <section className="bg-gradient-to-b from-white to-blue-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PageText variant="h2" className="text-center mb-8">
+              Best Honor Mobile Contract Deals — UK's Best Honor Phone Offers
+            </PageText>
+            
+            <PageText className="text-gray-600 leading-relaxed space-y-6">
+              <p>
+                With the speed at which the smartphone world continues to evolve, finding the best deals and stays up to date can be as tricky as ever. Whether you're a die-hard iOS user, a Google Pixel lover or a Samsung fan, there's something for you out there.
+              </p>
+              <p>
+                But have you ever tried picking one of Honor phones? With their on-trend specs and attractive pricing, Honor is making a name for itself in the UK. In this handy guide, we're wading into the best Honor mobile contract deals out there on bemobiles.com, to get guides on the ideal device and contract plan that suits your lifestyle.
+              </p>
+            </PageText>
+          </div>
+        </div>
+      </section>
+      
       <Footer />
     </>
   );
