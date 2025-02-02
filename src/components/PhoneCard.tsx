@@ -21,7 +21,7 @@ export const PhoneCard = ({
   const handleFilteredDeals = () => {
     let filterObj;
     
-    // Handle filters for different iPhone models
+    // Handle filters for different phone models
     switch (name) {
       case "iPhone 16":
         filterObj = { 
@@ -53,6 +53,15 @@ export const PhoneCard = ({
       case "iPhone 15":
         filterObj = { 
           families: [1890],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
+        break;
+      case "Galaxy A53":
+        filterObj = { 
+          families: [1760],
           upfront_price: {
             min: 0,
             max: 0
