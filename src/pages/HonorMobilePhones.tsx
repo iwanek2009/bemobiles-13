@@ -48,7 +48,7 @@ const HonorMobilePhones = () => {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-blue-50 to-white py-16">
+      <section className="bg-gradient-to-b from-white to-blue-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <PageText variant="h2" className="text-center mb-8">
@@ -114,6 +114,138 @@ const HonorMobilePhones = () => {
                     </PageText>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-b from-white to-blue-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PageText variant="h2" className="text-center mb-8">
+              Contract Options & Carrier Deals
+            </PageText>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-gray-100 space-y-6 mb-12">
+              <PageText>
+                Getting a new phone shouldn't break the bank. That's why Honor's mobile contract deals are designed to offer flexibility and affordability:
+              </PageText>
+
+              <div className="space-y-4">
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Monthly Payment Plans:
+                  </PageText>
+                  <PageText>
+                    Spread the cost of your new Honor phone over manageable monthly installments—no need to pay the full price upfront.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Attractive Trade-In Offers:
+                  </PageText>
+                  <PageText>
+                    Upgrade your device and save money by trading in your old smartphone for credit towards your new Honor model.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Bundle Promotions:
+                  </PageText>
+                  <PageText>
+                    Look out for deals that combine your new phone with accessories like smartwatches and earbuds, giving you a complete tech package.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Family & Multi-Line Discounts:
+                  </PageText>
+                  <PageText>
+                    Great for families or groups, these plans let you enjoy excellent deals when you sign up multiple lines.
+                  </PageText>
+                </div>
+              </div>
+            </div>
+
+            <PageText variant="h2" className="text-center mb-8">
+              Ecosystem Perks
+            </PageText>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-gray-100 space-y-6 mb-12">
+              <PageText>
+                While Honor may be a relatively new player in the smartphone ecosystem, its offerings are rapidly evolving to compete with industry giants:
+              </PageText>
+
+              <div className="space-y-4">
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Seamless Integration with Smart Devices:
+                  </PageText>
+                  <PageText>
+                    Sync your Honor phone with compatible smartwatches, tablets, and even home devices for a truly connected experience.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Intuitive User Interface:
+                  </PageText>
+                  <PageText>
+                    Enjoy a clutter-free experience that makes everyday tasks like navigation, messaging, and multimedia consumption effortless.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Regular Software Updates:
+                  </PageText>
+                  <PageText>
+                    Stay secure and enjoy new features as Honor continues to roll out improvements and updates for its devices.
+                  </PageText>
+                </div>
+              </div>
+            </div>
+
+            <PageText variant="h2" className="text-center mb-8">
+              Comparisons & Competitors
+            </PageText>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-gray-100 space-y-6">
+              <PageText>
+                It's always useful to compare your options. Here's how Honor stacks up against some of the big names in the industry:
+              </PageText>
+
+              <div className="space-y-6">
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Versus iPhone:
+                  </PageText>
+                  <PageText>
+                    While <Link to="/iphone-mobile-phones" className="text-primary hover:underline">iPhones</Link> boast the iOS ecosystem with features like Face ID and Dynamic Island, Honor offers competitive performance at a more accessible price point—perfect if you're looking for value without compromise.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Versus Google Pixel:
+                  </PageText>
+                  <PageText>
+                    Both brands emphasize camera quality and AI-driven features. However, Honor often provides a broader range of contract deals and customizable options than <Link to="/google-mobile-phones" className="text-primary hover:underline">Google Pixel</Link>, giving you more bang for your buck.
+                  </PageText>
+                </div>
+
+                <div>
+                  <PageText variant="h3" className="text-lg font-medium mb-2">
+                    Versus Samsung Galaxy:
+                  </PageText>
+                  <PageText>
+                    Honor holds its own with impressive display technology and battery life, and if you're a fan of cutting-edge features like the S Pen or foldable designs from <Link to="/samsung-mobile-phones" className="text-primary hover:underline">Samsung</Link>, it's worth comparing both to see which fits your lifestyle best.
+                  </PageText>
+                </div>
               </div>
             </div>
           </div>
