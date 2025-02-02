@@ -13,8 +13,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 const NoUpfrontCostPhones = () => {
   useSEO({
-    title: "No Upfront Cost Phone Deals | £0 Deposit Mobile Contracts",
-    description: "Get the latest mobile phones with no upfront cost. Compare £0 deposit phone contracts from leading UK networks. Find your perfect deal today!"
+    title: "Mobile Phone Deals With No Upfront Cost – Unbeatable iPhone, Pixel & Galaxy Offers | BeMobiles.com",
+    description: "Upgrade your smartphone with zero upfront cost! Discover exclusive deals on iPhone, Pixel, and Galaxy, plus flexible payment plans, and carrier contracts designed for every lifestyle. Explore the latest offers on BeMobiles.com today!"
   });
 
   return (
