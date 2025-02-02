@@ -11,6 +11,7 @@ import SamsungMobilePhones from "./pages/SamsungMobilePhones";
 import GoogleMobilePhones from "./pages/GoogleMobilePhones";
 import SonyMobilePhones from "./pages/SonyMobilePhones";
 import IPhoneMobilePhones from "./pages/IPhoneMobilePhones";
+import HonorMobilePhones from "./pages/HonorMobilePhones";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +34,8 @@ const RouteWrapper = () => {
         '/samsung-mobile-phones',
         '/google-mobile-phones',
         '/sony-mobile-phones',
-        '/iphone-mobile-phones'
+        '/iphone-mobile-phones',
+        '/honor-mobile-phones'
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
@@ -58,6 +60,7 @@ const RouteWrapper = () => {
       <Route path="/google-mobile-phones" element={<GoogleMobilePhones />} />
       <Route path="/sony-mobile-phones" element={<SonyMobilePhones />} />
       <Route path="/iphone-mobile-phones" element={<IPhoneMobilePhones />} />
+      <Route path="/honor-mobile-phones" element={<HonorMobilePhones />} />
     </Routes>
   );
 };
