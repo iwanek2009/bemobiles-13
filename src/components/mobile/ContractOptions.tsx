@@ -7,38 +7,34 @@ export const ContractOptions = () => {
         <h2 className="text-3xl font-bold text-gray-900 mb-6">
           Contract Options & Carrier Deals
         </h2>
-        <div className="space-y-6">
-          <p className="text-lg text-gray-600 leading-relaxed">
-            When choosing a smartphone, your contract plan is just as important as the device itself. Here's what to look out for:
-          </p>
+        <p className="text-lg text-gray-600 leading-relaxed mb-8">
+          One of the biggest advantages of these deals is the ability to spread your payments over time. Here's what you need to know:
+        </p>
+        
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Monthly Payment Plans:</h3>
+            <p className="text-gray-600">Avoid a large upfront payment by paying a fixed amount each month.</p>
+          </div>
           
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Flexible Payment Plans:</h3>
-              <p className="text-gray-600">Choose from 24- or 36-month contracts to spread the cost comfortably over time.</p>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Trade-In Offers:</h3>
-              <p className="text-gray-600">Upgrade your current phone by trading it in for a discount on your new device, reducing overall expenses.</p>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Bundle Promotions:</h3>
-              <p className="text-gray-600">Look for deals that include additional accessories like smartwatches, wireless earbuds, or even data packages.</p>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Carrier Exclusives:</h3>
-              <p className="text-gray-600">
-                Major UK carriers such as{' '}
-                <a href="https://ee.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">EE</a>,{' '}
-                <a href="https://www.vodafone.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Vodafone</a>,{' '}
-                <a href="https://www.o2.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">O2</a>, and{' '}
-                <a href="https://www.three.co.uk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Three</a>{' '}
-                often offer exclusive perks—extra data, lower upfront costs, or even streaming subscriptions.
-              </p>
-            </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Trade-In Offers:</h3>
+            <p className="text-gray-600">Swap your old phone to lower your monthly bill even further.</p>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Carrier Deals:</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-600">
+              <li>Bundle promotions that may include accessories like smartwatches or earbuds.</li>
+              <li>Family plans that offer multi-line discounts.</li>
+              <li>Upgrade programs that let you switch to the latest model each year.</li>
+            </ul>
+          </div>
+          
+          <div className="bg-blue-50 p-6 rounded-xl mt-6">
+            <p className="text-blue-800 font-medium">
+              Quick tip: Always check if there are additional perks like insurance (think AppleCare+ or Samsung Care+) that can protect your new device.
+            </p>
           </div>
         </div>
       </CardContent>

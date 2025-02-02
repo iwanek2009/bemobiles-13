@@ -4,6 +4,8 @@ import { TheMobile } from "@/components/templates/TheMobile";
 import { NoUpfrontContent } from "@/components/mobile/NoUpfrontContent";
 import { ModelVariations } from "@/components/mobile/ModelVariations";
 import { LatestFeatures } from "@/components/mobile/LatestFeatures";
+import { ContractOptions } from "@/components/mobile/ContractOptions";
+import { EcosystemPerks } from "@/components/mobile/EcosystemPerks";
 import { useSEO } from "@/hooks/useSEO";
 
 const NoUpfrontCostPhones = () => {
@@ -32,6 +34,8 @@ const NoUpfrontCostPhones = () => {
       <NoUpfrontContent />
       <ModelVariations />
       <LatestFeatures />
+      <ContractOptions />
+      <EcosystemPerks />
       <Footer />
     </>
   );
