@@ -1,4 +1,4 @@
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
@@ -6,7 +6,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
@@ -68,6 +67,12 @@ export const Header = () => {
                       >
                         Sony
                       </Link>
+                      <Link 
+                        to="/honor-mobile-phones" 
+                        className="block px-4 py-2 hover:bg-accent rounded-md transition-colors text-base"
+                      >
+                        Honor
+                      </Link>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -82,7 +87,7 @@ export const Header = () => {
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon">
-                <Menu className="h-7 w-7" /> {/* Increased size from default 6 to 7 */}
+                <Menu className="h-7 w-7" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="bg-white">
@@ -96,6 +101,7 @@ export const Header = () => {
                     <Link to="/samsung-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Samsung</Link>
                     <Link to="/google-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Google</Link>
                     <Link to="/sony-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Sony</Link>
+                    <Link to="/honor-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Honor</Link>
                   </div>
                 </div>
                 <Link to="#" className="text-black hover:text-primary transition-colors text-lg font-medium">Sim Only</Link>

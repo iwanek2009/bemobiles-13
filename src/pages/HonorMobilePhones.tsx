@@ -15,7 +15,7 @@ const HonorMobilePhones = () => {
       <TheMobile
         title="Honor phone deals."
         description="Innovative smartphones combining style with cutting-edge technology at competitive prices."
-        heroImage="/lovable-uploads/df83f3e3-20c0-4ec8-86d9-4bdde97b863d.png"
+        heroImage="/lovable-uploads/ce3416ba-a118-4173-9c41-fd8b27198479.png"
         imageAlt="Honor smartphone showcasing premium design and features"
         filter={{ brands: [72] }}
         imageProps={{
