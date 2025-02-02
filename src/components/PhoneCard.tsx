@@ -21,7 +21,6 @@ export const PhoneCard = ({
   const handleFilteredDeals = () => {
     // Only handle iPhone 16 for now as requested
     if (name === "iPhone 16") {
-      window.scrollTo(0, 0);
       const filterObj = { families: [1968] };
       const encodedFilter = encodeURIComponent(JSON.stringify(filterObj));
       window.location.href = `/mobile-phones?filter=${encodedFilter}`;
