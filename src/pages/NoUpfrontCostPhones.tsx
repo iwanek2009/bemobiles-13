@@ -26,6 +26,12 @@ const NoUpfrontCostPhones = () => {
         heroImage="/lovable-uploads/db93ae0b-0115-490e-85e2-f244c441730a.png"
         imageAlt="Latest iPhone models showing Pro and regular versions with advanced camera system"
         basic={true}
+        filter={{
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        }}
         imageProps={{
           loading: "eager",
           fetchPriority: "high",

@@ -4,6 +4,10 @@ interface StickeeWidgetProps {
   filter?: { 
     families?: number[];
     brands?: number[];
+    upfront_price?: {
+      min: number;
+      max: number;
+    };
   };
   basic?: boolean;
 }
@@ -45,16 +49,6 @@ export const StickeeWidget = ({ filter, basic }: StickeeWidgetProps) => {
   if (hasError) {
     console.error('Widget in error state');
     return null;
-  }
-
-  if (basic) {
-    return (
-      <div className="w-full">
-        <div data-stickee-widget-id="smartfony-90">
-          Loading...
-        </div>
-      </div>
-    );
   }
 
   return (
