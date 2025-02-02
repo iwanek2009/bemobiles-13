@@ -10,9 +10,10 @@ interface StickeeWidgetProps {
     };
   };
   basic?: boolean;
+  sort?: string;
 }
 
-export const StickeeWidget = ({ filter, basic }: StickeeWidgetProps) => {
+export const StickeeWidget = ({ filter, basic, sort = "UPFRONT_PRICE" }: StickeeWidgetProps) => {
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
@@ -56,7 +57,7 @@ export const StickeeWidget = ({ filter, basic }: StickeeWidgetProps) => {
       <div 
         data-stickee-widget-id="smartfony-90"
         data-filters={filter ? JSON.stringify(filter) : undefined}
-        data-sort="UPFRONT_PRICE"
+        data-sort={sort}
       >
         Loading deals...
       </div>

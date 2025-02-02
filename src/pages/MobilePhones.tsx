@@ -29,7 +29,7 @@ const MobilePhones = () => {
     <div className="min-h-screen bg-gray-50">
       <Header />
       <MobileHeroSection />
-      <StickeeWidget basic />
+      <StickeeWidget basic sort="POPULARITY" />
 
       {/* Content Sections */}
       <div className="bg-white py-16">
