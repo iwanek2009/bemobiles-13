@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
 import { PageText } from "@/components/ui/page-text";
 import { useSEO } from "@/hooks/useSEO";
+import { Link } from "react-router-dom";
 
 const HonorMobilePhones = () => {
   useSEO({
@@ -37,10 +38,10 @@ const HonorMobilePhones = () => {
             
             <PageText className="text-gray-600 leading-relaxed space-y-6">
               <p>
-                With the speed at which the smartphone world continues to evolve, finding the best deals and stays up to date can be as tricky as ever. Whether you're a die-hard iOS user, a Google Pixel lover or a Samsung fan, there's something for you out there.
+                With the speed at which the smartphone world continues to evolve, finding the best deals and stays up to date can be as tricky as ever. Whether you're a <Link to="/iphone-mobile-phones" className="text-primary hover:underline">die-hard iOS user</Link>, a <Link to="/google-mobile-phones" className="text-primary hover:underline">Google Pixel lover</Link> or a <Link to="/samsung-mobile-phones" className="text-primary hover:underline">Samsung fan</Link>, there's something for you out there.
               </p>
               <p>
-                But have you ever tried picking one of Honor phones? With their on-trend specs and attractive pricing, Honor is making a name for itself in the UK. In this handy guide, we're wading into the best Honor mobile contract deals out there on bemobiles.com, to get guides on the ideal device and contract plan that suits your lifestyle.
+                But have you ever tried picking one of Honor phones? With their on-trend specs and attractive pricing, Honor is making a name for itself in the UK. In this handy guide, we're wading into the best Honor mobile contract deals out there on <Link to="/" className="text-primary hover:underline">bemobiles.com</Link>, to get guides on the ideal device and contract plan that suits your lifestyle.
               </p>
             </PageText>
           </div>
