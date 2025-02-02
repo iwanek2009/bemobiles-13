@@ -8,8 +8,13 @@ interface TheMobileProps {
   filter?: {
     families?: number[];
     brands?: number[];
+    upfront_price?: {
+      min: number;
+      max: number;
+    };
   };
   basic?: boolean;
+  sort?: string;
   imageProps?: {
     loading?: "eager" | "lazy";
     fetchPriority?: "high" | "low" | "auto";
@@ -26,6 +31,7 @@ export const TheMobile = ({
   imageAlt,
   filter,
   basic,
+  sort,
   imageProps
 }: TheMobileProps) => {
   return (
@@ -55,7 +61,7 @@ export const TheMobile = ({
       </div>
 
       <div id="phones-section">
-        <StickeeWidget filter={filter} basic={basic} />
+        <StickeeWidget filter={filter} basic={basic} sort={sort} />
       </div>
     </div>
   );
