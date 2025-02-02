@@ -23,6 +23,7 @@ const IPhoneMobilePhones = () => {
         heroImage="/lovable-uploads/2cfcbfd3-2aa7-4cd3-b90b-7c501499fb1e.png"
         imageAlt="Latest iPhone 14 Pro showcasing premium design with triple camera system"
         filter={{ brands: [19] }}
+        sort="POPULARITY"
         imageProps={{
           loading: "eager",
           fetchPriority: "high",
