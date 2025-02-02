@@ -27,7 +27,13 @@ export const PhoneCard = ({
         filterObj = { families: [1968] };
         break;
       case "iPhone 16 Pro":
-        filterObj = { families: [1970] };
+        filterObj = { 
+          families: [1970],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
         break;
       case "iPhone 16 Pro Max":
         filterObj = { 
