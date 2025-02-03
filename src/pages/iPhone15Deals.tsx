@@ -16,7 +16,13 @@ const iPhone15Deals = () => {
         description="Get the latest iPhone 15 on contract with amazing deals from top UK networks."
         heroImage="/lovable-uploads/2cfcbfd3-2aa7-4cd3-b90b-7c501499fb1e.png"
         imageAlt="iPhone 15 showing its stunning design and features"
-        filter={{ families: [1234] }}
+        filter={{
+          families: [1890],
+          upfront_price: {
+            min: 0,
+            max: undefined
+          }
+        }}
         sort="POPULARITY"
         imageProps={{
           loading: "eager",
@@ -30,7 +36,6 @@ const iPhone15Deals = () => {
       <Footer />
     </div>
   );
-
 };
 
 export default iPhone15Deals;
