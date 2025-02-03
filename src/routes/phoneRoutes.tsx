@@ -15,6 +15,7 @@ import GalaxyS25UltraDeals from "@/pages/GalaxyS25UltraDeals";
 import GooglePixel9Deals from "@/pages/GooglePixel9Deals";
 import GooglePixel9ProDeals from "@/pages/GooglePixel9ProDeals";
 import GooglePixel9ProFoldDeals from "@/pages/GooglePixel9ProFoldDeals";
+import GooglePixel8ProDeals from "@/pages/GooglePixel8ProDeals";
 
 export const PhoneRoutes = [
   <Route key="mobile-phones" path="/mobile-phones" element={<MobilePhones />} />,
@@ -32,5 +33,6 @@ export const PhoneRoutes = [
   <Route key="galaxy-s25-ultra" path="/mobile-phones/Galaxy-S25-Ultra-Deals" element={<GalaxyS25UltraDeals />} />,
   <Route key="pixel-9" path="/mobile-phones/Google-Pixel-9-Deals" element={<GooglePixel9Deals />} />,
   <Route key="pixel-9-pro" path="/mobile-phones/Google-Pixel-9-Pro-Deals" element={<GooglePixel9ProDeals />} />,
-  <Route key="pixel-9-pro-fold" path="/mobile-phones/Google-Pixel-9-Pro-Fold-Deals" element={<GooglePixel9ProFoldDeals />} />
+  <Route key="pixel-9-pro-fold" path="/mobile-phones/Google-Pixel-9-Pro-Fold-Deals" element={<GooglePixel9ProFoldDeals />} />,
+  <Route key="pixel-8-pro" path="/mobile-phones/Google-Pixel-8-Pro-Deals" element={<GooglePixel8ProDeals />} />
 ];

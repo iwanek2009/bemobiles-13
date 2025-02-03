@@ -9,7 +9,7 @@ const GooglePixel8ProDeals = () => {
 
   return (
     <TheMobile
-      title="Google Pixel 8 Pro deals."
+      title="Google Pixel 8 Pro deals"
       description="Experience pro-level photography with the Pixel 8 Pro's advanced camera system."
       heroImage="/lovable-uploads/853d1592-1bf1-4803-a5d2-37a75f347fad.png"
       imageAlt="Google Pixel 8 Pro showcasing its pro camera system"
