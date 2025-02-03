@@ -108,6 +108,14 @@ export const MobileMenu = () => {
               <Link to="/mobile-phones/Unlimited-data-Sony-Deals" className="block text-black hover:text-primary transition-colors text-base">Sony Unlimited Data</Link>
             </CollapsibleContent>
           </Collapsible>
+
+          <Link to="#" className="text-black hover:text-primary transition-colors text-lg font-medium">
+            Sim Only
+          </Link>
+
+          <Link to="#" className="text-black hover:text-primary transition-colors text-lg font-medium">
+            Broadband & TV
+          </Link>
         </nav>
       </SheetContent>
     </Sheet>
