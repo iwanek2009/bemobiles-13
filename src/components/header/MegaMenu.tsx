@@ -16,7 +16,7 @@ export const MegaMenu = () => {
             Mobile Phones
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="grid grid-cols-3 gap-6 p-6 w-[800px] bg-white shadow-lg rounded-lg origin-top-left">
+            <div className="grid grid-cols-3 gap-6 p-6 w-[800px] bg-white shadow-lg rounded-lg -translate-x-1/4">
               {/* Mobile Phones Column */}
               <div>
                 <h3 className="font-semibold mb-3">Mobile Phones</h3>
