@@ -24,6 +24,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Manufacturer Pages -->
   <url>
     <loc>https://bemobiles.com/samsung-mobile-phones</loc>
     <lastmod>2024-03-19</lastmod>
@@ -52,6 +53,150 @@
     <loc>https://bemobiles.com/honor-mobile-phones</loc>
     <lastmod>2024-03-19</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- iPhone Deal Pages -->
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/iPhone-13-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/iPhone-14-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/iPhone-14-Pro-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/iPhone-15-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/iPhone-15-Plus-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/iPhone-15-Pro-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/iPhone-15-Pro-Max-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Samsung Deal Pages -->
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Galaxy-S24-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Galaxy-S24-Plus-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Galaxy-S24-Ultra-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Google Pixel Deal Pages -->
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Google-Pixel-8-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Google-Pixel-8-Pro-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Contract Type Pages -->
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Phone-contracts-under-£20</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Phone-contracts-under-£30</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Phone-contracts-under-£40</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Phone-contracts-under-£50</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Unlimited Data Pages -->
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Unlimited-data-iPhone-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Unlimited-data-Samsung-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Unlimited-data-Google-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Unlimited-data-Honor-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Unlimited-data-Sony-Deals</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Other Pages -->
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/Refurbished-mobile-Phone-contracts</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bemobiles.com/mobile-phones/no-upfront-cost</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
