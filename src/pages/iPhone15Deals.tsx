@@ -17,11 +17,7 @@ const iPhone15Deals = () => {
         heroImage="/lovable-uploads/2cfcbfd3-2aa7-4cd3-b90b-7c501499fb1e.png"
         imageAlt="iPhone 15 showing its stunning design and features"
         filter={{
-          families: [1890],
-          upfront_price: {
-            min: 0,
-            max: undefined
-          }
+          families: [1890]
         }}
         sort="POPULARITY"
         imageProps={{
