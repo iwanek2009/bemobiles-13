@@ -23,6 +23,12 @@ import UnlimitedDataGoogleDeals from "./pages/UnlimitedDataGoogleDeals";
 import UnlimitedDataHonorDeals from "./pages/UnlimitedDataHonorDeals";
 import UnlimitedDataSonyDeals from "./pages/UnlimitedDataSonyDeals";
 import RefurbishedPhoneContracts from "./pages/RefurbishedPhoneContracts";
+import iPhone15Deals from "./pages/iPhone15Deals";
+import iPhone15PlusDeals from "./pages/iPhone15PlusDeals";
+import iPhone15ProDeals from "./pages/iPhone15ProDeals";
+import iPhone15ProMaxDeals from "./pages/iPhone15ProMaxDeals";
+import iPhone14Deals from "./pages/iPhone14Deals";
+import iPhone14ProDeals from "./pages/iPhone14ProDeals";
 
 const queryClient = new QueryClient();
 
@@ -57,7 +63,13 @@ const RouteWrapper = () => {
         '/mobile-phones/Unlimited-data-Google-Deals',
         '/mobile-phones/Unlimited-data-Honor-Deals',
         '/mobile-phones/Unlimited-data-Sony-Deals',
-        '/mobile-phones/Refurbished-mobile-Phone-contracts'
+        '/mobile-phones/Refurbished-mobile-Phone-contracts',
+        '/mobile-phones/iPhone-15-Deals',
+        '/mobile-phones/iPhone-15-Plus-Deals',
+        '/mobile-phones/iPhone-15-Pro-Deals',
+        '/mobile-phones/iPhone-15-Pro-Max-Deals',
+        '/mobile-phones/iPhone-14-Deals',
+        '/mobile-phones/iPhone-14-Pro-Deals'
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
@@ -94,6 +106,12 @@ const RouteWrapper = () => {
       <Route path="/mobile-phones/Unlimited-data-Honor-Deals" element={<UnlimitedDataHonorDeals />} />
       <Route path="/mobile-phones/Unlimited-data-Sony-Deals" element={<UnlimitedDataSonyDeals />} />
       <Route path="/mobile-phones/Refurbished-mobile-Phone-contracts" element={<RefurbishedPhoneContracts />} />
+      <Route path="/mobile-phones/iPhone-15-Deals" element={<iPhone15Deals />} />
+      <Route path="/mobile-phones/iPhone-15-Plus-Deals" element={<iPhone15PlusDeals />} />
+      <Route path="/mobile-phones/iPhone-15-Pro-Deals" element={<iPhone15ProDeals />} />
+      <Route path="/mobile-phones/iPhone-15-Pro-Max-Deals" element={<iPhone15ProMaxDeals />} />
+      <Route path="/mobile-phones/iPhone-14-Deals" element={<iPhone14Deals />} />
+      <Route path="/mobile-phones/iPhone-14-Pro-Deals" element={<iPhone14ProDeals />} />
     </Routes>
   );
 };
