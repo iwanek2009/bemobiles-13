@@ -37,7 +37,7 @@ export const TheMobile = ({
   imageProps
 }: TheMobileProps) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       <Header />
       
       {/* Hero Section */}
@@ -64,7 +64,7 @@ export const TheMobile = ({
         </div>
       </div>
 
-      <div id="phones-section" className="flex-grow">
+      <div id="phones-section">
         <StickeeWidget filter={filter} basic={basic} sort={sort} />
       </div>
 
