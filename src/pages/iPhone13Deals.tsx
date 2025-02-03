@@ -9,7 +9,7 @@ const iPhone13Deals = () => {
 
   return (
     <TheMobile
-      title="iPhone 13 deals."
+      title="iPhone 13 deals"
       description="Get the powerful iPhone 13 with stunning camera and 5G capabilities."
       heroImage="/lovable-uploads/794c7a99-1639-472d-97c3-1ebb220a09b1.png"
       imageAlt="iPhone 13 showing its dual camera system"
