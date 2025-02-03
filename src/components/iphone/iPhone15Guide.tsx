@@ -18,17 +18,17 @@ export const IPhone15Guide = () => {
             <div className="space-y-6 text-gray-600">
               <PageText>
                 Hey there! If you're shopping for a new smartphone, you've probably been bombarded with excitement about the iPhone 15 lineup. So whether you're after the{" "}
-                <Link to="/iphone-15-deals" className="text-primary hover:underline">standard iPhone 15</Link>, the bigger{" "}
-                <Link to="/iphone-15-plus-deals" className="text-primary hover:underline">iPhone 15 Plus</Link>, or one of the extra-lush features that arrive with the{" "}
-                <Link to="/iphone-15-pro-deals" className="text-primary hover:underline">iPhone 15 Pro</Link> and{" "}
-                <Link to="/iphone-15-pro-max-deals" className="text-primary hover:underline">iPhone 15 Pro Max</Link> you will have plenty of options open to you that make owning one easier than ever (especially if you're taking a pay monthly contract).
+                <Link to="/mobile-phones/iPhone-15-Deals" className="text-primary hover:underline">standard iPhone 15</Link>, the bigger{" "}
+                <Link to="/mobile-phones/iPhone-15-Plus-Deals" className="text-primary hover:underline">iPhone 15 Plus</Link>, or one of the extra-lush features that arrive with the{" "}
+                <Link to="/mobile-phones/iPhone-15-Pro-Deals" className="text-primary hover:underline">iPhone 15 Pro</Link> and{" "}
+                <Link to="/mobile-phones/iPhone-15-Pro-Max-Deals" className="text-primary hover:underline">iPhone 15 Pro Max</Link> you will have plenty of options open to you that make owning one easier than ever (especially if you're taking a pay monthly contract).
               </PageText>
 
               <PageText>
                 This guide will help you compare the models, as well as features, and see how different contracts might fit into your budget and lifestyle. Then we'll casually juxtapose some rival offerings from other brands, like{" "}
-                <Link to="/google-mobile-phones" className="text-primary hover:underline">Google</Link>,{" "}
-                <Link to="/samsung-mobile-phones" className="text-primary hover:underline">Samsung</Link> and{" "}
-                <Link to="/sony-mobile-phones" className="text-primary hover:underline">Sony</Link>, so you'll have all the info you'll need to make the best choice possible.
+                <Link to="/mobile-phones/Google-Pixel-8-Deals" className="text-primary hover:underline">Google Pixel 8</Link>,{" "}
+                <Link to="/mobile-phones/Galaxy-S24-Ultra-Deals" className="text-primary hover:underline">Galaxy S24 Ultra</Link> and{" "}
+                <Link to="/mobile-phones/Sony-Xperia-1-V-Deals" className="text-primary hover:underline">Sony Xperia</Link>, so you'll have all the info you'll need to make the best choice possible.
               </PageText>
             </div>
           </div>
@@ -133,8 +133,8 @@ export const IPhone15Guide = () => {
               <div className="bg-blue-50/50 rounded-xl p-6">
                 <PageText>
                   Of course, if you're considering alternatives, take a peek at offerings like the{" "}
-                  <Link to="/google-pixel-8-deals" className="text-primary hover:underline">Google Pixel 8</Link> for its AI-driven camera or{" "}
-                  <Link to="/galaxy-s24-ultra-deals" className="text-primary hover:underline">Galaxy S24 Ultra Deals</Link> if you're after customization and innovative features like the S Pen.
+                  <Link to="/mobile-phones/Google-Pixel-8-Deals" className="text-primary hover:underline">Google Pixel 8</Link> for its AI-driven camera or{" "}
+                  <Link to="/mobile-phones/Galaxy-S24-Ultra-Deals" className="text-primary hover:underline">Galaxy S24 Ultra Deals</Link> if you're after customization and innovative features like the S Pen.
                 </PageText>
               </div>
             </div>
@@ -161,17 +161,17 @@ export const IPhone15Guide = () => {
                 <ul className="space-y-4">
                   <li>
                     <span className="font-semibold">Photography & Multimedia:</span> Consider the{" "}
-                    <Link to="/iphone-15-pro-deals" className="text-primary hover:underline">iPhone 15 Pro</Link> or{" "}
-                    <Link to="/iphone-15-pro-max-deals" className="text-primary hover:underline">Pro Max</Link> for that extra camera punch and larger, more immersive display.
+                    <Link to="/mobile-phones/iPhone-15-Pro-Deals" className="text-primary hover:underline">iPhone 15 Pro</Link> or{" "}
+                    <Link to="/mobile-phones/iPhone-15-Pro-Max-Deals" className="text-primary hover:underline">Pro Max</Link> for that extra camera punch and larger, more immersive display.
                   </li>
                   <li>
                     <span className="font-semibold">Everyday Essentials:</span> The standard{" "}
-                    <Link to="/iphone-15-deals" className="text-primary hover:underline">iPhone 15</Link> offers all the must-haves without breaking the bank.
+                    <Link to="/mobile-phones/iPhone-15-Deals" className="text-primary hover:underline">iPhone 15</Link> offers all the must-haves without breaking the bank.
                   </li>
                   <li>
                     <span className="font-semibold">Budget Considerations:</span> Look for deals like{" "}
-                    <Link to="/phone-contracts-under-40" className="text-primary hover:underline">phone contracts under £40</Link> or even{" "}
-                    <Link to="/no-upfront-cost-phones" className="text-primary hover:underline">no upfront cost plans</Link>, which can make owning a premium device more accessible.
+                    <Link to="/mobile-phones/phone-contracts-under-40" className="text-primary hover:underline">phone contracts under £40</Link> or even{" "}
+                    <Link to="/mobile-phones/no-upfront-cost-phones" className="text-primary hover:underline">no upfront cost plans</Link>, which can make owning a premium device more accessible.
                   </li>
                 </ul>
               </div>
@@ -182,8 +182,8 @@ export const IPhone15Guide = () => {
                 </PageText>
                 <PageText>
                   Are you a heavy data user? A plan with{" "}
-                  <Link to="/unlimited-data-iphone-deals" className="text-primary hover:underline">unlimited data</Link> might be ideal. If you're a student or on a tight budget, checking out{" "}
-                  <Link to="/iphone-15-deals" className="text-primary hover:underline">iPhone 15 Deals</Link> with lower monthly fees can make a significant difference.
+                  <Link to="/mobile-phones/unlimited-data-iphone-deals" className="text-primary hover:underline">unlimited data</Link> might be ideal. If you're a student or on a tight budget, checking out{" "}
+                  <Link to="/mobile-phones/iPhone-15-Deals" className="text-primary hover:underline">iPhone 15 Deals</Link> with lower monthly fees can make a significant difference.
                 </PageText>
               </div>
 
