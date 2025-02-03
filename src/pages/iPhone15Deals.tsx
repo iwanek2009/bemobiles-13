@@ -1,3 +1,4 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { IPhone15Guide } from "@/components/iphone/iPhone15Guide";
@@ -5,8 +6,8 @@ import { Footer } from "@/components/Footer";
 
 const iPhone15Deals = () => {
   useSEO({
-    title: "iPhone 15 Deals | Compare Best Contract Offers",
-    description: "Find the best iPhone 15 contract deals. Compare prices and plans from UK's leading networks with flexible payment options."
+    title: "iPhone 15 Deals & Pay Monthly Contracts | Latest Smartphone Offers",
+    description: "Discover unbeatable iPhone 15 deals—including Pro and Pro Max offers—with flexible monthly contracts at bemobiles.com. Compare models, enjoy trade-in offers, and upgrade your smartphone experience today!"
   });
 
   return (
