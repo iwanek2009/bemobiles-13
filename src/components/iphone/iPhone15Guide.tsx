@@ -90,6 +90,53 @@ export const IPhone15Guide = () => {
           </div>
         </div>
       </div>
+
+      <div className="px-4 py-8 md:py-12 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto max-w-4xl">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100/20 p-6 md:p-8">
+            <PageText variant="h2" className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Must-Have Features That Make a Difference
+            </PageText>
+            
+            <PageText className="mb-6">
+              When you're comparing smartphones, it's not just about the specs—it's about how they enhance your daily life. Here are a few features you should keep an eye on:
+            </PageText>
+
+            <div className="space-y-6">
+              <div className="bg-blue-50/50 rounded-xl p-6">
+                <PageText variant="h3" className="text-xl font-semibold mb-4">
+                  Dynamic Island & ProMotion
+                </PageText>
+                <PageText>
+                  These innovative display features provide smooth scrolling and a unique way to interact with notifications, making your phone feel like an extension of your personality. Available on the{" "}
+                  <Link to="/iphone-15-pro-deals" className="text-primary hover:underline">iPhone 15 Pro</Link> and{" "}
+                  <Link to="/iphone-15-pro-max-deals" className="text-primary hover:underline">iPhone 15 Pro Max</Link>.
+                </PageText>
+              </div>
+
+              <div className="bg-blue-50/50 rounded-xl p-6">
+                <PageText variant="h3" className="text-xl font-semibold mb-4">
+                  Camera Capabilities
+                </PageText>
+                <PageText>
+                  Whether you're snapping quick selfies or shooting professional-grade videos, the improved camera systems on the{" "}
+                  <Link to="/iphone-15-pro-deals" className="text-primary hover:underline">Pro models</Link> are designed to impress. Imagine capturing every detail even in low light, thanks to advanced sensors and AI-powered enhancements.
+                </PageText>
+              </div>
+
+              <div className="bg-blue-50/50 rounded-xl p-6">
+                <PageText variant="h3" className="text-xl font-semibold mb-4">
+                  Security & Convenience
+                </PageText>
+                <PageText>
+                  With Face ID and a secure iOS ecosystem, you'll enjoy not only top-notch protection for your data but also a seamless experience when unlocking your phone or authorizing payments. Available across the entire{" "}
+                  <Link to="/iphone-mobile-phones" className="text-primary hover:underline">iPhone lineup</Link>.
+                </PageText>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
