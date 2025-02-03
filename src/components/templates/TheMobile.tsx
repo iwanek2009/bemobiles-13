@@ -1,6 +1,5 @@
 import { StickeeWidget } from "@/components/StickeeWidget";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { ReactNode } from "react";
 
 interface TheMobileProps {
@@ -40,7 +39,7 @@ export const TheMobile = ({
   children
 }: TheMobileProps) => {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="bg-gray-50">
       <Header />
       
       {/* Hero Section */}
@@ -72,8 +71,6 @@ export const TheMobile = ({
       </div>
 
       {children}
-
-      <Footer />
     </div>
   );
 };

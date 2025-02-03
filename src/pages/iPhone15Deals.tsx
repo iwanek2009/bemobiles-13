@@ -1,6 +1,7 @@
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { IPhone15Guide } from "@/components/iphone/iPhone15Guide";
+import { Footer } from "@/components/Footer";
 
 const iPhone15Deals = () => {
   useSEO({
@@ -9,7 +10,7 @@ const iPhone15Deals = () => {
   });
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <TheMobile
         title="iPhone 15 deals."
         description="Get the latest iPhone 15 on contract with amazing deals from top UK networks."
@@ -26,8 +27,10 @@ const iPhone15Deals = () => {
         }}
       />
       <IPhone15Guide />
-    </>
+      <Footer />
+    </div>
   );
+
 };
 
 export default iPhone15Deals;
