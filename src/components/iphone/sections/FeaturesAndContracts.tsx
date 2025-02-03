@@ -1,3 +1,4 @@
+
 import { PageText } from "@/components/ui/page-text";
 import { Link } from "react-router-dom";
 
@@ -49,9 +50,9 @@ export const FeaturesAndContracts = () => {
             <li className="flex gap-2">
               <span className="font-semibold">Family & Unlimited Data Plans:</span>
               If you're part of a family or rely on streaming and social media throughout the day, look for contracts featuring{" "}
-              <Link to="/mobile-phones/unlimited-data-iphone-deals" className="text-primary hover:underline">unlimited data iPhone Deals</Link>. Some carriers even offer plans starting with options like{" "}
-              <Link to="/mobile-phones/phone-contracts-under-20" className="text-primary hover:underline">phone contracts under £20</Link> or{" "}
-              <Link to="/mobile-phones/phone-contracts-under-30" className="text-primary hover:underline">phone contracts under £30</Link>, perfect for those who need a cost-effective solution.
+              <Link to="/mobile-phones/Unlimited-data-iPhone-Deals" className="text-primary hover:underline">unlimited data iPhone Deals</Link>. Some carriers even offer plans starting with options like{" "}
+              <Link to="/mobile-phones/Phone-contracts-under-20" className="text-primary hover:underline">phone contracts under £20</Link> or{" "}
+              <Link to="/mobile-phones/Phone-contracts-under-30" className="text-primary hover:underline">phone contracts under £30</Link>, perfect for those who need a cost-effective solution.
             </li>
           </ul>
 
@@ -59,7 +60,7 @@ export const FeaturesAndContracts = () => {
             These deals aren't exclusive to Apple—explore other options like{" "}
             <Link to="/mobile-phones/samsung-mobile-phones" className="text-primary hover:underline">Samsung Phone contracts</Link> or{" "}
             <Link to="/mobile-phones/google-mobile-phones" className="text-primary hover:underline">Google Phone contracts</Link> if you're curious about what the competition offers. And for those who love a bargain, don't overlook opportunities like{" "}
-            <Link to="/mobile-phones/refurbished-phone-contracts" className="text-primary hover:underline">refurbished phone contracts</Link> for a smart and sustainable choice.
+            <Link to="/mobile-phones/Refurbished-mobile-Phone-contracts" className="text-primary hover:underline">refurbished phone contracts</Link> for a smart and sustainable choice.
           </PageText>
         </div>
       </div>
