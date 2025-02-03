@@ -1,5 +1,3 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
 import { SamsungHowToCompare } from "@/components/samsung/SamsungHowToCompare";
 import { SamsungChoosingGuide } from "@/components/samsung/SamsungChoosingGuide";
@@ -17,7 +15,6 @@ const SamsungMobilePhones = () => {
 
   return (
     <>
-      <Header />
       <TheMobile
         title="Samsung phone deals."
         description="Discover Samsung's diverse range of smartphones, from premium Galaxy S series to innovative foldables."
@@ -32,8 +29,6 @@ const SamsungMobilePhones = () => {
       <SamsungConsiderations />
       <SamsungCoverageChecker />
       <SamsungGuide />
-      
-      <Footer />
     </>
   );
 };
