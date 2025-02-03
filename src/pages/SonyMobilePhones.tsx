@@ -1,5 +1,3 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
 import { SonyIntroduction } from "@/components/sony/sections/SonyIntroduction";
 import { SonyWelcome } from "@/components/sony/sections/SonyWelcome";
@@ -19,7 +17,6 @@ const SonyMobilePhones = () => {
 
   return (
     <>
-      <Header />
       <TheMobile
         title="Sony phone deals."
         description="Experience premium Sony Xperia smartphones with professional-grade cameras and stunning displays."
@@ -44,8 +41,6 @@ const SonyMobilePhones = () => {
           <SonyCTA />
         </div>
       </div>
-      
-      <Footer />
     </>
   );
 };

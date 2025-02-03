@@ -1,5 +1,3 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
 import { IPhoneContracts } from "@/components/iphone/IPhoneContracts";
 import { IPhoneFAQ } from "@/components/iphone/IPhoneFAQ";
@@ -16,7 +14,6 @@ const IPhoneMobilePhones = () => {
 
   return (
     <>
-      <Header />
       <TheMobile
         title="iPhone phone deals."
         description="Experience innovation with Apple's premium iPhone range, featuring cutting-edge technology and seamless integration with the Apple ecosystem."
@@ -37,7 +34,6 @@ const IPhoneMobilePhones = () => {
       <IPhoneCarrierDeals />
       <IPhoneEcosystem />
       <IPhoneFAQ />
-      <Footer />
     </>
   );
 };

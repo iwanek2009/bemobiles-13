@@ -1,5 +1,3 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { TheMobile } from "@/components/templates/TheMobile";
 import { NoUpfrontContent } from "@/components/mobile/NoUpfrontContent";
 import { ModelVariations } from "@/components/mobile/ModelVariations";
@@ -19,7 +17,6 @@ const NoUpfrontCostPhones = () => {
 
   return (
     <>
-      <Header />
       <TheMobile
         title="No upfront cost phone deals."
         description="Get the latest smartphones with £0 upfront cost. Compare deals from all major UK networks."
@@ -49,7 +46,6 @@ const NoUpfrontCostPhones = () => {
       <NoUpfrontComparisons />
       <NoUpfrontTips />
       <NoUpfrontCTASection />
-      <Footer />
     </>
   );
 };
