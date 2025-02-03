@@ -13,107 +13,107 @@ export const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild className="md:hidden">
-        <Button variant="ghost" size="icon">
-          <Menu className="h-7 w-7" />
+        <Button variant="ghost" size="icon" className="hover:bg-gray-100">
+          <Menu className="h-7 w-7 text-gray-700" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="bg-white overflow-y-auto">
-        <nav className="flex flex-col gap-4 mt-8">
-          <Link to="/" className="text-black hover:text-primary transition-colors text-lg font-medium">
+      <SheetContent side="right" className="bg-white overflow-y-auto border-l border-gray-100 p-0">
+        <nav className="flex flex-col gap-2 p-6">
+          <Link to="/" className="text-gray-900 hover:text-primary transition-colors text-lg font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
             Home
           </Link>
 
           <Collapsible className="w-full">
-            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-semibold text-black py-2">
+            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
               Mobile Phones
-              <ChevronDown className="h-5 w-5" />
+              <ChevronDown className="h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out group-data-[state=open]:rotate-180" />
             </CollapsibleTrigger>
-            <CollapsibleContent className="pl-4 space-y-3 border-l-2 border-primary">
-              <Link to="/iphone-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">iPhone Phone contracts</Link>
-              <Link to="/samsung-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Samsung Phone contracts</Link>
-              <Link to="/google-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Google Phone contracts</Link>
-              <Link to="/sony-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Sony Phone contracts</Link>
-              <Link to="/honor-mobile-phones" className="block text-black hover:text-primary transition-colors text-base">Honor Phone contracts</Link>
+            <CollapsibleContent className="pl-4 space-y-1 ml-4 border-l-2 border-primary/20">
+              <Link to="/iphone-mobile-phones" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone Phone contracts</Link>
+              <Link to="/samsung-mobile-phones" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Samsung Phone contracts</Link>
+              <Link to="/google-mobile-phones" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Google Phone contracts</Link>
+              <Link to="/sony-mobile-phones" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Sony Phone contracts</Link>
+              <Link to="/honor-mobile-phones" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Honor Phone contracts</Link>
             </CollapsibleContent>
           </Collapsible>
 
           <Collapsible className="w-full">
-            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-semibold text-black py-2">
+            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
               Popular Deals
-              <ChevronDown className="h-5 w-5" />
+              <ChevronDown className="h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out group-data-[state=open]:rotate-180" />
             </CollapsibleTrigger>
-            <CollapsibleContent className="pl-4 space-y-3 border-l-2 border-primary">
-              <Link to="/mobile-phones/no-upfront-cost" className="block text-black hover:text-primary transition-colors text-base">No Upfront Cost</Link>
-              <Link to="/mobile-phones/Phone-contracts-under-£20" className="block text-black hover:text-primary transition-colors text-base">Contracts under £20</Link>
-              <Link to="/mobile-phones/Phone-contracts-under-£30" className="block text-black hover:text-primary transition-colors text-base">Contracts under £30</Link>
-              <Link to="/mobile-phones/Phone-contracts-under-£40" className="block text-black hover:text-primary transition-colors text-base">Contracts under £40</Link>
-              <Link to="/mobile-phones/Phone-contracts-under-£50" className="block text-black hover:text-primary transition-colors text-base">Contracts under £50</Link>
+            <CollapsibleContent className="pl-4 space-y-1 ml-4 border-l-2 border-primary/20">
+              <Link to="/mobile-phones/no-upfront-cost" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">No Upfront Cost</Link>
+              <Link to="/mobile-phones/Phone-contracts-under-£20" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Contracts under £20</Link>
+              <Link to="/mobile-phones/Phone-contracts-under-£30" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Contracts under £30</Link>
+              <Link to="/mobile-phones/Phone-contracts-under-£40" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Contracts under £40</Link>
+              <Link to="/mobile-phones/Phone-contracts-under-£50" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Contracts under £50</Link>
             </CollapsibleContent>
           </Collapsible>
 
           <Collapsible className="w-full">
-            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-semibold text-black py-2">
+            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
               Latest iPhone Deals
-              <ChevronDown className="h-5 w-5" />
+              <ChevronDown className="h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out group-data-[state=open]:rotate-180" />
             </CollapsibleTrigger>
-            <CollapsibleContent className="pl-4 space-y-3 border-l-2 border-primary">
-              <Link to="/mobile-phones/iPhone-15-Deals" className="block text-black hover:text-primary transition-colors text-base">iPhone 15 Deals</Link>
-              <Link to="/mobile-phones/iPhone-15-Plus-Deals" className="block text-black hover:text-primary transition-colors text-base">iPhone 15 Plus Deals</Link>
-              <Link to="/mobile-phones/iPhone-15-Pro-Deals" className="block text-black hover:text-primary transition-colors text-base">iPhone 15 Pro Deals</Link>
-              <Link to="/mobile-phones/iPhone-15-Pro-Max-Deals" className="block text-black hover:text-primary transition-colors text-base">iPhone 15 Pro Max Deals</Link>
-              <Link to="/mobile-phones/iPhone-14-Deals" className="block text-black hover:text-primary transition-colors text-base">iPhone 14 Deals</Link>
-              <Link to="/mobile-phones/iPhone-14-Pro-Deals" className="block text-black hover:text-primary transition-colors text-base">iPhone 14 Pro Deals</Link>
+            <CollapsibleContent className="pl-4 space-y-1 ml-4 border-l-2 border-primary/20">
+              <Link to="/mobile-phones/iPhone-15-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 15 Deals</Link>
+              <Link to="/mobile-phones/iPhone-15-Plus-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 15 Plus Deals</Link>
+              <Link to="/mobile-phones/iPhone-15-Pro-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 15 Pro Deals</Link>
+              <Link to="/mobile-phones/iPhone-15-Pro-Max-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 15 Pro Max Deals</Link>
+              <Link to="/mobile-phones/iPhone-14-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 14 Deals</Link>
+              <Link to="/mobile-phones/iPhone-14-Pro-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 14 Pro Deals</Link>
             </CollapsibleContent>
           </Collapsible>
 
           <Collapsible className="w-full">
-            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-semibold text-black py-2">
+            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
               Latest Samsung Deals
-              <ChevronDown className="h-5 w-5" />
+              <ChevronDown className="h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out group-data-[state=open]:rotate-180" />
             </CollapsibleTrigger>
-            <CollapsibleContent className="pl-4 space-y-3 border-l-2 border-primary">
-              <Link to="/mobile-phones/Galaxy-S24-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S24 Deals</Link>
-              <Link to="/mobile-phones/Galaxy-S24-Plus-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S24+ Deals</Link>
-              <Link to="/mobile-phones/Galaxy-S24-Ultra-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S24 Ultra Deals</Link>
-              <Link to="/mobile-phones/Galaxy-S25-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S25 Deals</Link>
-              <Link to="/mobile-phones/Galaxy-S25-Plus-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S25+ Deals</Link>
-              <Link to="/mobile-phones/Galaxy-S25-Ultra-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S25 Ultra Deals</Link>
+            <CollapsibleContent className="pl-4 space-y-1 ml-4 border-l-2 border-primary/20">
+              <Link to="/mobile-phones/Galaxy-S24-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Galaxy S24 Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S24-Plus-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Galaxy S24+ Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S24-Ultra-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Galaxy S24 Ultra Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S25-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Galaxy S25 Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S25-Plus-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Galaxy S25+ Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S25-Ultra-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Galaxy S25 Ultra Deals</Link>
             </CollapsibleContent>
           </Collapsible>
 
           <Collapsible className="w-full">
-            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-semibold text-black py-2">
+            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
               Latest Google Deals
-              <ChevronDown className="h-5 w-5" />
+              <ChevronDown className="h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out group-data-[state=open]:rotate-180" />
             </CollapsibleTrigger>
-            <CollapsibleContent className="pl-4 space-y-3 border-l-2 border-primary">
-              <Link to="/mobile-phones/Google-Pixel-8-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 8 Deals</Link>
-              <Link to="/mobile-phones/Google-Pixel-8-Pro-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 8 Pro Deals</Link>
-              <Link to="/mobile-phones/Google-Pixel-9-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 9 Deals</Link>
-              <Link to="/mobile-phones/Google-Pixel-9-Pro-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 9 Pro Deals</Link>
-              <Link to="/mobile-phones/Google-Pixel-9-Pro-Fold-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 9 Pro Fold Deals</Link>
+            <CollapsibleContent className="pl-4 space-y-1 ml-4 border-l-2 border-primary/20">
+              <Link to="/mobile-phones/Google-Pixel-8-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Pixel 8 Deals</Link>
+              <Link to="/mobile-phones/Google-Pixel-8-Pro-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Pixel 8 Pro Deals</Link>
+              <Link to="/mobile-phones/Google-Pixel-9-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Pixel 9 Deals</Link>
+              <Link to="/mobile-phones/Google-Pixel-9-Pro-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Pixel 9 Pro Deals</Link>
+              <Link to="/mobile-phones/Google-Pixel-9-Pro-Fold-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Pixel 9 Pro Fold Deals</Link>
             </CollapsibleContent>
           </Collapsible>
 
           <Collapsible className="w-full">
-            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-semibold text-black py-2">
+            <CollapsibleTrigger className="flex items-center justify-between w-full text-lg font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
               Unlimited Data Deals
-              <ChevronDown className="h-5 w-5" />
+              <ChevronDown className="h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out group-data-[state=open]:rotate-180" />
             </CollapsibleTrigger>
-            <CollapsibleContent className="pl-4 space-y-3 border-l-2 border-primary">
-              <Link to="/mobile-phones/Unlimited-data-iPhone-Deals" className="block text-black hover:text-primary transition-colors text-base">iPhone Unlimited Data</Link>
-              <Link to="/mobile-phones/Unlimited-data-Samsung-Deals" className="block text-black hover:text-primary transition-colors text-base">Samsung Unlimited Data</Link>
-              <Link to="/mobile-phones/Unlimited-data-Google-Deals" className="block text-black hover:text-primary transition-colors text-base">Google Unlimited Data</Link>
-              <Link to="/mobile-phones/Unlimited-data-Honor-Deals" className="block text-black hover:text-primary transition-colors text-base">Honor Unlimited Data</Link>
-              <Link to="/mobile-phones/Unlimited-data-Sony-Deals" className="block text-black hover:text-primary transition-colors text-base">Sony Unlimited Data</Link>
+            <CollapsibleContent className="pl-4 space-y-1 ml-4 border-l-2 border-primary/20">
+              <Link to="/mobile-phones/Unlimited-data-iPhone-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone Unlimited Data</Link>
+              <Link to="/mobile-phones/Unlimited-data-Samsung-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Samsung Unlimited Data</Link>
+              <Link to="/mobile-phones/Unlimited-data-Google-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Google Unlimited Data</Link>
+              <Link to="/mobile-phones/Unlimited-data-Honor-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Honor Unlimited Data</Link>
+              <Link to="/mobile-phones/Unlimited-data-Sony-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Sony Unlimited Data</Link>
             </CollapsibleContent>
           </Collapsible>
 
-          <Link to="#" className="text-black hover:text-primary transition-colors text-lg font-medium">
+          <Link to="#" className="text-gray-900 hover:text-primary transition-colors text-lg font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
             Sim Only
           </Link>
 
-          <Link to="#" className="text-black hover:text-primary transition-colors text-lg font-medium">
+          <Link to="#" className="text-gray-900 hover:text-primary transition-colors text-lg font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
             Broadband & TV
           </Link>
         </nav>
