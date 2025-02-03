@@ -9,7 +9,7 @@ const GooglePixel8Deals = () => {
 
   return (
     <TheMobile
-      title="Google Pixel 8 deals."
+      title="Google Pixel 8 deals"
       description="Experience the magic of Pixel 8 with advanced AI features and amazing camera."
       heroImage="/lovable-uploads/836ea50b-7a40-4377-b225-2c59bacd6058.png"
       imageAlt="Google Pixel 8 showing its design"
@@ -17,7 +17,7 @@ const GooglePixel8Deals = () => {
         families: [2080],
         upfront_price: {
           min: 0,
-          max: 0
+          max: 200
         }
       }}
       sort="POPULARITY"
