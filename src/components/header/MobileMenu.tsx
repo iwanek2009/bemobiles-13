@@ -48,6 +48,27 @@ export const MobileMenu = () => {
             </div>
           </div>
           <div className="space-y-3">
+            <p className="text-lg font-semibold text-black">Latest Samsung Deals</p>
+            <div className="pl-4 space-y-3 border-l-2 border-primary">
+              <Link to="/mobile-phones/Galaxy-S24-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S24 Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S24-Plus-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S24+ Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S24-Ultra-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S24 Ultra Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S25-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S25 Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S25-Plus-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S25+ Deals</Link>
+              <Link to="/mobile-phones/Galaxy-S25-Ultra-Deals" className="block text-black hover:text-primary transition-colors text-base">Galaxy S25 Ultra Deals</Link>
+            </div>
+          </div>
+          <div className="space-y-3">
+            <p className="text-lg font-semibold text-black">Latest Google Deals</p>
+            <div className="pl-4 space-y-3 border-l-2 border-primary">
+              <Link to="/mobile-phones/Google-Pixel-8-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 8 Deals</Link>
+              <Link to="/mobile-phones/Google-Pixel-8-Pro-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 8 Pro Deals</Link>
+              <Link to="/mobile-phones/Google-Pixel-9-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 9 Deals</Link>
+              <Link to="/mobile-phones/Google-Pixel-9-Pro-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 9 Pro Deals</Link>
+              <Link to="/mobile-phones/Google-Pixel-9-Pro-Fold-Deals" className="block text-black hover:text-primary transition-colors text-base">Pixel 9 Pro Fold Deals</Link>
+            </div>
+          </div>
+          <div className="space-y-3">
             <p className="text-lg font-semibold text-black">Unlimited Data Deals</p>
             <div className="pl-4 space-y-3 border-l-2 border-primary">
               <Link to="/mobile-phones/Unlimited-data-iPhone-Deals" className="block text-black hover:text-primary transition-colors text-base">iPhone Unlimited Data</Link>
