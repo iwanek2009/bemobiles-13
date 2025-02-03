@@ -2,6 +2,7 @@ import { PageText } from "@/components/ui/page-text";
 import { Link } from "react-router-dom";
 import { EcosystemAdvantages } from "./sections/EcosystemAdvantages";
 import { ContractGuide } from "./sections/ContractGuide";
+import { IPhone15Family } from "./sections/IPhone15Family";
 
 export const IPhone15Guide = () => {
   return (
@@ -37,6 +38,7 @@ export const IPhone15Guide = () => {
         </div>
       </div>
 
+      <IPhone15Family />
       <EcosystemAdvantages />
       <ContractGuide />
     </div>
