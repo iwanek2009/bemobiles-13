@@ -12,7 +12,7 @@ import {
 
 export const Header = () => {
   return (
-    <header className="w-full bg-white border-b">
+    <header className="w-full bg-white border-b relative">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div>
@@ -36,7 +36,7 @@ export const Header = () => {
                     Mobile Phones
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="grid grid-cols-3 gap-6 p-6 w-[800px]">
+                    <div className="grid grid-cols-3 gap-6 p-6 w-[800px] relative left-1/2 -translate-x-1/2">
                       {/* Mobile Phones Column */}
                       <div>
                         <h3 className="font-semibold mb-3">Mobile Phones</h3>
