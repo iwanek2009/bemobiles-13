@@ -3,18 +3,18 @@ import { useSEO } from "@/hooks/useSEO";
 
 const GooglePixel8Deals = () => {
   useSEO({
-    title: "Google Pixel 8 Deals & Contracts | Compare Best Offers",
+    title: "Google Pixel 8 Deals | Compare Best Offers",
     description: "Find the best Google Pixel 8 deals and contracts. Compare prices, data plans, and network offers to get the perfect Pixel 8 contract for you."
   });
 
   return (
     <TheMobile
       title="Google Pixel 8 deals."
-      description="Discover the Google Pixel 8 with its advanced AI features and amazing camera."
-      heroImage="/lovable-uploads/ce3416ba-a118-4173-9c41-fd8b27198479.png"
-      imageAlt="Google Pixel 8 showcasing its design"
+      description="Experience the magic of Pixel 8 with advanced AI features and amazing camera."
+      heroImage="/lovable-uploads/836ea50b-7a40-4377-b225-2c59bacd6058.png"
+      imageAlt="Google Pixel 8 showing its design"
       filter={{
-        families: [1892],
+        families: [2080],
         upfront_price: {
           min: 0,
           max: 0

@@ -3,18 +3,18 @@ import { useSEO } from "@/hooks/useSEO";
 
 const GalaxyS24Deals = () => {
   useSEO({
-    title: "Samsung Galaxy S24 Deals & Contracts | Compare Best Offers",
+    title: "Samsung Galaxy S24 Deals | Compare Best Offers",
     description: "Find the best Samsung Galaxy S24 deals and contracts. Compare prices, data plans, and network offers to get the perfect Galaxy S24 contract for you."
   });
 
   return (
     <TheMobile
       title="Samsung Galaxy S24 deals."
-      description="Experience the next-gen Galaxy S24 with AI features and powerful performance."
-      heroImage="/lovable-uploads/6e83658a-1c9c-47f5-80f2-39e4627e3cb1.png"
-      imageAlt="Samsung Galaxy S24 showcasing its premium design"
+      description="Experience the latest Galaxy S24 with advanced AI features and powerful performance."
+      heroImage="/lovable-uploads/b53f9160-6075-444a-abe9-c8b4b56362ea.png"
+      imageAlt="Samsung Galaxy S24 showcasing its design"
       filter={{
-        families: [1904],
+        families: [2090],
         upfront_price: {
           min: 0,
           max: 0
