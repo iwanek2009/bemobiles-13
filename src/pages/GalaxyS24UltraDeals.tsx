@@ -9,12 +9,12 @@ const GalaxyS24UltraDeals = () => {
 
   return (
     <TheMobile
-      title="Samsung Galaxy S24 Ultra deals."
+      title="Samsung Galaxy S24 Ultra deals"
       description="Experience the ultimate Galaxy S24 Ultra with S Pen and pro-grade camera system."
       heroImage="/lovable-uploads/cfb28801-2b3e-4a7e-b078-d891e464e45d.png"
       imageAlt="Samsung Galaxy S24 Ultra with S Pen"
       filter={{
-        families: [2092],
+        families: [1906],
         upfront_price: {
           min: 0,
           max: 0

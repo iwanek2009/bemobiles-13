@@ -9,12 +9,12 @@ const GalaxyS24Deals = () => {
 
   return (
     <TheMobile
-      title="Samsung Galaxy S24 deals."
+      title="Samsung Galaxy S24 deals"
       description="Experience the latest Galaxy S24 with advanced AI features and powerful performance."
       heroImage="/lovable-uploads/b53f9160-6075-444a-abe9-c8b4b56362ea.png"
       imageAlt="Samsung Galaxy S24 showcasing its design"
       filter={{
-        families: [2090],
+        families: [1904],
         upfront_price: {
           min: 0,
           max: 0
