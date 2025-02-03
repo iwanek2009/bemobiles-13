@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { EcosystemAdvantages } from "./sections/EcosystemAdvantages";
 import { ContractGuide } from "./sections/ContractGuide";
 import { IPhone15Family } from "./sections/IPhone15Family";
+import { FeaturesAndContracts } from "./sections/FeaturesAndContracts";
 
 export const IPhone15Guide = () => {
   return (
@@ -39,6 +40,7 @@ export const IPhone15Guide = () => {
       </div>
 
       <IPhone15Family />
+      <FeaturesAndContracts />
       <EcosystemAdvantages />
       <ContractGuide />
     </div>
