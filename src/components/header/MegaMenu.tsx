@@ -16,11 +16,11 @@ export const MegaMenu = () => {
             Mobile Phones
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="grid grid-cols-3 gap-6 p-6 w-[800px] bg-white shadow-lg rounded-lg relative left-[-200px]">
+            <div className="grid grid-cols-3 gap-8 p-8 w-[800px] bg-white shadow-lg rounded-lg">
               {/* Mobile Phones Column */}
-              <div>
-                <h3 className="font-semibold mb-3">Mobile Phones</h3>
-                <div className="space-y-2">
+              <div className="space-y-4 px-4">
+                <h3 className="font-semibold mb-4 text-lg">Mobile Phones</h3>
+                <div className="space-y-3">
                   <Link to="/iphone-mobile-phones" className="block text-sm hover:text-primary">iPhone Phone contracts</Link>
                   <Link to="/samsung-mobile-phones" className="block text-sm hover:text-primary">Samsung Phone contracts</Link>
                   <Link to="/google-mobile-phones" className="block text-sm hover:text-primary">Google Phone contracts</Link>
@@ -39,9 +39,9 @@ export const MegaMenu = () => {
               </div>
 
               {/* Popular Mobile Phones Column */}
-              <div>
-                <h3 className="font-semibold mb-3">Popular Mobile Phones</h3>
-                <div className="space-y-2">
+              <div className="space-y-4 px-4 border-l border-gray-200">
+                <h3 className="font-semibold mb-4 text-lg">Popular Mobile Phones</h3>
+                <div className="space-y-3">
                   <Link to="/mobile-phones/iPhone-15-Deals" className="block text-sm hover:text-primary">iPhone 15 Deals</Link>
                   <Link to="/mobile-phones/iPhone-15-Plus-Deals" className="block text-sm hover:text-primary">iPhone 15 Plus Deals</Link>
                   <Link to="/mobile-phones/iPhone-15-Pro-Deals" className="block text-sm hover:text-primary">iPhone 15 Pro Max Deals</Link>
@@ -57,9 +57,9 @@ export const MegaMenu = () => {
               </div>
 
               {/* Latest Mobile Phones Column */}
-              <div>
-                <h3 className="font-semibold mb-3">Latest Mobile Phones</h3>
-                <div className="space-y-2">
+              <div className="space-y-4 px-4 border-l border-gray-200">
+                <h3 className="font-semibold mb-4 text-lg">Latest Mobile Phones</h3>
+                <div className="space-y-3">
                   <Link to="/mobile-phones/iPhone-16-Deals" className="block text-sm hover:text-primary">iPhone 16 Deals</Link>
                   <Link to="/mobile-phones/iPhone-16-Plus-Deals" className="block text-sm hover:text-primary">iPhone 16 Plus Deals</Link>
                   <Link to="/mobile-phones/iPhone-16-Pro-Deals" className="block text-sm hover:text-primary">iPhone 16 Pro Deals</Link>
