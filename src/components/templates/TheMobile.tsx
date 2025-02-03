@@ -1,4 +1,6 @@
 import { StickeeWidget } from "@/components/StickeeWidget";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 interface TheMobileProps {
   title: string;
@@ -36,6 +38,8 @@ export const TheMobile = ({
 }: TheMobileProps) => {
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header />
+      
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#2990dd]/50 to-white">
         <div className="container mx-auto px-4 pb-0 pt-16 md:py-0">
@@ -63,6 +67,8 @@ export const TheMobile = ({
       <div id="phones-section">
         <StickeeWidget filter={filter} basic={basic} sort={sort} />
       </div>
+
+      <Footer />
     </div>
   );
 };
