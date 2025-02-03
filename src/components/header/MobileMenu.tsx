@@ -57,6 +57,10 @@ export const MobileMenu = () => {
               <ChevronDown className="h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out group-data-[state=open]:rotate-180" />
             </CollapsibleTrigger>
             <CollapsibleContent className="pl-4 space-y-1 ml-4 border-l-2 border-primary/20">
+              <Link to="/mobile-phones/iPhone-16-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 16 Deals</Link>
+              <Link to="/mobile-phones/iPhone-16-Plus-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 16 Plus Deals</Link>
+              <Link to="/mobile-phones/iPhone-16-Pro-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 16 Pro Deals</Link>
+              <Link to="/mobile-phones/iPhone-16-Pro-Max-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 16 Pro Max Deals</Link>
               <Link to="/mobile-phones/iPhone-15-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 15 Deals</Link>
               <Link to="/mobile-phones/iPhone-15-Plus-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 15 Plus Deals</Link>
               <Link to="/mobile-phones/iPhone-15-Pro-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">iPhone 15 Pro Deals</Link>
