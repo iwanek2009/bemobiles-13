@@ -1,6 +1,7 @@
 import { StickeeWidget } from "@/components/StickeeWidget";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ReactNode } from "react";
 
 interface TheMobileProps {
   title: string;
@@ -24,6 +25,7 @@ interface TheMobileProps {
     height?: string;
     decoding?: "async" | "sync" | "auto";
   };
+  children?: ReactNode;
 }
 
 export const TheMobile = ({
@@ -34,10 +36,11 @@ export const TheMobile = ({
   filter,
   basic,
   sort,
-  imageProps
+  imageProps,
+  children
 }: TheMobileProps) => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header />
       
       {/* Hero Section */}
@@ -67,6 +70,8 @@ export const TheMobile = ({
       <div id="phones-section">
         <StickeeWidget filter={filter} basic={basic} sort={sort} />
       </div>
+
+      {children}
 
       <Footer />
     </div>
