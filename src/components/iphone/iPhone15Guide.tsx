@@ -1,3 +1,4 @@
+
 import { PageText } from "@/components/ui/page-text";
 import { Link } from "react-router-dom";
 import { EcosystemAdvantages } from "./sections/EcosystemAdvantages";
@@ -30,9 +31,8 @@ export const IPhone15Guide = () => {
 
               <PageText>
                 This guide will help you compare the models, as well as features, and see how different contracts might fit into your budget and lifestyle. Then we'll casually juxtapose some rival offerings from other brands, like{" "}
-                <Link to="/mobile-phones/Google-Pixel-8-Deals" className="text-primary hover:underline">Google Pixel 8</Link>,{" "}
-                <Link to="/mobile-phones/Galaxy-S24-Ultra-Deals" className="text-primary hover:underline">Galaxy S24 Ultra</Link> and{" "}
-                <Link to="/mobile-phones/Sony-Xperia-1-V-Deals" className="text-primary hover:underline">Sony Xperia</Link>, so you'll have all the info you'll need to make the best choice possible.
+                <Link to="/mobile-phones/Google-Pixel-8-Deals" className="text-primary hover:underline">Google Pixel 8</Link> and{" "}
+                <Link to="/mobile-phones/Galaxy-S24-Ultra-Deals" className="text-primary hover:underline">Galaxy S24 Ultra</Link>, so you'll have all the info you'll need to make the best choice possible.
               </PageText>
             </div>
           </div>
