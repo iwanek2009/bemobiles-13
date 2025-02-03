@@ -32,7 +32,7 @@ export const MegaMenu = () => {
             Mobile Phones
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-full bg-white">
+            <div className="absolute left-0 top-full w-full bg-white">
               <div className="container mx-auto">
                 <div className="grid grid-cols-3 gap-6 p-6 bg-white shadow-lg rounded-lg">
                   {/* Manufacturers Column */}
