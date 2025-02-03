@@ -27,18 +27,10 @@ export const MegaMenu = () => {
                   <Link to="/sony-mobile-phones" className="block text-sm hover:text-primary">Sony Phone contracts</Link>
                   <Link to="/honor-mobile-phones" className="block text-sm hover:text-primary">Honor Phone contracts</Link>
                   <Link to="/mobile-phones/no-upfront-cost" className="block text-sm hover:text-primary">No Upfront Cost</Link>
-                  <Link to="/mobile-phones/Phone-contracts-under-£20" className="block text-sm hover:text-primary">Phone contracts under £20</Link>
-                  <Link to="/mobile-phones/Phone-contracts-under-£30" className="block text-sm hover:text-primary">Phone contracts under £30</Link>
-                  <Link to="/mobile-phones/Phone-contracts-under-£40" className="block text-sm hover:text-primary">Phone contracts under £40</Link>
-                  <Link to="/mobile-phones/Phone-contracts-under-£50" className="block text-sm hover:text-primary">Phone contracts under £50</Link>
-                  <Link to="/mobile-phones/Unlimited-data-iPhone-Deals" className="block text-sm hover:text-primary">Unlimited data iPhone Deals</Link>
-                  <Link to="/mobile-phones/Unlimited-data-Samsung-Deals" className="block text-sm hover:text-primary">Unlimited data Samsung Deals</Link>
-                  <Link to="/mobile-phones/Unlimited-data-Google-Deals" className="block text-sm hover:text-primary">Unlimited data Google Deals</Link>
-                  <Link to="/mobile-phones/Refurbished-mobile-Phone-contracts" className="block text-sm hover:text-primary">Refurbished Phone contracts</Link>
                 </div>
               </div>
 
-              {/* Popular Mobile Phones Column */}
+              {/* Latest Mobile Phones Column */}
               <div>
                 <h3 className="font-semibold mb-3">Popular Mobile Phones</h3>
                 <div className="space-y-2">
@@ -56,20 +48,18 @@ export const MegaMenu = () => {
                 </div>
               </div>
 
-              {/* Latest Mobile Phones Column */}
+              {/* Additional Links Column */}
               <div>
                 <h3 className="font-semibold mb-3">Latest Mobile Phones</h3>
                 <div className="space-y-2">
-                  <Link to="/mobile-phones/iPhone-16-Deals" className="block text-sm hover:text-primary">iPhone 16 Deals</Link>
-                  <Link to="/mobile-phones/iPhone-16-Plus-Deals" className="block text-sm hover:text-primary">iPhone 16 Plus Deals</Link>
-                  <Link to="/mobile-phones/iPhone-16-Pro-Deals" className="block text-sm hover:text-primary">iPhone 16 Pro Deals</Link>
-                  <Link to="/mobile-phones/iPhone-16-Pro-Max-Deals" className="block text-sm hover:text-primary">iPhone 16 Pro Max Deals</Link>
-                  <Link to="/mobile-phones/Galaxy-S25-Deals" className="block text-sm hover:text-primary">Galaxy S25 Deals</Link>
-                  <Link to="/mobile-phones/Galaxy-S25-Plus-Deals" className="block text-sm hover:text-primary">Galaxy S25+ Deals</Link>
-                  <Link to="/mobile-phones/Galaxy-S25-Ultra-Deals" className="block text-sm hover:text-primary">Galaxy S25 Ultra Deals</Link>
-                  <Link to="/mobile-phones/Google-Pixel-9-Deals" className="block text-sm hover:text-primary">Google Pixel 9</Link>
-                  <Link to="/mobile-phones/Google-Pixel-9-Pro-Deals" className="block text-sm hover:text-primary">Google Pixel 9 Pro</Link>
-                  <Link to="/mobile-phones/Google-Pixel-9-Pro-Fold-Deals" className="block text-sm hover:text-primary">Google Pixel 9 Pro Fold</Link>
+                  <Link to="/mobile-phones/Phone-contracts-under-£20" className="block text-sm hover:text-primary">Phone contracts under £20</Link>
+                  <Link to="/mobile-phones/Phone-contracts-under-£30" className="block text-sm hover:text-primary">Phone contracts under £30</Link>
+                  <Link to="/mobile-phones/Phone-contracts-under-£40" className="block text-sm hover:text-primary">Phone contracts under £40</Link>
+                  <Link to="/mobile-phones/Phone-contracts-under-£50" className="block text-sm hover:text-primary">Phone contracts under £50</Link>
+                  <Link to="/mobile-phones/Unlimited-data-iPhone-Deals" className="block text-sm hover:text-primary">Unlimited data iPhone Deals</Link>
+                  <Link to="/mobile-phones/Unlimited-data-Samsung-Deals" className="block text-sm hover:text-primary">Unlimited data Samsung Deals</Link>
+                  <Link to="/mobile-phones/Unlimited-data-Google-Deals" className="block text-sm hover:text-primary">Unlimited data Google Deals</Link>
+                  <Link to="/mobile-phones/Refurbished-mobile-Phone-contracts" className="block text-sm hover:text-primary">Refurbished Phone contracts</Link>
                 </div>
               </div>
             </div>
