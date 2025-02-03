@@ -17,6 +17,12 @@ import PhoneContractsUnder20 from "./pages/PhoneContractsUnder20";
 import PhoneContractsUnder30 from "./pages/PhoneContractsUnder30";
 import PhoneContractsUnder40 from "./pages/PhoneContractsUnder40";
 import PhoneContractsUnder50 from "./pages/PhoneContractsUnder50";
+import UnlimitedDataIPhoneDeals from "./pages/UnlimitedDataIPhoneDeals";
+import UnlimitedDataSamsungDeals from "./pages/UnlimitedDataSamsungDeals";
+import UnlimitedDataGoogleDeals from "./pages/UnlimitedDataGoogleDeals";
+import UnlimitedDataHonorDeals from "./pages/UnlimitedDataHonorDeals";
+import UnlimitedDataSonyDeals from "./pages/UnlimitedDataSonyDeals";
+import RefurbishedPhoneContracts from "./pages/RefurbishedPhoneContracts";
 
 const queryClient = new QueryClient();
 
@@ -45,7 +51,13 @@ const RouteWrapper = () => {
         '/mobile-phones/Phone-contracts-under-£20',
         '/mobile-phones/Phone-contracts-under-£30',
         '/mobile-phones/Phone-contracts-under-£40',
-        '/mobile-phones/Phone-contracts-under-£50'
+        '/mobile-phones/Phone-contracts-under-£50',
+        '/mobile-phones/Unlimited-data-iPhone-Deals',
+        '/mobile-phones/Unlimited-data-Samsung-Deals',
+        '/mobile-phones/Unlimited-data-Google-Deals',
+        '/mobile-phones/Unlimited-data-Honor-Deals',
+        '/mobile-phones/Unlimited-data-Sony-Deals',
+        '/mobile-phones/Refurbished-mobile-Phone-contracts'
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
@@ -76,6 +88,12 @@ const RouteWrapper = () => {
       <Route path="/mobile-phones/Phone-contracts-under-£30" element={<PhoneContractsUnder30 />} />
       <Route path="/mobile-phones/Phone-contracts-under-£40" element={<PhoneContractsUnder40 />} />
       <Route path="/mobile-phones/Phone-contracts-under-£50" element={<PhoneContractsUnder50 />} />
+      <Route path="/mobile-phones/Unlimited-data-iPhone-Deals" element={<UnlimitedDataIPhoneDeals />} />
+      <Route path="/mobile-phones/Unlimited-data-Samsung-Deals" element={<UnlimitedDataSamsungDeals />} />
+      <Route path="/mobile-phones/Unlimited-data-Google-Deals" element={<UnlimitedDataGoogleDeals />} />
+      <Route path="/mobile-phones/Unlimited-data-Honor-Deals" element={<UnlimitedDataHonorDeals />} />
+      <Route path="/mobile-phones/Unlimited-data-Sony-Deals" element={<UnlimitedDataSonyDeals />} />
+      <Route path="/mobile-phones/Refurbished-mobile-Phone-contracts" element={<RefurbishedPhoneContracts />} />
     </Routes>
   );
 };
