@@ -16,11 +16,7 @@ const GalaxyS25Deals = () => {
         heroImage="/lovable-uploads/3ec50571-b797-4cea-9b46-e921cc20eab7.png"
         imageAlt="Samsung Galaxy S25 in light blue color showing triple camera setup"
         filter={{
-          families: [2093],
-          upfront_price: {
-            min: 0,
-            max: 0
-          }
+          families: [1904]
         }}
         sort="POPULARITY"
         imageProps={{
