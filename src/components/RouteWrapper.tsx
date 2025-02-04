@@ -49,7 +49,8 @@ export const RouteWrapper = () => {
         '/mobile-phones/Galaxy-S25-Plus-Deals',
         '/mobile-phones/Galaxy-S25-Ultra-Deals',
         '/mobile-phones/Google-Pixel-9-Deals',
-        '/mobile-phones/Google-Pixel-9-Pro-Deals'  // Added this line
+        '/mobile-phones/Google-Pixel-9-Pro-Deals',
+        '/mobile-phones/Google-Pixel-9-Pro-Fold-Deals'  // Added this line
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
