@@ -12,10 +12,10 @@ const GooglePixel9ProDeals = () => {
     <TheMobile
       title="Google Pixel 9 Pro deals."
       description="Experience professional-grade photography with the Pixel 9 Pro's advanced camera system and AI capabilities."
-      heroImage="/lovable-uploads/17ec08fc-d0ba-43af-8dff-35b4d32b1822.png"
-      imageAlt="Google Pixel 9 Pro in black color showcasing its advanced dual camera system and stunning display"
+      heroImage="/lovable-uploads/3afea53f-14a6-4462-a63b-9357394e9398.png"
+      imageAlt="Google Pixel 9 Pro showcasing its foldable display with vibrant blue and purple colors"
       filter={{
-        families: [1963]
+        families: [1965]
       }}
       sort="UPFRONT_PRICE"
       imageProps={{
@@ -30,3 +30,4 @@ const GooglePixel9ProDeals = () => {
 };
 
 export default GooglePixel9ProDeals;
+
