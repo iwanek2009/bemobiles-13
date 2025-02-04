@@ -1,195 +1,184 @@
 import { Link } from "react-router-dom";
+import { PageText } from "@/components/ui/page-text";
 
 export const GalaxyS25Guide = () => {
   return (
-    <div className="bg-gradient-to-b from-white to-[#2990dd]/10">
+    <div className="bg-gradient-to-b from-white to-[#2990dd]/10 py-12">
       <div className="container mx-auto px-4 max-w-[1000px]">
-        <section className="py-16 bg-white rounded-2xl shadow-lg backdrop-blur-sm bg-white/80 border border-gray-100 my-8">
-          <div className="px-6 md:px-12">
-            <h2 className="text-3xl font-bold tracking-tight text-[#111111] mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">
-              Samsung Galaxy S25 Deals & Monthly Contracts
-            </h2>
-            
-            <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-              Our comprehensive guide on the Samsung Galaxy S25 Deals & Monthly Contracts! Whether you're a long-time Samsung enthusiast or looking to upgrade from your current device, this article is your one-stop resource for understanding the latest offers, in-depth feature comparisons, and smart contract options available on bemobiles.com.
-            </p>
+        <h2 className="text-3xl font-bold tracking-tight text-[#111111] mb-6">
+          Samsung Galaxy S25: Future of Mobile Technology
+        </h2>
+        <p className="text-gray-600 leading-relaxed mb-8 text-lg">
+          The Samsung Galaxy S25 is not just a phone; it's a gateway to a new era of mobile technology. With cutting-edge features and innovative design, it sets a new standard for smartphones.
+        </p>
 
-            <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-              We're here to help you navigate the complex world of smartphone deals with a friendly, approachable tone—think of it as a chat with a knowledgeable friend who's excited about next-gen tech!
-            </p>
+        <h3 className="text-2xl font-bold text-[#111111] mb-4">Feature Breakdown</h3>
+        <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-8">
+          <li>Camera: Capture stunning photos with advanced camera technology.</li>
+          <li>Battery: Enjoy all-day battery life with fast charging capabilities.</li>
+          <li>Display: Experience vibrant visuals on a stunning display.</li>
+        </ul>
 
-            <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-              We'll break down the standout features of the Samsung Galaxy S25, compare it with top competitors like the{' '}
-              <Link to="/mobile-phones/google-pixel-8-pro-deals" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">Google Pixel 8 Pro</Link> and the{' '}
-              <Link to="/mobile-phones/iphone-16-pro-deals" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">iPhone 16 Pro</Link>, and explain contract details including{' '}
-              <Link to="/mobile-phones/no-upfront-cost" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">no upfront cost plans</Link>, trade-in offers, and bundle deals.
-            </p>
+        <div className="mt-12">
+          <h2 className="text-3xl font-bold tracking-tight text-[#111111] mb-6">
+            Contract Details: Flexible Options to Fit Every Lifestyle
+          </h2>
+          
+          <p className="text-gray-600 leading-relaxed mb-8 text-lg">
+            Upgrading to a flagship device like the Samsung Galaxy S25 shouldn't be a financial burden. With a range of contract options available, you can find the perfect plan to suit your budget and usage habits. Here's an overview of the popular contract features you can explore on bemobiles.com:
+          </p>
 
-            <div className="mt-12 space-y-6 bg-gradient-to-r from-blue-50 to-white p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-900">
-                Samsung Galaxy S25: Future of Mobile Technology
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Monthly Plans & No Upfront Cost Deals
               </h3>
-              
-              <p className="text-gray-600 leading-relaxed text-lg">
-                In today's rapidly evolving tech landscape, a smartphone isn't just a communication device—it's an extension of your digital lifestyle. The Samsung Galaxy S25 represents the pinnacle of innovation, merging cutting-edge hardware with intelligent software to deliver an experience that's both powerful and intuitive.
-              </p>
-
-              <p className="text-gray-600 leading-relaxed text-lg">
-                Imagine capturing every breathtaking moment with a camera system that adapts to your environment, enjoying a battery that keeps pace with your busy schedule, and interacting with a display that brings content to life in vivid detail. Whether you're comparing it to the{' '}
-                <Link to="/mobile-phones/google-pixel-8-pro-deals" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">Google Pixel 8 Pro</Link>'s remarkable camera or the seamless performance of the{' '}
-                <Link to="/mobile-phones/iphone-16-pro-deals" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">iPhone 16 Pro</Link>, the Galaxy S25 is designed to impress. And with a variety of flexible contract options, from{' '}
-                <Link to="/mobile-phones/no-upfront-cost" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">no upfront cost plans</Link> to{' '}
-                <Link to="/mobile-phones/phone-contracts-under-20" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">Phone contracts under £20</Link> and trade-in offers, upgrading to the latest technology has never been easier or more affordable.
-              </p>
-            </div>
-
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                Feature Breakdown: Galaxy S25 vs. The Competition
-              </h2>
-              
-              <div className="space-y-8">
+              <div className="space-y-4">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    1. Camera Capabilities
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    The Samsung Galaxy S25 is engineered to satisfy even the most demanding photography enthusiasts:
+                  <h4 className="font-semibold text-gray-800 mb-2">No Upfront Cost Options:</h4>
+                  <p className="text-gray-600">
+                    Many carriers now offer plans with zero initial payment, making it easier to secure the latest technology without a large upfront expense.
                   </p>
-
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Advanced Sensor Technology:</h4>
-                      <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                        <li>Capture ultra-high-resolution images that reveal every detail.</li>
-                        <li>Features an innovative sensor that adapts to various lighting conditions, ensuring crisp shots whether you're in bright daylight or low-light settings.</li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Pro-Grade Camera Modes:</h4>
-                      <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                        <li>Night Mode: Just like the renowned Night Sight on the <Link to="/mobile-phones/google-pixel-8-pro-deals" className="text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4">Google Pixel 8 Pro</Link>, the S25's Night Mode lets you shoot stunning low-light photos with minimal noise.</li>
-                        <li>AI-Powered Enhancements: Utilize smart algorithms to automatically adjust settings for optimal clarity and color accuracy.</li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Versatile Lens Array:</h4>
-                      <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                        <li>Multiple lenses (wide, ultra-wide, and telephoto) provide creative freedom for every scenario—from sweeping landscapes to detailed portraits.</li>
-                      </ul>
-                    </div>
-
-                    <div className="mt-8 overflow-x-auto">
-                      <h4 className="font-semibold text-gray-800 mb-4">Interactive Comparison Table:</h4>
-                      <table className="min-w-full bg-white border border-gray-200 rounded-lg">
-                        <thead>
-                          <tr className="bg-gray-50">
-                            <th className="px-6 py-3 border-b text-left text-sm font-semibold text-gray-800">Feature</th>
-                            <th className="px-6 py-3 border-b text-left text-sm font-semibold text-gray-800">Samsung Galaxy S25</th>
-                            <th className="px-6 py-3 border-b text-left text-sm font-semibold text-gray-800">Google Pixel 8 Pro</th>
-                            <th className="px-6 py-3 border-b text-left text-sm font-semibold text-gray-800">iPhone 16 Pro</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Main Sensor Resolution</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">108MP with adaptive sensor</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">50MP with Night Sight</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">48MP with ProRAW</td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Low-Light Mode</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Enhanced Night Mode</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Excellent Night Mode</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Good, but less refined</td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">AI Image Processing</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Advanced scene recognition</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">AI-driven image stabilization</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Manual adjustments needed</td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Versatility (Lenses)</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Triple camera setup</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Dual/Triple camera setup</td>
-                            <td className="px-6 py-4 border-b text-sm text-gray-700">Dual camera system</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
                 </div>
-
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    2. Battery Life and Performance
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    The Galaxy S25 is built to keep up with your busiest days:
+                  <h4 className="font-semibold text-gray-800 mb-2">Budget-Friendly Contracts:</h4>
+                  <p className="text-gray-600">
+                    Look for deals like{" "}
+                    <Link to="/mobile-phones/Phone-contracts-under-£20" className="text-primary hover:underline">
+                      Phone contracts under £20
+                    </Link>{" "}
+                    or{" "}
+                    <Link to="/mobile-phones/Phone-contracts-under-£30" className="text-primary hover:underline">
+                      Phone contracts under £30
+                    </Link>{" "}
+                    that provide quality service without overspending.
                   </p>
-
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Long-Lasting Battery:</h4>
-                      <p className="text-gray-600">
-                        Designed to power through heavy usage—from streaming your favorite shows to intensive gaming sessions—without constant recharging.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Fast Charging and Wireless Power:</h4>
-                      <p className="text-gray-600">
-                        Enjoy quick power-ups with ultra-fast charging capabilities and the convenience of wireless charging.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Smart Power Management:</h4>
-                      <p className="text-gray-600">
-                        Adaptive battery software learns your usage patterns and optimizes power distribution accordingly, similar to what you might see with Google's AI optimization in the Pixel series.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    3. Display and User Experience
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    A display that truly captivates makes all the difference:
-                  </p>
-
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Dynamic AMOLED Display:</h4>
-                      <p className="text-gray-600">
-                        Experience stunning visuals with deep blacks and vibrant colors. The S25's display adapts to your environment to provide optimal brightness and clarity.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Adaptive Refresh Rate:</h4>
-                      <p className="text-gray-600">
-                        Enjoy silky-smooth scrolling and responsive touch sensitivity whether you're browsing, gaming, or watching videos. This feature dynamically adjusts to content demands, balancing performance and energy efficiency.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">User-Centric Design:</h4>
-                      <p className="text-gray-600">
-                        A refined user interface with intuitive navigation and customizable settings ensures that interacting with your device is a delight.
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Trade-In Offers
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Upgrade Affordably:</h4>
+                  <p className="text-gray-600">
+                    Trading in your old device can significantly reduce your monthly payments. For example, if you're switching from an older Samsung model or another brand, the trade-in value could offset a large portion of your contract costs.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Seamless Process:</h4>
+                  <p className="text-gray-600">
+                    Many trade-in offers are designed to be hassle-free, ensuring you can quickly upgrade to the Galaxy S25 and enjoy its cutting-edge features.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Bundle Deals & Unlimited Data Plans
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Value-Added Bundles:</h4>
+                  <p className="text-gray-600">
+                    Consider bundles that pair your phone contract with additional services, such as broadband, streaming subscriptions, or even Samsung Phone contracts bundled with smart home devices.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Unlimited Data Options:</h4>
+                  <p className="text-gray-600">
+                    For heavy data users, explore plans offering{" "}
+                    <Link to="/mobile-phones/Unlimited-data-Samsung-Deals" className="text-primary hover:underline">
+                      Unlimited data Samsung Deals
+                    </Link>{" "}
+                    that keep you connected no matter where you are.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Flexible Contract Terms
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Short-Term Contracts:</h4>
+                  <p className="text-gray-600">
+                    Perfect if you prefer flexibility and enjoy upgrading your phone frequently.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-2">Long-Term Contracts:</h4>
+                  <p className="text-gray-600">
+                    Typically offer lower monthly payments and may include additional benefits like device insurance or exclusive software updates.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <table className="min-w-full">
+                  <thead className="bg-gray-50">
+                    <tr>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Contract Feature</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Samsung Galaxy S25 Deals</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Google Pixel 8 Pro Deals</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">iPhone 16 Pro Deals</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">No Upfront Cost</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Yes</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Yes</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Limited options</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">Monthly Price Options</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Under £20, £30, £40, & £50 options</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Competitive pricing</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Premium pricing</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">Trade-In Offers</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Attractive discounts</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Available</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Select models only</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">Bundle & Unlimited Data</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Available with extras</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Available with select plans</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Available on premium plans</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <p className="text-gray-600">
+                For more details on diverse plans, check out additional pages like{" "}
+                <Link to="/mobile-phones/iPhone-15-Deals" className="text-primary hover:underline">
+                  iPhone 15 Deals
+                </Link>,{" "}
+                <Link to="/google-mobile-phones" className="text-primary hover:underline">
+                  Google Phone contracts
+                </Link>, and{" "}
+                <Link to="/sony-mobile-phones" className="text-primary hover:underline">
+                  Sony Phone contracts
+                </Link>{" "}
+                to see how various offers compare and to find the perfect match for your lifestyle.
+              </p>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );
