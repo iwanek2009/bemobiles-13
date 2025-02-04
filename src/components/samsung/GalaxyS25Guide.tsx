@@ -8,11 +8,6 @@ export const GalaxyS25Guide = () => {
           <PageText>
             Our comprehensive guide on the Samsung Galaxy S25 Deals & Monthly Contracts! Whether you're a long-time Samsung enthusiast or looking to upgrade from your current device, this article is your one-stop resource for understanding the latest offers, in-depth feature comparisons, and smart contract options available on bemobiles.com.
           </PageText>
-
-          <PageText variant="h2">New Section Title</PageText>
-          <PageText>
-            Your new content goes here. This won't affect the existing content above.
-          </PageText>
         </section>
       </div>
     </div>
