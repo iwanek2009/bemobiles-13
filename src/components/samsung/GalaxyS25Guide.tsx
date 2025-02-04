@@ -42,6 +42,92 @@ export const GalaxyS25Guide = () => {
                 <Link to="/mobile-phones/phone-contracts-under-20" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">Phone contracts under £20</Link> and trade-in offers, upgrading to the latest technology has never been easier or more affordable.
               </p>
             </div>
+
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Feature Breakdown: Galaxy S25 vs. The Competition
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8 text-lg">
+                Let's dive into the core features of the Samsung Galaxy S25 and see how it stands against its main rivals. We've organized the key specifications into interactive, easy-to-digest segments that highlight the practical benefits for everyday use.
+              </p>
+
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    1. Camera Capabilities
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    The Samsung Galaxy S25 is engineered to satisfy even the most demanding photography enthusiasts:
+                  </p>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Advanced Sensor Technology:</h4>
+                      <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                        <li>Capture ultra-high-resolution images that reveal every detail.</li>
+                        <li>Features an innovative sensor that adapts to various lighting conditions, ensuring crisp shots whether you're in bright daylight or low-light settings.</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Pro-Grade Camera Modes:</h4>
+                      <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                        <li>Night Mode: Just like the renowned Night Sight on the <Link to="/mobile-phones/google-pixel-8-pro-deals" className="text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4">Google Pixel 8 Pro</Link>, the S25's Night Mode lets you shoot stunning low-light photos with minimal noise.</li>
+                        <li>AI-Powered Enhancements: Utilize smart algorithms to automatically adjust settings for optimal clarity and color accuracy.</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Versatile Lens Array:</h4>
+                      <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                        <li>Multiple lenses (wide, ultra-wide, and telephoto) provide creative freedom for every scenario—from sweeping landscapes to detailed portraits.</li>
+                      </ul>
+                    </div>
+
+                    <div className="mt-8 overflow-x-auto">
+                      <h4 className="font-semibold text-gray-800 mb-4">Interactive Comparison Table:</h4>
+                      <table className="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                          <tr className="bg-gray-50">
+                            <th className="px-6 py-3 border-b text-left text-sm font-semibold text-gray-800">Feature</th>
+                            <th className="px-6 py-3 border-b text-left text-sm font-semibold text-gray-800">Samsung Galaxy S25</th>
+                            <th className="px-6 py-3 border-b text-left text-sm font-semibold text-gray-800">Google Pixel 8 Pro</th>
+                            <th className="px-6 py-3 border-b text-left text-sm font-semibold text-gray-800">iPhone 16 Pro</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Main Sensor Resolution</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">108MP with adaptive sensor</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">50MP with Night Sight</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">48MP with ProRAW</td>
+                          </tr>
+                          <tr>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Low-Light Mode</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Enhanced Night Mode</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Excellent Night Mode</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Good, but less refined</td>
+                          </tr>
+                          <tr>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">AI Image Processing</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Advanced scene recognition</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">AI-driven image stabilization</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Manual adjustments needed</td>
+                          </tr>
+                          <tr>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Versatility (Lenses)</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Triple camera setup</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Dual/Triple camera setup</td>
+                            <td className="px-6 py-4 border-b text-sm text-gray-700">Dual camera system</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
