@@ -15,7 +15,7 @@ const GooglePixel9Deals = () => {
       heroImage="/lovable-uploads/94bb906a-3db5-4342-95fe-4dd94cdf917b.png"
       imageAlt="Google Pixel 9 in black color featuring its dual camera system and beautiful display"
       filter={{
-        families: [1963]
+        families: [1962]
       }}
       sort="POPULARITY"
       imageProps={{
@@ -30,3 +30,4 @@ const GooglePixel9Deals = () => {
 };
 
 export default GooglePixel9Deals;
+
