@@ -14,8 +14,8 @@ export const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild className="md:hidden">
-        <Button variant="ghost" size="icon" className="hover:bg-gray-100">
-          <Menu className="h-[38px] w-[38px] text-gray-700" />
+        <Button variant="ghost" size="icon" className="hover:bg-gray-100 h-[46px] w-[46px]">
+          <Menu className="h-[46px] w-[46px] text-gray-700" />
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="bg-white overflow-y-auto border-l border-gray-100 p-0">
