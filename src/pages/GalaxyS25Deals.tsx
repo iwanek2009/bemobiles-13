@@ -1,6 +1,7 @@
 import { TheMobile } from "@/components/templates/TheMobile";
 import { GalaxyS25Guide } from "@/components/samsung/GalaxyS25Guide";
 import { useSEO } from "@/hooks/useSEO";
+import { useEffect } from "react";
 
 const GalaxyS25Deals = () => {
   useSEO({
@@ -8,13 +9,18 @@ const GalaxyS25Deals = () => {
     description: "Find the best Samsung Galaxy S25 deals and contracts. Compare prices, data plans, and network offers to get the perfect Galaxy S25 contract for you."
   });
 
+  useEffect(() => {
+    // Force page reload on component mount
+    window.location.reload();
+  }, []);
+
   return (
     <>
       <TheMobile
         title="Samsung Galaxy S25 deals."
         description="Experience the next generation of Galaxy with advanced AI features."
-        heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
-        imageAlt="Samsung Galaxy S25 showcasing its premium design"
+        heroImage="/lovable-uploads/3ec50571-b797-4cea-9b46-e921cc20eab7.png"
+        imageAlt="Samsung Galaxy S25 in light blue color showing triple camera setup"
         filter={{
           families: [2093],
           upfront_price: {
