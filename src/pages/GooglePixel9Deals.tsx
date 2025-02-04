@@ -15,11 +15,7 @@ const GooglePixel9Deals = () => {
       heroImage="/lovable-uploads/94bb906a-3db5-4342-95fe-4dd94cdf917b.png"
       imageAlt="Google Pixel 9 in black color featuring its dual camera system and beautiful display"
       filter={{
-        families: [2084],
-        upfront_price: {
-          min: 0,
-          max: 0
-        }
+        families: [1963]
       }}
       sort="POPULARITY"
       imageProps={{
