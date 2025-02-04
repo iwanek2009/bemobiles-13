@@ -49,7 +49,7 @@ export const GalaxyS25Guide = () => {
 
               <div className="space-y-4">
                 <div>
-                  <PageText variant="h4" className="text-xl font-semibold text-gray-900">
+                  <PageText variant="h3" className="text-xl font-semibold text-gray-900">
                     Advanced Sensor Technology:
                   </PageText>
                   <ul className="list-disc pl-6 space-y-2 text-gray-700">
@@ -59,7 +59,7 @@ export const GalaxyS25Guide = () => {
                 </div>
 
                 <div>
-                  <PageText variant="h4" className="text-xl font-semibold text-gray-900">
+                  <PageText variant="h3" className="text-xl font-semibold text-gray-900">
                     Pro-Grade Camera Modes:
                   </PageText>
                   <ul className="list-disc pl-6 space-y-2 text-gray-700">
