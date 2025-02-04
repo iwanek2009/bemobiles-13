@@ -17,7 +17,7 @@ const GooglePixel9Deals = () => {
       filter={{
         families: [1962]
       }}
-      sort="POPULARITY"
+      sort="UPFRONT_PRICE"
       imageProps={{
         loading: "eager",
         fetchPriority: "high",
@@ -30,4 +30,3 @@ const GooglePixel9Deals = () => {
 };
 
 export default GooglePixel9Deals;
-
