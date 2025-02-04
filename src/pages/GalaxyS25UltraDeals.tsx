@@ -1,3 +1,4 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -14,11 +15,7 @@ const GalaxyS25UltraDeals = () => {
       heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
       imageAlt="Samsung Galaxy S25 Ultra showcasing its premium features"
       filter={{
-        families: [2083],
-        upfront_price: {
-          min: 0,
-          max: 0
-        }
+        families: [1989]
       }}
       sort="POPULARITY"
       imageProps={{
