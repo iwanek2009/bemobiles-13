@@ -13,14 +13,29 @@ export const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild className="md:hidden">
-        <Button variant="ghost" size="icon" className="hover:bg-gray-100">
-          <Menu className="h-7 w-7 text-gray-700" />
+        <Button variant="ghost" size="icon" className="hover:bg-transparent">
+          <Menu className="h-8 w-8 text-gray-900" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="bg-white overflow-y-auto border-l border-gray-100 p-0">
-        <nav className="flex flex-col gap-2 p-6">
-          <Link to="/" className="text-gray-900 hover:text-primary transition-colors text-lg font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
-            Home
+      <SheetContent side="left" className="w-full sm:w-[320px] bg-white p-0">
+        <nav className="flex flex-col gap-0">
+          <Link to="/" className="flex items-center px-6 py-4 text-base font-normal text-gray-900 hover:bg-gray-50 border-b">
+            <span className="flex-1">Home</span>
+          </Link>
+          
+          <Link to="/broadband-tv" className="flex items-center px-6 py-4 text-base font-normal text-gray-900 hover:bg-gray-50 border-b">
+            <span className="flex-1">Broadband & TV</span>
+            <ChevronDown className="h-5 w-5 text-gray-400 rotate-[-90deg]" />
+          </Link>
+
+          <Link to="/sim-only" className="flex items-center px-6 py-4 text-base font-normal text-gray-900 hover:bg-gray-50 border-b">
+            <span className="flex-1">SIM only</span>
+            <ChevronDown className="h-5 w-5 text-gray-400 rotate-[-90deg]" />
+          </Link>
+
+          <Link to="/mobile-phones" className="flex items-center px-6 py-4 text-base font-normal text-gray-900 hover:bg-gray-50 border-b">
+            <span className="flex-1">Mobile phones</span>
+            <ChevronDown className="h-5 w-5 text-gray-400 rotate-[-90deg]" />
           </Link>
 
           <Collapsible className="w-full">
@@ -112,14 +127,6 @@ export const MobileMenu = () => {
               <Link to="/mobile-phones/Unlimited-data-Sony-Deals" className="block text-gray-700 hover:text-primary transition-colors text-base p-3 rounded-lg hover:bg-gray-50">Sony Unlimited Data</Link>
             </CollapsibleContent>
           </Collapsible>
-
-          <Link to="#" className="text-gray-900 hover:text-primary transition-colors text-lg font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
-            Sim Only
-          </Link>
-
-          <Link to="#" className="text-gray-900 hover:text-primary transition-colors text-lg font-medium px-4 py-2 rounded-lg hover:bg-gray-50">
-            Broadband & TV
-          </Link>
         </nav>
       </SheetContent>
     </Sheet>
