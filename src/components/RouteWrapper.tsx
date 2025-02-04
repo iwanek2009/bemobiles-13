@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Index from "@/pages/Index";
@@ -44,7 +45,8 @@ export const RouteWrapper = () => {
         '/mobile-phones/iPhone-15-Pro-Max-Deals',
         '/mobile-phones/iPhone-14-Deals',
         '/mobile-phones/iPhone-14-Pro-Deals',
-        '/mobile-phones/Galaxy-S25-Deals'  // Added this line
+        '/mobile-phones/Galaxy-S25-Deals',
+        '/mobile-phones/Galaxy-S25-Plus-Deals'  // Added this line
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
