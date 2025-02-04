@@ -1,18 +1,12 @@
 import { TheMobile } from "@/components/templates/TheMobile";
 import { GalaxyS25Guide } from "@/components/samsung/GalaxyS25Guide";
 import { useSEO } from "@/hooks/useSEO";
-import { useEffect } from "react";
 
 const GalaxyS25Deals = () => {
   useSEO({
     title: "Samsung Galaxy S25 Deals | Compare Best Offers",
     description: "Find the best Samsung Galaxy S25 deals and contracts. Compare prices, data plans, and network offers to get the perfect Galaxy S25 contract for you."
   });
-
-  useEffect(() => {
-    // Force page reload on component mount
-    window.location.reload();
-  }, []);
 
   return (
     <>
