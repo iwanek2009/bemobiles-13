@@ -1,3 +1,4 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -11,8 +12,8 @@ const GooglePixel9Deals = () => {
     <TheMobile
       title="Google Pixel 9 deals."
       description="Experience pure Android with the Pixel 9's advanced AI features and exceptional camera capabilities."
-      heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
-      imageAlt="Google Pixel 9 showcasing its camera system"
+      heroImage="/lovable-uploads/94bb906a-3db5-4342-95fe-4dd94cdf917b.png"
+      imageAlt="Google Pixel 9 in black color featuring its dual camera system and beautiful display"
       filter={{
         families: [2084],
         upfront_price: {
