@@ -5,8 +5,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 const GalaxyS25Deals = () => {
   useSEO({
-    title: "Samsung Galaxy S25 Deals | Compare Best Offers",
-    description: "Find the best Samsung Galaxy S25 deals and contracts. Compare prices, data plans, and network offers to get the perfect Galaxy S25 contract for you."
+    title: "Samsung Galaxy S25 Deals & Contracts 2025 | Best Monthly Plans & No Upfront Cost",
+    description: "Compare the best Samsung Galaxy S25 deals & monthly contracts. Find no upfront cost plans, trade-in offers & unlimited data bundles. Expert guide with latest prices & features comparison."
   });
 
   return (
@@ -14,8 +14,8 @@ const GalaxyS25Deals = () => {
       <TheMobile
         title="Samsung Galaxy S25 deals."
         description="Experience the next generation of Galaxy with advanced AI features."
-        heroImage="/lovable-uploads/3ec50571-b797-4cea-9b46-e921cc20eab7.png"
-        imageAlt="Samsung Galaxy S25 in light blue color showing triple camera setup"
+        heroImage="/lovable-uploads/2d3483e1-dc43-4c59-9984-88025392790d.png"
+        imageAlt="Samsung Galaxy S25 in navy blue color showing triple camera setup and sleek design"
         filter={{
           families: [1904]
         }}
