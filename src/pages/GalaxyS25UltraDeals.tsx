@@ -15,7 +15,7 @@ const GalaxyS25UltraDeals = () => {
       heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
       imageAlt="Samsung Galaxy S25 Ultra showcasing its premium features"
       filter={{
-        families: [1989]
+        families: [1990]
       }}
       sort="POPULARITY"
       imageProps={{
