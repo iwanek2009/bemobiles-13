@@ -46,7 +46,8 @@ export const RouteWrapper = () => {
         '/mobile-phones/iPhone-14-Deals',
         '/mobile-phones/iPhone-14-Pro-Deals',
         '/mobile-phones/Galaxy-S25-Deals',
-        '/mobile-phones/Galaxy-S25-Plus-Deals'  // Added this line
+        '/mobile-phones/Galaxy-S25-Plus-Deals',
+        '/mobile-phones/Galaxy-S25-Ultra-Deals'  // Added this line
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
@@ -72,3 +73,4 @@ export const RouteWrapper = () => {
     </Routes>
   );
 };
+
