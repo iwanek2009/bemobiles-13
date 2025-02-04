@@ -12,8 +12,8 @@ const GalaxyS25UltraDeals = () => {
     <TheMobile
       title="Samsung Galaxy S25 Ultra deals."
       description="Experience ultimate power with the Galaxy S25 Ultra's professional-grade camera system and S Pen functionality."
-      heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
-      imageAlt="Samsung Galaxy S25 Ultra showcasing its premium features"
+      heroImage="/lovable-uploads/e1b92cf4-3563-4b8a-b22d-099dd0280be0.png"
+      imageAlt="Samsung Galaxy S25 Ultra with S Pen showcasing its premium design and camera system"
       filter={{
         families: [1990]
       }}
