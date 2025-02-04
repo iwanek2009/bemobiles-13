@@ -48,10 +48,6 @@ export const GalaxyS25Guide = () => {
                 Feature Breakdown: Galaxy S25 vs. The Competition
               </h2>
               
-              <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-                Let's dive into the core features of the Samsung Galaxy S25 and see how it stands against its main rivals. We've organized the key specifications into interactive, easy-to-digest segments that highlight the practical benefits for everyday use.
-              </p>
-
               <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -123,6 +119,70 @@ export const GalaxyS25Guide = () => {
                           </tr>
                         </tbody>
                       </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    2. Battery Life and Performance
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    The Galaxy S25 is built to keep up with your busiest days:
+                  </p>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Long-Lasting Battery:</h4>
+                      <p className="text-gray-600">
+                        Designed to power through heavy usage—from streaming your favorite shows to intensive gaming sessions—without constant recharging.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Fast Charging and Wireless Power:</h4>
+                      <p className="text-gray-600">
+                        Enjoy quick power-ups with ultra-fast charging capabilities and the convenience of wireless charging.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Smart Power Management:</h4>
+                      <p className="text-gray-600">
+                        Adaptive battery software learns your usage patterns and optimizes power distribution accordingly, similar to what you might see with Google's AI optimization in the Pixel series.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    3. Display and User Experience
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    A display that truly captivates makes all the difference:
+                  </p>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Dynamic AMOLED Display:</h4>
+                      <p className="text-gray-600">
+                        Experience stunning visuals with deep blacks and vibrant colors. The S25's display adapts to your environment to provide optimal brightness and clarity.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">Adaptive Refresh Rate:</h4>
+                      <p className="text-gray-600">
+                        Enjoy silky-smooth scrolling and responsive touch sensitivity whether you're browsing, gaming, or watching videos. This feature dynamically adjusts to content demands, balancing performance and energy efficiency.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-gray-800 mb-2">User-Centric Design:</h4>
+                      <p className="text-gray-600">
+                        A refined user interface with intuitive navigation and customizable settings ensures that interacting with your device is a delight.
+                      </p>
                     </div>
                   </div>
                 </div>
