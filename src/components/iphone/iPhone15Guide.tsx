@@ -1,4 +1,3 @@
-
 import { PageText } from "@/components/ui/page-text";
 import { Link } from "react-router-dom";
 import { EcosystemAdvantages } from "./sections/EcosystemAdvantages";
@@ -9,18 +8,18 @@ import { FeaturesAndContracts } from "./sections/FeaturesAndContracts";
 export const IPhone15Guide = () => {
   return (
     <div className="space-y-12">
-      <div className="mt-12 px-4 py-8 md:py-12 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto max-w-4xl">
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100/20 p-6 md:p-8">
-            <PageText variant="h2" className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+      <div className="mt-12 px-4 py-8 md:py-12 bg-white">
+        <div className="container mx-auto max-w-[1000px]">
+          <div className="bg-white rounded-2xl p-6 md:p-8">
+            <PageText variant="h2" className="text-3xl font-bold text-[#111111] mb-6 tracking-tight">
               iPhone 15 Deals & Pay Monthly Contracts
             </PageText>
             
-            <PageText variant="h3" className="text-2xl font-semibold text-gray-800 mb-4">
+            <PageText variant="h3" className="text-2xl font-semibold text-[#111111] mb-4">
               Your Friendly Guide to the Latest Smartphone Innovations
             </PageText>
             
-            <div className="space-y-6 text-gray-600">
+            <div className="space-y-6 text-[#4B5563] leading-relaxed">
               <PageText>
                 Hey there! If you're shopping for a new smartphone, you've probably been bombarded with excitement about the iPhone 15 lineup. So whether you're after the{" "}
                 <Link to="/mobile-phones/iPhone-15-Deals" className="text-primary hover:underline">standard iPhone 15</Link>, the bigger{" "}
