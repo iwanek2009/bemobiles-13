@@ -18,7 +18,7 @@ const GalaxyS25Deals = () => {
         filter={{
           families: [1904]
         }}
-        sort="POPULARITY"
+        sort="UPFRONT_PRICE"
         imageProps={{
           loading: "eager",
           fetchPriority: "high",
