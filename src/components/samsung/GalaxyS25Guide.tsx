@@ -20,9 +20,9 @@ export const GalaxyS25Guide = () => {
 
             <p className="text-gray-600 leading-relaxed mb-8 text-lg">
               We'll break down the standout features of the Samsung Galaxy S25, compare it with top competitors like the{' '}
-              <Link to="/google-pixel-8-pro-deals" className="text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-2 transition-colors">Google Pixel 8 Pro</Link> and the{' '}
-              <Link to="/iphone-16-pro-deals" className="text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-2 transition-colors">iPhone 16 Pro</Link>, and explain contract details including{' '}
-              <Link to="/no-upfront-cost-phones" className="text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-2 transition-colors">no upfront cost plans</Link>, trade-in offers, and bundle deals. Plus, we've packed in interactive elements like comparison tables, embedded video suggestions, and an FAQ section to ensure you have all the information you need to make an informed purchasing decision.
+              <Link to="/mobile-phones/google-pixel-8-pro-deals" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">Google Pixel 8 Pro</Link> and the{' '}
+              <Link to="/mobile-phones/iphone-16-pro-deals" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">iPhone 16 Pro</Link>, and explain contract details including{' '}
+              <Link to="/mobile-phones/no-upfront-cost" className="font-medium text-blue-600 hover:text-blue-800 underline decoration-2 underline-offset-4 transition-colors duration-200">no upfront cost plans</Link>, trade-in offers, and bundle deals. Plus, we've packed in interactive elements like comparison tables, embedded video suggestions, and an FAQ section to ensure you have all the information you need to make an informed purchasing decision.
             </p>
           </div>
         </section>
