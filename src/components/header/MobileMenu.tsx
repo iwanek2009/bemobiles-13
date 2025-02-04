@@ -7,6 +7,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { Separator } from "@/components/ui/separator";
 import { ChevronDown } from "lucide-react";
 
 export const MobileMenu = () => {
@@ -22,6 +23,7 @@ export const MobileMenu = () => {
           <Link to="/" className="text-base text-gray-900 hover:text-primary transition-colors px-4 py-2 rounded-lg hover:bg-gray-50">
             Home
           </Link>
+          <Separator className="my-1" />
 
           <Collapsible className="w-full">
             <CollapsibleTrigger className="flex items-center justify-between w-full text-base font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
@@ -36,6 +38,7 @@ export const MobileMenu = () => {
               <Link to="/honor-mobile-phones" className="block text-base text-gray-700 hover:text-primary transition-colors p-3 rounded-lg hover:bg-gray-50">Honor Phone contracts</Link>
             </CollapsibleContent>
           </Collapsible>
+          <Separator className="my-1" />
 
           <Collapsible className="w-full">
             <CollapsibleTrigger className="flex items-center justify-between w-full text-base font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
@@ -50,6 +53,7 @@ export const MobileMenu = () => {
               <Link to="/mobile-phones/Phone-contracts-under-£50" className="block text-base text-gray-700 hover:text-primary transition-colors p-3 rounded-lg hover:bg-gray-50">Contracts under £50</Link>
             </CollapsibleContent>
           </Collapsible>
+          <Separator className="my-1" />
 
           <Collapsible className="w-full">
             <CollapsibleTrigger className="flex items-center justify-between w-full text-base font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
@@ -69,6 +73,7 @@ export const MobileMenu = () => {
               <Link to="/mobile-phones/iPhone-14-Pro-Deals" className="block text-base text-gray-700 hover:text-primary transition-colors p-3 rounded-lg hover:bg-gray-50">iPhone 14 Pro Deals</Link>
             </CollapsibleContent>
           </Collapsible>
+          <Separator className="my-1" />
 
           <Collapsible className="w-full">
             <CollapsibleTrigger className="flex items-center justify-between w-full text-base font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
@@ -84,6 +89,7 @@ export const MobileMenu = () => {
               <Link to="/mobile-phones/Galaxy-S25-Ultra-Deals" className="block text-base text-gray-700 hover:text-primary transition-colors p-3 rounded-lg hover:bg-gray-50">Galaxy S25 Ultra Deals</Link>
             </CollapsibleContent>
           </Collapsible>
+          <Separator className="my-1" />
 
           <Collapsible className="w-full">
             <CollapsibleTrigger className="flex items-center justify-between w-full text-base font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
@@ -98,6 +104,7 @@ export const MobileMenu = () => {
               <Link to="/mobile-phones/Google-Pixel-9-Pro-Fold-Deals" className="block text-base text-gray-700 hover:text-primary transition-colors p-3 rounded-lg hover:bg-gray-50">Pixel 9 Pro Fold Deals</Link>
             </CollapsibleContent>
           </Collapsible>
+          <Separator className="my-1" />
 
           <Collapsible className="w-full">
             <CollapsibleTrigger className="flex items-center justify-between w-full text-base font-medium text-gray-900 p-4 rounded-lg hover:bg-gray-50 transition-colors">
@@ -112,10 +119,12 @@ export const MobileMenu = () => {
               <Link to="/mobile-phones/Unlimited-data-Sony-Deals" className="block text-base text-gray-700 hover:text-primary transition-colors p-3 rounded-lg hover:bg-gray-50">Sony Unlimited Data</Link>
             </CollapsibleContent>
           </Collapsible>
+          <Separator className="my-1" />
 
           <Link to="#" className="text-base text-gray-900 hover:text-primary transition-colors px-4 py-2 rounded-lg hover:bg-gray-50">
             Sim Only
           </Link>
+          <Separator className="my-1" />
 
           <Link to="#" className="text-base text-gray-900 hover:text-primary transition-colors px-4 py-2 rounded-lg hover:bg-gray-50">
             Broadband & TV
