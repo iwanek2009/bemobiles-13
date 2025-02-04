@@ -1,5 +1,6 @@
 import { TheMobile } from "@/components/templates/TheMobile";
 import { GalaxyS25Guide } from "@/components/samsung/GalaxyS25Guide";
+import { Footer } from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 
 const GalaxyS25Deals = () => {
@@ -28,6 +29,7 @@ const GalaxyS25Deals = () => {
         }}
       />
       <GalaxyS25Guide />
+      <Footer />
     </>
   );
 };
