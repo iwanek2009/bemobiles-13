@@ -6,8 +6,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 const GalaxyS25Deals = () => {
   useSEO({
-    title: "Samsung Galaxy S25 Deals & Contracts 2025 | Best Monthly Plans & No Upfront Cost",
-    description: "Compare the best Samsung Galaxy S25 deals & monthly contracts. Find no upfront cost plans, trade-in offers & unlimited data bundles. Expert guide with latest prices & features comparison."
+    title: "Samsung Galaxy S25 Deals & Contracts | Compare Latest Plans",
+    description: "Discover Samsung Galaxy S25 with powerful performance. Compare flexible monthly plans, unlimited data packages & exclusive network perks."
   });
 
   return (
