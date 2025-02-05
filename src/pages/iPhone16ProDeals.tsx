@@ -21,7 +21,7 @@ const iPhone16ProDeals = () => {
   return (
     <TheMobile
       title="iPhone 16 Pro deals."
-      description="Experience pro-level features with the iPhone 16 Pro's advanced camera system."
+      description="Experience Apple's Ultimate Professional iPhone with Advanced Camera Features, Premium Network Benefits, and Flexible Monthly Payment Plans from Leading Providers."
       heroImage="/lovable-uploads/3fd20b7f-c7e4-4654-affb-b7a87c42957f.png"
       imageAlt="iPhone 16 Pro showcasing its pro camera system"
       filter={{
