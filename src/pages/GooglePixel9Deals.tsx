@@ -4,8 +4,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 const GooglePixel9Deals = () => {
   useSEO({
-    title: "Google Pixel 9 Deals | Compare Best Offers",
-    description: "Find the best Google Pixel 9 deals and contracts. Compare prices, data plans, and network offers to get the perfect Pixel 9 contract for you."
+    title: "Google Pixel 9 Deals & Contracts | Compare Latest AI Phone Plans",
+    description: "Explore Google Pixel 9 with advanced AI features. Compare flexible monthly plans, unlimited data packages & exclusive network benefits."
   });
 
   return (
@@ -30,3 +30,4 @@ const GooglePixel9Deals = () => {
 };
 
 export default GooglePixel9Deals;
+
