@@ -1,7 +1,9 @@
+
 import { manufacturers } from "@/data/manufacturers";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const CategoryList = () => {
   return (
@@ -19,20 +21,23 @@ export const CategoryList = () => {
             <CardContent>
               <div className="space-y-2">
                 {manufacturer.models.map((model) => (
-                  <div
+                  <Link
                     key={model.id}
-                    className="flex items-center justify-between p-2 hover:bg-accent rounded-lg transition-colors"
+                    to={model.name === "iPhone 16" ? "/mobile-phones/iPhone-16-Deals" : "#"}
+                    className="block"
                   >
-                    <div>
-                      <h4 className="font-medium">{model.name}</h4>
-                      <p className="text-sm text-muted-foreground">
-                        From £{model.price.monthly}/month
-                      </p>
+                    <div className="flex items-center justify-between p-2 hover:bg-accent rounded-lg transition-colors">
+                      <div>
+                        <h4 className="font-medium">{model.name}</h4>
+                        <p className="text-sm text-muted-foreground">
+                          From £{model.price.monthly.toFixed(2)}/month
+                        </p>
+                      </div>
+                      <Button variant="ghost" size="icon">
+                        <ChevronRight className="h-4 w-4" />
+                      </Button>
                     </div>
-                    <Button variant="ghost" size="icon">
-                      <ChevronRight className="h-4 w-4" />
-                    </Button>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </CardContent>
