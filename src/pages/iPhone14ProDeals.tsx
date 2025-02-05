@@ -1,20 +1,21 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 
 const iPhone14ProDeals = () => {
   useSEO({
-    title: "iPhone 14 Pro Deals | Compare Best Contract Offers",
-    description: "Find the best iPhone 14 Pro contract deals. Compare prices and plans from UK's leading networks with flexible payment options."
+    title: "iPhone 14 Pro Deals & Contracts | Compare Premium Plans",
+    description: "Explore iPhone 14 Pro with premium features. Compare flexible monthly plans, unlimited data packages & exclusive network benefits."
   });
 
   return (
     <TheMobile
       title="iPhone 14 Pro deals."
       description="Experience pro-level features with iPhone 14 Pro on contract from top UK networks."
-      heroImage="/lovable-uploads/2cfcbfd3-2aa7-4cd3-b90b-7c501499fb1e.png"
-      imageAlt="iPhone 14 Pro showcasing its premium design and features"
-      filter={{ families: [1239] }}
-      sort="POPULARITY"
+      heroImage="/lovable-uploads/19301e10-a0cf-46f1-bf0d-6f9970bc8011.png"
+      imageAlt="iPhone 14 Pro in Space Black showcasing its premium design and triple camera system"
+      filter={{ families: [1802] }}
+      sort="UPFRONT_PRICE"
       imageProps={{
         loading: "eager",
         fetchPriority: "high",
