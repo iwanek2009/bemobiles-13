@@ -107,8 +107,8 @@ const deals: PhoneDeal[] = [
   {
     id: 11,
     name: "Pixel 9 Pro Fold",
-    image: "/lovable-uploads/bb25369c-a143-48e9-bc03-b67f393192ce.png",
-    monthlyPrice: 30.00,
+    image: "/lovable-uploads/17ec08fc-d0ba-43af-8dff-35b4d32b1822.png",
+    monthlyPrice: 89.00,
     upfrontCost: 0,
     colors: ["#403E43"],
     brand: "Google"
