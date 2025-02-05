@@ -11,7 +11,7 @@ const iPhone15PlusDeals = () => {
   return (
     <TheMobile
       title="iPhone 15 Plus deals."
-      description="Experience the larger iPhone 15 Plus on contract with amazing deals from top UK networks."
+      description="Find Unbeatable Monthly Plans for iPhone 15 Plus with Zero Upfront Cost Options, Unlimited Data Packages, and Exclusive Network Benefits."
       heroImage="/lovable-uploads/be7d1c03-10f4-4284-82e1-92b891a5fdf4.png"
       imageAlt="iPhone 15 Plus showcasing its larger display and features"
       filter={{ families: [1891] }}
@@ -28,3 +28,4 @@ const iPhone15PlusDeals = () => {
 };
 
 export default iPhone15PlusDeals;
+
