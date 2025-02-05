@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { PhoneColorSelector } from "./PhoneColorSelector";
 
@@ -106,6 +107,15 @@ export const PhoneCard = ({
       case "Pixel 9 Pro":
         filterObj = { 
           families: [1963],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
+        break;
+      case "Pixel 9 Pro Fold":
+        filterObj = { 
+          families: [1965],
           upfront_price: {
             min: 0,
             max: 0
