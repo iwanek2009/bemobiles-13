@@ -9,9 +9,13 @@ const iPhone16ProDeals = () => {
     description: "Find the best iPhone 16 Pro deals and contracts. Compare prices, data plans, and network offers to get the perfect iPhone 16 Pro contract for you."
   });
 
-  // Add page refresh on every visit
+  // Add page refresh only on first visit
   useEffect(() => {
-    window.location.reload();
+    const hasReloaded = sessionStorage.getItem('iPhone16ProDealsReloaded');
+    if (!hasReloaded) {
+      sessionStorage.setItem('iPhone16ProDealsReloaded', 'true');
+      window.location.reload();
+    }
   }, []);
 
   return (
