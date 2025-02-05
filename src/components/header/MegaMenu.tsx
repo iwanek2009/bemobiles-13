@@ -44,6 +44,7 @@ export const MegaMenu = () => {
                 <h3 className="font-semibold mb-4 text-lg">Popular Mobile Phones</h3>
                 <div className="space-y-3">
                   <Link to="/mobile-phones/iPhone-15-Pro-Deals" className="block text-sm hover:text-primary">iPhone 15 Pro Deals</Link>
+                  <Link to="/mobile-phones/iPhone-15-Pro-Max-Deals" className="block text-sm hover:text-primary">iPhone 15 Pro Max Deals</Link>
                   <Link to="/mobile-phones/iPhone-15-Deals" className="block text-sm hover:text-primary">iPhone 15 Deals</Link>
                   <Link to="/mobile-phones/iPhone-15-Plus-Deals" className="block text-sm hover:text-primary">iPhone 15 Plus Deals</Link>
                   <Link to="/mobile-phones/iPhone-14-Deals" className="block text-sm hover:text-primary">iPhone 14 Deals</Link>
@@ -80,3 +81,4 @@ export const MegaMenu = () => {
     </NavigationMenu>
   );
 };
+
