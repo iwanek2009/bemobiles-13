@@ -5,8 +5,8 @@ import { useEffect } from "react";
 
 const iPhone16PlusDeals = () => {
   useSEO({
-    title: "iPhone 16 Plus Deals | Compare Best Offers",
-    description: "Find the best iPhone 16 Plus deals and contracts. Compare prices, data plans, and network offers to get the perfect iPhone 16 Plus contract for you."
+    title: "iPhone 16 Plus Deals & Contracts | Compare Large Screen Plans",
+    description: "Explore iPhone 16 Plus with superior screen size and performance. Compare flexible monthly plans, unlimited data packages & exclusive network perks."
   });
 
   // Add page refresh only on first visit
