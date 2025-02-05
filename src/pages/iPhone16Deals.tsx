@@ -1,3 +1,4 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -11,8 +12,8 @@ const iPhone16Deals = () => {
     <TheMobile
       title="iPhone 16 deals."
       description="Experience the latest iPhone 16 with advanced features and powerful performance."
-      heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
-      imageAlt="iPhone 16 showcasing its design"
+      heroImage="/lovable-uploads/23b27686-c064-4ea4-8e77-83147aac4765.png"
+      imageAlt="iPhone 16 in Space Black color showing its dual camera system and elegant design"
       filter={{
         families: [1968],
         upfront_price: {
@@ -20,7 +21,7 @@ const iPhone16Deals = () => {
           max: 0
         }
       }}
-      sort="POPULARITY"
+      sort="UPFRONT_PRICE"
       imageProps={{
         loading: "eager",
         fetchPriority: "high",

@@ -39,7 +39,7 @@ export const RouteWrapper = () => {
         '/mobile-phones/Unlimited-data-Honor-Deals',
         '/mobile-phones/Unlimited-data-Sony-Deals',
         '/mobile-phones/Refurbished-mobile-Phone-contracts',
-        '/mobile-phones/iPhone-15-Deals',
+        '/mobile-phones/iPhone-16-Deals',
         '/mobile-phones/iPhone-15-Plus-Deals',
         '/mobile-phones/iPhone-15-Pro-Deals',
         '/mobile-phones/iPhone-15-Pro-Max-Deals',
@@ -50,7 +50,7 @@ export const RouteWrapper = () => {
         '/mobile-phones/Galaxy-S25-Ultra-Deals',
         '/mobile-phones/Google-Pixel-9-Deals',
         '/mobile-phones/Google-Pixel-9-Pro-Deals',
-        '/mobile-phones/Google-Pixel-9-Pro-Fold-Deals'  // Added this line
+        '/mobile-phones/Google-Pixel-9-Pro-Fold-Deals'
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
@@ -76,4 +76,3 @@ export const RouteWrapper = () => {
     </Routes>
   );
 };
-
