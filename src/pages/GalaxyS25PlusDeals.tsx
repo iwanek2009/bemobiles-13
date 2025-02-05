@@ -21,7 +21,7 @@ const GalaxyS25PlusDeals = () => {
   return (
     <TheMobile
       title="Samsung Galaxy S25 Plus deals."
-      description="Experience premium features with the Galaxy S25 Plus's advanced camera system and powerful performance."
+      description="Samsung's Enhanced Premium Smartphone with Advanced Display Technology, Superior Performance Features, and Exclusive Network Benefits from Leading Providers"
       heroImage="/lovable-uploads/5022cc00-a5d8-4c0d-b8ce-a1a650ac5a19.png"
       imageAlt="Samsung Galaxy S25 Plus in blue color showcasing its triple camera system"
       filter={{
