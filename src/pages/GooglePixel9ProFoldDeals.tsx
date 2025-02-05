@@ -4,8 +4,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 const GooglePixel9ProFoldDeals = () => {
   useSEO({
-    title: "Google Pixel 9 Pro Fold Deals | Compare Best Offers",
-    description: "Find the best Google Pixel 9 Pro Fold deals and contracts. Compare prices, data plans, and network offers to get the perfect Pixel 9 Pro Fold contract for you."
+    title: "Google Pixel 9 Pro Fold Deals & Contracts | Premium Foldable Plans",
+    description: "Experience Google's innovative Pixel 9 Pro Fold with flexible display. Compare premium monthly plans, unlimited data packages & exclusive network benefits."
   });
 
   return (
@@ -34,4 +34,3 @@ const GooglePixel9ProFoldDeals = () => {
 };
 
 export default GooglePixel9ProFoldDeals;
-
