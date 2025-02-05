@@ -21,7 +21,7 @@ const iPhone16ProMaxDeals = () => {
   return (
     <TheMobile
       title="iPhone 16 Pro Max deals."
-      description="Experience the ultimate iPhone with the largest display and most advanced features."
+      description="Experience Apple's Largest Professional iPhone with Revolutionary Camera System, and Exclusive Network Benefits from Leading Mobile Providers"
       heroImage="/lovable-uploads/29119fb5-858d-4230-aa74-b9ad183d9fff.png"
       imageAlt="iPhone 16 Pro Max showcasing its premium design"
       filter={{
