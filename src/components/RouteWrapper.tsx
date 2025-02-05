@@ -54,7 +54,7 @@ export const RouteWrapper = () => {
         '/mobile-phones/iPhone-16-Deals',
         '/mobile-phones/iPhone-16-Plus-Deals',
         '/mobile-phones/iPhone-16-Pro-Deals',
-        '/mobile-phones/iPhone-16-Pro-Max-Deals'  // Added this line
+        '/mobile-phones/iPhone-16-Pro-Max-Deals'
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);

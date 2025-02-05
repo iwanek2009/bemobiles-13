@@ -1,12 +1,22 @@
 
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
+import { useEffect } from "react";
 
 const GalaxyS25UltraDeals = () => {
   useSEO({
-    title: "Samsung Galaxy S25 Ultra Deals | Compare Best Offers",
-    description: "Find the best Samsung Galaxy S25 Ultra deals and contracts. Compare prices, data plans, and network offers to get the perfect Galaxy S25 Ultra contract for you."
+    title: "Samsung Galaxy S25 Ultra Deals & Contracts | Premium Android Plans",
+    description: "Experience Samsung's ultimate flagship Galaxy S25 Ultra. Compare premium plans, unlimited data packages & exclusive network benefits."
   });
+
+  // Add page refresh only on first visit
+  useEffect(() => {
+    const hasReloaded = sessionStorage.getItem('GalaxyS25UltraDealsReloaded');
+    if (!hasReloaded) {
+      sessionStorage.setItem('GalaxyS25UltraDealsReloaded', 'true');
+      window.location.reload();
+    }
+  }, []);
 
   return (
     <TheMobile
@@ -30,3 +40,4 @@ const GalaxyS25UltraDeals = () => {
 };
 
 export default GalaxyS25UltraDeals;
+
