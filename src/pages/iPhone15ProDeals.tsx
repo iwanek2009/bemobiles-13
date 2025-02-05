@@ -1,3 +1,4 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -11,10 +12,10 @@ const iPhone15ProDeals = () => {
     <TheMobile
       title="iPhone 15 Pro deals."
       description="Experience pro-grade features with iPhone 15 Pro on contract from top UK networks."
-      heroImage="/lovable-uploads/2cfcbfd3-2aa7-4cd3-b90b-7c501499fb1e.png"
-      imageAlt="iPhone 15 Pro showcasing its premium design and features"
-      filter={{ families: [1236] }}
-      sort="POPULARITY"
+      heroImage="/lovable-uploads/841c1985-3bfc-46da-a318-829a0136c9fc.png"
+      imageAlt="iPhone 15 Pro in Space Black finish showcasing its premium design"
+      filter={{ families: [1892] }}
+      sort="UPFRONT_PRICE"
       imageProps={{
         loading: "eager",
         fetchPriority: "high",
