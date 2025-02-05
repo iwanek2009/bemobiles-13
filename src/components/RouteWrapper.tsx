@@ -52,7 +52,8 @@ export const RouteWrapper = () => {
         '/mobile-phones/Google-Pixel-9-Pro-Deals',
         '/mobile-phones/Google-Pixel-9-Pro-Fold-Deals',
         '/mobile-phones/iPhone-16-Deals',
-        '/mobile-phones/iPhone-16-Plus-Deals'  // Added this line
+        '/mobile-phones/iPhone-16-Plus-Deals',
+        '/mobile-phones/iPhone-16-Pro-Deals'  // Added this line
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
