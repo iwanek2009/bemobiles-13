@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { PhoneColorSelector } from "./PhoneColorSelector";
 
@@ -89,6 +90,15 @@ export const PhoneCard = ({
       case "Galaxy S24 Ultra":
         filterObj = { 
           families: [1906],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
+        break;
+      case "Pixel 9 Pro":
+        filterObj = { 
+          families: [1963],
           upfront_price: {
             min: 0,
             max: 0
