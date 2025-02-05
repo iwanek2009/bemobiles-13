@@ -5,8 +5,8 @@ import { useEffect } from "react";
 
 const iPhone16ProDeals = () => {
   useSEO({
-    title: "iPhone 16 Pro Deals | Compare Best Offers",
-    description: "Find the best iPhone 16 Pro deals and contracts. Compare prices, data plans, and network offers to get the perfect iPhone 16 Pro contract for you."
+    title: "iPhone 16 Pro Deals & Contracts | Compare Premium Plans",
+    description: "Explore premium iPhone 16 Pro with flexible monthly contracts. Compare no upfront cost plans, unlimited data bundles & exclusive carrier benefits."
   });
 
   // Add page refresh only on first visit
