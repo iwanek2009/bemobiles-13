@@ -14,7 +14,7 @@ const GalaxyS25Deals = () => {
     <>
       <TheMobile
         title="Samsung Galaxy S25 deals."
-        description="Experience the next generation of Galaxy with advanced AI features."
+        description="Samsung's Latest Flagship Smartphone with Innovative Features, see Exclusive Network Benefits from Leading Providers."
         heroImage="/lovable-uploads/2d3483e1-dc43-4c59-9984-88025392790d.png"
         imageAlt="Samsung Galaxy S25 in navy blue color showing triple camera setup and sleek design"
         filter={{
