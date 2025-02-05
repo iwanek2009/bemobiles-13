@@ -11,7 +11,7 @@ const iPhone14ProDeals = () => {
   return (
     <TheMobile
       title="iPhone 14 Pro deals."
-      description="Experience pro-level features with iPhone 14 Pro on contract from top UK networks."
+      description="Compare Premium Monthly Plans for iPhone 14 Pro Deals with Zero Upfront Cost Options, Unlimited Data Packages, and Network Benefits"
       heroImage="/lovable-uploads/19301e10-a0cf-46f1-bf0d-6f9970bc8011.png"
       imageAlt="iPhone 14 Pro in Space Black showcasing its premium design and triple camera system"
       filter={{ families: [1802] }}
