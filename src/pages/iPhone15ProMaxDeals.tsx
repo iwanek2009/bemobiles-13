@@ -11,7 +11,7 @@ const iPhone15ProMaxDeals = () => {
   return (
     <TheMobile
       title="iPhone 15 Pro Max deals."
-      description="Experience the ultimate iPhone with Pro Max features on contract from top UK networks."
+      description="Find Premium Monthly Plans for iPhone 15 Pro Max with Unlimited Data Options, Network Perks, and Exclusive Provider Packages"
       heroImage="/lovable-uploads/2309a3ca-7eec-435d-a9d6-f30a38181db1.png"
       imageAlt="iPhone 15 Pro Max in Space Black showcasing its premium design and triple camera system"
       filter={{ families: [1893] }}
