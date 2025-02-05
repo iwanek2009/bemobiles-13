@@ -11,7 +11,7 @@ const GooglePixel9ProFoldDeals = () => {
   return (
     <TheMobile
       title="Google Pixel 9 Pro Fold deals."
-      description="Experience the future of mobile with the Pixel 9 Pro Fold's innovative folding display and advanced features."
+      description="Google's Revolutionary Foldable Smartphone with Advanced AI Technology, Premium Display Innovation, Compare Exclusive Network Deals from Leading Providers."
       heroImage="/lovable-uploads/bb25369c-a143-48e9-bc03-b67f393192ce.png"
       imageAlt="Google Pixel 9 Pro Fold showcasing its sleek folding display with blue and purple reflections"
       filter={{
