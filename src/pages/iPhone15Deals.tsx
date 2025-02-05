@@ -14,7 +14,7 @@ const iPhone15Deals = () => {
     <div className="min-h-screen flex flex-col">
       <TheMobile
         title="iPhone 15 deals."
-        description="Get the latest iPhone 15 on contract with amazing deals from top UK networks."
+        description="Find Affordable Monthly Plans for iPhone 15 with No Upfront Cost Options, Unlimited Data Packages, and Exclusive Provider Benefits."
         heroImage="/lovable-uploads/d94de1cf-1264-41cb-b4c3-c52fa6fee6d6.png"
         imageAlt="iPhone 15 showcasing its sleek design with dual camera system"
         filter={{
@@ -40,3 +40,4 @@ const iPhone15Deals = () => {
 };
 
 export default iPhone15Deals;
+
