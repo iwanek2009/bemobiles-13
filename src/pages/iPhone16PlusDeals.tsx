@@ -21,7 +21,7 @@ const iPhone16PlusDeals = () => {
   return (
     <TheMobile
       title="iPhone 16 Plus deals."
-      description="Experience the larger iPhone 16 Plus with enhanced features and display."
+      description="Apple's Enhanced Large-Screen iPhone with Advanced Display Features, Premium Performance Capabilities, and Exclusive Monthly Plans from Leading Networks."
       heroImage="/lovable-uploads/ff145b21-91f7-427f-8cb4-8ea269192f1b.png"
       imageAlt="iPhone 16 Plus showcasing its larger display"
       filter={{
@@ -44,3 +44,4 @@ const iPhone16PlusDeals = () => {
 };
 
 export default iPhone16PlusDeals;
+
