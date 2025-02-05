@@ -11,7 +11,7 @@ const GooglePixel9Deals = () => {
   return (
     <TheMobile
       title="Google Pixel 9 deals."
-      description="Experience pure Android with the Pixel 9's advanced AI features and exceptional camera capabilities."
+      description="Google's Most Intelligent Smartphone with Advanced AI Photography, Premium Performance Features, and Exclusive Network Benefits from Leading Providers."
       heroImage="/lovable-uploads/94bb906a-3db5-4342-95fe-4dd94cdf917b.png"
       imageAlt="Google Pixel 9 in black color featuring its dual camera system and beautiful display"
       filter={{
