@@ -11,7 +11,7 @@ const iPhone14Deals = () => {
   return (
     <TheMobile
       title="iPhone 14 deals."
-      description="Get the powerful iPhone 14 on contract with great deals from top UK networks."
+      description="Find Value Monthly Plans for iPhone 14 with Zero Upfront Options, Unlimited Data Packages, and Network Perks"
       heroImage="/lovable-uploads/6bfd71a6-6f64-439f-a3dd-b75fd167a7a7.png"
       imageAlt="iPhone 14 showcasing its sleek design and dynamic island display"
       filter={{ families: [1800] }}
