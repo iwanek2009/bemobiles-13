@@ -52,7 +52,7 @@ export const TheMobile = ({
                 {title}
               </h1>
               <p className="text-lg md:text-xl text-gray-700">
-                Get the latest Galaxy S25 on contract with amazing deals from top UK networks for unbeatable savings every month.
+                {description}
               </p>
             </div>
             <div className="relative h-[300px] md:h-[320px] w-full md:mt-5">
@@ -77,3 +77,4 @@ export const TheMobile = ({
 };
 
 export default TheMobile;
+
