@@ -1,12 +1,22 @@
 
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
+import { useEffect } from "react";
 
 const GalaxyS25PlusDeals = () => {
   useSEO({
-    title: "Samsung Galaxy S25 Plus Deals | Compare Best Offers",
-    description: "Find the best Samsung Galaxy S25 Plus deals and contracts. Compare prices, data plans, and network offers to get the perfect Galaxy S25 Plus contract for you."
+    title: "Samsung Galaxy S25 Plus Deals & Contracts | Compare Premium Plans",
+    description: "Explore Samsung Galaxy S25 Plus with enhanced features. Compare flexible monthly plans, unlimited data packages & exclusive network benefits."
   });
+
+  // Add page refresh only on first visit
+  useEffect(() => {
+    const hasReloaded = sessionStorage.getItem('GalaxyS25PlusDealsReloaded');
+    if (!hasReloaded) {
+      sessionStorage.setItem('GalaxyS25PlusDealsReloaded', 'true');
+      window.location.reload();
+    }
+  }, []);
 
   return (
     <TheMobile
@@ -30,3 +40,4 @@ const GalaxyS25PlusDeals = () => {
 };
 
 export default GalaxyS25PlusDeals;
+
