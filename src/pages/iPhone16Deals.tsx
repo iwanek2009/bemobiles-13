@@ -12,7 +12,7 @@ const iPhone16Deals = () => {
     <TheMobile
       title="iPhone 16 deals."
       description="Apple's Most Advanced iPhone with Premium Network Benefits, Unlimited Data Options, and Flexible Monthly Payment Solutions from UK Leading Providers."
-      heroImage="/lovable-uploads/433be046-89b3-46b5-8c10-cd09ac5c19bc.png"
+      heroImage="/lovable-uploads/ae777cac-c70f-4c87-8a4d-8351654ead38.png"
       imageAlt="iPhone 16 showcasing its design"
       filter={{
         families: [1968],
