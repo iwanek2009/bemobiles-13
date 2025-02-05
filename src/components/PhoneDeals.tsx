@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { PhoneCard } from "./PhoneCard";
 import { useBrandFilter } from "./BrandFilter";
@@ -84,6 +85,15 @@ const deals: PhoneDeal[] = [
     upfrontCost: 0,
     colors: ["#9b87f5", "#000000", "#8E9196", "#FEF7CD"],
     brand: "Samsung"
+  },
+  {
+    id: 9,
+    name: "Pixel 9 Pro",
+    image: "/lovable-uploads/17ec08fc-d0ba-43af-8dff-35b4d32b1822.png",
+    monthlyPrice: 41.65,
+    upfrontCost: 0,
+    colors: ["#000000", "#8E9196", "#F1F1F1", "#FDE1D3"],
+    brand: "Google"
   }
 ];
 
