@@ -1,12 +1,22 @@
 
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
+import { useEffect } from "react";
 
 const GooglePixel8Deals = () => {
   useSEO({
     title: "Google Pixel 8 Deals | Smart AI Phone Plans",
     description: "Experience intelligent photography with Pixel 8. Compare flexible monthly plans, unlimited AI features & exclusive network perks."
   });
+
+  // Add page refresh only on first visit
+  useEffect(() => {
+    const hasLoaded = sessionStorage.getItem('pixel8Loaded');
+    if (!hasLoaded) {
+      sessionStorage.setItem('pixel8Loaded', 'true');
+      window.location.reload();
+    }
+  }, []);
 
   return (
     <TheMobile
@@ -34,3 +44,4 @@ const GooglePixel8Deals = () => {
 };
 
 export default GooglePixel8Deals;
+
