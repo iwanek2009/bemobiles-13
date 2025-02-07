@@ -22,8 +22,8 @@ const GooglePixel8ProDeals = () => {
     <TheMobile
       title="Google Pixel 8 Pro deals"
       description="Explore Monthly Plans Deals for Pixel 8 Pro with AI-Enhanced Features, Unlimited Cloud Storage, and Premium Network Benefits."
-      heroImage="/lovable-uploads/0e5d689a-5b7f-4929-bcae-ceb1e4b47cc2.png"
-      imageAlt="Google Pixel 8 Pro showcasing its pro camera system"
+      heroImage="/lovable-uploads/c81b964f-826e-4472-a041-be3f38db9484.png"
+      imageAlt="Google Pixel 8 Pro in obsidian black showcasing its sleek design"
       filter={{
         families: [1901],
         upfront_price: {
