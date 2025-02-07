@@ -9,9 +9,13 @@ const GooglePixel8ProDeals = () => {
     description: "Experience Google Pixel 8 Pro with advanced AI features. Compare flexible monthly plans, unlimited data packages & exclusive network benefits."
   });
 
-  // Add page refresh on every visit
+  // Add page refresh only on first visit
   useEffect(() => {
-    window.location.reload();
+    const hasLoaded = sessionStorage.getItem('pixel8ProLoaded');
+    if (!hasLoaded) {
+      sessionStorage.setItem('pixel8ProLoaded', 'true');
+      window.location.reload();
+    }
   }, []);
 
   return (
