@@ -11,7 +11,7 @@ const GooglePixel8Deals = () => {
   return (
     <TheMobile
       title="Google Pixel 8 deals"
-      description="Experience the magic of Pixel 8 with advanced AI features and amazing camera."
+      description="Compare and Find the Best Pixel 8 Plans Across Networks - Match Data Packages, Monthly Costs, and Contract Terms"
       heroImage="/lovable-uploads/ea64ddb5-5dbe-4cef-b17b-bc7d55ca55a4.png"
       imageAlt="Google Pixel 8 showing its design"
       filter={{
