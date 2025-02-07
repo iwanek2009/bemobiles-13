@@ -22,8 +22,8 @@ const GooglePixel8Deals = () => {
     <TheMobile
       title="Google Pixel 8 deals"
       description="Compare and Find the Best Pixel 8 Plans Across Networks - Match Data Packages, Monthly Costs, and Contract Terms"
-      heroImage="/lovable-uploads/ea64ddb5-5dbe-4cef-b17b-bc7d55ca55a4.png"
-      imageAlt="Google Pixel 8 showing its design"
+      heroImage="/lovable-uploads/352eb6dc-872b-4dcd-b2cc-a2f614810fc6.png"
+      imageAlt="Google Pixel 8 in black color with a unique crystal display wallpaper"
       filter={{
         families: [1900],
         upfront_price: {
@@ -44,4 +44,3 @@ const GooglePixel8Deals = () => {
 };
 
 export default GooglePixel8Deals;
-
