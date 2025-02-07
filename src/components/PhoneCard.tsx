@@ -122,6 +122,24 @@ export const PhoneCard = ({
           }
         };
         break;
+      case "Pixel 8 Pro":
+        filterObj = { 
+          families: [1901],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
+        break;
+      case "Pixel 8":
+        filterObj = { 
+          families: [1900],
+          upfront_price: {
+            min: 0,
+            max: 0
+          }
+        };
+        break;
       default:
         return;
     }

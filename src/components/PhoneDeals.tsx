@@ -112,6 +112,24 @@ const deals: PhoneDeal[] = [
     upfrontCost: 0,
     colors: ["#403E43"],
     brand: "Google"
+  },
+  {
+    id: 12,
+    name: "Pixel 8 Pro",
+    image: "/lovable-uploads/0e5d689a-5b7f-4929-bcae-ceb1e4b47cc2.png",
+    monthlyPrice: 29.00,
+    upfrontCost: 0,
+    colors: ["#000000", "#8E9196", "#F1F1F1", "#FDE1D3"],
+    brand: "Google"
+  },
+  {
+    id: 13,
+    name: "Pixel 8",
+    image: "/lovable-uploads/ea64ddb5-5dbe-4cef-b17b-bc7d55ca55a4.png",
+    monthlyPrice: 21.99,
+    upfrontCost: 0,
+    colors: ["#000000", "#8E9196", "#F1F1F1", "#FDE1D3"],
+    brand: "Google"
   }
 ];
 
