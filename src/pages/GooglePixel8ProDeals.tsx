@@ -11,8 +11,8 @@ const GooglePixel8ProDeals = () => {
   return (
     <TheMobile
       title="Google Pixel 8 Pro deals"
-      description="Experience pro-level photography with the Pixel 8 Pro's advanced camera system."
-      heroImage="/lovable-uploads/853d1592-1bf1-4803-a5d2-37a75f347fad.png"
+      description="Explore Monthly Plans Deals for Pixel 8 Pro with AI-Enhanced Features, Unlimited Cloud Storage, and Premium Network Benefits."
+      heroImage="/lovable-uploads/0e5d689a-5b7f-4929-bcae-ceb1e4b47cc2.png"
       imageAlt="Google Pixel 8 Pro showcasing its pro camera system"
       filter={{
         families: [1900],
@@ -34,3 +34,4 @@ const GooglePixel8ProDeals = () => {
 };
 
 export default GooglePixel8ProDeals;
+
