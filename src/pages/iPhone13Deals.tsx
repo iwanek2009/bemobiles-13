@@ -4,8 +4,8 @@ import { useSEO } from "@/hooks/useSEO";
 
 const iPhone13Deals = () => {
   useSEO({
-    title: "iPhone 13 Deals & Contracts | Compare Best Offers",
-    description: "Find the best iPhone 13 deals and contracts. Compare prices, data plans, and network offers to get the perfect iPhone 13 contract for you."
+    title: "iPhone 13 Deals & Contracts | Compare Value Plans",
+    description: "Find great value iPhone 13 plans. Compare affordable monthly contracts, unlimited data packages & exclusive network perks."
   });
 
   return (
