@@ -1,3 +1,4 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -11,16 +12,12 @@ const iPhone13Deals = () => {
     <TheMobile
       title="iPhone 13 deals"
       description="Get the powerful iPhone 13 with stunning camera and 5G capabilities."
-      heroImage="/lovable-uploads/794c7a99-1639-472d-97c3-1ebb220a09b1.png"
-      imageAlt="iPhone 13 showing its dual camera system"
+      heroImage="/lovable-uploads/6e2a1107-e179-4a8e-bcba-063a55e941b4.png"
+      imageAlt="iPhone 13 in Midnight Black showing its dual camera system"
       filter={{
-        families: [1890],
-        upfront_price: {
-          min: 0,
-          max: 0
-        }
+        families: [1708],
       }}
-      sort="POPULARITY"
+      sort="UPFRONT_PRICE"
       imageProps={{
         loading: "eager",
         fetchPriority: "high",
