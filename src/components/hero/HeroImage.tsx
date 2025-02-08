@@ -6,6 +6,8 @@ interface HeroImageProps {
 }
 
 export const HeroImage = ({ scrollPosition }: HeroImageProps) => {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <div className="hidden md:block relative h-[400px] overflow-hidden">
       <img
@@ -17,11 +19,20 @@ export const HeroImage = ({ scrollPosition }: HeroImageProps) => {
           transform: `translateY(${-scrollPosition * 0.2}px)`,
           top: '0'
         }}
-        loading="lazy"
+        loading="eager"
         decoding="async"
         width="800"
         height="800"
+        onError={() => {
+          console.error("Image failed to load");
+          setImageError(true);
+        }}
       />
+      {imageError && (
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+          <p className="text-gray-500">Image could not be loaded</p>
+        </div>
+      )}
     </div>
   );
 };
