@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 
 interface HeroImageProps {
@@ -8,7 +9,7 @@ export const HeroImage = ({ scrollPosition }: HeroImageProps) => {
   return (
     <div className="hidden md:block relative h-[400px] overflow-hidden">
       <img
-        src="/lovable-uploads/1f97ee16-02b5-48f8-aa35-82d57b257908.png"
+        src="/lovable-uploads/1f97ee16-02b5-48f8-aa35-82d57b257908.webp"
         alt="Modern smartphones"
         className="absolute w-full object-cover transition-transform duration-300 ease-out"
         style={{
