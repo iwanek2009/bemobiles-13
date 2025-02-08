@@ -15,6 +15,7 @@ interface TheMobileProps {
       min: number;
       max: number;
     };
+    refurbished?: "ONLY_REFURB" | "NO_REFURB";
   };
   basic?: boolean;
   sort?: string;
@@ -77,4 +78,3 @@ export const TheMobile = ({
 };
 
 export default TheMobile;
-

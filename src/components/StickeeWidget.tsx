@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 
 interface StickeeWidgetProps {
@@ -8,6 +9,7 @@ interface StickeeWidgetProps {
       min: number;
       max: number;
     };
+    refurbished?: "ONLY_REFURB" | "NO_REFURB";
   };
   basic?: boolean;
   sort?: string;
