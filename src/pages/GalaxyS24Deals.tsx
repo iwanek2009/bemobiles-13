@@ -1,3 +1,4 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -11,16 +12,12 @@ const GalaxyS24Deals = () => {
     <TheMobile
       title="Samsung Galaxy S24 deals"
       description="Experience the latest Galaxy S24 with advanced AI features and powerful performance."
-      heroImage="/lovable-uploads/b53f9160-6075-444a-abe9-c8b4b56362ea.png"
+      heroImage="/lovable-uploads/ea3347f8-0911-4f5f-9bcf-5c6d43d61908.png"
       imageAlt="Samsung Galaxy S24 showcasing its design"
       filter={{
         families: [1904],
-        upfront_price: {
-          min: 0,
-          max: 0
-        }
       }}
-      sort="POPULARITY"
+      sort="UPFRONT_PRICE"
       imageProps={{
         loading: "eager",
         fetchPriority: "high",

@@ -45,7 +45,8 @@ export const RouteWrapper = () => {
         '/mobile-phones/iPhone-15-Pro-Max-Deals',
         '/mobile-phones/iPhone-14-Deals',
         '/mobile-phones/iPhone-14-Pro-Deals',
-        '/mobile-phones/iPhone-13-Deals',  // Added iPhone 13 Deals
+        '/mobile-phones/iPhone-13-Deals',
+        '/mobile-phones/Galaxy-S24-Deals',
         '/mobile-phones/Galaxy-S25-Deals',
         '/mobile-phones/Galaxy-S25-Plus-Deals',
         '/mobile-phones/Galaxy-S25-Ultra-Deals',
