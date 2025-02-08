@@ -1,18 +1,19 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 
 const GalaxyS24PlusDeals = () => {
   useSEO({
-    title: "Samsung Galaxy S24+ Deals | Compare Best Offers",
-    description: "Find the best Samsung Galaxy S24+ deals and contracts. Compare prices, data plans, and network offers to get the perfect Galaxy S24+ contract for you."
+    title: "Samsung Galaxy S24+ Deals & Contracts | Compare Premium Plans",
+    description: "Explore Samsung Galaxy S24+ with enhanced AI features. Compare flexible monthly plans, unlimited data packages & exclusive network benefits."
   });
 
   return (
     <TheMobile
       title="Samsung Galaxy S24+ deals"
-      description="Get the enhanced Galaxy S24+ with larger display and premium features."
-      heroImage="/lovable-uploads/ce3416ba-a118-4173-9c41-fd8b27198479.png"
-      imageAlt="Samsung Galaxy S24+ showcasing its premium design"
+      description="Compare and Find Premium S24+ Plans Across Networks - Match Enhanced Features, Data Allowances, and Monthly Costs."
+      heroImage="/lovable-uploads/72d63d99-0c78-40c3-9541-92b78be41f31.png"
+      imageAlt="Samsung Galaxy S24+ showcasing its premium design with triple camera system"
       filter={{
         families: [1905],
         upfront_price: {
