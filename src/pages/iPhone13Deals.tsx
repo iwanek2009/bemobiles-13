@@ -11,9 +11,9 @@ const iPhone13Deals = () => {
   return (
     <TheMobile
       title="iPhone 13 deals"
-      description="Get the powerful iPhone 13 with stunning camera and 5G capabilities."
-      heroImage="/lovable-uploads/6e2a1107-e179-4a8e-bcba-063a55e941b4.png"
-      imageAlt="iPhone 13 in Midnight Black showing its dual camera system"
+      description="Compare and Find Affordable iPhone 13 Plans Across All UK Networks - Match Data Allowances, Monthly Prices, and Contract Benefits."
+      heroImage="/lovable-uploads/972a0053-51e4-4624-9827-50ad8e23c159.png"
+      imageAlt="iPhone 13 in Midnight Black showing its dual camera system and sleek design"
       filter={{
         families: [1708],
       }}
