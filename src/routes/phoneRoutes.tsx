@@ -1,3 +1,4 @@
+
 import { Route } from "react-router-dom";
 import MobilePhones from "@/pages/MobilePhones";
 import SamsungMobilePhones from "@/pages/SamsungMobilePhones";
@@ -21,6 +22,7 @@ import GooglePixel9ProFoldDeals from "@/pages/GooglePixel9ProFoldDeals";
 import GooglePixel8ProDeals from "@/pages/GooglePixel8ProDeals";
 import GooglePixel8Deals from "@/pages/GooglePixel8Deals";
 import UnlimitedDataSamsungDealsByPopularity from "@/pages/UnlimitedDataSamsungDealsByPopularity";
+import UnlimitedDataIPhoneDeals from "@/pages/UnlimitedDataIPhoneDeals";
 
 export const PhoneRoutes = [
   <Route key="mobile-phones" path="/mobile-phones" element={<MobilePhones />} />,
@@ -44,5 +46,6 @@ export const PhoneRoutes = [
   <Route key="pixel-9-pro-fold" path="/mobile-phones/Google-Pixel-9-Pro-Fold-Deals" element={<GooglePixel9ProFoldDeals />} />,
   <Route key="pixel-8-pro" path="/mobile-phones/Google-Pixel-8-Pro-Deals" element={<GooglePixel8ProDeals />} />,
   <Route key="pixel-8" path="/mobile-phones/Google-Pixel-8-Deals" element={<GooglePixel8Deals />} />,
-  <Route key="unlimited-samsung-popularity" path="/mobile-phones/Unlimited-data-Samsung-Deals/by-popularity" element={<UnlimitedDataSamsungDealsByPopularity />} />
+  <Route key="unlimited-samsung-popularity" path="/mobile-phones/Unlimited-data-Samsung-Deals/by-popularity" element={<UnlimitedDataSamsungDealsByPopularity />} />,
+  <Route key="unlimited-iphone-data" path="/mobile-phones/Unlimited-data-iPhone-Deals" element={<UnlimitedDataIPhoneDeals />} />
 ];
