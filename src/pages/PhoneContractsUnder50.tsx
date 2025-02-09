@@ -16,8 +16,8 @@ const PhoneContractsUnder50 = () => {
       imageAlt="Latest smartphones under £50 monthly contracts"
       filter={{
         upfront_price: {
-          min: 10,
-          max: 50
+          min: 35,
+          max: 40
         }
       }}
       sort="MONTHLY_PRICE"
