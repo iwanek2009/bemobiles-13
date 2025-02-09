@@ -32,7 +32,7 @@ export const RouteWrapper = () => {
         '/mobile-phones/Phone-contracts-under-£20',
         '/mobile-phones/Phone-contracts-under-£30',
         '/mobile-phones/Phone-contracts-under-£40',
-        '/mobile-phones/Phone-contracts-under-£50',
+        '/mobile-phones/Phone-contracts-under-50',
         '/mobile-phones/Unlimited-data-iPhone-Deals',
         '/mobile-phones/Unlimited-data-Samsung-Deals',
         '/mobile-phones/Unlimited-data-Google-Deals',
