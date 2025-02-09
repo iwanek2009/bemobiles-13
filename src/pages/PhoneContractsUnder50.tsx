@@ -15,7 +15,7 @@ const PhoneContractsUnder50 = () => {
       heroImage="/lovable-uploads/837a4649-6387-4c3a-bf7a-d6c05b0595cc.png"
       imageAlt="Modern smartphones showing iPhone and Android devices"
       filter={{
-        effective_line_rental: {
+        upfront_price: {
           min: 10,
           max: 50
         }
