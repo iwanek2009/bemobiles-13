@@ -45,7 +45,7 @@ const iPhone16Deals = () => {
           </PageText>
 
           <div className="mt-4 space-y-2">
-            <PageText variant="h4">Key Offer Highlights:</PageText>
+            <PageText variant="h3">Key Offer Highlights:</PageText>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Flexible Monthly Contracts:</strong> Spread the cost over your chosen contract period.</li>
               <li><strong>Diverse Data Packages:</strong> Options include 5GB, 10GB, 20GB, or even unlimited data plans.</li>
@@ -94,7 +94,7 @@ const iPhone16Deals = () => {
             </PageText>
 
             <div className="mt-4 space-y-2">
-              <PageText variant="h4">Key Features:</PageText>
+              <PageText variant="h3">Key Features:</PageText>
               <ul className="list-disc pl-6 space-y-2 text-gray-700">
                 <li><strong>Immersive Display:</strong> Enjoy a larger, edge-to-edge screen for vibrant visuals.</li>
                 <li><strong>Advanced Camera System:</strong> Capture professional-quality photos with improved low-light performance.</li>
@@ -145,3 +145,4 @@ const iPhone16Deals = () => {
 };
 
 export default iPhone16Deals;
+
