@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -30,7 +31,7 @@ export const MegaMenu = () => {
                   <Link to="/mobile-phones/Phone-contracts-under-£20" className="block text-sm hover:text-primary">Phone contracts under £20</Link>
                   <Link to="/mobile-phones/Phone-contracts-under-£30" className="block text-sm hover:text-primary">Phone contracts under £30</Link>
                   <Link to="/mobile-phones/Phone-contracts-under-£40" className="block text-sm hover:text-primary">Phone contracts under £40</Link>
-                  <Link to="/mobile-phones/Phone-contracts-under-50" className="block text-sm hover:text-primary">Phone contracts under £50</Link>
+                  <Link to="/mobile-phones/Phone-contracts-under-£50" className="block text-sm hover:text-primary">Phone contracts under £50</Link>
                   <Link to="/mobile-phones/Unlimited-data-iPhone-Deals" className="block text-sm hover:text-primary">Unlimited data iPhone Deals</Link>
                   <Link to="/mobile-phones/Unlimited-data-Samsung-Deals" className="block text-sm hover:text-primary">Unlimited data Samsung Deals</Link>
                   <Link to="/mobile-phones/Unlimited-data-Google-Deals" className="block text-sm hover:text-primary">Unlimited data Google Deals</Link>
@@ -80,3 +81,4 @@ export const MegaMenu = () => {
     </NavigationMenu>
   );
 };
+

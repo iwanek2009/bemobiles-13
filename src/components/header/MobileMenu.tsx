@@ -50,7 +50,7 @@ export const MobileMenu = () => {
               <Link to="/mobile-phones/Phone-contracts-under-£20" className="block text-base text-gray-700 hover:text-primary transition-colors px-3 py-2.5 rounded-lg hover:bg-gray-50">Contracts under £20</Link>
               <Link to="/mobile-phones/Phone-contracts-under-£30" className="block text-base text-gray-700 hover:text-primary transition-colors px-3 py-2.5 rounded-lg hover:bg-gray-50">Contracts under £30</Link>
               <Link to="/mobile-phones/Phone-contracts-under-£40" className="block text-base text-gray-700 hover:text-primary transition-colors px-3 py-2.5 rounded-lg hover:bg-gray-50">Contracts under £40</Link>
-              <Link to="/mobile-phones/Phone-contracts-under-50" className="block text-base text-gray-700 hover:text-primary transition-colors px-3 py-2.5 rounded-lg hover:bg-gray-50">Contracts under £50</Link>
+              <Link to="/mobile-phones/Phone-contracts-under-£50" className="block text-base text-gray-700 hover:text-primary transition-colors px-3 py-2.5 rounded-lg hover:bg-gray-50">Contracts under £50</Link>
             </CollapsibleContent>
           </Collapsible>
           <Separator className="my-1" />
