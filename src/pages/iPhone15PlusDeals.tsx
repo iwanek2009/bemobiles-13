@@ -85,6 +85,44 @@ const iPhone15PlusDeals = () => {
             </p>
           </div>
         </section>
+
+        <section className="bg-white rounded-lg shadow-sm p-6">
+          <h2 className="text-2xl font-bold mb-4">Why Choose the iPhone 15 Plus?</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">Design and Display</h3>
+              <p className="text-gray-600">
+                The iPhone 15 Plus delivers a premium experience with its expansive 6.7-inch Super Retina XDR display - the same size as the Pro Max, but at a more accessible price point. The durable aluminum design combined with Ceramic Shield makes it both stylish and robust. Dynamic Island keeps your notifications and activities easily visible.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">Camera Excellence</h3>
+              <p className="text-gray-600">
+                Experience a major upgrade with the 48MP main camera, which captures stunning detail in every shot. The advanced camera system brings you improved Portrait mode with Focus and Depth Control, plus the next generation of HDR photos with Smart HDR 5. Perfect for capturing life's moments in vivid detail.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">Performance and Battery</h3>
+              <p className="text-gray-600">
+                Powered by the A16 Bionic chip, the iPhone 15 Plus handles everything from everyday tasks to intensive gaming with ease. The larger size accommodates a bigger battery, offering exceptional life that can last up to 26 hours of video playback. Fast charging support gets you to 50% in around 30 minutes.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">Additional Premium Features</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                <li>USB-C connectivity for universal charging and faster data transfer</li>
+                <li>5G capabilities for ultra-fast mobile data</li>
+                <li>Enhanced security with Face ID</li>
+                <li>MagSafe charging compatibility</li>
+                <li>Improved satellite connectivity for emergencies</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
