@@ -2,12 +2,81 @@
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
+const FAQItem = ({ question, answer, isOpen, onClick }: { 
+  question: string;
+  answer: string;
+  isOpen: boolean;
+  onClick: () => void;
+}) => {
+  return (
+    <div className="border-b border-gray-200 last:border-0">
+      <button
+        onClick={onClick}
+        className="w-full flex justify-between items-center py-4 text-left hover:bg-gray-50 focus:outline-none"
+      >
+        <span className="font-medium text-gray-900 pr-8">{question}</span>
+        <ChevronDown
+          className={`transform transition-transform duration-200 flex-shrink-0 ${
+            isOpen ? 'rotate-180' : ''
+          }`}
+        />
+      </button>
+      <div
+        className={`overflow-hidden transition-all duration-200 ${
+          isOpen ? 'max-h-[500px] pb-4' : 'max-h-0'
+        }`}
+      >
+        <p className="text-gray-600 pr-8">{answer}</p>
+      </div>
+    </div>
+  );
+};
 
 const iPhone15PlusDeals = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   useSEO({
     title: "iPhone 15 Plus Deals & Contracts | Compare Large Screen iPhone Plans",
     description: "Explore iPhone 15 Plus with superior screen size and performance. Compare flexible monthly plans, unlimited data packages & exclusive network perks."
   });
+
+  const faqs = [
+    {
+      question: "Should you go for the iPhone 15 Plus over the standard iPhone 15, and is the additional cost justified?",
+      answer: "The iPhone 15 Plus has a lot of advantages over the regular model: a much larger 6.7-inch screen that's great for streaming and gaming, substantially longer battery life (up to 26 hours of video playback) and a much more immersive experience for everyday use. For those who prioritize screen real estate and longer battery life, the Plus model offers tremendous value."
+    },
+    {
+      question: "How does iPhone 15 Plus battery life stack up against other models?",
+      answer: "The biggest, most productive iPhone in the range -- up to 26 hours of video playback and 100 hours of audio playback. It bests the regular iPhone 15 and comes close to the Pro Max model, which makes it a fantastic option for heavy users who want great battery life without the Pro price."
+    },
+    {
+      question: "Will my old iPhone case work with iPhone 15 Plus?",
+      answer: "Thanks to the new USB-C port, not to mention slightly different dimensions, cases from older iPhone models won't fit the iPhone 15 Plus. The case will have to be dedicated to this model, but there will be plenty of them available, as many manufacturers have already come up with their designs."
+    },
+    {
+      question: "Which storage size for iPhone 15 Plus should I choose?",
+      answer: "The iPhone 15 Plus is available in 128GB, 256GB, and 512GB options. 128GB is more than enough for apps, photos, and a few footages for most users. But if you take numerous photos or 4K video, choose the 256GB model. The 512GB model is for those who keep a large media library or use their phone for content creation."
+    },
+    {
+      question: "Are the cameras on the iPhone 15 Plus the same as the Pro models?",
+      answer: "While the iPhone 15 Plus packs the main camera with 48MP resolution and many advanced features such as Smart HDR 5 and improved Portrait mode, it lacks a telephoto lens like the Pro models. However, for the majority of photography needs, from social media to portraits to everyday shots, the Plus produces excellent quality photos."
+    },
+    {
+      question: "Which Colors are Offered with iPhone 15 Plus?",
+      answer: "The iPhone 15 Plus is available in Pink, Yellow, Green, Blue, and Black. These finishes are available with a refined matte texture that looks sleek and is resistant to fingerprints."
+    },
+    {
+      question: "Can you get iPhone 15 Plus contracts with no up front cost?",
+      answer: "Yes, there are a number of iPhone 15 Plus deals in the UK that do not require an upfront cost. Though these contracts usually come with bigger monthly payments, they lower the barrier to entry if you want the latest iPhone but don't want to spend a lot upfront."
+    },
+    {
+      question: "What kinds of charging does the iPhone 15 Plus support?",
+      answer: "The iPhone 15 Plus gives you the same USB-C port introduction, with universal charging, fast charging (50% in 30 minutes with a 20W adapter) and wireless charging with MagSafe charging up to 15W."
+    }
+  ];
 
   return (
     <>
@@ -51,7 +120,7 @@ const iPhone15PlusDeals = () => {
                 <Link to="/mobile-phones/iPhone-15-Pro-Deals" className="text-blue-600 hover:underline">iPhone 15 Pro</Link>, {' '}
                 <Link to="/mobile-phones/iPhone-16-Deals" className="text-blue-600 hover:underline">iPhone 16</Link> and {' '}
                 <Link to="/mobile-phones/iPhone-16-Pro-Deals" className="text-blue-600 hover:underline">iPhone 16 Pro</Link>, or view {' '}
-                <Link to="/mobile-phones/iphone-deals" className="text-blue-600 hover:underline">all iPhone deals</Link>.
+                <Link to="/iphone-mobile-phones" className="text-blue-600 hover:underline">all iPhone deals</Link>.
               </p>
             </div>
           </div>
@@ -123,9 +192,25 @@ const iPhone15PlusDeals = () => {
             </div>
           </div>
         </section>
+
+        <section className="bg-white rounded-lg shadow-sm p-6">
+          <h2 className="text-2xl font-bold mb-6">iPhone 15 Plus FAQs</h2>
+          <div className="divide-y divide-gray-200">
+            {faqs.map((faq, index) => (
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openIndex === index}
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+              />
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );
 };
 
 export default iPhone15PlusDeals;
+
