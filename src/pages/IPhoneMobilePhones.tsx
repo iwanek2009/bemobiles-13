@@ -1,9 +1,11 @@
+
 import { TheMobile } from "@/components/templates/TheMobile";
 import { IPhoneContracts } from "@/components/iphone/IPhoneContracts";
 import { IPhoneFAQ } from "@/components/iphone/IPhoneFAQ";
 import { IPhoneLineup } from "@/components/iphone/IPhoneLineup";
 import { IPhoneCarrierDeals } from "@/components/iphone/IPhoneCarrierDeals";
 import { IPhoneEcosystem } from "@/components/iphone/IPhoneEcosystem";
+import PhoneModelsSection from "@/components/iphone/PhoneModelsSection";
 import { useSEO } from "@/hooks/useSEO";
 
 const IPhoneMobilePhones = () => {
@@ -31,6 +33,7 @@ const IPhoneMobilePhones = () => {
       />
       <IPhoneContracts />
       <IPhoneLineup />
+      <PhoneModelsSection />
       <IPhoneCarrierDeals />
       <IPhoneEcosystem />
       <IPhoneFAQ />
