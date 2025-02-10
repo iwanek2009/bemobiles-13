@@ -29,7 +29,7 @@ const CTAComparison = () => {
             <ChevronRight size={20} />
           </button>
           <a 
-            href="/mobile-phones/iphone-deals" 
+            href="/iphone-mobile-phones" 
             className="flex items-center justify-center gap-2 bg-white border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors w-full sm:w-auto"
           >
             View All iPhone Deals
