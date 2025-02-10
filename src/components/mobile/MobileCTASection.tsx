@@ -1,39 +1,45 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const MobileCTASection = () => {
-  return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-16 mt-12">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Ready to explore the best phone deals?
-          </h2>
-          
-          <p className="text-lg text-gray-600 mb-8">
-            Navigating the smartphone market and mobile contract deals in the UK doesn't have to be overwhelming. With insights into model variations, latest releases, and contract options, you're now better equipped to make an informed decision. Whether it's an iPhone, Google Pixel, Samsung Galaxy, or Sony Xperia, there's a contract deal that perfectly matches your lifestyle and budget.
-          </p>
+  const scrollToWidget = () => {
+    const widget = document.querySelector('[data-stickee-widget-id]');
+    if (widget) {
+      widget.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-          <p className="text-lg text-gray-600 mb-8">
-            Check out the latest mobile contract deals and exclusive offers. Dive into our comprehensive comparisons, discover trade-in opportunities, and find the perfect plan that gets you the most out of your new smartphone. Happy shopping!
-          </p>
-          
+  return (
+    <div className="w-full max-w-4xl mx-auto bg-gray-50 rounded-lg p-8 my-8">
+      <div className="text-center space-y-6">
+        <h2 className="text-2xl font-bold text-gray-900">
+          Find Your Perfect iPhone 15 Pro Deal Today
+        </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Why wait? Compare the latest iPhone 15 Pro contract deals from major UK networks and discover exclusive offers not available elsewhere. Use our comparison tool to find the perfect balance of upfront cost, monthly payments, and data allowance.
+        </p>
+        <p className="text-gray-600">
+          With deals starting from £35 per month, you could be enjoying your new iPhone 15 Pro sooner than you think.
+        </p>
+        <div className="space-x-4 pt-4">
           <Button 
-            size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 h-auto text-base"
-            onClick={() => {
-              const widget = document.querySelector('[data-stickee-widget-id]');
-              if (widget) {
-                widget.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
+            onClick={scrollToWidget}
+            className="bg-primary text-white px-6 py-3 h-auto font-medium hover:bg-primary/90"
           >
-            Explore Mobile Phone Deals
-            <ArrowRight className="ml-2" />
+            Compare iPhone 15 Pro Deals
           </Button>
+          <Link to="/mobile-phones/iPhone-15-Pro-Max-Deals">
+            <Button 
+              variant="outline"
+              className="bg-white text-primary px-6 py-3 h-auto font-medium border-primary hover:bg-primary/10"
+            >
+              View iPhone 15 Pro Max Deals
+            </Button>
+          </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
