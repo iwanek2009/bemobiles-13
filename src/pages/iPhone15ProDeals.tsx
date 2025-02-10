@@ -2,6 +2,7 @@ import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { PageText } from "@/components/ui/page-text";
 import { Link } from "react-router-dom";
+import { IPhoneFAQ } from "@/components/iphone/IPhoneFAQ";
 
 const iPhone15ProDeals = () => {
   useSEO({
@@ -132,6 +133,8 @@ const iPhone15ProDeals = () => {
               </div>
             </div>
           </section>
+
+          <IPhoneFAQ />
         </div>
       </div>
     </TheMobile>
