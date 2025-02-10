@@ -4,6 +4,7 @@ import { PageText } from "@/components/ui/page-text";
 import { Link } from "react-router-dom";
 import FeaturesSection from "@/components/iphone/FeaturesSection";
 import FAQSection from "@/components/iphone/FAQSection";
+import CTAComparison from "@/components/iphone/CTAComparison";
 
 const iPhone15ProMaxDeals = () => {
   useSEO({
@@ -146,8 +147,8 @@ const iPhone15ProMaxDeals = () => {
           </section>
 
           <FeaturesSection />
-          
           <FAQSection />
+          <CTAComparison />
         </div>
       </div>
     </TheMobile>
