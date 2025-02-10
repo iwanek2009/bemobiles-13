@@ -98,6 +98,62 @@ const iPhone15ProDeals = () => {
           </section>
 
           <section>
+            <PageText variant="h2">Available iPhone 15 Pro Max Deals & Contract Offers</PageText>
+            <div className="mt-4 space-y-4">
+              <PageText>
+                Looking for an iPhone 15 Pro Max contract? Our smart comparison tool helps you find exactly what you need, including deals with no upfront cost. Filter through a wide range of options including:
+              </PageText>
+              
+              <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                <li>Data packages from 1GB to unlimited data</li>
+                <li>
+                  Plans from major networks like{" "}
+                  <a 
+                    href="https://www.o2.co.uk/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    O2
+                  </a>,{" "}
+                  <a 
+                    href="https://www.vodafone.co.uk/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    Vodafone
+                  </a>,{" "}
+                  <a 
+                    href="https://www.sky.com/shop/mobile" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    Sky Mobile
+                  </a>, and{" "}
+                  <a 
+                    href="https://www.idmobile.co.uk/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    iD Mobile
+                  </a>
+                </li>
+                <li>Choice between new and refurbished phones</li>
+                <li>Available colors: Natural Titanium, Blue Titanium, Black Titanium, White Titanium</li>
+                <li>Storage options: 256GB, 512GB, and 1TB</li>
+                <li>Options with no upfront cost available</li>
+              </ul>
+              
+              <PageText>
+                Whether you're looking for a plan with unlimited minutes and texts, or a specific data allowance, our platform lets you compare and find the most competitive iPhone 15 Pro Max deals from UK carriers today.
+              </PageText>
+            </div>
+          </section>
+
+          <section>
             <PageText variant="h2">What are the iPhone 15 Pro best features?</PageText>
             
             <div className="mt-6 space-y-8">
