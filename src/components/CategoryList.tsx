@@ -6,6 +6,27 @@ import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const CategoryList = () => {
+  const getModelLink = (modelName: string) => {
+    switch (modelName) {
+      case "iPhone 15":
+        return "/mobile-phones/iPhone-15-Deals";
+      case "Galaxy S25":
+        return "/mobile-phones/Galaxy-S25-Deals";
+      case "Galaxy S24 Ultra":
+        return "/mobile-phones/Galaxy-S24-Ultra-Deals";
+      case "Pixel 9 Pro":
+        return "/mobile-phones/Google-Pixel-9-Pro-Deals";
+      case "Xperia 1 VI":
+        return "/sony-mobile-phones";
+      case "Honor 200 Pro":
+        return "/honor-mobile-phones";
+      case "iPhone 16":
+        return "/mobile-phones/iPhone-16-Deals";
+      default:
+        return "#";
+    }
+  };
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-[1000px]">
       <h2 className="text-2xl font-bold mb-6">Browse by Manufacturer</h2>
@@ -23,7 +44,7 @@ export const CategoryList = () => {
                 {manufacturer.models.map((model) => (
                   <Link
                     key={model.id}
-                    to={model.name === "iPhone 16" ? "/mobile-phones/iPhone-16-Deals" : "#"}
+                    to={getModelLink(model.name)}
                     className="block"
                   >
                     <div className="flex items-center justify-between p-2 hover:bg-accent rounded-lg transition-colors">
@@ -47,3 +68,4 @@ export const CategoryList = () => {
     </div>
   );
 };
+
