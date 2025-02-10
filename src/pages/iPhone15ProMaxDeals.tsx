@@ -79,7 +79,7 @@ const iPhone15ProMaxDeals = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/mobile-phones/iphone-deals" className="text-primary hover:underline">
+                    <Link to="/iphone-mobile-phones" className="text-primary hover:underline">
                       View all iPhone deals
                     </Link>
                   </li>
