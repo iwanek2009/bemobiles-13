@@ -1,9 +1,9 @@
-
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { PageText } from "@/components/ui/page-text";
 import { Link } from "react-router-dom";
 import FeaturesSection from "@/components/iphone/FeaturesSection";
+import FAQSection from "@/components/iphone/FAQSection";
 
 const iPhone15ProMaxDeals = () => {
   useSEO({
@@ -146,6 +146,8 @@ const iPhone15ProMaxDeals = () => {
           </section>
 
           <FeaturesSection />
+          
+          <FAQSection />
         </div>
       </div>
     </TheMobile>
@@ -153,4 +155,3 @@ const iPhone15ProMaxDeals = () => {
 };
 
 export default iPhone15ProMaxDeals;
-
