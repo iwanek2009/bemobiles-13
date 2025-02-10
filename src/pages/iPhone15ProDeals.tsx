@@ -1,4 +1,3 @@
-
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { PageText } from "@/components/ui/page-text";
@@ -91,6 +90,44 @@ const iPhone15ProDeals = () => {
                       iPhone 15 Plus deals
                     </Link>
                   </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <PageText variant="h2">What are the iPhone 15 Pro best features?</PageText>
+            
+            <div className="mt-6 space-y-8">
+              <div>
+                <PageText variant="h3">Design and Display</PageText>
+                <PageText>
+                  The iPhone 15 Pro features a lightweight titanium frame and a stunning 6.1-inch Super Retina XDR OLED display with ProMotion 120Hz technology. The Always-On display keeps important information visible with minimal battery impact.
+                </PageText>
+              </div>
+
+              <div>
+                <PageText variant="h3">Battery Life and Performance</PageText>
+                <PageText>
+                  With the powerful A17 Pro chip and efficient battery management, you get all-day battery life with up to 23 hours of video playback. Fast charging capability gets you to 50% in just 30 minutes.
+                </PageText>
+              </div>
+
+              <div>
+                <PageText variant="h3">Entertainment and Gaming</PageText>
+                <PageText>
+                  Experience console-quality gaming with ray tracing support and immersive Spatial Audio. The A17 Pro chip ensures smooth performance for all your entertainment needs.
+                </PageText>
+              </div>
+
+              <div>
+                <PageText variant="h3">Additional Standout Features</PageText>
+                <ul className="mt-4 list-disc pl-6 space-y-2 text-gray-700">
+                  <li>USB-C port for universal connectivity and faster data transfer</li>
+                  <li>Pro camera system with 48MP main sensor</li>
+                  <li>Action button for quick access to custom functions</li>
+                  <li>Advanced safety features including Emergency SOS and Crash Detection</li>
+                  <li>5G connectivity for ultra-fast mobile data</li>
                 </ul>
               </div>
             </div>
