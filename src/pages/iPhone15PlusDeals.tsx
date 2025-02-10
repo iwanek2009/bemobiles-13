@@ -1,9 +1,9 @@
-
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const FAQItem = ({ question, answer, isOpen, onClick }: { 
   question: string;
@@ -77,6 +77,13 @@ const iPhone15PlusDeals = () => {
       answer: "The iPhone 15 Plus gives you the same USB-C port introduction, with universal charging, fast charging (50% in 30 minutes with a 20W adapter) and wireless charging with MagSafe charging up to 15W."
     }
   ];
+
+  const scrollToWidget = () => {
+    const widget = document.querySelector('[data-stickee-widget-id]');
+    if (widget) {
+      widget.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -207,10 +214,38 @@ const iPhone15PlusDeals = () => {
             ))}
           </div>
         </section>
+
+        <section className="bg-gradient-to-b from-blue-50 to-white py-12 rounded-lg">
+          <div className="text-center space-y-6 px-4">
+            <h2 className="text-3xl font-bold text-gray-900">
+              Get Your Perfect iPhone 15 Plus Deal Today
+            </h2>
+            
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Ready to experience the bigger screen and longer battery life? Compare the latest iPhone 15 Plus deals from major UK networks starting from £40 per month, with options for no upfront cost. Find the perfect balance of data, cost, and features.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button
+                onClick={scrollToWidget}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 h-auto"
+              >
+                Compare iPhone 15 Plus Deals
+              </Button>
+              <Link to="/iphone-mobile-phones">
+                <Button
+                  variant="outline"
+                  className="w-full sm:w-auto border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 h-auto"
+                >
+                  View All iPhone Deals
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
 };
 
 export default iPhone15PlusDeals;
-
