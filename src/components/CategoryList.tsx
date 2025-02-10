@@ -20,53 +20,25 @@ export const CategoryList = () => {
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                {manufacturer.models.map((model) => {
-                  let linkPath = "#";
-                  
-                  // Map specific model names to their routes
-                  switch(model.name) {
-                    case "iPhone 15":
-                      linkPath = "/mobile-phones/iPhone-15-Deals";
-                      break;
-                    case "Galaxy S25":
-                      linkPath = "/mobile-phones/Galaxy-S25-Deals";
-                      break;
-                    case "Galaxy S24 Ultra":
-                      linkPath = "/mobile-phones/Galaxy-S24-Ultra-Deals";
-                      break;
-                    case "Pixel 9 Pro":
-                      linkPath = "/mobile-phones/Google-Pixel-9-Pro-Deals";
-                      break;
-                    case "Xperia 1 VI":
-                      linkPath = "/sony-mobile-phones";
-                      break;
-                    case "Honor 200 Pro":
-                      linkPath = "/honor-mobile-phones";
-                      break;
-                    default:
-                      linkPath = "#";
-                  }
-
-                  return (
-                    <Link
-                      key={model.id}
-                      to={linkPath}
-                      className="block"
-                    >
-                      <div className="flex items-center justify-between p-2 hover:bg-accent rounded-lg transition-colors">
-                        <div>
-                          <h4 className="font-medium">{model.name}</h4>
-                          <p className="text-sm text-muted-foreground">
-                            From £{model.price.monthly.toFixed(2)}/month
-                          </p>
-                        </div>
-                        <Button variant="ghost" size="icon">
-                          <ChevronRight className="h-4 w-4" />
-                        </Button>
+                {manufacturer.models.map((model) => (
+                  <Link
+                    key={model.id}
+                    to={model.name === "iPhone 16" ? "/mobile-phones/iPhone-16-Deals" : "#"}
+                    className="block"
+                  >
+                    <div className="flex items-center justify-between p-2 hover:bg-accent rounded-lg transition-colors">
+                      <div>
+                        <h4 className="font-medium">{model.name}</h4>
+                        <p className="text-sm text-muted-foreground">
+                          From £{model.price.monthly.toFixed(2)}/month
+                        </p>
                       </div>
-                    </Link>
-                  );
-                })}
+                      <Button variant="ghost" size="icon">
+                        <ChevronRight className="h-4 w-4" />
+                      </Button>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </CardContent>
           </Card>
