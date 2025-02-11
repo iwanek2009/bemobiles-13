@@ -51,7 +51,6 @@ const GooglePixel8ProDeals = () => {
 
           <p className="text-lg">
             The Pixel 8 Pro is the pinnacle of Google's handset tech, packing incredible AI smarts and a stunning camera system — it's priced from £999 {' '}
-            <span className="text-sm text-gray-500">(opens in new tab)</span> {' '}
             <a 
               href="https://store.google.com/gb/product/pixel_9_pro?hl=en-GB" 
               target="_blank" 
