@@ -3,6 +3,7 @@ import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Pixel8ProSpecs } from "@/components/google/sections/Pixel8ProSpecs";
 
 const GooglePixel8ProDeals = () => {
   useSEO({
@@ -131,6 +132,8 @@ const GooglePixel8ProDeals = () => {
           </ul>
         </div>
       </section>
+
+      <Pixel8ProSpecs />
     </>
   );
 };
