@@ -44,8 +44,6 @@ const GooglePixel8ProDeals = () => {
         }}
       />
 
-      <PixelSpecsTable />
-
       <section className="max-w-4xl mx-auto px-4 py-8 space-y-8">
         <h2 className="text-4xl font-bold text-gray-900 mb-6">How to Find the Best Google Pixel 8 Pro Deals</h2>
 
@@ -134,8 +132,11 @@ const GooglePixel8ProDeals = () => {
           </ul>
         </div>
       </section>
+
+      <PixelSpecsTable />
     </>
   );
 };
 
 export default GooglePixel8ProDeals;
+
