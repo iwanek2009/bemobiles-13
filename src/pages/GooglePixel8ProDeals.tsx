@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Pixel8ProSpecs } from "@/components/google/sections/Pixel8ProSpecs";
 import { Pixel8ProDealsSection } from "@/components/google/sections/Pixel8ProDealsSection";
+import { Pixel8ProCTASection } from "@/components/google/sections/Pixel8ProCTASection";
 
 const GooglePixel8ProDeals = () => {
   useSEO({
@@ -136,6 +137,7 @@ const GooglePixel8ProDeals = () => {
 
       <Pixel8ProDealsSection />
       <Pixel8ProSpecs />
+      <Pixel8ProCTASection />
     </>
   );
 };
