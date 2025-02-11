@@ -3,6 +3,7 @@ import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { PixelSpecsTable } from "@/components/google/sections/PixelSpecsTable";
 
 const GooglePixel8ProDeals = () => {
   useSEO({
@@ -42,6 +43,8 @@ const GooglePixel8ProDeals = () => {
           decoding: "async"
         }}
       />
+
+      <PixelSpecsTable />
 
       <section className="max-w-4xl mx-auto px-4 py-8 space-y-8">
         <h2 className="text-4xl font-bold text-gray-900 mb-6">How to Find the Best Google Pixel 8 Pro Deals</h2>
@@ -136,4 +139,3 @@ const GooglePixel8ProDeals = () => {
 };
 
 export default GooglePixel8ProDeals;
-
