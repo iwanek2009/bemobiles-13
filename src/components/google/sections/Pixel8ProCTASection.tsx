@@ -5,6 +5,15 @@ import { useNavigate } from 'react-router-dom';
 export const Pixel8ProCTASection = () => {
   const navigate = useNavigate();
 
+  const handlePixel9ProClick = () => {
+    // Navigate to the Pixel 9 Pro page
+    navigate('/mobile-phones/Google-Pixel-9-Pro-Deals');
+    // Force a page refresh after navigation
+    window.location.reload();
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <section className="max-w-4xl mx-auto px-4 py-8 text-center">
       <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -27,7 +36,7 @@ export const Pixel8ProCTASection = () => {
           Compare Pixel 8 Pro Deals
         </button>
         <button 
-          onClick={() => navigate('/mobile-phones/Google-Pixel-9-Pro-Deals')}
+          onClick={handlePixel9ProClick}
           className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors duration-200"
         >
           View Pixel 9 Pro Deals
