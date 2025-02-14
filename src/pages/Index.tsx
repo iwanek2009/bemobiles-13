@@ -9,7 +9,7 @@ import { GuideSection } from "@/components/GuideSection";
 import { Footer } from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 import PhoneModelsSection from "@/components/iphone/PhoneModelsSection";
-import { SamsungModelsSection } from "@/components/samsung/SamsungModelsSection";
+import SamsungModelsSection from "@/components/samsung/SamsungModelsSection";
 
 const Index = () => {
   useSEO({
