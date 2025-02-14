@@ -1,3 +1,4 @@
+
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { BrandFilter } from "@/components/BrandFilter";
@@ -7,6 +8,7 @@ import { CategoryList } from "@/components/CategoryList";
 import { GuideSection } from "@/components/GuideSection";
 import { Footer } from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
+import PhoneModelsSection from "@/components/iphone/PhoneModelsSection";
 
 const Index = () => {
   useSEO({
@@ -27,6 +29,7 @@ const Index = () => {
       <CategoryList />
       <GuideSection />
       <InfoSection />
+      <PhoneModelsSection />
       <Footer />
     </div>
   );
