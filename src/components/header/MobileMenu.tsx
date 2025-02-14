@@ -2,19 +2,13 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Separator } from "@/components/ui/separator";
 import { ChevronDown } from "lucide-react";
-
 export const MobileMenu = () => {
-  return (
-    <Sheet>
+  return <Sheet>
       <SheetTrigger asChild className="md:hidden">
-        <Button variant="ghost" size="icon" className="hover:bg-gray-100 h-[46px] w-[46px]">
+        <Button variant="ghost" size="icon" className="hover:bg-gray-100 h-[46px] w-[46px] text-zinc-50">
           <Menu className="h-[46px] w-[46px] text-gray-700" />
         </Button>
       </SheetTrigger>
@@ -131,6 +125,5 @@ export const MobileMenu = () => {
           </Link>
         </nav>
       </SheetContent>
-    </Sheet>
-  );
+    </Sheet>;
 };
