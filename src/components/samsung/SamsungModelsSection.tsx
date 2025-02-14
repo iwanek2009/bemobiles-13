@@ -38,7 +38,7 @@ function SamsungModelsSection() {
     url: "/mobile-phones/Galaxy-S25-Ultra-Deals"
   }];
   return <div className="max-w-7xl mx-auto p-6">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Compare Samsung Galaxy Models</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">Phone Contracts Samsung Galaxy Models</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {models.map((model, index) => <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow h-full flex flex-col">
             <div className="flex-grow">
