@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { updateSEO } from '../utils/seo';
 
