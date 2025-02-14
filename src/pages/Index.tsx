@@ -9,6 +9,7 @@ import { GuideSection } from "@/components/GuideSection";
 import { Footer } from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 import PhoneModelsSection from "@/components/iphone/PhoneModelsSection";
+import { SamsungModelsSection } from "@/components/samsung/SamsungModelsSection";
 
 const Index = () => {
   useSEO({
@@ -27,9 +28,10 @@ const Index = () => {
       <BrandFilter />
       <PhoneDeals />
       <CategoryList />
+      <SamsungModelsSection />
+      <PhoneModelsSection />
       <GuideSection />
       <InfoSection />
-      <PhoneModelsSection />
       <Footer />
     </div>
   );
