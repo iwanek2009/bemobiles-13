@@ -8,7 +8,7 @@ import { ChevronDown } from "lucide-react";
 export const MobileMenu = () => {
   return <Sheet>
       <SheetTrigger asChild className="md:hidden">
-        <Button variant="ghost" size="icon" className="hover:bg-gray-100 h-[46px] w-[46px] text-zinc-50">
+        <Button variant="ghost" size="icon" className="h-[46px] w-[46px] text-zinc-50 bg-primary-foreground">
           <Menu className="h-[46px] w-[46px] text-gray-700" />
         </Button>
       </SheetTrigger>
