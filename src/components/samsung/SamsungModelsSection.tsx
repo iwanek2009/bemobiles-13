@@ -1,7 +1,7 @@
 
-import { ChevronRight } from "lucide-react";
+import { FC } from 'react';
 
-export const SamsungModelsSection = () => {
+function SamsungModelsSection() {
   const models = [
     {
       name: "Galaxy S24",
@@ -11,7 +11,7 @@ export const SamsungModelsSection = () => {
       url: "/mobile-phones/Galaxy-S24-Deals"
     },
     {
-      name: "Galaxy S24+",
+      name: "Galaxy S24 Plus",
       description: "A larger display variant with enhanced features, perfect for those who want a bigger screen without the Ultra's premium features.",
       keyFeatures: ["6.7\" QHD+ display", "Larger battery", "Advanced AI"],
       targetUser: "Users wanting a premium large-screen experience",
@@ -32,7 +32,7 @@ export const SamsungModelsSection = () => {
       url: "/mobile-phones/Galaxy-S25-Deals"
     },
     {
-      name: "Galaxy S25+",
+      name: "Galaxy S25 Plus",
       description: "The perfect balance of screen size and premium features, offering an enhanced viewing experience and powerful performance.",
       keyFeatures: ["Large display", "Premium build", "Advanced features"],
       targetUser: "Users wanting a premium large-screen device",
@@ -48,34 +48,32 @@ export const SamsungModelsSection = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="max-w-7xl mx-auto p-6">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Compare Samsung Galaxy Models</h2>
-      <div className="grid gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {models.map((model, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
-            <div className="flex justify-between items-start">
-              <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">{model.name}</h3>
-                <p className="text-gray-600 mb-4">{model.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {model.keyFeatures.map((feature, idx) => (
-                    <span key={idx} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm">
-                      {feature}
-                    </span>
-                  ))}
-                </div>
-                <p className="text-sm text-gray-500">
-                  Best for: {model.targetUser}
-                </p>
+          <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow h-full flex flex-col">
+            <div className="flex-grow">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2">{model.name}</h3>
+              <p className="text-gray-600 mb-4">{model.description}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {model.keyFeatures.map((feature, idx) => (
+                  <span key={idx} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm">
+                    {feature}
+                  </span>
+                ))}
               </div>
+              <p className="text-sm text-gray-500">
+                Best for: {model.targetUser}
+              </p>
             </div>
             <div className="mt-4 pt-4 border-t border-gray-100">
               <a 
                 href={model.url}
                 className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
               >
-                Compare deals
-                <ChevronRight className="h-4 w-4 ml-1" />
+                Compare {model.name} deals
+                <span className="ml-1">→</span>
               </a>
             </div>
           </div>
@@ -88,4 +86,6 @@ export const SamsungModelsSection = () => {
       </div>
     </div>
   );
-};
+}
+
+export default SamsungModelsSection;

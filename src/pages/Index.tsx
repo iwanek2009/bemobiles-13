@@ -28,13 +28,14 @@ const Index = () => {
       <BrandFilter />
       <PhoneDeals />
       <CategoryList />
-      <SamsungModelsSection />
       <PhoneModelsSection />
       <GuideSection />
       <InfoSection />
+      <SamsungModelsSection />
       <Footer />
     </div>
   );
 };
 
 export default Index;
+
