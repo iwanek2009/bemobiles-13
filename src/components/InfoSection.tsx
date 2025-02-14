@@ -1,14 +1,7 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Smartphone, CreditCard, DollarSign, ChartBar, Check, Heart } from "lucide-react";
-
 export const InfoSection = () => {
-  return (
-    <>
+  return <>
       <div className="w-full bg-[#F1F1F1] py-8">
         <div className="container mx-auto px-4 max-w-[1000px]">
           <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-6 flex items-center gap-3">
@@ -139,7 +132,7 @@ export const InfoSection = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div className="rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow bg-slate-200 hover:bg-slate-100">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                 Important Considerations
               </h3>
@@ -179,6 +172,5 @@ export const InfoSection = () => {
           </div>
         </div>
       </div>
-    </>
-  );
+    </>;
 };
