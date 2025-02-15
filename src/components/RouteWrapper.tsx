@@ -60,7 +60,8 @@ export const RouteWrapper = () => {
         '/mobile-phones/iPhone-16-Pro-Deals',
         '/mobile-phones/iPhone-16-Pro-Max-Deals',
         '/mobile-phones/Google-Pixel-8-Pro-Deals',
-        '/mobile-phones/Google-Pixel-8-Deals'
+        '/mobile-phones/Google-Pixel-8-Deals',
+        '/best-mobile-phone-deals-southampton'  // Added new route
       ];
 
       const shouldRefresh = refreshRoutes.some(route => href === route);
