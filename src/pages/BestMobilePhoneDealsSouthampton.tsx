@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import SouthamptonIntroSection from "@/components/sections/SouthamptonIntroSection";
 import FeaturedPhonesPreview from "@/components/sections/FeaturedPhonesPreview";
 import ContractTypesSection from "@/components/sections/ContractTypesSection";
+import FAQSection from "@/components/sections/FAQSection";
 
 const BestMobilePhoneDealsSouthampton = () => {
   useSEO({
@@ -43,6 +44,9 @@ const BestMobilePhoneDealsSouthampton = () => {
           </div>
           <div className="mb-8">
             <ContractTypesSection />
+          </div>
+          <div className="mb-8">
+            <FAQSection />
           </div>
         </div>
       </TheMobile>
