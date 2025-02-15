@@ -1,4 +1,6 @@
+
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -20,7 +22,7 @@ export const Footer = () => {
             <nav className="flex flex-col gap-3">
               <a href="#" className="text-black hover:text-primary">About Bemobiles</a>
               <a href="#" className="text-black hover:text-primary">Home</a>
-              <a href="#" className="text-black hover:text-primary">Mobile Phones</a>
+              <Link to="/best-mobile-phone-deals-southampton" className="text-black hover:text-primary">Mobile Phones</Link>
               <a href="#" className="text-black hover:text-primary">Sim Only</a>
               <a href="#" className="text-black hover:text-primary">Broadband & TV</a>
             </nav>
