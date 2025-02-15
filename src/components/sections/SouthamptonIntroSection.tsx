@@ -4,9 +4,9 @@ import React from 'react';
 const SouthamptonIntroSection = () => {
   return (
     <section className="max-w-4xl mx-auto py-6">
-      <h1 className="text-2xl font-semibold mb-4">
+      <h2 className="text-2xl font-semibold mb-4">
         Best Mobile Phone Deals in Southampton
-      </h1>
+      </h2>
       
       <div className="space-y-4">
         <p className="text-gray-800">
