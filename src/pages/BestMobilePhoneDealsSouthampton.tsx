@@ -2,6 +2,7 @@
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { Footer } from "@/components/Footer";
+import SouthamptonIntroSection from "@/components/sections/SouthamptonIntroSection";
 
 const BestMobilePhoneDealsSouthampton = () => {
   useSEO({
@@ -33,25 +34,7 @@ const BestMobilePhoneDealsSouthampton = () => {
       >
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Choose a Phone Contract in Southampton?</h2>
-            <ul className="space-y-3 text-gray-600">
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Local store support and expert advice
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Exclusive regional deals and promotions
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Excellent network coverage across Hampshire
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
-                Flexible payment options and contract lengths
-              </li>
-            </ul>
+            <SouthamptonIntroSection />
           </div>
         </div>
       </TheMobile>
