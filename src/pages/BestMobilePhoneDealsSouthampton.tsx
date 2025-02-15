@@ -10,8 +10,10 @@ import CTASection from "@/components/sections/CTASection";
 
 const BestMobilePhoneDealsSouthampton = () => {
   useSEO({
-    title: "Best Mobile Phone Deals in Southampton | Compare Local Offers",
-    description: "Find the best mobile phone deals in Southampton. Compare local contracts, plans & exclusive offers from major networks. Save on your next phone contract!"
+    title: "Best Mobile Phone Deals in Southampton | Compare Latest Offers 2025",
+    description: "Compare the best mobile phone deals in Southampton from major networks. Find exclusive local offers on iPhone, Samsung & more. Save on phone contracts with our comparison tool.",
+    keywords: "mobile phone deals Southampton, phone contracts Southampton, iPhone deals Southampton, Samsung deals Southampton, 5G phones Southampton",
+    canonical: "https://bemobiles.com/mobile-phone-deals-southampton"
   });
 
   return (
