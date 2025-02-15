@@ -3,6 +3,7 @@ import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { Footer } from "@/components/Footer";
 import SouthamptonIntroSection from "@/components/sections/SouthamptonIntroSection";
+import FeaturedPhonesPreview from "@/components/sections/FeaturedPhonesPreview";
 
 const BestMobilePhoneDealsSouthampton = () => {
   useSEO({
@@ -35,6 +36,9 @@ const BestMobilePhoneDealsSouthampton = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
             <SouthamptonIntroSection />
+          </div>
+          <div className="mb-8">
+            <FeaturedPhonesPreview />
           </div>
         </div>
       </TheMobile>
