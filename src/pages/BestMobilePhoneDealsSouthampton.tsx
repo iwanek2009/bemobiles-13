@@ -1,6 +1,7 @@
 import { TheMobile } from "@/components/templates/TheMobile";
 import { useSEO } from "@/hooks/useSEO";
 import { Footer } from "@/components/Footer";
+import SouthamptonIntroSection from "@/components/sections/SouthamptonIntroSection";
 const BestMobilePhoneDealsSouthampton = () => {
   useSEO({
     title: "Best Mobile Phone Deals in Southampton | Compare Local Offers",
@@ -20,7 +21,9 @@ const BestMobilePhoneDealsSouthampton = () => {
       decoding: "async"
     }}>
         <div className="container mx-auto px-4 py-8">
-          
+          <div className="bg-white rounded-lg shadow-sm p-6 mb-8 px-[8px]">
+            <SouthamptonIntroSection />
+          </div>
         </div>
       </TheMobile>
       <Footer />
