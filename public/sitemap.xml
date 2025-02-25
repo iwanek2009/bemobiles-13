@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -55,7 +56,7 @@
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- iPhone Deal Pages -->
+  <!-- Current iPhone Deal Pages -->
   <url>
     <loc>https://bemobiles.com/mobile-phones/iPhone-13-Deals</loc>
     <lastmod>2024-03-19</lastmod>
@@ -98,7 +99,7 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  <!-- Samsung Deal Pages -->
+  <!-- Current Samsung Deal Pages -->
   <url>
     <loc>https://bemobiles.com/mobile-phones/Galaxy-S24-Deals</loc>
     <lastmod>2024-03-19</lastmod>
@@ -117,7 +118,7 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  <!-- Google Pixel Deal Pages -->
+  <!-- Current Google Deal Pages -->
   <url>
     <loc>https://bemobiles.com/mobile-phones/Google-Pixel-8-Deals</loc>
     <lastmod>2024-03-19</lastmod>
@@ -199,4 +200,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://bemobiles.com/best-mobile-phone-deals-southampton</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
+
